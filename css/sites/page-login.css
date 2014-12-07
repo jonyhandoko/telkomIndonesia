@@ -1,0 +1,442 @@
+#sites-page h4 {
+  font-family: 'Conv_GothamRnd-Bold';
+  font-size: 24px;
+  line-height: 24px;
+  color: #000;
+  margin: 0 0 25px 0;
+  display: block;
+  text-align: center; }
+
+.reg-title, .checkbox, .form-group p {
+  font-family: 'Conv_GothamRnd-Book';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px; }
+
+.login-left {
+  border-right: 1px solid #dfdfdf; }
+
+.login-connect {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-top: 50px; }
+  .login-connect h6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Conv_GothamRnd-Bold';
+    color: #000;
+    letter-spacing: -0.04em;
+    text-transform: none; }
+  .login-connect .connect-list {
+    width: 55%;
+    position: relative;
+    display: block;
+    margin-bottom: 50px; }
+    .login-connect .connect-list a {
+      display: block;
+      padding: 6px 20px;
+      font-size: 12px;
+      font-family: 'Conv_GothamRnd-Bold';
+      color: #fff;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px; }
+      .login-connect .connect-list a img {
+        margin-right: 10px;
+        margin-top: -2px; }
+      .login-connect .connect-list a.connect-fb {
+        background: #3b5998;
+        margin-bottom: 20px; }
+        .login-connect .connect-list a.connect-fb:hover {
+          background: #26488e; }
+      .login-connect .connect-list a.connect-twitter {
+        background: #00aced;
+        margin-top: 15px; }
+        .login-connect .connect-list a.connect-twitter:hover {
+          background: #0694c9; }
+      .login-connect .connect-list a:hover {
+        text-decoration: none; }
+    .login-connect .connect-list p {
+      font-family: 'Conv_GothamRnd-Bold';
+      font-size: 20px;
+      letter-spacing: -0.04em;
+      color: #000;
+      text-align: center; }
+
+.login-form {
+  width: 75%;
+  position: relative;
+  display: block;
+  margin-bottom: 60px; }
+  .login-form .btn-red {
+    padding: 8px 22px; }
+  .login-form a {
+    color: #e41b13; }
+  .login-form h6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Conv_GothamRnd-Bold';
+    color: #000;
+    letter-spacing: -0.04em;
+    text-transform: none; }
+  .login-form label, .login-form .login-form .form-control::-webkit-input-placeholder, .login-form .login-form .form-control::-webkit-input-placeholder, .login-form .login-form .form-control:-moz-placeholder, .login-form .login-form .form-control:-moz-placeholder, .login-form .login-form .form-control::-moz-placeholder, .login-form .login-form .form-control::-moz-placeholder, .login-form .login-form .form-control:-ms-input-placeholder, .login-form .login-form .form-control:-ms-input-placeholder {
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 14px;
+    letter-spacing: -0.02em; }
+  .login-form .form-control {
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #a1a1a1;
+    border-radius: 0px;
+    border: 1px solid #ececec;
+    padding: 7px 13px; }
+    .login-form .form-control::-webkit-input-placeholder {
+      color: #a1a1a1; }
+    .login-form .form-control:-moz-placeholder {
+      color: #a1a1a1; }
+    .login-form .form-control::-moz-placeholder {
+      color: #a1a1a1; }
+    .login-form .form-control:-ms-input-placeholder {
+      color: #a1a1a1; }
+
+.login-right {
+  margin-top: 50px;
+  padding-left: 20px;
+  font-family: 'Conv_GothamRnd-Book';
+  font-size: 14px;
+  letter-spacing: -0.02em; }
+  .login-right .btn {
+    padding: 8px 22px; }
+  .login-right h6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Conv_GothamRnd-Bold';
+    color: #000;
+    letter-spacing: -0.04em;
+    text-transform: none;
+    margin-bottom: 20px; }
+  .login-right ul {
+    margin: 0 0 20px;
+    padding: 0 15px; }
+
+.box-reset {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 60px; }
+  .box-reset .form-group {
+    margin-bottom: 25px; }
+    .box-reset .form-group .form-title {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      margin-bottom: 15px;
+      font-weight: normal; }
+
+.success-register {
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 90px; }
+  .success-register h6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Conv_GothamRnd-Bold';
+    color: #000;
+    letter-spacing: -0.04em;
+    text-transform: none;
+    margin-bottom: 5px; }
+  .success-register a {
+    color: #e41b13; }
+
+.activate-register {
+  padding: 25px 0;
+  margin-bottom: 50px;
+  text-align: center; }
+  .activate-register h6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Conv_GothamRnd-Bold';
+    color: #000;
+    letter-spacing: -0.04em;
+    text-transform: none;
+    margin-bottom: 5px; }
+    .activate-register h6 span {
+      color: #e41b13; }
+  .activate-register .box-images {
+    width: 100%;
+    margin: 35px 0 60px; }
+    .activate-register .box-images img {
+      border: none;
+      max-width: 100%; }
+  .activate-register .text-content {
+    width: 75%;
+    margin: 0px auto;
+    margin-bottom: 35px; }
+  .activate-register p {
+    text-align: center; }
+
+.form-registration {
+  padding: 10px 0;
+  margin-bottom: 50px; }
+  .form-registration h6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Conv_GothamRnd-Bold';
+    color: #000;
+    letter-spacing: -0.04em;
+    text-transform: none;
+    margin-bottom: 5px; }
+  .form-registration p {
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 18px; }
+  .form-registration form {
+    margin-top: 30px;
+    width: 73%;
+    display: block;
+    position: relative; }
+    .form-registration form a {
+      color: #e41b13; }
+      .form-registration form a:hover {
+        color: #000; }
+    .form-registration form .form-group {
+      position: relative; }
+    .form-registration form .checkbox {
+      margin-bottom: 25px; }
+    .form-registration form input {
+      width: 90%; }
+    .form-registration form .security-code {
+      margin-bottom: 10px; }
+    .form-registration form .form-control {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 14px;
+      letter-spacing: -0.02em;
+      color: #a1a1a1;
+      border-radius: 0px;
+      border: 1px solid #ececec;
+      padding: 7px 13px;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none; }
+    .form-registration form .form-control-feedback {
+      top: 30px; }
+    .form-registration form .help-block.text-error {
+      color: #e41b13; }
+
+#sites-page .block-feature {
+  width: 100%;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 20px 0 60px 0; }
+  #sites-page .block-feature .block-images {
+    width: 115px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    display: block;
+    overflow: hidden; }
+    #sites-page .block-feature .block-images .icon {
+      width: 115px;
+      height: 115px;
+      background: #e41b13;
+      border-radius: 115px;
+      -moz-border-radius: 115px;
+      -webkit-border-radius: 115px;
+      behavior: url(PIE.htc);
+      vertical-align: middle;
+      display: table-cell; }
+      #sites-page .block-feature .block-images .icon img {
+        max-width: 100%;
+        border: none; }
+  #sites-page .block-feature strong {
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Conv_GothamRnd-Bold';
+    font-size: 16px;
+    line-height: 24px; }
+  #sites-page .block-feature p {
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 14px;
+    line-height: 22px;
+    color: #000; }
+
+@media screen and (max-width : 599px) {
+  .reg-title {
+    font-size: 0.8em; }
+  .btn-red {
+    font-size: 0.9em;
+    width: 100%;
+    text-align: center;
+    height: 34px; }
+  #sites-page {
+    padding-top: 100px; }
+    #sites-page h1 {
+      font-size: 2em;
+      line-height: 1.1em;
+      margin-bottom: 0px; }
+    #sites-page h4 {
+      font-size: 1.5em;
+      line-height: normal; }
+    #sites-page .block-feature {
+      margin: 10px 0 30px 0; }
+  .login-left {
+    border: none; }
+    .login-left .login-connect h6 {
+      font-size: 0.9em;
+      line-height: 1em;
+      margin-bottom: 5px; }
+    .login-left .login-connect p {
+      font-size: 0.8em; }
+    .login-left .login-connect .connect-list {
+      width: 100%; }
+      .login-left .login-connect .connect-list a, .login-left .login-connect .connect-list p {
+        text-align: center;
+        font-size: 0.7em; }
+        .login-left .login-connect .connect-list a.connect-fb, .login-left .login-connect .connect-list p.connect-fb {
+          margin-bottom: 10px; }
+        .login-left .login-connect .connect-list a.connect-twitter, .login-left .login-connect .connect-list p.connect-twitter {
+          margin-top: 5px; }
+    .login-left .login-form {
+      width: 100%; }
+      .login-left .login-form h6 {
+        font-size: 1em;
+        line-height: 1em; }
+      .login-left .login-form .checkbox {
+        margin: 0; }
+      .login-left .login-form .form-control, .login-left .login-form p {
+        font-size: 0.8em; }
+      .login-left .login-form .btn-red {
+        margin-top: 15px;
+        width: 100%; }
+  .login-right {
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-left: 0px; }
+    .login-right h6 {
+      font-size: 1.2em;
+      line-height: 1em; }
+  .box-reset {
+    padding-bottom: 25px; }
+    .box-reset .form-group {
+      margin-bottom: 20px; }
+      .box-reset .form-group .form-title {
+        font-size: 0.8em;
+        line-height: normal;
+        margin-bottom: 10px; }
+      .box-reset .form-group .form-control {
+        width: 100%;
+        font-size: 0.8em; }
+  .form-registration form {
+    width: 100%; }
+    .form-registration form .text-error {
+      font-size: 0.8em; }
+    .form-registration form .security-code {
+      width: 90%; }
+      .form-registration form .security-code img {
+        max-width: 100%; }
+  .form-registration h6 {
+    font-size: 1.2em;
+    line-height: 1em; }
+  .form-registration p {
+    font-size: 0.9em; }
+  .form-control-feedback {
+    width: 24px;
+    height: 24px; }
+    .form-control-feedback img {
+      max-width: 100%; }
+  .activate-register h6 {
+    font-size: 1.1em;
+    line-height: 1em; }
+  .activate-register .text-content {
+    width: 100%;
+    font-size: 0.9em; }
+  .activate-register .box-images {
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 50px; }
+  .success-register {
+    font-size: 0.8em;
+    line-height: normal;
+    margin-bottom: 45px; }
+    .success-register h6 {
+      font-size: 1.2em;
+      line-height: normal; } }
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .reg-title {
+    font-size: 0.9em; }
+  .btn-red {
+    font-size: 1em; }
+  #sites-page {
+    padding-top: 120px; }
+    #sites-page h1 {
+      font-size: 2.5em;
+      line-height: 1em; }
+    #sites-page h4 {
+      font-size: 1.5em;
+      line-height: 1em; }
+    #sites-page .block-feature strong {
+      font-size: 0.9em;
+      line-height: normal; }
+    #sites-page .block-feature p {
+      font-size: 0.8em;
+      line-height: normal; }
+  .login-left {
+    border: none; }
+    .login-left .login-connect h6 {
+      font-size: 1.2em;
+      line-height: 1em; }
+    .login-left .login-connect p {
+      font-size: 0.9em; }
+    .login-left .login-connect .connect-list {
+      width: 65%; }
+      .login-left .login-connect .connect-list a, .login-left .login-connect .connect-list p {
+        text-align: center;
+        font-size: 0.9em; }
+        .login-left .login-connect .connect-list a.connect-fb, .login-left .login-connect .connect-list p.connect-fb {
+          margin-bottom: 10px; }
+        .login-left .login-connect .connect-list a.connect-twitter, .login-left .login-connect .connect-list p.connect-twitter {
+          margin-top: 5px; }
+    .login-left .login-form {
+      width: 85%; }
+      .login-left .login-form h6 {
+        font-size: 1.2em;
+        line-height: 1em; }
+      .login-left .login-form .form-control {
+        font-size: 0.9em; }
+  .login-right {
+    font-size: 0.9em; }
+    .login-right h6 {
+      font-size: 1.2em;
+      line-height: 1em; }
+  .box-reset {
+    padding-bottom: 50px; }
+    .box-reset .form-group {
+      margin-bottom: 15px; }
+      .box-reset .form-group .form-title {
+        font-size: 0.9em;
+        line-height: normal;
+        margin-bottom: 10px; }
+      .box-reset .form-group .form-control {
+        width: 70%; }
+  .activate-register h6 {
+    font-size: 1.2em;
+    line-height: 1em; }
+  .activate-register .text-content {
+    width: 90%;
+    font-size: 1em; }
+  .success-register {
+    font-size: 0.9em;
+    line-height: normal; }
+    .success-register h6 {
+      font-size: 1.2em;
+      line-height: 1em; } }

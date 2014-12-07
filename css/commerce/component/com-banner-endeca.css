@@ -1,0 +1,124 @@
+.breadcrumb {
+  background: none;
+  padding: 20px 0 8px;
+  position: relative;
+  z-index: 1; }
+  .breadcrumb li {
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 12px;
+    line-height: 24px; }
+    .breadcrumb li.active {
+      color: #fff; }
+  .breadcrumb a {
+    color: #fff; }
+
+#banner-site-search, #banner-store-locator {
+  width: 100%;
+  height: 380px;
+  display: block;
+  position: relative;
+  margin-top: -25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-behavior: url(backgroundsize.min.htc); }
+  #banner-site-search .txt-desc, #banner-store-locator .txt-desc {
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    color: #fff;
+    text-align: left; }
+    #banner-site-search .txt-desc h1, #banner-store-locator .txt-desc h1 {
+      font-family: 'Conv_GothamRnd-Bold';
+      font-size: 50px;
+      line-height: 60px;
+      color: #fff;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+
+#banner-site-search {
+  margin-top: -98px; }
+  #banner-site-search .txt-desc {
+    margin-top: 100px; }
+
+#banner-store-locator .txt-desc {
+  width: 60%;
+  margin-top: 100px; }
+
+#banner-shop {
+  width: 100%;
+  height: 351px;
+  position: relative;
+  display: block;
+  margin-top: -98px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-behavior: url(backgroundsize.min.htc); }
+  #banner-shop .head-banner {
+    width: 45%;
+    margin-top: 100px;
+    color: #fff; }
+    #banner-shop .head-banner h1 {
+      font-family: 'Conv_GothamRnd-Bold';
+      font-size: 50px;
+      line-height: 61px;
+      color: #fff; }
+
+@media screen and (max-width : 540px) {
+  #banner-site-search, #banner-store-locator {
+    overflow: hidden;
+    height: 300px;
+    background-position: left center;
+    margin-top: 60px; }
+    #banner-site-search .txt-desc, #banner-store-locator .txt-desc {
+      font-size: 0.9em;
+      line-height: 1.5em;
+      width: 100%;
+      text-align: left;
+      margin: 10% 0 5% 0; }
+      #banner-site-search .txt-desc h1, #banner-store-locator .txt-desc h1 {
+        font-size: 2.5em;
+        line-height: 1em; }
+  #banner-store-locator {
+    height: 330px; } }
+
+@media screen and (min-width:541px) and (max-width:1024px) {
+  #banner-support {
+    margin-top: 69px;
+    height: auto;
+    padding-bottom: 7%; }
+    #banner-support .txt-desc {
+      width: 50%;
+      margin: 0px;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      color: #fff;
+      text-align: left; }
+      #banner-support .txt-desc h1 {
+        font-size: 250%;
+        margin-bottom: 1%; } }
+
+@media only screen and (min-width : 767px) and (max-width : 1024px) {
+  #banner-site-search, #banner-store-locator {
+    margin-top: 69px;
+    height: auto;
+    padding-bottom: 7%; }
+    #banner-site-search .txt-desc, #banner-store-locator .txt-desc {
+      width: 50%;
+      margin: 0px;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      color: #fff;
+      text-align: left; }
+      #banner-site-search .txt-desc h1, #banner-store-locator .txt-desc h1 {
+        font-size: 2.5em;
+        line-height: 1em;
+        margin-bottom: 10px; } }

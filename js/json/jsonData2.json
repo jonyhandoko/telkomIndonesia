@@ -1,0 +1,14 @@
+{
+  "list" : [{
+				"label" : "lbl1",
+				"category" : "cat1",
+				"desc" : "desc1"
+			}, {
+				"label" : "lbl2",
+				"category" : "cat1",
+				"desc" : "desc2"
+			}, {
+				"label" : "lbl3",
+				"category" : "cat1"
+			}]
+}

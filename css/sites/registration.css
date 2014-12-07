@@ -1,0 +1,27 @@
+.error {
+	color: #e41b13;
+	font-family: 'Conv_GothamRnd-Book';
+	font-size: 14px;
+	letter-spacing: -0.02em;
+	line-height: 18px;
+	font-weight: normal;
+	font-style: normal;
+	padding-top: 4px;
+}
+.error .reg-title{
+	color: #000;
+}
+.text-error,.form-control-feedback{
+	display: none;
+}
+
+.error > .error-field > .form-control-feedback{
+	display: block;
+}
+.checkbox input[type="checkbox"]{
+	width: 20px;
+}
+.checkbox span{
+	top: 0px;
+	position: relative;
+}

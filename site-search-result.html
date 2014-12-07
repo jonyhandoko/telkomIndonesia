@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="no-js lt-ie7"><![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Telkom</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" /> 
+	<meta name="MobileOptimized" content="320">
+	
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<meta property="og:title" content="">
+   	<meta property="og:image" content="">
+   	<meta property="og:description" content="">
+   
+	<!-- BEGIN STYLES -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="css/commerce/component/com-head-endeca.css" rel="stylesheet" type="text/css"/>
+    <link href="css/commerce/component/com-banner-endeca.css" rel="stylesheet" type="text/css"/>
+    <link href="css/commerce/component/com-search-endeca.css" rel="stylesheet" type="text/css"/>
+    <link href="css/commerce/component/com-highlight-endeca.css" rel="stylesheet" type="text/css"/>
+    <link href="css/commerce/component/com-support-endeca.css" rel="stylesheet" type="text/css"/>
+    <link href="css/commerce/component/com-foot-endeca.css" rel="stylesheet" type="text/css"/>
+    <link href="css/commerce/page-search.css" rel="stylesheet" type="text/css"/>
+    <link href="css/commerce/page-shop.css" rel="stylesheet" type="text/css"/>
+    <link href="css/commerce/page-location.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/box-search.css" type="text/css" />
+    <link rel="stylesheet" href="css/typo.css" type="text/css" />
+    <link rel="stylesheet" href="css/buttons.css" type="text/css" />
+<!--    <link href="css/com-bottom.css" rel="stylesheet" type="text/css"/>-->    
+<!--    <link href="css/dropdown-search.css" rel="stylesheet" type="text/css"/>-->    
+	<!-- END STYLES -->   
+	
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jsonSuggest.js"></script>
+	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
+	<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/collapse-header.js"></script>
+    <script type="text/javascript" src="js/banner-slider.js"></script>
+    <script type="text/javascript" src="js/news-ticker.js"></script>
+    <script type="text/javascript" src="js/jsonData.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/side-navigation.js"></script>
+	<script type="text/javascript" src="js/responsive.js"></script>
+	<script type="text/javascript" src="js/component.js"></script> 
+	<script type="text/javascript" src="js/jquery.ui.map.js"></script>
+	<script type="text/javascript" src="js/store-location.js"></script>
+	
+  	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/ie.css" />
+		<script type="text/javascript" src="js/PIE.js"></script>		
+	<![endif]-->    	
+</head>
+<!-- END HEAD -->
+<body>
+	<a href="#" class="back-to-top">Back to Top</a>
+	<!-- Header Start Here -->
+	<div id="header">
+		<div class="container">
+			<div class="row block-top">
+				<div id="nav-left" class="col-md-4 col-xs-4 col-sm-4">
+					<div class="nav-top hidden-sm hidden-xs">
+						<ul>
+							<li><a href="#">Pelanggan</a></li>
+							<li><a href="#">Bisnis</a></li>
+							<li><a href="#">Tentang Telkom</a></li>
+						</ul>
+					</div>
+					<div class="dropdown text-right hidden-lg hidden-md">
+					  <button class="drop-top btn btn-default dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">
+					    Pelanggan
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="top-left-menu">
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bisnis</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tentang Telkom</a></li>
+					  </ul>
+					</div>					
+				</div>
+				<div class="col-md-8 hidden-xs hidden-sm text-right">
+					<div class="language hidden-sm hidden-xs">
+						<div class="dropdown">
+						  <button class="drop-top btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+						    Bahasa Indonesia
+						  </button>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">English</a></li>
+						  </ul>
+						</div>						
+					</div>
+                    <div id="block-search-head">
+                        <form action="" method="POST" id="search-box" class="navbar-right" role="search">
+                            <div class="form-group box-search">
+                            <input type="text" class="form-control" placeholder="Search" id="header-search-input">
+                            <button type="submit">go</button>
+                            </div>                       
+                        </form>
+<!--
+                            <div class="suggest-box">
+                                <ul>
+                                    <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                                    <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                                    <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                                    <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                                    <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                                    <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                                    <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                                    <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                                </ul>
+                            </div>
+-->
+                    </div>
+                    
+				</div>
+				<div id="box-search" class="col-xs-2 col-sm-1 visible-xs visible-sm">
+					<div class="icon-search" id="box-form-search">
+						<img src="img/icon.search.png">
+					</div>
+				</div>				
+				<div id="box-user" class="col-xs-2 col-sm-1 visible-xs visible-sm">
+					<div class="icon-user">
+						<img src="img/icon.user.png">
+					</div>
+				</div>
+			</div>
+			<div class="row block-nav">		
+				<div id="logo" class="col-md-2 col-xs-1 col-sm-3">
+					<a href="/" title="Telkom Indonesia" class="logo">Telkom Indonesia</a>	
+				</div>
+				<button id="nav-mob" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<div class="text">Menu</div>
+				</button>									
+				<div class="col-md-10 col-xs-12 col-sm-12 navigation">	
+		          <div class="navbar-collapse collapse">
+		          	<ul class='collapse-menu hidden-xs hidden-sm'>
+		          		<li><a id="top-page" href="#">See Menu</a></li>	
+		          	</ul>					
+					<ul class="expand-menu">
+						<li><a href="#">broadband</a></li>
+						<li><a href="#">wifi</a></li>
+						<li><a href="#">tv</a></li>
+						<li><a href="#">phone</a></li>
+						<li><a href="#">bundles</a></li>
+						<li><a href="#">rewards</a></li>
+						<li><a href="#">magazine</a></li>
+						<li class="nav-shop"><a href="#">Telkom Shop<i class="glyphicon glyphicon-lock"></i></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="sticky-right" class="hidden-sm hidden-xs"><!-- Side nav start here -->
+		<ul>
+			<li>
+				<div class="box-icon login">
+					<img src="img/icon-login.png">
+					Login
+				</div>
+			</li>
+			<li>
+				<div class="box-icon">
+					<img src="img/icon-cart.png">
+					shopping cart
+				</div>
+			</li>				
+			<li id='ctn-support'>
+				<div class="box-icon">
+					<img id="ctn-support" src="img/icon-support.png">
+					support		
+				</div>				
+				<div class="box-support">
+					<div class="content">
+						<form class="form" role="form">
+						<div class="row">
+						  <div class="col-md-9">
+						    <input type="text" class="form-control icon-search" placeholder="Search Support">
+						  </div>
+						  <div class="col-md-3">
+						     <button type="submit" class="btn btn-red">search</button>
+						  </div>
+						</div>		
+						</form>	
+						<div class="row">
+							<div class="col-md-6">
+								<div class="title-ribbon">
+									we are online	
+								</div>	
+								<div class="box-chat">
+									<img src="img/icon-livechat.png" />
+									<span>live chat</span>
+									Lorem ipsum dolor sit, ipsum adipiscin.
+								</div>
+							</div>	
+							<div class="col-md-6 ctn-right">
+								<div class="sidebox">
+									<h7>Join our community</h7>
+									<div class="links">
+										<a href="#">Facebook</a>
+										<a href="#">Twitter</a>
+									</div>
+								</div>
+								<div class="sidebox">
+									<h7>Talk to us</h7>
+									<div class="links odd">
+										<a href="#">Contact Details</a>
+										<a href="#">Feedback</a>
+										<a href="#">Find a store</a>
+									</div>
+								</div>								
+							</div>	
+						</div>	
+				    </div>
+				</div>					
+			</li>	
+			<li>
+				<div class="box-icon">
+					<img src="img/icon-feedback.png">
+					feedback
+				</div>
+			</li>						
+		</ul>		
+	</div><!-- End Side nav -->
+	<!-- End Header -->
+<div><div class="container" id="breadcrumb">
+ <div class="row">
+  <div class="col-md-12 hidden-xs hidden-sm">
+   <ol class="breadcrumb hidden-xs hidden-sm">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Broadband</a></li>
+    <li class="active">Question</li>
+   </ol>
+  </div>	
+ </div>
+</div>	
+<!-- Banner start here -->
+<div id="banner-site-search" style="background-image:url('img/banner-support.jpg');">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="txt-desc">
+     <h1>Bantuan</h1>
+     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros molestie. </p>
+    </div>				 
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End banner here -->
+<!-- Box search start here -->
+<div id="block-search">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="box-search-support">
+     <form>
+      <div class="box-input">
+       <!-- <img src="images/search.png" class="img-search"> -->
+       <input class="input-medium search-query" id="search-input-big" placeholder="Search Support" type="text">
+      </div>
+      <button class="btn hidden-xs" name="button" type="submit">Search</button>	
+      <button class="btn hidden-sm hidden-md hidden-lg" name="button" type="submit">Go</button>	
+     </form>	
+     <div class="suggest">
+      Did you mean: <a href="#">Broadband</a>?
+     </div>																		
+    </div>
+   </div>
+  </div>
+ </div>
+</div>	
+<!-- End search-->	
+
+<div id="content-search">
+ <div class="container">
+  <div class="row">				
+   <div class="col-md-3 col-sm-12 col-xs-12">
+    <div class="sidebar">
+     <div class="txt-keyword">
+      <div class="caption">
+       You search for:
+      </div>
+      <div class="detail">
+       <strong>Keyword</strong>
+       <a href="#">BPL</a>
+      </div>
+      <div class="detail last">
+       <strong>Category</strong>
+       <ul>
+        <li>
+         <a href="#">Broadband </a> 
+         <a href="#"><span class="glyphicon glyphicon-remove"></span></a>										
+        </li>
+        <li>
+         <a href="#">Usee TV</a>
+         <a href="#" class="remove">
+          <span class="glyphicon glyphicon-remove"></span>
+         </a>											
+        </li>										
+       </ul>
+      </div>
+      <div class="caption hidden-xs hidden-sm">
+       Refine your search by:
+      </div>                                
+     </div>	
+     <div class="side-nav hidden-xs hidden-sm">
+      <ul>
+       <li>
+        <a href="#" class="active">Broadband<span>(99)</span></a>
+        <ul>
+         <li><a href="#">Speedy<span>(33)</span></a></li>
+         <li><a href="#">Speedy Hotspot<span>(33)</span></a></li>
+        </ul>
+       </li>
+       <li>
+        <a href="#">Business<span>(9)</span></a>
+       </li>	
+       <li>
+        <a href="#">About Telkom<span>(9)</span></a>
+       </li>																																																							
+      </ul>																									
+     </div>                            
+     <div class="side-find hidden-sm">
+      <strong>Can’t find what you’re looking for?</strong>
+      <div class="list">
+       <div class="block-images">
+        <img src="img/find-contact.png">
+       </div>
+       <div class="block-desc">
+        <h6>call us now</h6>
+        <p>
+         Lorem ipsum dolor sit, +62-22-4521404
+        </p>
+       </div>
+      </div>
+      <div class="list">
+       <div class="block-images">
+        <img src="img/find-chat.png">
+       </div>
+       <div class="block-desc">
+        <h6>LIVE CHAT</h6>
+        <p>
+         Lorem ipsum dolor sit, ipsum adipiscin.
+        </p>
+       </div>
+      </div>
+      <div class="list">
+       <div class="block-images">
+        <img src="img/find-store.png">
+       </div>
+       <div class="block-desc">
+        <h6>FIND A STORE</h6>
+        <p>
+         Lorem ipsum dolor sit, ipsum adipiscin.
+        </p>
+       </div>
+      </div>																
+     </div>																	
+    </div>
+   </div>
+   
+   <div class="col-md-9 col-sm-12 col-xs-12 contents">
+    <div class="col-sm-8 col-xs-12 visible-sm visible-xs">
+     <div id="tab-search">
+      <div class="dropdown">
+       <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+        All Results (9999)
+       </button>
+       <ul class="dropdown-menu">
+        <li><a href="#">Broadband (99)</a></li>
+       </ul>
+      </div>
+     </div>
+    </div>					
+    <div class="col-md-12 col-sm-4 box-paging text-right tops hidden-xs">
+     <ul class="pagination tops">
+      <li><a href="#">Back</a></li>
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#" class="active">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">&raquo;</a></li>
+      <li><a href="#">Next</a></li>
+     </ul>
+    </div>							
+    <div class="box-content">
+     <div class="list-item">
+      <div class="block-images">
+       <img src="img/icon-article-search.png" />
+      </div>
+      <div class="block-desc">
+       <h4>What is lorem ipsum dolor sit amet?</h4>
+       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
+       <a href="#" class="read-more">read more</a>
+       <a class="desc-url hidden-xs" href="#">
+        http://www.telkom.co.id/broadband/home-broadband/index.htm
+       </a> 									
+      </div>							
+     </div>
+     <div class="list-item">
+      <div class="block-images">
+       <img src="img/icon-article-search.png" />
+      </div>
+      <div class="block-desc">
+       <h5>What is lorem ipsum dolor sit amet?</h5>
+       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
+       <a href="#" class="read-more">read more</a>  
+       <a class="desc-url hidden-xs" href="#">
+        http://www.telkom.co.id/broadband/home-broadband/index.htm
+       </a>                              
+      </div>
+     </div>	
+     <div class="list-item">
+      <div class="block-images">
+       <img src="img/icon-article-search.png" />
+      </div>
+      <div class="block-desc">
+       <h5>What is lorem ipsum dolor sit amet?</h5>
+       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
+       <a href="#" class="read-more">read more</a>  
+       <a class="desc-url hidden-xs" href="#">
+        http://www.telkom.co.id/broadband/home-broadband/index.htm
+       </a>                              
+      </div>
+     </div>
+     <div class="list-item">
+      <div class="block-images">
+       <img src="img/icon-article-search.png" />
+      </div>
+      <div class="block-desc">
+       <h5>What is lorem ipsum dolor sit amet?</h5>
+       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
+       <a href="#" class="read-more">read more</a>  
+       <a class="desc-url hidden-xs" href="#">
+        http://www.telkom.co.id/broadband/home-broadband/index.htm
+       </a>                              
+      </div>
+     </div>	
+     <div class="list-item last">
+      <div class="block-images">
+       <img src="img/icon-article-search.png" />
+      </div>
+      <div class="block-desc">
+       <h5>What is lorem ipsum dolor sit amet?</h5>
+       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.</p>
+       <a href="#" class="read-more">read more</a>  
+       <a class="desc-url hidden-xs" href="#">
+        http://www.telkom.co.id/broadband/home-broadband/index.htm
+       </a>                              
+      </div>
+     </div>																						
+    </div>
+    <div class="box-paging text-right bottoms">
+     <ul class="pagination">
+      <li><a href="#">Back</a></li>
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#" class="active">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">&raquo;</a></li>
+      <li><a href="#">Next</a></li>
+     </ul>
+    </div>						
+   </div>
+  </div>
+ </div>
+</div>		</div>
+	<!-- Footer start here  -->   
+    <div id="news-ticker">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 col-xs-12 col-sm-1">
+                    <h3>News</h3>
+                </div>
+                <div class="col-md-10 col-xs-12 col-sm-10">
+                    <ul id="list-news">
+                        <li><a href="#">Etiam imperdiet volutpat libero eu tristique.</a> </li>
+                        <li><a href="#">Curabitur porttitor ante eget hendrerit </a> </li>  
+                        <li><a href="#">Etiam imperdiet volutpat libero eu tristique.</a> </li>
+                        <li><a href="#">Curabitur porttitor ante eget hendrerit </a> </li>  
+                        <li><a href="#">Etiam imperdiet volutpat libero eu tristique.</a> </li>
+                        <li><a href="#">Curabitur porttitor ante eget hendrerit </a> </li>                                                                    
+                    </ul>
+                    <div class="clearfix"></div>
+                    <a id="news-prev" href="#"><span class="news-left">previous</span></a>
+                    <a id="news-next" href="#"><span class="news-right">next</span></a>
+                </div>
+                <div class="col-md-1 col-xs-12 col-sm-1">
+                    <a class="more">more</a>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 visible-sm visible-xs">
+                <div class="dropdown hidden-lg hidden-md">
+                  <button class="drop-quick btn btn-default btn-block dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">
+                   Quick Links
+                  </button>
+                </div>                  
+                </div>              
+                <div class="col-md-8 hidden-xs hidden-sm">
+                    <div class="sidefoot">
+                        <h3>Broadband</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidefoot">
+                        <h3>TV</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>  
+                    <div class="sidefoot">
+                        <h3>Bundles</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>  
+                    <div class="sidefoot">
+                        <h3>Magazine</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>  
+                    <div class="sidefoot">
+                        <h3>Telkom Shop</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>   
+                    <div class="sidefoot">
+                        <h3>wifi</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div> 
+                    <div class="sidefoot">
+                        <h3>My Phone</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>   
+                    <div class="sidefoot">
+                        <h3>Rewards</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div> 
+                    <div class="sidefoot">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>                                                                                                                                                  
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="side-socmed">
+                        <h3>Connect with us</h3>
+                        <a class="facebook" href="#">
+                            <img src="img/icon-fb.png" />
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-twitter.png" />
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-linkedin.png" />
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-youtube.png" />
+                        </a>                                                                        
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 sidefoot-bottom">
+                    <div class="col-md-7 col-sm-6 col-xs-12">
+                        <ul>
+                            <li><a href="#">About Telkom</a></li>
+                            <li><a href="#">Investors Relations</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">CSR</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                        </ul>   
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <p class="text-right">
+                            &copy; 2014 PT. Telekomunikasi Indonesia, Tbk. All Right Reserved.
+                        </p>    
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div> 
+    <!-- End footer  -->  
+</body>
+</html>

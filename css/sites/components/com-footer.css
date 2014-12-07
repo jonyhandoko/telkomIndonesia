@@ -1,0 +1,175 @@
+#footer {
+  width: 100%;
+  background: #242424;
+  padding: 70px 0 0 0;
+  min-height: 400px; }
+  #footer .sidefoot {
+    width: 100px;
+    float: left;
+    display: inline-block;
+    margin-right: 27px;
+    margin-bottom: 40px;
+    max-height: 100px; }
+    #footer .sidefoot:nth-child(5n+5) {
+      margin-right: 0; }
+    #footer .sidefoot h3 {
+      font-size: 11px;
+      line-height: 22px;
+      color: #fff;
+      font-family: 'Conv_GothamRnd-Bold';
+      text-transform: uppercase;
+      margin: 0; }
+    #footer .sidefoot ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      #footer .sidefoot ul li {
+        font-family: 'Conv_GothamRnd-Book';
+        font-size: 11px;
+        line-height: 22px;
+        margin: 5px 0; }
+        #footer .sidefoot ul li a {
+          color: #fff;
+          text-decoration: none; }
+          #footer .sidefoot ul li a:hover {
+            color: #e41b13; }
+  #footer .side-socmed {
+    border-left: 1px solid #333;
+    padding-left: 30px;
+    min-height: 240px; }
+    #footer .side-socmed h3 {
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Conv_GothamRnd-Bold';
+      margin: 0 0 20px 0; }
+    #footer .side-socmed a {
+      float: left;
+      display: inline-block;
+      width: 43px;
+      height: 43px;
+      margin-right: 20px; }
+      #footer .side-socmed a:hover {
+        color: #e41b13; }
+      #footer .side-socmed a:last-child {
+        margin-right: 0px; }
+  #footer .sidefoot-bottom {
+    margin-top: 35px;
+    padding: 25px 0;
+    border-top: 1px solid #333; }
+    #footer .sidefoot-bottom .col-md-7 {
+      padding-left: 0px; }
+    #footer .sidefoot-bottom .col-md-5 {
+      padding-right: 0px; }
+    #footer .sidefoot-bottom p {
+      color: #fff;
+      font-size: 11px;
+      font-family: 'Conv_GothamRnd-Book'; }
+    #footer .sidefoot-bottom ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      #footer .sidefoot-bottom ul li {
+        float: left;
+        display: inline-block;
+        font-size: 11px;
+        line-height: 22px;
+        padding: 0 10px;
+        border-right: 1px solid #333; }
+        #footer .sidefoot-bottom ul li:first-child {
+          padding: 0 10px 0 0; }
+        #footer .sidefoot-bottom ul li:last-child {
+          border: none; }
+        #footer .sidefoot-bottom ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-family: 'Conv_GothamRnd-Book';
+          text-transform: uppercase; }
+          #footer .sidefoot-bottom ul li a:hover {
+            color: #e41b13; }
+
+@media screen and (max-width : 540px) {
+  #footer {
+    padding: 35px 0 0 0;
+    min-height: 200px;
+    overflow: hidden; }
+    #footer .dropdown {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #333;
+      margin-left: 10px;
+      margin-right: 10px; }
+    #footer .drop-quick.btn {
+      padding: 2% 10% 2% 3%;
+      background: url('../../img/arrow-dropdown.png') no-repeat 97% center #fff;
+      font-size: 100%;
+      text-align: left;
+      width: 100%;
+      color: #acacac; }
+    #footer .side-socmed {
+      min-height: 50px;
+      position: relative;
+      overflow: hidden;
+      border-left: none;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-left: 0px;
+      margin-top: 20px;
+      border-bottom: 1px solid #333; }
+    #footer .sidefoot-bottom {
+      text-align: left;
+      border: none; }
+      #footer .sidefoot-bottom .text-right {
+        text-align: left;
+        margin-left: 15px; }
+      #footer .sidefoot-bottom ul {
+        margin: 0 0 0 32px; }
+        #footer .sidefoot-bottom ul li a {
+          text-transform: none; } }
+
+@media screen and (min-width:541px) and (max-width:1024px) {
+  #footer {
+    padding: 50px 0 0 0;
+    min-height: 250px;
+    overflow: hidden; }
+    #footer .dropdown {
+      margin-left: 15px; }
+    #footer .side-socmed {
+      min-height: 80px; }
+    #footer .sidefoot-bottom {
+      padding: 25px; }
+      #footer .sidefoot-bottom ul li a {
+        text-transform: none; } }
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  #footer {
+    padding: 50px 0 0 0;
+    min-height: 250px; }
+    #footer .dropdown {
+      margin-left: 0; }
+    #footer .drop-quick.btn {
+      padding: 2% 10% 2% 3%;
+      background: url('../../img/arrow-dropdown.png') no-repeat 97% center #fff;
+      font-size: 100%;
+      text-align: left;
+      width: 100%;
+      color: #acacac; }
+    #footer .side-socmed {
+      min-height: 80px; }
+    #footer .sidefoot-bottom {
+      padding: 20px 15px; }
+      #footer .sidefoot-bottom .col-sm-6 {
+        padding-right: 0px; }
+      #footer .sidefoot-bottom ul li {
+        padding: 0 2px;
+        font-size: 11px;
+        line-height: 11px; }
+        #footer .sidefoot-bottom ul li:first-child {
+          padding: 0 2px 0 0; }
+        #footer .sidefoot-bottom ul li a {
+          text-transform: none; }
+      #footer .sidefoot-bottom p {
+        font-size: 11px;
+        line-height: 11px; } }

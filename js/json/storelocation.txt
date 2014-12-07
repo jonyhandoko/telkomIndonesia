@@ -1,0 +1,14 @@
+{"telkomlocation":[
+            {
+                "latitude":-6.180682, 
+                "longitude":106.826313, 
+                "title":"Telkom Plasa, Gambir Building",
+                "content":"<strong>Telkom Plasa, Gambir Building</strong><p>Jl. Medan Merdeka Selatan No. 12,<br>Jakarta Pusat <br>Phone : (021) 5352345</p>"            
+            }, 
+            { 
+                "latitude":-6.2440165, 
+                "longitude":106.7883531, 
+                "title":"Plasa Telkom", 
+                "content":"<strong>Plasa Telkom </strong><p>Grand Wijaya Blok F52-53<br> Jalan Wijaya 3 <br> Kebayoran Baru, Jakarta Selatan <br>DKI Jakarta 12160</p>" 
+            }
+]}

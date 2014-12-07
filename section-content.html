@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="no-js lt-ie7"><![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Telkom</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" /> 
+	<meta name="MobileOptimized" content="320">
+	
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<meta property="og:title" content="">
+   	<meta property="og:image" content="">
+   	<meta property="og:description" content="">
+   
+	<!-- BEGIN STYLES -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="css/sites/base-site.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/homepage.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/page-article.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/services.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/page-feedback.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/page-errors.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/page-login.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/loggedoff.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/typo.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/box-search.css">
+	<!-- END STYLES -->   
+	
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/jquery-validate.bootstrap-tooltip.js"></script>
+	<script type="text/javascript" src="js/jquery.placeholder.js"></script> 
+    <script type="text/javascript" src="js/collapse-header.js"></script>
+    <script type="text/javascript" src="js/jquery.jsonSuggest.js"></script>
+    <script type="text/javascript" src="js/jsonData.js"></script>
+    <script type="text/javascript" src="js/banner-slider.js"></script>
+    <script type="text/javascript" src="js/news-ticker.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/side-navigation.js"></script>
+	<script type="text/javascript" src="js/responsive.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.map.js"></script>
+	<script type="text/javascript" src="js/logoff-maps.js"></script>
+	<script type="text/javascript" src="js/component.js"></script>  
+	
+  	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/ie.css" />
+		<script type="text/javascript" src="js/PIE.js"></script>		
+	<![endif]-->    	
+</head>
+<!-- END HEAD -->
+<body>
+	<a href="#" class="back-to-top">Back to Top</a>
+	<!-- Header Start Here -->
+	<div id="header">
+		<div class="container">
+			<div class="row block-top">
+				<div id="nav-left" class="col-md-4 col-xs-4 col-sm-4">
+					<div class="nav-top hidden-sm hidden-xs">
+						<ul>
+							<li><a href="#">Pelanggan</a></li>
+							<li><a href="#">Bisnis</a></li>
+							<li><a href="#">Tentang Telkom</a></li>
+						</ul>
+					</div>
+					<div class="dropdown text-right hidden-lg hidden-md">
+					  <button class="drop-top btn btn-default dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">
+					    Pelanggan
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="top-left-menu">
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bisnis</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tentang Telkom</a></li>
+					  </ul>
+					</div>					
+				</div>
+				<div class="col-md-8 hidden-xs hidden-sm text-right">
+					<div class="language hidden-sm hidden-xs">
+						<div class="dropdown">
+						  <button class="drop-top btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+						    Bahasa Indonesia
+						  </button>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">English</a></li>
+						  </ul>
+						</div>						
+					</div>
+                    <div id="block-search-head">
+                        <form action="" method="POST" id="search-box" class="navbar-right" role="search">
+                            <div class="form-group box-search">
+                            <input type="text" class="form-control" placeholder="Search" id="header-search-input" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
+                            <button type="submit">go</button>
+                            </div>                       
+                        </form>
+                    </div>
+                    
+				</div>
+				<div id="box-search" class="col-xs-2 col-sm-1 visible-xs visible-sm">
+					<div class="icon-search" id="box-form-search">
+						<img src="img/icon.search.png">
+					</div>
+				</div>				
+				<div id="box-user" class="col-xs-2 col-sm-1 visible-xs visible-sm">
+					<div class="icon-user">
+						<img src="img/icon.user.png">
+					</div>
+				</div>
+			</div>
+			<div class="row block-nav">		
+				<div id="logo" class="col-md-2 col-xs-1 col-sm-3">
+					<a href="/" title="Telkom Indonesia" class="logo">Telkom Indonesia</a>	
+				</div>
+				<button id="nav-mob" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<div class="text">Menu</div>
+				</button>									
+				<div class="col-md-10 col-xs-12 col-sm-12 navigation">	
+		          <div class="navbar-collapse collapse">
+		          	<ul class='collapse-menu hidden-xs hidden-sm'>
+		          		<li><a id="top-page" href="#">See Menu</a></li>	
+		          	</ul>					
+					<ul class="expand-menu">
+						<li><a href="#">broadband</a></li>
+						<li><a href="#">wifi</a></li>
+						<li><a href="#">tv</a></li>
+						<li><a href="#">phone</a></li>
+						<li><a href="#">bundles</a></li>
+						<li><a href="#">rewards</a></li>
+						<li><a href="#">magazine</a></li>
+						<li class="nav-shop"><a href="#">Telkom Shop<i class="glyphicon glyphicon-lock"></i></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="sticky-right" class="hidden-sm hidden-xs"><!-- Side nav start here -->
+		<ul>
+			<li>
+				<div class="box-icon login">
+					<img src="img/icon-login.png">
+					Login
+				</div>
+			</li>
+			<li>
+				<div class="box-icon">
+					<img src="img/icon-cart.png">
+					shopping cart
+				</div>
+			</li>				
+			<li id='ctn-support'>
+				<div class="box-icon">
+					<img id="ctn-support" src="img/icon-support.png">
+					support		
+				</div>				
+				<div class="box-support">
+					<div class="content">
+						<form class="form" role="form">
+						<div class="row">
+						  <div class="col-md-9">
+						    <input type="text" id="search-head" class="form-control icon-search" placeholder="Search Support">
+						  </div>
+						  <div class="col-md-3">
+						     <button type="submit" class="btn btn-red">search</button>
+						  </div>
+						</div>		
+						</form>	
+						<div class="row">
+							<div class="col-md-6">
+								<div class="title-ribbon">
+									we are online	
+								</div>	
+								<div class="box-chat">
+									<img src="img/icon-livechat.png" />
+									<span>live chat</span>
+									Lorem ipsum dolor sit, ipsum adipiscin.
+								</div>
+							</div>	
+							<div class="col-md-6 ctn-right">
+								<div class="sidebox">
+									<h7>Join our community</h7>
+									<div class="links">
+										<a href="#">Facebook</a>
+										<a href="#">Twitter</a>
+									</div>
+								</div>
+								<div class="sidebox">
+									<h7>Talk to us</h7>
+									<div class="links odd">
+										<a href="#">Contact Details</a>
+										<a href="#">Feedback</a>
+										<a href="#">Find a store</a>
+									</div>
+								</div>								
+							</div>	
+						</div>	
+				    </div>
+				</div>					
+			</li>	
+			<li>
+				<div class="box-icon">
+					<img src="img/icon-feedback.png">
+					feedback
+				</div>
+			</li>						
+		</ul>		
+	</div><!-- End Side nav -->
+	<!-- End Header -->
+	<div>
+    <div id="article-content">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12 col-sm-12 col-xs-12">
+    <ol class="breadcrumb hidden-xs hidden-sm">
+     <li><a href="#">Home</a></li>
+     <li><a href="#">Section Landing Title</a></li>
+     <li><a href="#">Sub Category</a></li>
+     <li><a href="#">Tag</a></li>
+     <li><a href="#">Content Title</a></li>
+    </ol>	
+   </div>
+   
+   <div class="col-md-3 visible-md">
+    <div class="side-nav"> 
+     <div class="title">Generic Landing Title</div>
+     <ul>
+      <li>
+       <a href="#" class="active">Sub Category</a>
+       <ul>
+        <li><a href="#">Sub Category</a></li>
+        <li><a href="#">Sub Category</a></li>
+        <li><a href="#">Sub Category</a></li>
+        <li><a href="#">Sub Category</a></li>
+        <li><a href="#">Sub Category</a></li>
+        <li><a href="#">Sub Category</a></li>										
+        <li><a href="#">Sub Category</a></li>
+        <li><a href="#">Sub Category</a></li>
+       </ul>
+      </li>					
+     </ul>								
+    </div>
+    <div class="side-nav"> 
+     <div class="title">Popular Tag <a href="#">See All</a></div>
+     <ul>
+      <li>
+       <a href="#" class="active">Sub Category</a>
+       <ul>
+        <li><a href="#">Tag Name</a></li>
+        <li><a href="#">Tag Name</a></li>
+        <li><a href="#">Tag Name</a></li>
+        <li><a href="#">Tag Name</a></li>
+        <li><a href="#">Tag Name</a></li>
+        <li><a href="#">Tag Name</a></li>										
+        <li><a href="#">Tag Name</a></li>
+        <li><a href="#">Tag Name</a></li>
+       </ul>
+      </li>					
+     </ul>								
+    </div>						
+   </div>
+   
+   <div class="col-sm-12 col-xs-12 visible-sm visible-xs">
+    <div id="side-nav">
+     <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+       Generic Landing Title
+      </button>
+      <ul class="dropdown-menu">
+       <li>
+        <a href="#" class="active">Sub Category</a>
+        <ul>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>										
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+        </ul>
+       </li>
+       <li>
+        <h3>Popular Tag</h3>
+        <a href="#" class="active">Sub Category</a>
+        <ul>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>										
+         <li><a href="#">Sub Category</a></li>
+         <li><a href="#">Sub Category</a></li>
+        </ul>
+       </li>									
+      </ul>
+     </div>
+    </div>
+   </div>	
+   
+   <div class="col-md-8 col-md-offset-1 col-sm-12 col-xs-12">
+   
+    <div class="detail-article">
+     <h3>Easy Steps to Troubleshoot Your Speedy Modem</h3>
+     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>							
+     <div class="block-images">
+      <img src="img/image-section-content.jpg" />	
+     </div>
+     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>	
+     <p class="text-right">
+      <a href="#" class="btn btn-red">Call to action</a>
+     </p>
+     <div class="sub-content">
+     
+     <div class="row">
+      <div class="col-md-7 col-sm-6 col-xs-6 box-left">
+       <p><strong>Steps 1: Subheader lorem ipsum dolor</strong></p>
+       <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.</p>
+      </div>
+      <div class="col-md-5 col-sm-5 col-xs-6 box-right">
+       <div class="txt-highlight">	
+        Pullout/Highlight Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+       </div>
+      </div>
+     </div>
+     
+     <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+       <p><strong>Steps 2: Subheader lorem ipsum dolor</strong></p>
+       <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.</p>
+      </div>
+     </div>	
+     
+     <div class="row">
+      <div class="col-md-4 col-xs-12 col-sm-6 box-left">
+       <img src="img/image-section-content-2.jpg" />
+      </div>						
+      <div class="col-md-8 col-sm-6 col-xs-12 box-right">
+       <p><strong>Steps 3: Subheader lorem ipsum dolor</strong></p>
+       <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. </p>
+      </div>	
+     </div>
+     
+     <div class="row">					
+      <div class="col-md-8 col-sm-6 col-xs-12 box-left">
+       <p><strong>Steps 4: Subheader lorem ipsum dolor</strong></p>
+       <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. </p>
+      </div>	
+      <div class="col-md-4 col-xs-12 col-sm-6 box-right">
+       <img src="img/image-section-content-2.jpg" />
+      </div>									
+     </div>									
+     
+     <div class="row">
+      <div class="col-md-12 quotes">
+       <h6>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel."</h6>
+       <p>Jane Doe <br />
+       Speedy Specialist</p>
+      </div>
+     </div>	
+     
+     <div class="row">
+      <div class="col-md-12">
+       <p><strong>Subheader lorem ipsum dolor</strong></p>
+       <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.</p>
+      </div>
+     </div>	
+     
+     <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs">
+       <div class="title-list">List Title</div>
+       <ul class="list-group">
+        <li class="list-group-item">
+         <div class="no">1</div>
+         <div class="txt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         </div>
+        </li>
+        <li class="list-group-item">
+         <div class="no">2</div>
+         <div class="txt">
+         Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+         </div>
+        </li>
+        <li class="list-group-item">
+         <div class="no">3</div>
+         <div class="txt">
+         Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+         </div>
+        </li>
+        <li class="list-group-item">
+         <div class="no">4</div>
+         <div class="txt">
+         Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+         </div>
+        </li>
+       </ul>	
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs">
+       <div class="title-list">Comparison Chart</div>
+       <table class="table table-striped">
+        <thead>
+         <tr>
+          <th>#</th>
+          <th>Compare 01</th>
+          <th>Compare 02</th>
+          <th>Compare 03</th>
+          <th>Compare 04</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>1</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+         </tr>
+         <tr>
+          <td>2</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+         </tr>	
+         <tr>
+          <td>3</td>
+          <td>
+           <div class="ctn-price">
+            <span class="currency">Rp</span>
+            <h3>99.000</h3>
+            <span>/mth</span>
+           </div>
+          </td>
+          <td>
+           <div class="ctn-price">
+            <span class="currency">Rp</span>
+            <h3>99.000</h3>
+            <span>/mth</span>
+           </div>
+          </td>
+          <td>
+           <div class="ctn-price">
+            <span class="currency">Rp</span>
+            <h3>99.000</h3>
+            <span>/mth</span>
+           </div>
+          </td>
+          <td>
+           <div class="ctn-price">
+            <span class="currency">Rp</span>
+            <h3>99.000</h3>
+            <span>/mth</span>
+           </div>
+          </td>
+         </tr>																
+         <tr>
+          <td>&nbsp;</td>
+          <td><a href="#" class="btn btn-red">Call to action</a></td>
+          <td><a href="#" class="btn btn-red">Call to action</a></td>
+          <td><a href="#" class="btn btn-red">Call to action</a></td>
+          <td><a href="#" class="btn btn-red">Call to action</a></td>
+         </tr>															
+        </tbody>
+       </table>	
+      </div>	
+      <div class="col-md-12 col-sm-12 col-xs-12">
+       <div class="content-service">
+        <ul id="section-service">
+         <li>
+          <h4>Service Name 01</h4>
+          <p>Aenean euismod bibendum daoreet. Proin gravida dolor sit amet lacus accumsan.</p>
+          <h2>Rp 99.999</h2>
+          <div class="box-images">
+           <img src="img/image-content-service.jpg">
+          </div>
+          <a href="#" class="btn btn-red btn-block">See All</a>
+         </li>
+         <li>
+          <h4>Service Name 02</h4>
+          <p>Aenean euismod bibendum daoreet. Proin gravida dolor sit amet lacus accumsan.</p>
+          <h2>Rp 99.999</h2>
+          <div class="box-images">
+           <img src="img/image-content-service.jpg">
+          </div>
+          <a href="#" class="btn btn-red btn-block">See All</a>
+         </li>
+         <li>
+          <h4>Service Name 03</h4>
+          <p>Aenean euismod bibendum daoreet. Proin gravida dolor sit amet lacus accumsan.</p>
+          <h2>Rp 99.999</h2>
+          <div class="box-images">
+           <img src="img/image-content-service.jpg">
+          </div>
+          <a href="#" class="btn btn-red btn-block">See All</a>
+         </li>			
+        <ul>
+        <div class="clearfix visible-xs"></div>
+        <a class="prev visible-xs" id="srv_prev" href="#"><span>prev</span></a>
+        <a class="next visible-xs" id="srv_next" href="#"><span>next</span></a>									
+       </div>
+      </div>	
+      <div class="col-md-12 col-sm-12 col-xs-12">
+       <div class="sub-header-bottom">
+        <div class="desc">
+         <p><strong>Subheader lorem ipsum dolor</strong></p>
+         <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.</p>	
+        </div>
+        <div class="actions">
+         <a href="#">Read Term &amp; Conditions</a>
+         <a href="#" class="btn btn-red text-right">Call to action</a>
+        </div>
+       </div>
+       
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12" id="sharing-article">
+       <div class="share-article">
+        <ul class="list-inline">
+         <li>
+          <a href="#"><img src="img/share-fb.png"></a>
+         </li>
+         <li>
+          <a href="#"><img src="img/share-twitter.png"></a>
+         </li>
+        </ul>
+       </div>
+       <div class="meta-tag">
+        Tags: <a href="#">Modern</a>, <a href="#">Troubleshoot</a>, <a href="#">Tutorial</a>
+       </div>										
+      </div>									
+      <div class="col-md-12 col-xs-12 col-sm-12">
+       <div class="content-related">
+        <div class="title">Related Contents</div>
+        <ul>
+         <li>
+          <div class="box-images">
+           <img src="img/image-related-content.jpg">
+          </div>
+          <div class="txt-content">
+          <p>Aenean euismod bibendum daoreet. Proin gravida dolor sit amet lacus accumsan.</p>			
+          </div>								
+          <a href="#" class="btn btn-red btn-block">Find out more</a>
+         </li>
+         <li>
+          <div class="box-images">
+           <img src="img/image-related-content.jpg">
+          </div>
+          <div class="txt-content">
+          <p>Aenean euismod bibendum daoreet. Proin gravida dolor sit amet lacus accumsan.</p>	
+          </div>										
+          <a href="#" class="btn btn-red btn-block">find out more</a>
+         </li>
+         <li>
+          <div class="box-images">
+           <img src="img/image-related-content.jpg">
+          </div>
+          <div class="txt-content">
+          <p>Aenean euismod bibendum daoreet. Proin gravida dolor sit amet lacus accumsan.</p>
+          </div>											
+          <a href="#" class="btn btn-red btn-block">find out more</a>
+         </li>					
+        <ul>																
+       </div>									
+      </div>																
+     </div>
+     
+     </div>
+    </div>						
+   </div>
+   
+  </div>
+ </div>
+</div></div>
+	<!-- Footer start here  -->   
+    <div id="news-ticker">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 col-xs-12 col-sm-1">
+                    <h3>News</h3>
+                </div>
+                <div class="col-md-10 col-xs-12 col-sm-10">
+                    <ul id="list-news">
+                        <li><a href="#">Etiam imperdiet volutpat libero eu tristique.</a> </li>
+                        <li><a href="#">Curabitur porttitor ante eget hendrerit </a> </li>  
+                        <li><a href="#">Etiam imperdiet volutpat libero eu tristique.</a> </li>
+                        <li><a href="#">Curabitur porttitor ante eget hendrerit </a> </li>  
+                        <li><a href="#">Etiam imperdiet volutpat libero eu tristique.</a> </li>
+                        <li><a href="#">Curabitur porttitor ante eget hendrerit </a> </li>                                                                    
+                    </ul>
+                    <div class="clearfix"></div>
+                    <a id="news-prev" href="#"><span class="news-left">previous</span></a>
+                    <a id="news-next" href="#"><span class="news-right">next</span></a>
+                </div>
+                <div class="col-md-1 col-xs-12 col-sm-1">
+                    <a class="more">more</a>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 visible-sm visible-xs">
+                <div class="dropdown hidden-lg hidden-md">
+                  <button class="drop-quick btn btn-default btn-block dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">
+                   Quick Links
+                  </button>
+                </div>                  
+                </div>              
+                <div class="col-md-8 hidden-xs hidden-sm">
+                    <div class="sidefoot">
+                        <h3>Broadband</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidefoot">
+                        <h3>TV</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>  
+                    <div class="sidefoot">
+                        <h3>Bundles</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>  
+                    <div class="sidefoot">
+                        <h3>Magazine</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>  
+                    <div class="sidefoot">
+                        <h3>Telkom Shop</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>   
+                    <div class="sidefoot">
+                        <h3>wifi</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div> 
+                    <div class="sidefoot">
+                        <h3>My Phone</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>   
+                    <div class="sidefoot">
+                        <h3>Rewards</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div> 
+                    <div class="sidefoot">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>                                                                                                                                                  
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="side-socmed">
+                        <h3>Connect with us</h3>
+                        <a class="facebook" href="#">
+                            <img src="img/icon-fb.png" />
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-twitter.png" />
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-linkedin.png" />
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-youtube.png" />
+                        </a>                                                                        
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 sidefoot-bottom">
+                    <div class="col-md-7 col-sm-6 col-xs-12">
+                        <ul>
+                            <li><a href="#">About Telkom</a></li>
+                            <li><a href="#">Investors Relations</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">CSR</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                        </ul>   
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <p class="text-right">
+                            &copy; 2014 PT. Telekomunikasi Indonesia, Tbk. All Right Reserved.
+                        </p>    
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div> 
+    <!-- End footer  -->  
+</body>
+</html>

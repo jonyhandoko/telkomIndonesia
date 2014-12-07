@@ -1,0 +1,831 @@
+#magazine ul#list-magazine li {
+  float: left;
+  display: inline-block;
+  min-height: 400px;
+  /*width: 945px;*/
+  width: 100%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  behavior: url(PIE.htc);
+  position: relative;
+  z-index: 0;
+  margin: 0 6px;
+  background: #fff;
+}
+
+#magazine ul#list-magazine li .block-images {
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+#magazine ul#list-magazine li .block-images img {
+  width: 100%;
+  max-width: 100%;
+  border-top-left-radius: 0px;
+  -moz-border-top-left-radius: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-top-right-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  position: relative;
+  z-index: 0;
+}
+#magazine ul#list-magazine li .block-desc {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  top: 0px;
+  left: 0;
+  padding: 0px 20px 15px 20px;
+}
+#magazine ul#list-magazine li .block-desc a {
+  text-transform: uppercase;
+  width: 165px;
+  font-size: 12px;
+  /* line-height: 25px; */
+  height: auto;
+  display: block;
+  font-family: 'Conv_GothamRnd-Book';
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  color: #fff;
+  background: #e41b13!important;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+#magazine ul#list-magazine li .block-desc p{
+  border-bottom: none;
+  margin-bottom: -8px;
+}
+#magazine a.prev, #magazine a.next {
+  top: 160px;
+}
+/*Generic section landing*/
+#ctn-service-tab .gensecland-tabs{
+  margin-top: 0px!important;
+}
+#ctn-service-tab .content .tab-content {
+  padding: 10px 0!important;
+  /*margin-bottom: 50px;*/
+}
+  #ctn-service-tab .set-bottom-10 {
+    margin-bottom: 50px;
+  }
+.gensecland-top{
+  padding-top : 50px;
+}
+.gensecland-bg{
+  background: #f8f8f8!important;
+}
+.gensecland-paging{
+  height: 34px;
+  color: #e41b13;
+}
+  .gensecland-paging .set-left{
+    /*float: left;*/
+    padding-top: 4px;
+    margin-right: 10px;
+  } 
+  .gensecland-paging .btn-default{
+   /* width: 30%;*/
+  }
+.box-detail-support h3 {
+  color: #000;
+  text-align: left;
+  margin: 0;
+}
+.txt-contents{
+  padding-top: 15px;
+}
+.gensecland-title-reg{
+  border-bottom: 1px solid #ddd;
+  padding: 9px;
+}
+  
+  .gensecland-title-reg .last-child{
+    float: right;
+  }
+/*.gensecland-bg .content {
+  margin-top: 45px!important;
+}
+
+.gensecland-bg .content .tab-content {
+  padding: 17px 0!important;
+}*/
+
+.page-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #e41b13;
+}
+.page-tabs > li > a {
+  position: relative;
+  display: block;
+  padding: 0px;
+  color: #b4b4b4;
+}
+.page-tabs > li > a:hover{
+  color: #e41b13;
+  background-color: inherit;
+}
+.page-tabs > li > .active{
+  font-weight: bold;
+  color: #e41b13;
+}
+.page-tabs-items{
+  float: right;
+}
+.page-tabs-items > li {
+  margin-right: 10px;
+  color: #b4b4b4;
+}
+.page-tabs-items > li > .active{
+  font-weight: bold;
+  color: #e41b13;
+}
+.page-tabs-items > li > .red{
+  color: #e41b13;
+}
+
+.gensecland-box{
+  float: left;
+  display: inline-block;
+  min-height: 350px;
+  /*width: 204px;*/
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  behavior: url(PIE.htc);
+  position: relative;
+  z-index: 0;
+  margin: 10px 0px;
+  background: #fff;
+}
+  .gensecland-box .block-images {
+    width: 100%;
+    /*height: 240px;*/
+    position: relative;
+  }
+  .gensecland-box .block-images img {
+    width: 100%;
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    behavior: url(PIE.htc);
+    position: relative;
+    z-index: 0;
+  }
+  .gensecland-box .block-images .ribbon {
+    position: absolute;
+    left: -4px;
+    top: 15px;
+    height: 34px;
+    padding: 3px 0;
+    background: url('../../img/corner-title-2.png') no-repeat left 3px;
+  }
+  .gensecland-box .block-images .ribbon span {
+    font-size: 12px;
+    font-family: 'Conv_GothamRnd-Bold';
+    color: #fff;
+    text-transform: uppercase;
+    padding: 7px 15px 7px 15px;
+    margin-left: 4px;
+    background: #e41b13;
+    border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    behavior: url(PIE.htc);
+    position: relative;
+    z-index: 0;
+  }
+  .gensecland-box .block-desc {
+    position: relative;
+    /*top: 137px;*/
+    left: 0;
+    padding: 17px 10px 10px 10px;
+    background: url('../../img/arrow-mag-img.png') no-repeat 25px top;
+  }
+    .gensecland-box .block-desc h3 {
+      font-size: 18px;
+      font-family: 'Conv_GothamRnd-Bold';
+      line-height: 18px;
+      color: #585858;
+      margin: 0 0 15px 0;
+    }
+    .gensecland-box .block-desc p{
+      font-size: 14px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 5px;
+    }
+  .gensecland-box .bottom-left{
+    text-align: left;
+    padding-left: 0px;
+    padding-top: 8px;
+    color: #e41b13;
+  } 
+    .gensecland-box .bottom-left .plus{
+      float: left;
+      text-align: center;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      background: #e41b13;
+      color: #fff;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    }
+    .gensecland-box .bottom-left span{
+      padding-left: 4px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  .gensecland-box .bottom-right{  
+    text-align: right;
+    padding: 0px;
+    font-size: 14px;
+  }
+    .gensecland-box .bottom-right span{ 
+      float: right;
+      margin-bottom: -10px;
+      margin-right: 4px;
+      color: #e41b13;
+    }
+
+.category-head{
+  height: 40px;
+  padding: 9px 20px;
+  margin-top: 10px;
+  background: url('../../img/arrow-cat.jpg') no-repeat right #e41b13;
+}   
+  .category-head span{
+    color: #fff;
+    font-weight: bold;
+  }
+  .sub-cat{
+    margin-top: 7px;
+    margin-bottom: 20px;
+  }
+  .sub-cat li{
+    line-height: 7px;
+  }
+  .sub-cat li a{
+    color: #e41b13;
+  } 
+  .sub-cat li a:hover{
+    background-color: inherit
+  }
+
+.seeAll{
+  font-size: 12px;
+  color: #e41b13;
+  text-decoration: underline;
+} 
+.seeAll:hover{
+  color: #e41b13;
+}
+.white-bg{
+  background: #fff;
+  /*margin-top: 30px!important;*/
+}
+  .white-bg .box-title{
+    margin-top: -80px;
+  }
+
+.grey-bg{
+  background: #f8f8f8;
+}
+  .grey-bg li{
+    background: #f0f0f0!important;
+  }
+.gensecland-bg .container .row{
+  margin-bottom: 30px;
+} 
+
+
+#list-content{
+  list-style: none outside none;
+  padding: 0 10px 0 0;
+  margin: 0;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  clear: both;
+  height: 150px;
+}
+  ul#list-content li:first-child{
+    border-bottom: none;
+  }
+  ul#list-content li{
+    font-size: 14px;
+    color: #585858;
+    /*background: url("../../img/iconsprite") no-repeat scroll 0 -595px transparent;*/
+    padding: 2px 0 2px 0px;
+    width: 100%!important;
+    min-height: 10px!important;
+    line-height: 21px;
+  }
+#support .sidebar .inner ul li a{
+  /*color: #e41b13;*/
+}
+#support .side-contact ul li a{
+  color: #e41b13;
+}
+
+#ctn-service-tab .side-nav {
+position: relative;
+display: block;
+z-index: 1;
+margin-bottom: 30px;
+}
+#ctn-service-tab .side-nav .title {
+font-family: 'Conv_GothamRnd-Book';
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+padding: 0 0 10px 0;
+border-bottom: 1px solid #e5e5e5;
+color: #000;
+margin-bottom: 10px;
+}
+#ctn-service-tab .side-nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#ctn-service-tab .side-nav ul li {
+font-family: 'Conv_GothamRnd-Bold';
+font-weight: normal;
+font-style: normal;
+font-size: 14px;
+display: block;
+width: 262px;
+padding: 0;
+color: #000;
+}
+
+#ctn-service-tab .side-nav ul li ul {
+position: relative;
+overflow: hidden;
+margin: 10px 0;
+padding: 0;
+list-style: none;
+width: 100%;
+display: block;
+}
+
+#ctn-service-tab .side-nav ul li ul li a {
+font-family: 'Conv_GothamRnd-Book';
+font-weight: normal;
+font-style: normal;
+color: #e41b13;
+text-decoration: none;
+line-height: 24px;
+padding: 0 35px 0 20px;
+}
+#ctn-service-tab .side-nav ul li ul li a:hover {
+                color: #000;
+                background: none; }
+
+#ctn-service-tab .side-nav ul li a {
+  padding: 0 35px 0 20px;
+  color: #000;
+  line-height: 40px;
+  display: block;
+}
+#ctn-service-tab .side-nav ul li a:hover, #ctn-service-tab .side-nav ul li a.active {
+background: url(../../img/support-bg-active.png) no-repeat;
+width: 262px;
+color: #fff;
+text-decoration: none;
+}
+
+#ctn-service-tab .side-nav-cat a {
+  font-family: 'Conv_GothamRnd-Book';
+  font-weight: normal;
+  font-style: normal;
+  color: #e41b13!important;
+  text-decoration: none;
+  line-height: 24px;
+  padding: 0 35px 0 20px;
+}
+
+
+#ctn-service-tab .side-nav-cat a:hover,#ctn-service-tab .side-nav-cat a.active {
+  background: url(../../img/support-bg-active.png) no-repeat;
+  width: 262px;
+  font-family: 'Conv_GothamRnd-Bold'!important;
+  color: #fff!important;
+  text-decoration: none;
+}
+
+/*#ctn-service-tab .side-nav-cat a:hover{
+  color: #000!important;
+  background: none!important; 
+}*/
+
+
+#ctn-service-tab .side-nav .title a {
+float: right;
+font-size: 12px;
+color: #e41b13;
+text-decoration: underline;
+}
+.margin-top{
+  margin-top: -10px;
+}
+.grey-bg{
+  background: #f0f0f0;
+}
+.pad-height{
+  padding: 23px 10px;
+  max-height: 90px;
+}
+.support-bg{
+      background-image:url('../../img/bg-support.jpg');
+} 
+.clear{
+  clear: both;
+}
+#ctn-service-tab .dropdown-menu{
+ /* min-width: 50px;*/
+  /*left: 71px;*/
+}
+
+#bottom-site .see-more {
+padding: 90px 0 50px;
+background: url('../../img/arrow-mag.png') no-repeat center top;
+}
+
+#ctn-benefits {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 40px 0px 40px 0px;
+  background: #fff;
+}
+  #ctn-benefits ul#list-mag {
+    width: 100%!important;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #ctn-benefits ul#list-mag li{
+    line-height: 8px;
+  }
+  #ctn-benefits ul#list-mag li:last-child{
+    margin-bottom: -60px!important;
+  }
+  
+  #ctn-benefits ul#list-mag li .block-images {
+    width: 50%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+ }
+     #ctn-benefits ul#list-mag li .block-images img {
+        width: 100%;
+        max-width: 100%;
+        border-top-left-radius: 0px;
+        -moz-border-top-left-radius: 0px;
+        -webkit-border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        -moz-border-top-right-radius: 0px;
+        -webkit-border-top-right-radius: 0px;
+        position: relative;
+        z-index: 0;
+    }
+  #ctn-benefits ul#list-mag li .block-desc {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    top: 0px;
+    left: 0;
+    padding: 0px 20px 15px 20px;
+  }
+  #ctn-benefits ul#list-mag li .block-desc p {
+    font-size: 14px;
+    color: #585858;
+    line-height: 20px;
+    padding-bottom: 20px;
+    margin-top: 21px;
+    margin-bottom: 20px;
+    min-height: 83px;
+  }
+  #ctn-benefits ul#list-mag li .block-desc a {
+    text-transform: uppercase;
+    width: 165px;
+    font-size: 12px;
+     line-height: 25px; 
+     margin-top: 25px;
+    height: auto;
+    display: block;
+    font-family: 'Conv_GothamRnd-Book';
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    color: #fff;
+    background: #e41b13!important;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
+
+.single-mag h3{
+  font-size: 35px!important;
+  text-align: left!important;
+  color: #1c1a1d!important;
+  line-height: 41px!important;
+  position: absolute;
+  left: -464px!important;
+  top: -60px;
+  z-index: 999;
+}
+  .single-mag .container{
+    margin-top: -50px!important;
+  }
+    .single-mag .block-images{
+      margin-top: 85px!important;
+    }
+    .single-mag .block-desc{
+      margin-top: 60px!important;
+    }
+  .single-mag li:first-child{
+    border-bottom: 1px solid #e5e5e5;
+    border-radius:0px!important;
+    -moz-border-radius: 0px!important;
+    -webkit-border-radius: 0px!important;
+  }  
+  .single-mag li{
+    margin-bottom: 20px!important;
+    min-height: 490px!important;
+  }
+  .single-mag .set-head-title{
+    /*margin-top: -55px;
+    margin-bottom: 20px;*/
+  }
+  .single-mag .caroufredsel_wrapper{
+    overflow: visible!important;
+    min-height: 970px!important;
+    cursor: default!important;
+  }
+
+  .full-width{
+    width: 100%!important;
+  }
+  .full-width h3{
+    left: 0px!important;
+  }
+
+#reviews{
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 40px 0px 40px 0px;
+  background: #fff;
+}
+  #reviews h2{
+    color: #000;
+  }
+  #reviews .left-block-img{
+    width: 140px;
+    height: 140px;
+    margin: auto;
+  }
+     #reviews .left-block-img img{
+        width: 140px;
+        max-width: 100%;
+        border-radius: 180px;
+        -moz-border-radius: 180px;
+        -webkit-border-radius: 180px;
+        behavior: url(PIE.htc);
+        position: relative;
+        z-index: 0;
+     }
+  #reviews .right-block-desc{
+    float: left;
+  }
+    #reviews .right-block-desc h6{
+      font-size: 16px;
+      color: #1c1a1d;
+      font-family: 'Conv_GothamRnd-Bold';
+      text-transform: none;
+    }
+    #reviews .right-block-desc p{
+      color: #1c1a1d;
+      font-size: 15.9px;
+    }
+    #reviews .right-block-desc a{
+      font-size: 14px;
+      color: #000;
+      text-decoration: underline;
+    }
+    #reviews .right-block-desc .find-out {
+        text-transform: uppercase;
+        width: 165px;
+        font-size: 12px;
+        /* line-height: 25px; */
+        height: auto;
+        display: block;
+        font-family: 'Conv_GothamRnd-Book';
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        color: #fff;
+        background: #e41b13!important;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    #reviews .right-block-desc blockquote{
+        font-size: 24px;
+        border-left:none;
+        padding:0px;
+        font-family: 'Conv_GothamRnd-LightIta';
+    }
+    #reviews .right-block-desc .right-align{
+      text-align: right;
+    }
+      #reviews .right-block-desc .right-align span{
+        margin-right: 10px;
+      }
+  #reviews .list-reviews{
+    margin-top: 40px;
+  } 
+
+@media screen and (max-width : 500px) {
+}
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}
+@media screen and (min-width:501px) and (max-width:999px) {
+  .single-mag .tab-h3{
+    left: -350px!important;
+  }
+  #ctn-benefits ul#list-mag li .block-desc p{
+    margin-bottom: -8px;
+  }
+  .tab-left-review{
+    width: 25%;
+  }
+  .tab-right-review{
+    width: 75%;
+    margin-bottom: 40px;
+  }
+  #reviews .right-block-desc .find-out{
+    width: 133px;
+    position: relative;
+    margin-top: -10px;
+  }
+  #support {
+    background: none!important;
+    height: auto;
+  }
+  #reviews .right-block-desc .right-align span{
+    float: left;
+    text-align: left;
+  }
+
+}
+@media screen and (max-width:605px) {
+   #ctn-service-form .soc-like-support{
+    display: none;
+  }
+  .single-mag .tab-h3, .single-mag h3 {
+    left: -2px!important;
+    margin: 10px 0px -70px 0px;
+    clear: both;
+    position: relative;
+  }
+  #ctn-benefits ul#list-mag li:first-child{
+    border-bottom: none;
+  }
+  #ctn-benefits ul#list-mag li .block-images,#ctn-benefits ul#list-mag li .block-desc{
+    width: 100%;
+  }
+  #ctn-service-bundle .container {
+    background: url('../../img/bg-bundle-poster-tab-small.png') no-repeat 98% top!important;
+    min-height: 400px;
+  }
+  #ctn-service-bundle .box-poster .btn-red{
+    font-size: 10px;
+  }
+  #reviews .left-block-img {
+    width: 120px;
+    height: 120px;
+  }
+  .block-info-highlight {
+    min-height: 140px;
+  }
+  .tab-width-half{
+    width: 30%;
+  } 
+  .tab-width-full{
+    width: 90%;
+  }
+  #reviews .right-block-desc .find-out{
+    margin-top: 3px;
+    width: 100%;
+  }
+}
+@media screen and (max-width:465px) {
+  #ctn-service-top{
+    background: #f6f5f3!important;
+  }
+
+  #ctn-service-top .content .txt-info{
+    font-family: 'Conv_GothamRnd-Bold';
+  }
+  #ctn-service-middle .container{
+    background: #fff!important;
+  }
+  
+  #ctn-service-middle .container .content p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+  #ctn-service-bundle .container{
+    background: none!important;
+  }
+  #magazine ul#list-magazine li .block-images,#magazine ul#list-magazine li .block-desc,#magazine ul#list-magazine li .block-desc a {
+    width: 100%;
+  }
+
+  #reviews .left-block-img{
+    margin: 0px;
+    width: 140px;
+    height: 140px;
+  }
+  .tab-right-review{
+    margin-bottom: 40px;
+  }
+  #support {
+    background: none!important;
+  }
+
+}
+@media screen and (min-width:240px) and (max-width:365px) {
+  #ctn-service-middle {
+    height: auto;
+    min-height: 210px;
+  }
+  .single-mag .container{
+    padding: 0px;
+  }
+  .single-mag .col-md-12{
+    padding: 0px;
+  }
+  .single-mag .block-images{
+    margin-top: 10px;
+  }
+  #ctn-benefits ul#list-mag li .block-images{
+    padding: 0px;
+  }
+  .tab-width-full {
+    width: 100%;
+  }
+  #reviews .right-block-desc .right-align{
+    text-align: left;
+  }
+  .set-top{
+    top: -38px;
+    position: relative;
+  }
+  .set-right{
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+  #ctn-benefits ul#list-mag li .block-desc a{
+    width: 100%;
+  }
+}

@@ -1,0 +1,160 @@
+#modal-live-chat #box-feedback {
+  width: 100%;
+  margin-top: 0; }
+  #modal-live-chat #box-feedback .modal-dialog {
+    margin: 0px; }
+  #modal-live-chat #box-feedback .modal-content {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px; }
+  #modal-live-chat #box-feedback h7 {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px; }
+  #modal-live-chat #box-feedback p {
+    height: auto;
+    width: auto;
+    margin-left: 60px;
+    line-height: 10px;
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 12px; }
+  #modal-live-chat #box-feedback .modal-body-line {
+    margin: 10px 0;
+    border-top: 1px solid #d7d7d7; }
+  #modal-live-chat #box-feedback .modal-header {
+    padding-left: 35px;
+    padding-right: 20px;
+    background-color: #9a9a9a;
+    font-family: 'Conv_GothamRnd-Bold';
+    color: #fff; }
+    #modal-live-chat #box-feedback .modal-header .close {
+      color: #fff;
+      font-size: 18px;
+      font-weight: normal;
+      margin-top: 0px;
+      opacity: 100; }
+  #modal-live-chat #box-feedback .modal-body {
+    overflow: hidden;
+    padding: 20px 10px; }
+    #modal-live-chat #box-feedback .modal-body .modal-body-avatar {
+      margin-top: 15px; }
+      #modal-live-chat #box-feedback .modal-body .modal-body-avatar img {
+        float: left; }
+    #modal-live-chat #box-feedback .modal-body .modal-body-nametitle {
+      margin-top: 15px; }
+    #modal-live-chat #box-feedback .modal-body .modal-body-options a {
+      font-size: 12px;
+      color: #e41b13; }
+      #modal-live-chat #box-feedback .modal-body .modal-body-options a img {
+        margin-right: 5px; }
+    #modal-live-chat #box-feedback .modal-body #bd-msg::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+      border-radius: 4px; }
+    #modal-live-chat #box-feedback .modal-body #bd-msg::-webkit-scrollbar {
+      width: 7px;
+      background-color: #fff; }
+    #modal-live-chat #box-feedback .modal-body #bd-msg::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #9a9a9a; }
+    #modal-live-chat #box-feedback .modal-body .modal-body-message {
+      height: 260px;
+      width: 385px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+      #modal-live-chat #box-feedback .modal-body .modal-body-message -webkit-scrollbar-track {
+        background-color: #b46868; }
+      #modal-live-chat #box-feedback .modal-body .modal-body-message .modal-left-message {
+        text-align: left; }
+        #modal-live-chat #box-feedback .modal-body .modal-body-message .modal-left-message strong {
+          padding-left: 0px;
+          font-family: 'Conv_GothamRnd-Medium';
+          font-size: 14px;
+          line-height: 21px; }
+        #modal-live-chat #box-feedback .modal-body .modal-body-message .modal-left-message p {
+          margin-left: 0px;
+          width: 250px;
+          line-height: 20px; }
+      #modal-live-chat #box-feedback .modal-body .modal-body-message .modal-right-message {
+        text-align: right;
+        padding-right: 30px; }
+        #modal-live-chat #box-feedback .modal-body .modal-body-message .modal-right-message strong {
+          padding-right: auto;
+          font-family: 'Conv_GothamRnd-Medium';
+          font-size: 14px;
+          line-height: 21px; }
+        #modal-live-chat #box-feedback .modal-body .modal-body-message .modal-right-message p {
+          width: 250px;
+          line-height: 20px;
+          margin-left: auto; }
+  #modal-live-chat #box-feedback .modal-footer {
+    background-color: #d7d7d7; }
+    #modal-live-chat #box-feedback .modal-footer input {
+      margin-left: 50px;
+      width: 80%;
+      font-style: italic; }
+#modal-live-chat #box-feedback-1 {
+  width: 100%;
+  margin-top: 0; }
+  #modal-live-chat #box-feedback-1 .modal-dialog {
+    margin: 0px; }
+  #modal-live-chat #box-feedback-1 .modal-content {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none; }
+  #modal-live-chat #box-feedback-1 .modal-header {
+    padding-left: 35px;
+    padding-right: 20px;
+    background-color: #9a9a9a;
+    font-family: 'Conv_GothamRnd-Bold';
+    color: #fff; }
+    #modal-live-chat #box-feedback-1 .modal-header .close {
+      color: #fff;
+      font-size: 18px;
+      font-weight: normal;
+      margin-top: 0px;
+      opacity: 100; }
+  #modal-live-chat #box-feedback-1 .modal-body {
+    padding: 30px 15px 15px 15px;
+    margin: 0;
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -20; }
+    #modal-live-chat #box-feedback-1 .modal-body .col-md-12 {
+      border: 1px solid #fff; }
+    #modal-live-chat #box-feedback-1 .modal-body .modal-body-head {
+      width: 100%;
+      margin-bottom: 20px;
+      color: #242424; }
+    #modal-live-chat #box-feedback-1 .modal-body .modal-body-isi input {
+      margin-top: 20px;
+      border-radius: 0px;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      border: 1px solid #ececec;
+      color: #a1a1a1; }
+    #modal-live-chat #box-feedback-1 .modal-body .modal-body-isi select {
+      border: 1px solid #ececec;
+      margin-top: 10px;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none; }
+    #modal-live-chat #box-feedback-1 .modal-body .modal-body-isi .radio {
+      margin-top: 20px; }
+      #modal-live-chat #box-feedback-1 .modal-body .modal-body-isi .radio span {
+        margin-left: 10px; }
+        #modal-live-chat #box-feedback-1 .modal-body .modal-body-isi .radio span label {
+          margin-left: 10px; }
+          #modal-live-chat #box-feedback-1 .modal-body .modal-body-isi .radio span label input {
+            margin-top: 5px; }
+  #modal-live-chat #box-feedback-1 .modal-footer {
+    text-align: left;
+    border-top: none; }
+    #modal-live-chat #box-feedback-1 .modal-footer button {
+      margin-top: 10px; }

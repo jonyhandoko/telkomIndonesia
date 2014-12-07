@@ -1,0 +1,1104 @@
+.back-to-top {
+  position: fixed;
+  bottom: 50%;
+  right: 0px;
+  text-decoration: none;
+  color: #000000;
+  background: url('../../img/arrow-up.png') no-repeat;
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-indent: -9999px;
+  display: none;
+  z-index: 999; }
+
+#header {
+  width: 100%;
+  height: 130px;
+  min-height: 110px;
+  position: relative;
+  display: block;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  background: url('../../img/bg.mainmenu.png') center bottom no-repeat;
+  z-index: 1; }
+  #header.shrink {
+    position: fixed;
+    background: #fff;
+    height: 70px;
+    z-index: 9999;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25); }
+  #header:before {
+    background: url('../../img/bg-header.png') repeat-x;
+    z-index: -1; }
+
+.block-top {
+  padding: 0;
+  border-bottom: 1px solid #e5e5e5; }
+  .block-top .language {
+    float: left;
+    margin-left: 210px;
+    margin-top: 12px;
+    width: 100px;
+    display: inline-block; }
+    .block-top .language .dropdown-menu > li > a {
+      padding: 3px 10px;
+      font-size: 10px;
+      font-family: 'Conv_GothamRnd-Bold';
+      text-transform: uppercase; }
+    .block-top .language .drop-top {
+      background: url('../../img/arrow-dropdown-desktop.png') no-repeat right 10px #fff; }
+      .block-top .language .drop-top:hover, .block-top .language .drop-top:focus {
+        background: url('../../img/arrow-dropdown-desktop.png') no-repeat right 10px #fff; }
+    .block-top .language .btn {
+      padding: 6px 10px;
+      font-size: 10px;
+      font-family: 'Conv_GothamRnd-Bold';
+      color: #000;
+      text-transform: uppercase;
+      border: none; }
+  .block-top .nav-top {
+    position: relative;
+    display: block;
+    width: 100%; }
+    .block-top .nav-top ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .block-top .nav-top ul li {
+        float: left;
+        display: inline-block;
+        padding: 0 20px 0 0; }
+        .block-top .nav-top ul li a {
+          font-size: 10px;
+          text-decoration: none;
+          line-height: 50px;
+          height: 50px;
+          margin-bottom: -1px;
+          display: block;
+          color: #999999;
+          text-transform: uppercase;
+          font-family: 'Conv_GothamRnd-Bold'; }
+          .block-top .nav-top ul li a:hover, .block-top .nav-top ul li a.active {
+            color: #e41b13;
+            background: url('../../img/nav.top.hov.png') no-repeat bottom center; }
+
+.box-search {
+  position: relative;
+  margin: 12px 25px 5px 0 !important;
+  width: 240px; }
+  .box-search .form-control {
+    margin: 0px;
+    background: url('../../img/icon-search.png') no-repeat 215px 6px;
+    behavior: url(PIE.htc);
+    position: relative;
+    z-index: 0; }
+  .box-search input {
+    height: 25px;
+    font-size: 9px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border: 1px solid #e5e5e5;
+    behavior: url(PIE.htc);
+    position: relative;
+    z-index: 0;
+    color: #585858;
+    background: #fff;
+    padding: 0 25px 0 15px;
+    width: 100%;
+    text-transform: uppercase; }
+    .box-search input:focus {
+      border-color: #e5e5e5; }
+  .box-search button {
+    cursor: pointer;
+    height: 12px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 12px;
+    text-indent: -9999px;
+    background: none;
+    border: none; }
+
+.suggest-box {
+  position: absolute;
+  background-color: #fff;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin: -5px 20px 0 10px;
+  padding: 15px;
+  width: 220px;
+  z-index: 50;
+  height: 225px;
+  overflow: auto;
+  right: 30px;
+  top: 42px; }
+  .suggest-box ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important; }
+    .suggest-box ul li {
+      float: left;
+      width: 100%;
+      display: block;
+      font-family: 'Conv_GothamRnd-Light';
+      font-size: 12px !important;
+      line-height: 20px !important;
+      margin-bottom: 5px !important;
+      text-align: left;
+      border: none !important;
+      padding: 0 !important; }
+      .suggest-box ul li a {
+        text-decoration: none;
+        color: #585858;
+        font-family: 'Conv_GothamRnd-Light' !important;
+        text-transform: none !important; }
+        .suggest-box ul li a:hover {
+          color: #e41b13; }
+
+.block-nav {
+  position: relative;
+  display: block;
+  padding-top: 20px;
+  min-height: 100px; }
+  .block-nav .collapse-menu {
+    display: none; }
+  .block-nav .suggest-box {
+    right: 0px;
+    margin: -5px 10px 0 10px;
+    top: 35px; }
+  .block-nav .box-search {
+    position: relative;
+    margin: 5px 0 5px 0 !important;
+    width: 240px; }
+    .block-nav .box-search .form-control {
+      margin: 0px;
+      background: url('../../img/icon-search.png') no-repeat 215px 6px;
+      behavior: url(PIE.htc);
+      position: relative;
+      z-index: 0; }
+    .block-nav .box-search input {
+      height: 25px;
+      font-size: 9px;
+      border-radius: 20px;
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      border: 1px solid #e5e5e5;
+      behavior: url(PIE.htc);
+      position: relative;
+      z-index: 0;
+      color: #585858;
+      background: #fff;
+      padding: 0 25px 0 15px;
+      width: 100%;
+      text-transform: uppercase; }
+    .block-nav .box-search button {
+      cursor: pointer;
+      height: 12px;
+      position: absolute;
+      right: 10px;
+      top: 7px;
+      width: 12px;
+      text-indent: -9999px;
+      background: none;
+      border: none; }
+  .block-nav .collapse-menu li {
+    padding: 0; }
+    .block-nav .collapse-menu li a {
+      background: url(../../img/support-arrow-nav.png) no-repeat left;
+      padding-left: 17px; }
+  .block-nav ul {
+    margin: 12px 0 0 40px;
+    padding: 0;
+    list-style: none; }
+    .block-nav ul li {
+      float: left;
+      display: inline-block;
+      padding: 0 17px;
+      border-right: 1px solid #e5e5e5;
+      font-size: 12px;
+      line-height: 14px; }
+      .block-nav ul li:last-child {
+        border-right: none;
+        padding: 0 0 0 16px; }
+      .block-nav ul li:nth-last-child(2) {
+        border-right: none; }
+      .block-nav ul li a {
+        color: #000;
+        font-family: 'Conv_GothamRnd-Bold';
+        text-decoration: none;
+        text-transform: uppercase; }
+        .block-nav ul li a:hover {
+          color: #e41b13; }
+    .block-nav ul .nav-shop {
+      margin-top: -1px; }
+      .block-nav ul .nav-shop a {
+        color: #e41b13;
+        font-family: 'Conv_GothamRnd-Book';
+        font-size: 13px;
+        text-transform: none; }
+        .block-nav ul .nav-shop a i {
+          margin-left: 10px; }
+        .block-nav ul .nav-shop a:hover {
+          color: #000; }
+  .block-nav .logo {
+    width: 158px;
+    height: 33px;
+    display: block;
+    text-indent: -9999px;
+    background: url('../../img/logo.png') no-repeat; }
+  .block-nav .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0; }
+
+.block-support {
+  background: #fff; }
+  .block-support .block-top #nav-left .nav-back {
+    padding: 0 17px 0 0; }
+    .block-support .block-top #nav-left .nav-back a {
+      background: url(../../img/support-arrow-nav.png) no-repeat left;
+      padding-left: 20px; }
+  .block-support .language {
+    float: right;
+    margin-left: 0;
+    width: auto; }
+    .block-support .language .btn {
+      padding: 6px 10px 6px 0;
+      border: none; }
+      .block-support .language .btn:hover, .block-support .language .btn:focus, .block-support .language .btn.active {
+        outline: none;
+        border: none;
+        box-shadow: none; }
+    .block-support .language .dropdown .dropdown-menu {
+      left: auto;
+      right: 0; }
+  .block-support .nav-login {
+    float: right; }
+
+#modal-helpusbetter #box-helpusbetter {
+  margin-top: 100px; }
+  #modal-helpusbetter #box-helpusbetter .modal-header {
+    width: 420px;
+    font-size: 14px;
+    background-color: #e41b13;
+    color: #fff;
+    padding-left: 30px;
+    font-family: 'Conv_GothamRnd-Bold'; }
+    #modal-helpusbetter #box-helpusbetter .modal-header .close {
+      color: #fff;
+      font-size: 15px;
+      font-weight: normal;
+      margin-top: 0px;
+      opacity: 100; }
+  #modal-helpusbetter #box-helpusbetter .modal-body {
+    font-size: 14px;
+    width: 420px;
+    background-color: #fff; }
+    #modal-helpusbetter #box-helpusbetter .modal-body .modal-body-head {
+      padding-left: 20px;
+      padding-right: 20px; }
+    #modal-helpusbetter #box-helpusbetter .modal-body .modal-body-form {
+      padding-left: 20px;
+      padding-right: 20px; }
+      #modal-helpusbetter #box-helpusbetter .modal-body .modal-body-form input {
+        margin-top: 20px;
+        margin-bottom: 20px; }
+      #modal-helpusbetter #box-helpusbetter .modal-body .modal-body-form button {
+        margin-top: 20px;
+        margin-right: 5px; }
+
+#banner-support {
+  width: 100%;
+  height: 380px;
+  display: block;
+  position: relative;
+  margin-top: -25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-behavior: url(backgroundsize.min.htc); }
+  #banner-support .breadcrumb {
+    margin-top: 40px;
+    margin-left: 0px;
+    padding: 0px;
+    background: none; }
+    #banner-support .breadcrumb li {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: -20; }
+      #banner-support .breadcrumb li.active {
+        color: #fff; }
+    #banner-support .breadcrumb a {
+      color: #fff; }
+  #banner-support .txt-desc {
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    color: #fff;
+    text-align: left; }
+    #banner-support .txt-desc h1 {
+      font-family: 'Conv_GothamRnd-Bold';
+      font-size: 50px;
+      line-height: 60px;
+      color: #fff;
+      letter-spacing: -40;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+
+#block-search {
+  width: 100%;
+  margin-top: -67px;
+  background: #f8f8f8; }
+  #block-search .box-search-support {
+    width: 100%;
+    position: relative;
+    padding: 40px 60px 60px 60px;
+    background: #acacac;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    behavior: url(PIE.htc);
+    z-index: 1;
+    height: 150px; }
+    #block-search .box-search-support form {
+      position: relative;
+      display: block;
+      width: 100%; }
+      #block-search .box-search-support form .box-input {
+        background: #fff;
+        padding: 5px 20px;
+        width: 675px;
+        float: left;
+        display: inline-block; }
+        #block-search .box-search-support form .box-input input {
+          background: url(../../img/icon-search-support.png) no-repeat left 12px;
+          padding-left: 55px;
+          color: #242424;
+          font-size: 25px;
+          line-height: 30px;
+          font-family: 'Conv_GothamRnd-Book';
+          border: none;
+          margin-right: 15px;
+          padding: 10px 20px 10px 40px;
+          width: 100%; }
+          #block-search .box-search-support form .box-input input:focus {
+            outline: none; }
+        #block-search .box-search-support form .box-input .ui-menu {
+          top: 60px !important;
+          width: 675px !important;
+          left: -10px !important; }
+          #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a {
+            line-height: 24px; }
+            #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a strong {
+              color: #e41b13;
+              font-weight: normal; }
+        #block-search .box-search-support form .box-input .ui-widget-content {
+          border: 1px solid #e5e5e5; }
+        #block-search .box-search-support form .box-input .ui-widget {
+          font-size: 16px; }
+      #block-search .box-search-support form button {
+        float: right;
+        font-family: 'Conv_GothamRnd-Medium';
+        font-size: 16px;
+        letter-spacing: 20;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 19px 40px;
+        background: #e41b13;
+        border: none;
+        border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        behavior: url(PIE.htc); }
+    #block-search .box-search-support .suggest {
+      float: left;
+      display: inline-block;
+      width: 45%;
+      margin-top: 15px;
+      font-size: 14px;
+      font-family: 'Conv_GothamRnd-Light';
+      line-height: 21px;
+      letter-spacing: -20;
+      color: #fff; }
+      #block-search .box-search-support .suggest a {
+        color: #fff;
+        text-decoration: underline; }
+    #block-search .box-search-support .advance {
+      float: right;
+      margin-top: 15px;
+      margin-right: 165px;
+      width: 35%;
+      text-align: right; }
+      #block-search .box-search-support .advance a {
+        font-size: 14px;
+        font-family: 'Conv_GothamRnd-Light';
+        line-height: 21px;
+        letter-spacing: -20;
+        color: #fff;
+        text-decoration: underline; }
+    #block-search .box-search-support .suggest-box-big {
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ececec;
+      margin: -5px 20px 0 10px;
+      padding: 20px;
+      width: 675px;
+      z-index: 50;
+      height: 205px;
+      overflow: auto;
+      left: 50px;
+      top: 105px; }
+      #block-search .box-search-support .suggest-box-big ul {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important; }
+        #block-search .box-search-support .suggest-box-big ul li {
+          float: left;
+          width: 100%;
+          display: block;
+          font-family: 'Conv_GothamRnd-Light';
+          font-size: 18px;
+          line-height: 28px;
+          margin-bottom: 8px;
+          text-align: left;
+          border: none !important;
+          padding: 0 !important; }
+          #block-search .box-search-support .suggest-box-big ul li a {
+            text-decoration: none;
+            color: #242424;
+            font-family: 'Conv_GothamRnd-Light' !important;
+            text-transform: none !important; }
+            #block-search .box-search-support .suggest-box-big ul li a:hover {
+              color: #e41b13; }
+
+#box-adv-search #form-adv-search .modal-dialog {
+  width: 640px; }
+  #box-adv-search #form-adv-search .modal-dialog .modal-header {
+    width: 640px;
+    font-size: 14px;
+    background-color: #e41b13;
+    color: #fff;
+    padding-left: 30px;
+    font-family: 'Conv_GothamRnd-Bold';
+    padding: 10px 15px; }
+    #box-adv-search #form-adv-search .modal-dialog .modal-header .close {
+      color: #fff;
+      font-size: 15px;
+      font-weight: normal;
+      margin-top: 3px;
+      opacity: 100; }
+  #box-adv-search #form-adv-search .modal-dialog .modal-body {
+    font-size: 14px;
+    width: 640px;
+    background-color: #fff; }
+    #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-head {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 10px;
+      margin-bottom: 20px; }
+      #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-head a {
+        text-decoration: underline;
+        font-family: 'Conv_GothamRnd-Light';
+        font-size: 16px;
+        line-height: 18px;
+        color: #585858;
+        letter-spacing: -20; }
+        #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-head a:focus {
+          outline: none;
+          border: none; }
+    #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-form {
+      padding-left: 20px;
+      padding-right: 20px; }
+      #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-form .control-label {
+        text-align: left;
+        font-family: 'Conv_GothamRnd-Book';
+        font-size: 16px;
+        line-height: 18px;
+        color: #585858;
+        letter-spacing: -20; }
+      #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-form input {
+        height: 40px;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border: 1px solid #ececec;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        outline: none; }
+        #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-form input:focus {
+          border: 2px solid #e41b13; }
+      #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-form .styled-select {
+        width: 100%;
+        height: 40px;
+        overflow: hidden;
+        background: url(../../img/arrow-dropdown.png) no-repeat 98% #fff;
+        border: 1px solid #ececec; }
+        #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-form .styled-select.ordering {
+          margin-top: 10px; }
+        #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-form .styled-select select {
+          background: transparent;
+          width: 95%;
+          padding: 10px;
+          font-size: 16px;
+          line-height: 1;
+          border: 0;
+          border-radius: 0;
+          -moz-border-radius: 0;
+          -webkit-border-radius: 0;
+          height: 39px;
+          -webkit-appearance: none; }
+      #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-form button {
+        margin-top: 20px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        padding: 10px 20px; }
+        #box-adv-search #form-adv-search .modal-dialog .modal-body .modal-body-form button.btn-grey {
+          margin-right: 0; }
+
+#content-support {
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  display: block;
+  position: relative;
+  background: #f8f8f8; }
+  #content-support .col-md-3 {
+    z-index: 2; }
+  #content-support .col-md-9 {
+    z-index: 1; }
+  #content-support h2 {
+    text-align: center;
+    color: #585858;
+    margin-bottom: 80px;
+    font-family: 'Conv_GothamRnd-Light'; }
+  #content-support .soc-like-support {
+    margin: 5px 0 0 0;
+    text-align: right;
+    position: relative; }
+  #content-support .helpfull-box {
+    height: 55px;
+    background-color: #ebebeb;
+    width: 350px;
+    text-align: center;
+    line-height: 55px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    #content-support .helpfull-box span {
+      display: inline-block;
+      vertical-align: middle;
+      width: 350px;
+      font-size: 14px;
+      font-family: 'Conv_GothamRnd-Book'; }
+      #content-support .helpfull-box span a {
+        color: #000;
+        text-decoration: none; }
+    #content-support .helpfull-box .yes-feed {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 14px;
+      display: inline-block;
+      margin-right: 40px;
+      margin-left: 20px;
+      background: url('../../img/feed-yes.png') no-repeat;
+      width: 13px;
+      height: 14px;
+      background-position: 0 0;
+      padding-left: 21px;
+      line-height: 14px; }
+      #content-support .helpfull-box .yes-feed:hover {
+        background-position: 0 -14px; }
+    #content-support .helpfull-box .no-feed {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 14px;
+      background: url('../../img/feed-no.png') no-repeat;
+      width: 10px;
+      height: 14px;
+      line-height: 14px;
+      padding-left: 20px; }
+      #content-support .helpfull-box .no-feed:hover {
+        background-position: 0 -14px; }
+    #content-support .helpfull-box label {
+      margin-left: 0px; }
+      #content-support .helpfull-box label .red-click {
+        color: #e41b13;
+        font-size: 20px;
+        font-family: 'Conv_GothamRnd-Bold'; }
+      #content-support .helpfull-box label .green-click {
+        color: #00a651;
+        font-size: 20px;
+        font-family: 'Conv_GothamRnd-Bold'; }
+  #content-support .box-detail-readmore-support a {
+    text-transform: uppercase;
+    width: 105px;
+    font-size: 12px;
+    line-height: 25px;
+    height: 25px;
+    display: block;
+    font-family: 'Conv_GothamRnd-Bold';
+    text-decoration: none;
+    color: #585858;
+    padding: 0 20px 0 0;
+    background: url('../../img/arrow-link.png') no-repeat right; }
+  #content-support .box-detail-support {
+    margin-bottom: 30px; }
+    #content-support .box-detail-support.txt-contents {
+      padding-top: 35px;
+      border-top: 1px solid #dfdfdf; }
+    #content-support .box-detail-support h3 {
+      color: #000;
+      text-align: left;
+      margin: 0; }
+    #content-support .box-detail-support h5 {
+      text-align: left;
+      color: #000;
+      font-size: 16px;
+      font-family: 'Conv_GothamRnd-Bold'; }
+    #content-support .box-detail-support p {
+      text-align: left;
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 20px;
+      font-family: 'Conv_GothamRnd-Book'; }
+    #content-support .box-detail-support a {
+      color: #e41b13;
+      line-height: 40px;
+      margin-bottom: 20px; }
+  #content-support .head-list-support h3 {
+    text-align: center;
+    margin-bottom: 80px;
+    color: #000; }
+  #content-support .box-list-support {
+    margin-bottom: 100px;
+    text-align: center;
+    height: auto;
+    width: 218px;
+    position: relative; }
+    #content-support .box-list-support h1 {
+      color: #000;
+      height: 0px; }
+    #content-support .box-list-support img {
+      max-height: 52px; }
+    #content-support .box-list-support p {
+      text-align: left;
+      font-size: 14px;
+      color: #e41b13;
+      line-height: 25px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #e5e5e5;
+      height: 120px; }
+    #content-support .box-list-support h6 {
+      color: #000;
+      text-align: left;
+      font-family: 'Conv_GothamRnd-Medium';
+      font-size: 18px;
+      letter-spacing: 10;
+      margin-top: 45px;
+      margin-bottom: 20px; }
+    #content-support .box-list-support a {
+      text-transform: uppercase;
+      width: 105px;
+      font-size: 12px;
+      line-height: 25px;
+      height: 25px;
+      display: block;
+      font-family: 'Conv_GothamRnd-Bold';
+      text-decoration: none;
+      color: #585858;
+      padding: 0 20px 0 0;
+      background: url('../../img/arrow-link.png') no-repeat right; }
+  #content-support .box-content {
+    background: #fff;
+    padding: 35px;
+    font-family: 'Conv_GothamRnd-Light';
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -20;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    behavior: url(PIE.htc); }
+    #content-support .box-content h4 {
+      margin: 10px 0 15px 0;
+      font-size: 26px;
+      line-height: 25px;
+      letter-spacing: -60;
+      color: #000; }
+    #content-support .box-content ul li {
+      margin: 5px 0; }
+    #content-support .box-content .list-item {
+      width: 100%;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #e5e5e5; }
+      #content-support .box-content .list-item .txt-highlight {
+        font-family: 'Conv_GothamRnd-Bold';
+        font-size: 14px;
+        color: #e41b13;
+        text-transform: uppercase;
+        letter-spacing: -20; }
+      #content-support .box-content .list-item h4 {
+        font-family: 'Conv_GothamRnd-Bold';
+        font-size: 26px;
+        line-height: 25px;
+        letter-spacing: -20;
+        margin: 10px 0;
+        color: #000; }
+      #content-support .box-content .list-item h5 {
+        font-family: 'Conv_GothamRnd-Bold';
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -20;
+        color: #000;
+        margin-bottom: 0px;
+        text-align: left; }
+      #content-support .box-content .list-item .read-more {
+        font-family: 'Conv_GothamRnd-Bold';
+        letter-spacing: 20;
+        color: #000; }
+      #content-support .box-content .list-item:last-child {
+        padding-bottom: 0px;
+        border: none;
+        margin-bottom: 0px; }
+  #content-support .box-paging {
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 14px;
+    line-height: 42px;
+    letter-spacing: -20;
+    margin-top: 10px; }
+    #content-support .box-paging.tops {
+      margin-top: -50px !important; }
+    #content-support .box-paging .pagination.tops {
+      margin: 0px !important; }
+    #content-support .box-paging .pagination li a {
+      color: #e41b13;
+      border: none;
+      background: none;
+      padding: 6px; }
+      #content-support .box-paging .pagination li a:hover {
+        color: #000;
+        text-decoration: none; }
+  #content-support .sidebar {
+    float: left;
+    width: 100%;
+    display: block;
+    z-index: 1; }
+    #content-support .sidebar .head {
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: -20;
+      font-family: 'Conv_GothamRnd-Book';
+      color: #000;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px; }
+    #content-support .sidebar .side-nav {
+      position: relative;
+      display: block;
+      z-index: 1; }
+      #content-support .sidebar .side-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        #content-support .sidebar .side-nav ul li {
+          font-family: 'Conv_GothamRnd-Bold';
+          font-size: 14px;
+          display: block;
+          width: 262px;
+          padding: 0;
+          color: #000; }
+          #content-support .sidebar .side-nav ul li a {
+            padding: 0 0 0 20px;
+            color: #000;
+            line-height: 40px;
+            display: block; }
+            #content-support .sidebar .side-nav ul li a:hover {
+              background: url(../../img/support-bg-active.png) no-repeat;
+              width: 262px;
+              color: #fff; }
+          #content-support .sidebar .side-nav ul li ul {
+            position: relative;
+            overflow: hidden;
+            margin: 0 0 10px 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            display: block; }
+            #content-support .sidebar .side-nav ul li ul li {
+              width: 100%;
+              display: block;
+              float: left;
+              font-size: 14px;
+              line-height: 24px;
+              margin-top: 5px;
+              padding: 0; }
+              #content-support .sidebar .side-nav ul li ul li a {
+                font-family: 'Conv_GothamRnd-Book';
+                color: #e41b13;
+                text-decoration: none;
+                line-height: 24px;
+                padding: 0 0 0 20px; }
+                #content-support .sidebar .side-nav ul li ul li a:hover {
+                  color: #000;
+                  background: none; }
+    #content-support .sidebar .panel-default {
+      border-radius: 0px;
+      background: none;
+      border: none;
+      box-shadow: none; }
+      #content-support .sidebar .panel-default .panel-heading {
+        border-radius: 0px;
+        border: none;
+        background: none;
+        padding: 0px; }
+        #content-support .sidebar .panel-default .panel-heading.active-panel, #content-support .sidebar .panel-default .panel-heading:hover {
+          background: url(../../img/support-bg-active.png) no-repeat;
+          width: 262px;
+          color: #fff; }
+          #content-support .sidebar .panel-default .panel-heading.active-panel a, #content-support .sidebar .panel-default .panel-heading:hover a {
+            color: #fff; }
+          #content-support .sidebar .panel-default .panel-heading.active-panel .side-broadband, #content-support .sidebar .panel-default .panel-heading:hover .side-broadband {
+            background: url(../../img/icon-broadband-active.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading.active-panel .side-wifi, #content-support .sidebar .panel-default .panel-heading:hover .side-wifi {
+            background: url(../../img/icon-support-wifi-active.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading.active-panel .side-tv, #content-support .sidebar .panel-default .panel-heading:hover .side-tv {
+            background: url(../../img/icon-support-tv-active.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading.active-panel .side-phone, #content-support .sidebar .panel-default .panel-heading:hover .side-phone {
+            background: url(../../img/icon-support-phone-active.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading.active-panel .side-bundles, #content-support .sidebar .panel-default .panel-heading:hover .side-bundles {
+            background: url(../../img/icon-support-bundles-active.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading.active-panel .side-rewards, #content-support .sidebar .panel-default .panel-heading:hover .side-rewards {
+            background: url(../../img/icon-support-rewards-active.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading.active-panel .side-billing, #content-support .sidebar .panel-default .panel-heading:hover .side-billing {
+            background: url(../../img/icon-support-billing-active.png) no-repeat 20px center; }
+        #content-support .sidebar .panel-default .panel-heading.func-error a {
+          font-size: 16px;
+          font-family: 'Conv_GothamRnd-Book'; }
+        #content-support .sidebar .panel-default .panel-heading a {
+          font-family: 'Conv_GothamRnd-Bold';
+          font-size: 14px;
+          height: 40px;
+          line-height: 40px;
+          display: block;
+          width: 262px;
+          padding: 0 20px 0 53px;
+          color: #000; }
+          #content-support .sidebar .panel-default .panel-heading a:hover {
+            color: #fff;
+            text-decoration: none; }
+          #content-support .sidebar .panel-default .panel-heading a.side-broadband {
+            background: url(../../img/icon-broadband.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading a.side-wifi {
+            background: url(../../img/icon-support-wifi.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading a.side-tv {
+            background: url(../../img/icon-support-tv.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading a.side-phone {
+            background: url(../../img/icon-support-phone.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading a.side-bundles {
+            background: url(../../img/icon-support-bundles.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading a.side-rewards {
+            background: url(../../img/icon-support-rewards.png) no-repeat 20px center; }
+          #content-support .sidebar .panel-default .panel-heading a.side-billing {
+            background: url(../../img/icon-support-billing.png) no-repeat 20px center; }
+      #content-support .sidebar .panel-default .panel-body {
+        border: none;
+        padding: 10px 15px; }
+    #content-support .sidebar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      #content-support .sidebar ul li {
+        float: left;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -20;
+        font-family: 'Conv_GothamRnd-Book';
+        color: #000; }
+        #content-support .sidebar ul li a {
+          color: #e41b13;
+          text-decoration: none;
+          display: block;
+          padding-left: 40px; }
+          #content-support .sidebar ul li a:hover, #content-support .sidebar ul li a.active {
+            color: #000; }
+  #content-support .modal-dialog {
+    width: 420px; }
+    #content-support .modal-dialog .modal-content .modal-header {
+      padding: 17px 40px;
+      background: #b2b2b2;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: 'Conv_GothamRnd-Bold'; }
+      #content-support .modal-dialog .modal-content .modal-header .close {
+        color: #fff;
+        font-size: 18px;
+        font-weight: normal;
+        margin-top: 0px;
+        opacity: 100; }
+    #content-support .modal-dialog .modal-content .modal-body {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 14px;
+      line-height: 21px;
+      color: #222;
+      letter-spacing: -20;
+      padding: 40px 40px 15px 40px; }
+      #content-support .modal-dialog .modal-content .modal-body form {
+        margin-top: 20px; }
+        #content-support .modal-dialog .modal-content .modal-body form input, #content-support .modal-dialog .modal-content .modal-body form textarea {
+          color: #a1a1a1;
+          font-family: 'Conv_GothamRnd-Book';
+          font-size: 14px;
+          letter-spacing: -20;
+          margin-bottom: 15px; }
+          #content-support .modal-dialog .modal-content .modal-body form input.form-control, #content-support .modal-dialog .modal-content .modal-body form textarea.form-control {
+            border-radius: 0px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            behavior: url(PIE.htc);
+            border: 1px solid #ececec; }
+            #content-support .modal-dialog .modal-content .modal-body form input.form-control::-webkit-input-placeholder, #content-support .modal-dialog .modal-content .modal-body form textarea.form-control::-webkit-input-placeholder {
+              color: #a1a1a1;
+              font-family: 'Conv_GothamRnd-Book';
+              font-size: 14px;
+              letter-spacing: -20; }
+            #content-support .modal-dialog .modal-content .modal-body form input.form-control:-moz-placeholder, #content-support .modal-dialog .modal-content .modal-body form textarea.form-control:-moz-placeholder {
+              color: #a1a1a1;
+              font-family: 'Conv_GothamRnd-Book';
+              font-size: 14px;
+              letter-spacing: -20; }
+            #content-support .modal-dialog .modal-content .modal-body form input.form-control:-ms-input-placeholder, #content-support .modal-dialog .modal-content .modal-body form textarea.form-control:-ms-input-placeholder {
+              color: #a1a1a1;
+              font-family: 'Conv_GothamRnd-Book';
+              font-size: 14px;
+              letter-spacing: -20; }
+            #content-support .modal-dialog .modal-content .modal-body form input.form-control::-moz-placeholder, #content-support .modal-dialog .modal-content .modal-body form textarea.form-control::-moz-placeholder {
+              color: #a1a1a1;
+              font-family: 'Conv_GothamRnd-Book';
+              font-size: 14px;
+              letter-spacing: -20; }
+    #content-support .modal-dialog .modal-content .modal-footer {
+      text-align: left;
+      border: none;
+      padding: 0 40px 40px 40px; }
+      #content-support .modal-dialog .modal-content .modal-footer .btn-defaults {
+        font-family: 'Conv_GothamRnd-Bold';
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase; }
+
+#side-bottom {
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 50px 0;
+  background: #fff; }
+  #side-bottom .box-detail-support {
+    margin-bottom: 0; }
+    #side-bottom .box-detail-support h5 {
+      text-align: left;
+      color: #000;
+      font-size: 16px;
+      font-family: 'Conv_GothamRnd-Bold';
+      margin-bottom: 20px; }
+    #side-bottom .box-detail-support p {
+      text-align: left;
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 20px;
+      font-family: 'Conv_GothamRnd-Book'; }
+    #side-bottom .box-detail-support ul {
+      margin: 0; }
+      #side-bottom .box-detail-support ul li {
+        margin-bottom: 10px; }
+    #side-bottom .box-detail-support a {
+      color: #e41b13;
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 16px;
+      line-height: 18px; }
+
+#bottom-support, #bottom-shop, #bottom-services {
+  width: 100%;
+  min-height: 475px;
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-behavior: url(backgroundsize.min.htc);
+  padding: 80px 0; }
+  #bottom-support h2, #bottom-shop h2, #bottom-services h2 {
+    color: #fff;
+    margin: 0 0 40px 0;
+    text-align: center; }
+  #bottom-support .box-links, #bottom-shop .box-links, #bottom-services .box-links {
+    text-align: center;
+    color: #fff;
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 14px;
+    letter-spacing: -20;
+    line-height: 20px; }
+    #bottom-support .box-links a, #bottom-shop .box-links a, #bottom-services .box-links a {
+      color: #fff;
+      cursor: pointer; }
+      #bottom-support .box-links a:hover, #bottom-shop .box-links a:hover, #bottom-services .box-links a:hover {
+        text-decoration: none; }
+    #bottom-support .box-links img, #bottom-shop .box-links img, #bottom-services .box-links img {
+      text-align: center;
+      border: none;
+      max-width: 100%;
+      margin-bottom: 20px; }
+    #bottom-support .box-links h6, #bottom-shop .box-links h6, #bottom-services .box-links h6 {
+      margin: 0;
+      line-height: 33px;
+      color: #fff; }
+
+#foot-support {
+  width: 100%;
+  display: block;
+  padding: 25px 0;
+  position: relative;
+  overflow: hidden;
+  background: #242424;
+  color: #fff; }
+  #foot-support ul {
+    float: right;
+    margin: 0;
+    list-style: none;
+    padding: 0; }
+    #foot-support ul li {
+      float: right;
+      diplay: inline-block;
+      border-left: 1px solid #494949;
+      margin: 0;
+      padding: 0 15px;
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 11px;
+      line-height: 11px;
+      letter-spacing: -20; }
+      #foot-support ul li a {
+        color: #fff;
+        text-decoration: none; }
+      #foot-support ul li:last-child {
+        border: none; }

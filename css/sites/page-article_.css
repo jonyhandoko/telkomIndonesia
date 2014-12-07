@@ -1,0 +1,595 @@
+#article-content {
+  margin-top: -23px;
+  background: #f8f8f8; }
+  #article-content .breadcrumb {
+    margin: 50px 0 50px -15px;
+    background: #f8f8f8; }
+    #article-content .breadcrumb li {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 12px;
+      line-height: 24px; }
+      #article-content .breadcrumb li.active {
+        color: #000; }
+    #article-content .breadcrumb li + li:before {
+      color: #000; }
+    #article-content .breadcrumb a {
+      color: #000; }
+  #article-content .col-md-7 {
+    padding-right: 0; }
+  #article-content .main-article {
+    position: relative;
+    display: block;
+    width: 100%; }
+    #article-content .main-article h3 {
+      color: #000;
+      margin-top: 0px; }
+    #article-content .main-article .meta-data {
+      margin: 20px 0;
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 12px;
+      line-height: 18px;
+      color: #585858; }
+      #article-content .main-article .meta-data span {
+        color: #e41b13; }
+    #article-content .main-article p {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 14px;
+      line-height: 22px;
+      color: #000;
+      margin: 0 0 20px 0; }
+    #article-content .main-article .share-article {
+      margin: 10px 0 30px; }
+  #article-content .detail-article {
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 14px;
+    line-height: 22px;
+    color: #000; }
+    #article-content .detail-article .block-images {
+      width: 100%;
+      height: 190px;
+      margin-bottom: 30px; }
+      #article-content .detail-article .block-images img {
+        max-width: 100%;
+        border: none; }
+    #article-content .detail-article p {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 14px;
+      line-height: 22px;
+      color: #000; }
+    #article-content .detail-article strong {
+      font-size: 16px;
+      color: #000;
+      line-height: 22px;
+      font-family: 'Conv_GothamRnd-Bold'; }
+    #article-content .detail-article .sub-content {
+      width: 100%;
+      margin: 30px 0;
+      position: relative;
+      display: block;
+      overflow: hidden; }
+      #article-content .detail-article .sub-content .quotes h6 {
+        font-family: 'Conv_GothamRnd-LightIta';
+        color: #000;
+        margin-bottom: 20px;
+        text-transform: none;
+        line-height: 30px; }
+      #article-content .detail-article .sub-content .row {
+        margin: 30px 0; }
+        #article-content .detail-article .sub-content .row .col-md-12 {
+          padding-left: 0;
+          padding-right: 0; }
+      #article-content .detail-article .sub-content .box-left {
+        padding-left: 0; }
+      #article-content .detail-article .sub-content .box-right {
+        padding-right: 0; }
+      #article-content .detail-article .sub-content .txt-highlight {
+        padding: 20px;
+        font-family: 'Conv_GothamRnd-Light';
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        background: #585858; }
+      #article-content .detail-article .sub-content .title-list {
+        font-size: 16px;
+        font-family: 'Conv_GothamRnd-Bold';
+        line-height: 22px;
+        color: #000;
+        margin-bottom: 15px; }
+      #article-content .detail-article .sub-content .meta-tag {
+        color: #000;
+        width: 100%;
+        position: relative;
+        display: block;
+        margin: 20px 0;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e5e5e5; }
+        #article-content .detail-article .sub-content .meta-tag a {
+          color: #e41b13; }
+      #article-content .detail-article .sub-content .list-group li {
+        margin-bottom: 2px;
+        border: none;
+        background: #e9e9e9; }
+        #article-content .detail-article .sub-content .list-group li div.no {
+          float: left;
+          padding-right: 20px;
+          display: inline-block;
+          width: 5%;
+          text-align: left; }
+        #article-content .detail-article .sub-content .list-group li div.txt {
+          margin-left: 5%;
+          width: 95%; }
+        #article-content .detail-article .sub-content .list-group li:first-child {
+          border-radius: 0px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          background: #e9e9e9; }
+        #article-content .detail-article .sub-content .list-group li:nth-child(2n+2) {
+          background: #f0f0f0; }
+      #article-content .detail-article .sub-content .sidebar-bottom {
+        margin-bottom: 50px;
+        position: relative;
+        display: block;
+        overflow: hidden; }
+        #article-content .detail-article .sub-content .sidebar-bottom .title {
+          font-family: 'Conv_GothamRnd-Bold';
+          font-size: 16px;
+          line-height: 22px;
+          text-transform: uppercase;
+          color: #000;
+          margin-bottom: 25px; }
+        #article-content .detail-article .sub-content .sidebar-bottom .item {
+          width: 170px;
+          margin-right: 25px;
+          display: inline-block;
+          float: left; }
+          #article-content .detail-article .sub-content .sidebar-bottom .item a {
+            text-decoration: none; }
+            #article-content .detail-article .sub-content .sidebar-bottom .item a img {
+              max-width: 100%;
+              border: none;
+              margin-bottom: 20px; }
+            #article-content .detail-article .sub-content .sidebar-bottom .item a .article-title {
+              width: 100%;
+              display: block;
+              font-family: 'Conv_GothamRnd-Book';
+              font-size: 14px;
+              line-height: 20px;
+              color: #000; }
+            #article-content .detail-article .sub-content .sidebar-bottom .item a:hover {
+              color: #242424;
+              text-decoration: underline; }
+          #article-content .detail-article .sub-content .sidebar-bottom .item.last {
+            margin-right: 0; }
+      #article-content .detail-article .sub-content .box-discussion .title {
+        font-family: 'Conv_GothamRnd-Bold';
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 10px; }
+      #article-content .detail-article .sub-content .box-discussion .txt-discuss {
+        margin-bottom: 30px;
+        font-family: 'Conv_GothamRnd-Book';
+        font-size: 14px;
+        line-height: 20px;
+        color: #000; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss {
+        margin-top: 40px; }
+        #article-content .detail-article .sub-content .box-discussion .feature-discuss .nav-tabs li {
+          margin-right: 25px; }
+          #article-content .detail-article .sub-content .box-discussion .feature-discuss .nav-tabs li a {
+            font-size: 13px;
+            font-family: 'Conv_GothamRnd-Bold';
+            text-transform: uppercase;
+            color: #b4b4b4;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            border: none;
+            border-radius: 0px; }
+          #article-content .detail-article .sub-content .box-discussion .feature-discuss .nav-tabs li.active a {
+            border: none;
+            background: url(../../img/bg-nav-tab.png) repeat-x left bottom;
+            color: #000; }
+          #article-content .detail-article .sub-content .box-discussion .feature-discuss .nav-tabs li:hover a {
+            border: none;
+            background: url(../../img/bg-nav-tab.png) repeat-x left bottom;
+            color: #000; }
+        #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content {
+          padding: 40px 0; }
+          #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form {
+            width: 100%;
+            display: block; }
+            #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .box-input {
+              width: 100%;
+              display: block;
+              position: relative;
+              overflow: hidden;
+              margin-bottom: 20px; }
+              #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .box-input .avatar {
+                float: left;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                margin-right: 20px; }
+                #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .box-input .avatar img {
+                  max-width: 100%;
+                  border: none;
+                  border-radius: 5px;
+                  -moz-border-radius: 5px;
+                  -webkit-border-radius: 5px;
+                  behavior: url(PIE.htc); }
+              #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .box-input textarea {
+                float: right;
+                width: 490px; }
+            #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .actions {
+              width: 100%;
+              display: block;
+              text-align: right; }
+              #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .actions .btn-red {
+                font-family: 'Conv_GothamRnd-Bold';
+                font-size: 12px;
+                text-transform: uppercase; }
+              #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .actions .fb-con {
+                font-family: 'Conv_GothamRnd-Bold';
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #fff;
+                margin-left: 5px;
+                background: #3b5998;
+                padding: 10px 20px;
+                border-radius: 5px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                behavior: url(PIE.htc); }
+                #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .actions .fb-con img {
+                  margin-right: 10px;
+                  border: none; }
+                #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .actions .fb-con:hover {
+                  background: #2b4883;
+                  text-decoration: none; }
+          #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 40px 0; }
+            #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment {
+              width: 100%;
+              display: none;
+              position: relative;
+              overflow: hidden;
+              margin-bottom: 45px; }
+              #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .avatar {
+                float: left;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                margin-right: 20px; }
+                #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .avatar img {
+                  max-width: 100%;
+                  border: none; }
+              #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc {
+                float: right;
+                width: 490px; }
+                #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc .author {
+                  width: 100%;
+                  display: block;
+                  font-family: 'Conv_GothamRnd-Book';
+                  font-size: 12px;
+                  line-height: 14px;
+                  color: #000;
+                  margin-bottom: 10px; }
+                  #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc .author span {
+                    font-family: 'Conv_GothamRnd-Bold';
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-right: 5px; }
+                #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc .comment-txt {
+                  width: 100%;
+                  display: block;
+                  font-family: 'Conv_GothamRnd-Book';
+                  font-size: 14px;
+                  margin-bottom: 10px; }
+                #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc .comment-link {
+                  width: 100%;
+                  display: block;
+                  font-family: 'Conv_GothamRnd-Book';
+                  font-size: 12px;
+                  line-height: 22px; }
+                  #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc .comment-link a {
+                    text-decoration: none;
+                    color: #e41b13; }
+                    #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc .comment-link a:hover {
+                      text-decoration: none;
+                      color: #000; }
+            #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list #load-comment {
+              background: #c2c2c2;
+              color: #fff;
+              font-family: 'Conv_GothamRnd-Bold';
+              font-size: 12px;
+              text-transform: uppercase;
+              padding: 10px 15px; }
+              #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list #load-comment:hover {
+                background: #acacac; }
+  #article-content .sidebar {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5; }
+    #article-content .sidebar.last {
+      border: none; }
+    #article-content .sidebar a:hover {
+      text-decoration: none; }
+    #article-content .sidebar .btn-article {
+      font-family: 'Conv_GothamRnd-Bold';
+      font-size: 12px; }
+    #article-content .sidebar .title {
+      font-family: 'Conv_GothamRnd-Bold';
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 25px; }
+    #article-content .sidebar .item {
+      width: 100%;
+      display: block;
+      overflow: hidden;
+      margin-bottom: 25px; }
+      #article-content .sidebar .item .block-images {
+        float: left;
+        width: 140px;
+        margin-right: 15px; }
+        #article-content .sidebar .item .block-images img {
+          max-width: 100%;
+          border: none; }
+      #article-content .sidebar .item .desc {
+        font-family: 'Conv_GothamRnd-Book';
+        font-size: 14px;
+        line-height: 20px;
+        color: #000; }
+
+@media screen and (max-width : 500px) {
+  #article-content {
+    width: 100%;
+    margin-top: 59px;
+    padding-top: 20px; }
+    #article-content .col-md-7 {
+      padding-right: 15px; }
+    #article-content .main-article h3 {
+      font-size: 2.5em; }
+    #article-content .main-article p {
+      font-size: 0.9em;
+      line-height: 1.4em; }
+    #article-content .detail-article {
+      font-size: 0.8em;
+      line-height: 1.4em; }
+      #article-content .detail-article .block-images {
+        height: auto;
+        margin-bottom: 10px; }
+      #article-content .detail-article .sub-content .box-left img {
+        border: none;
+        max-width: 100%;
+        margin-bottom: 20px; }
+      #article-content .detail-article .sub-content .list-group li div.no {
+        padding-right: 0px; }
+      #article-content .detail-article .sub-content .col-xs-12 {
+        padding: 0; }
+        #article-content .detail-article .sub-content .col-xs-12 .drop-article.btn {
+          padding: 2% 10% 2% 3%;
+          background: url('../../img/arrow-dropdown.png') no-repeat 97% center #fff;
+          font-size: 100%;
+          text-align: left;
+          width: 100%;
+          color: #acacac; }
+        #article-content .detail-article .sub-content .col-xs-12 #list-2 {
+          display: none; }
+      #article-content .detail-article .sub-content #sidebar-article .dropdown-menu {
+        width: 100%; }
+      #article-content .detail-article .sub-content .quotes h6 {
+        font-size: 1em;
+        line-height: 1.5em; }
+      #article-content .detail-article .sub-content .title-list {
+        font-size: 1.2em;
+        line-height: 1.4em; }
+      #article-content .detail-article .sub-content .sidebar-bottom {
+        margin-bottom: 0; }
+        #article-content .detail-article .sub-content .sidebar-bottom .item {
+          width: 100%;
+          display: block;
+          float: left; }
+          #article-content .detail-article .sub-content .sidebar-bottom .item a img {
+            float: left;
+            display: inline-block;
+            max-width: 40%;
+            margin-right: 15px; }
+          #article-content .detail-article .sub-content .sidebar-bottom .item a .article-title {
+            float: right;
+            width: 50%; }
+      #article-content .detail-article .sub-content .txt-highlight {
+        font-size: 0.8em;
+        line-height: 1.4em;
+        padding: 10px; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .drop-comment.btn {
+        padding: 2% 10% 2% 3%;
+        background: url('../../img/arrow-dropdown.png') no-repeat 97% center #fff;
+        font-size: 100%;
+        text-align: left;
+        width: 100%;
+        color: #acacac; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss #list-3 {
+        display: none; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .dropdown-menu {
+        width: 100%; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .box-input textarea {
+        width: 75%; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .actions .fb-con {
+        font-size: 0.8em; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .actions .btn-red {
+        font-size: 0.8em; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc {
+        width: 75%; }
+      #article-content .detail-article strong {
+        font-size: 1em;
+        line-height: 1.4em; }
+      #article-content .detail-article p {
+        font-size: 0.9em;
+        line-height: 1.4em; }
+    #article-content #trending-article {
+      display: none; }
+    #article-content .sidebar {
+      margin-top: 30px;
+      margin-bottom: 0; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+  #article-content {
+    width: 100%;
+    margin-top: 59px;
+    padding-top: 20px; }
+    #article-content .col-md-7 {
+      padding-right: 15px; }
+    #article-content .main-article h3 {
+      font-size: 2.5em; }
+    #article-content .main-article p {
+      font-size: 0.9em;
+      line-height: 1.4em; }
+    #article-content .detail-article {
+      font-size: 0.8em;
+      line-height: 1.4em; }
+      #article-content .detail-article .block-images {
+        height: auto;
+        margin-bottom: 10px; }
+      #article-content .detail-article .sub-content .box-left img {
+        border: none;
+        max-width: 100%;
+        margin-bottom: 20px; }
+      #article-content .detail-article .sub-content .list-group li div.no {
+        padding-right: 0px; }
+      #article-content .detail-article .sub-content .col-xs-12 {
+        padding: 0; }
+        #article-content .detail-article .sub-content .col-xs-12 .drop-article.btn {
+          padding: 2% 10% 2% 3%;
+          background: url('../../img/arrow-dropdown.png') no-repeat 97% center #fff;
+          font-size: 100%;
+          text-align: left;
+          width: 100%;
+          color: #acacac; }
+        #article-content .detail-article .sub-content .col-xs-12 #list-2 {
+          display: none; }
+      #article-content .detail-article .sub-content #sidebar-article .dropdown-menu {
+        width: 100%; }
+      #article-content .detail-article .sub-content .quotes h6 {
+        font-size: 1em;
+        line-height: 1.5em; }
+      #article-content .detail-article .sub-content .title-list {
+        font-size: 1.2em;
+        line-height: 1.4em; }
+      #article-content .detail-article .sub-content .sidebar-bottom {
+        margin-bottom: 0; }
+        #article-content .detail-article .sub-content .sidebar-bottom .item {
+          width: 100%;
+          display: block;
+          float: left; }
+          #article-content .detail-article .sub-content .sidebar-bottom .item a img {
+            float: left;
+            display: inline-block;
+            max-width: 40%;
+            margin-right: 15px; }
+          #article-content .detail-article .sub-content .sidebar-bottom .item a .article-title {
+            float: right;
+            width: 50%; }
+      #article-content .detail-article .sub-content .txt-highlight {
+        font-size: 0.8em;
+        line-height: 1.4em;
+        padding: 10px; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .drop-comment.btn {
+        padding: 2% 10% 2% 3%;
+        background: url('../../img/arrow-dropdown.png') no-repeat 97% center #fff;
+        font-size: 100%;
+        text-align: left;
+        width: 100%;
+        color: #acacac; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss #list-3 {
+        display: none; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .dropdown-menu {
+        width: 100%; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .box-input textarea {
+        width: 75%; }
+      #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc {
+        width: 75%; }
+      #article-content .detail-article strong {
+        font-size: 1em;
+        line-height: 1.4em; }
+      #article-content .detail-article p {
+        font-size: 0.9em;
+        line-height: 1.4em; }
+    #article-content #trending-article {
+      display: none; }
+    #article-content .sidebar {
+      margin-top: 30px;
+      margin-bottom: 0; } }
+
+@media screen and (min-width:501px) and (max-width:999px) {
+  #article-content {
+    width: 100%;
+    margin-top: 69px;
+    padding-top: 30px; }
+    #article-content .main-article h3 {
+      width: 90%; }
+    #article-content .detail-article .sub-content .row .col-md-12 {
+      padding-right: 15px; }
+    #article-content .detail-article .sub-content .row .col-sm-12 {
+      padding: 0; }
+    #article-content .detail-article .sub-content .box-right {
+      padding-right: 15px; }
+    #article-content .detail-article .sub-content .txt-highlight {
+      font-size: 14px;
+      line-height: 24px; }
+    #article-content .detail-article .sub-content .quotes h6 {
+      font-size: 18px;
+      line-height: 28px; }
+    #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-form .box-input textarea {
+      width: 90%; }
+    #article-content .detail-article .sub-content .box-discussion .feature-discuss .tab-content .comment-list .item-comment .desc {
+      width: 90%; }
+    #article-content .detail-article .sub-content .sidebar-bottom {
+      margin-bottom: 30px; }
+      #article-content .detail-article .sub-content .sidebar-bottom .item {
+        width: 32%;
+        float: left;
+        display: inline-block;
+        margin-right: 1%;
+        margin-bottom: 0; }
+        #article-content .detail-article .sub-content .sidebar-bottom .item a img {
+          max-width: 35%;
+          float: left;
+          display: inline-block;
+          margin-right: 15px; }
+        #article-content .detail-article .sub-content .sidebar-bottom .item a .article-title {
+          float: right;
+          width: 58%;
+          font-size: 12px;
+          line-height: 18px; }
+    #article-content .detail-article p {
+      font-size: 13px;
+      line-height: 20px; }
+    #article-content .sidebar {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border: none; }
+      #article-content .sidebar.last {
+        margin-bottom: 0px; }
+      #article-content .sidebar .item {
+        width: 32%;
+        float: left;
+        display: inline-block;
+        margin-right: 1%;
+        margin-bottom: 0; }
+        #article-content .sidebar .item .block-images {
+          width: 35%;
+          height: auto; }
+        #article-content .sidebar .item .desc {
+          font-size: 12px;
+          line-height: 18px; } }

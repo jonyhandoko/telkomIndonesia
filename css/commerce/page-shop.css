@@ -1,0 +1,298 @@
+#shop-list {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 30px 0 70px;
+  background: #f8f8f8;
+  text-align: center; }
+  #shop-list a {
+    display: block;
+    max-height: 250px;
+    overflow: hidden; }
+    #shop-list a:hover {
+      text-decoration: none; }
+  #shop-list .images {
+    width: 100%;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    margin-top: 30px; }
+    #shop-list .images img {
+      border: none;
+      max-width: 100%;
+      vertical-align: bottom; }
+  #shop-list .desc {
+    dispay: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #9a9a9a; }
+    #shop-list .desc span {
+      font-family: 'Conv_GothamRnd-Medium';
+      font-size: 15px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 5px; }
+
+#bottom-shop {
+  width: 100%;
+  min-height: 308px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-behavior: url(backgroundsize.min.htc);
+  margin-top: -20px;
+  position: inherit;
+  padding: 0; }
+  #bottom-shop .container {
+    padding: 100px 0 100px;
+    background: url('../../../img/arrow-mag.png') no-repeat center top; }
+  #bottom-shop h2 {
+    color: #fff;
+    margin: 0 0 40px 0;
+    text-align: center; }
+  #bottom-shop .box-links {
+    text-align: center;
+    color: #fff;
+    font-family: 'Conv_GothamRnd-Book';
+    font-size: 14px;
+    line-height: 20px; }
+    #bottom-shop .box-links .short-desc {
+      width: 75%;
+      margin: 0px auto;
+      text-align: center; }
+    #bottom-shop .box-links a {
+      color: #fff;
+      cursor: pointer; }
+      #bottom-shop .box-links a:hover {
+        text-decoration: none; }
+    #bottom-shop .box-links img {
+      text-align: center;
+      border: none;
+      max-width: 100%;
+      margin-bottom: 20px; }
+    #bottom-shop .box-links h6 {
+      margin: 0;
+      line-height: 33px;
+      color: #fff; }
+  #bottom-shop .col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+
+#footer-shop .sidefoot {
+  margin-right: 0px;
+  margin-left: 20px;
+  width: 105px;
+  margin-bottom: 27px; }
+  #footer-shop .sidefoot ul > li {
+    line-height: 18px; }
+#footer-shop .col-md-4 {
+  padding-right: 30px; }
+#footer-shop .box-subscribe {
+  width: 100%;
+  position: relative;
+  display: block; }
+  #footer-shop .box-subscribe h3 {
+    font-family: 'Conv_GothamRnd-Light';
+    font-size: 31px;
+    line-height: 33px;
+    color: #fff;
+    margin: 0 0 10px 0; }
+  #footer-shop .box-subscribe p {
+    font-size: 12px;
+    color: #fff; }
+  #footer-shop .box-subscribe input {
+    margin-bottom: 15px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    behavior: url(PIE.htc); }
+  #footer-shop .box-subscribe button {
+    text-transform: uppercase;
+    font-family: 'Conv_GothamRnd-Bold';
+    font-size: 12px;
+    margin-bottom: 20px; }
+#footer-shop .col-md-8 {
+  border-left: 1px solid #333; }
+#footer-shop .side-socmed {
+  display: block;
+  width: 100%;
+  float: left;
+  border-left: none;
+  padding-left: 27px;
+  min-height: 40px; }
+  #footer-shop .side-socmed h3 {
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 43px; }
+#footer-shop .sidefoot-bottom ul > li > a {
+  text-transform: none; }
+
+@media screen and (max-width : 540px) {
+  #banner-shop {
+    overflow: hidden;
+    height: 230px;
+    background-position: left center;
+    margin-top: 60px;
+    padding-bottom: 7%; }
+    #banner-shop .head-banner {
+      width: 95%;
+      margin-top: 45px; }
+      #banner-shop .head-banner h1 {
+        font-size: 2.5em;
+        width: 50%;
+        line-height: 1em;
+        margin-top: 0;
+        margin-bottom: 5%;
+        text-transform: uppercase; }
+      #banner-shop .head-banner p {
+        font-size: 0.9em;
+        line-height: 1.4em; }
+  #shop-list {
+    padding: 5% 0 10%; }
+    #shop-list .images {
+      margin-top: 7%; }
+    #shop-list .desc {
+      font-size: 0.8em;
+      line-height: 1.4em;
+      margin-top: 5%;
+      margin-bottom: 7%; }
+      #shop-list .desc span {
+        font-size: 1.1em;
+        line-height: 1.5em; }
+  #bottom-shop {
+    overflow: hidden; }
+    #bottom-shop h2 {
+      font-size: 200%; }
+    #bottom-shop .box-links {
+      font-size: 120%;
+      line-height: 1.5em;
+      margin-bottom: 7%; }
+      #bottom-shop .box-links .title {
+        font-size: 130%;
+        line-height: 1.5em; }
+      #bottom-shop .box-links .short-desc {
+        font-size: 120%;
+        line-height: 1.5em;
+        width: 70%; }
+  #footer-shop {
+    padding: 10% 0 0 0; }
+    #footer-shop .col-md-7 {
+      padding-left: 15px !important; }
+    #footer-shop .side-socmed {
+      padding-left: 15px; }
+      #footer-shop .side-socmed h3 {
+        font-family: 'Conv_GothamRnd-Medium';
+        font-size: 120%;
+        margin: 0 5% 0 0;
+        line-height: 35px; }
+      #footer-shop .side-socmed a {
+        width: 12%;
+        height: 12%;
+        margin-right: 0; }
+        #footer-shop .side-socmed a img {
+          max-width: 70%; }
+    #footer-shop #foot-socmed {
+      padding: 5% 0px;
+      margin: 5% 0;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+      border-left: none; }
+    #footer-shop .box-subscribe p {
+      font-size: 100%; }
+    #footer-shop .box-subscribe h3 {
+      font-family: 'Conv_GothamRnd-Medium';
+      font-size: 120%;
+      line-height: 1.5em;
+      margin: 0 0 3% 0;
+      text-transform: uppercase; }
+    #footer-shop .box-subscribe .form-control {
+      font-size: 100%;
+      margin-bottom: 3%; }
+    #footer-shop .box-subscribe button {
+      font-size: 100%; }
+    #footer-shop .sidefoot-bottom {
+      margin-top: 3%;
+      padding: 5% 0; }
+      #footer-shop .sidefoot-bottom ul li {
+        padding-right: 2%;
+        margin-bottom: 2%;
+        font-size: 90%;
+        line-height: 1.5em; }
+        #footer-shop .sidefoot-bottom ul li:first-child {
+          padding-right: 2%; }
+      #footer-shop .sidefoot-bottom p {
+        margin-top: 3%;
+        font-size: 90%;
+        line-height: 1.5em;
+        text-align: left; } }
+
+@media screen and (min-width:541px) and (max-width:1024px) {
+  #banner-shop {
+    margin-top: 69px;
+    height: auto;
+    padding-bottom: 7%; }
+    #banner-shop .head-banner h1 {
+      font-family: 'Conv_GothamRnd-Light';
+      text-transform: uppercase;
+      font-size: 250%;
+      line-height: 1em; }
+  #bottom-shop {
+    overflow: hidden; }
+  #footer-shop {
+    padding: 35px 0 0 0; }
+    #footer-shop .side-socmed {
+      margin-top: 25px;
+      padding-left: 0; }
+      #footer-shop .side-socmed h3 {
+        line-height: 25px;
+        margin-right: 10px;
+        display: block;
+        width: 100%; }
+      #footer-shop .side-socmed a img {
+        border: none;
+        max-width: 100%; }
+    #footer-shop .sidefoot-bottom {
+      padding: 25px; }
+    #footer-shop .col-md-4 {
+      border-left: 1px solid #333; } }
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  #banner-shop {
+    margin-top: 69px;
+    height: auto;
+    padding-bottom: 7%; }
+    #banner-shop .head-banner h1 {
+      font-family: 'Conv_GothamRnd-Light';
+      text-transform: uppercase;
+      font-size: 250%;
+      line-height: 1em; }
+  #bottom-shop {
+    overflow: hidden; }
+  #footer-shop {
+    padding: 35px 0 0 0; }
+    #footer-shop .side-socmed {
+      margin-top: 25px;
+      padding-left: 0; }
+      #footer-shop .side-socmed h3 {
+        line-height: 25px;
+        margin-right: 10px;
+        display: block;
+        width: 100%; }
+      #footer-shop .side-socmed a img {
+        border: none;
+        max-width: 100%; }
+    #footer-shop .sidefoot-bottom {
+      padding: 25px; }
+    #footer-shop .col-md-4 {
+      border-left: 1px solid #333; } }

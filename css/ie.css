@@ -1,0 +1,24 @@
+.box-title {
+   margin-top:-10px;
+}
+.box-title h3 {
+	max-width:220px;
+}
+#magazine {
+	background-size:100%;
+}
+#footer .sidefoot {
+	width:95px;
+}
+.block-top .box-search input {
+	padding-top:5px;
+}
+#magazine ul#list-magazine li {
+	background:none;
+}
+#magazine ul#list-magazine li .block-desc {
+	background-color:#ffffff;
+}
+#magazine ul#list-magazine li .block-images .ribbon span {
+	padding:6px 15px 5px 15px;
+}

@@ -1,0 +1,219 @@
+.box-title {
+  margin-top: -10px;
+  position: absolute;
+  margin-left: -15px;
+  background: url('../../../img/corner-title.png') no-repeat left top; }
+  .box-title h3 {
+    color: #000;
+    background: #e5e5e5;
+    font-family: 'Conv_GothamRnd-Bold';
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 5px 35px;
+    margin: 0 0 0 14px;
+    border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -moz-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -moz-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    behavior: url(PIE.htc);
+    position: relative;
+    z-index: 0; }
+
+.block-inside {
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden; }
+
+.block-img-highlight {
+  text-align: left;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 15px; }
+  .block-img-highlight img {
+    width: 180px;
+    max-width: 100%;
+    border-radius: 180px;
+    -moz-border-radius: 180px;
+    -webkit-border-radius: 180px;
+    behavior: url(PIE.htc);
+    position: relative;
+    z-index: 0; }
+
+.block-info-highlight {
+  color: #585858;
+  font-size: 14px;
+  font-family: 'Conv_GothamRnd-Bold'; }
+  .block-info-highlight a {
+    margin-bottom: 50px; }
+  .block-info-highlight p {
+    display: block;
+    width: 100%;
+    margin: 0 0 5px 0; }
+  .block-info-highlight h4 {
+    margin-top: 0px; }
+  .block-info-highlight .price {
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+    font-size: 36px;
+    color: #e41b13;
+    font-family: 'Conv_GothamRnd-Light';
+    margin: 0 0 30px 0;
+    line-height: 20px; }
+    .block-info-highlight .price h5 {
+      float: left;
+      display: inline-block;
+      margin-right: 5px;
+      margin-top: -7px; }
+    .block-info-highlight .price span {
+      font-size: 14px;
+      font-family: 'Conv_GothamRnd-Book';
+      line-height: 20px;
+      color: #585858; }
+
+.block-button-higlight {
+  width: 100%; }
+  .block-button-higlight a {
+    margin-bottom: 50px; }
+
+.action-slide {
+  margin: 0px auto;
+  margin-top: 20px;
+  z-index: 999;
+  text-align: center; }
+  .action-slide a {
+    font-size: 17px;
+    line-height: 25px;
+    color: #000;
+    font-family: 'Conv_GothamRnd-Bold';
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: middle;
+    display: block;
+    background: url('../../../img/arrow-highlight.png') no-repeat right center;
+    padding-right: 10px; }
+    .action-slide a:hover {
+      text-decoration: none;
+      color: #e41b13; }
+
+@media screen and (max-width : 540px) {
+  .box-title > h3 {
+    font-size: 100%;
+    padding: 0 5%;
+    text-align: center; }
+  .block-img-highlight {
+    width: 35%;
+    float: left;
+    height: auto;
+    display: inline-block;
+    margin-right: 5%; }
+    .block-img-highlight img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 100%;
+      -moz-border-radius: 100%;
+      -webkit-border-radius: 100%; }
+  .block-info-highlight {
+    font-size: 100%; }
+    .block-info-highlight h4 {
+      font-size: 100%; }
+    .block-info-highlight .price {
+      margin: 0 0 5% 0; }
+      .block-info-highlight .price h5 {
+        margin-top: 0px;
+        font-size: 75%;
+        line-height: 1.2em; }
+      .block-info-highlight .price span {
+        font-size: 40%;
+        line-height: 1em; }
+  .block-button-higlight {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    text-align: center; }
+  .block-inside {
+    margin-top: 10%; }
+  .box-title {
+    position: relative;
+    margin-top: -10px;
+    width: 50%;
+    max-width: 80%; }
+  .btn-reds {
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    background: #e41b13 !important;
+    height: auto;
+    line-height: 1em; }
+    .btn-reds:hover {
+      background: #e41b13 !important;
+      width: 100% !important; } }
+
+@media screen and (min-width:541px) and (max-width:1024px) {
+  .block-info-highlight {
+    padding-left: 15px; }
+    .block-info-highlight h4 {
+      font-size: 20px; }
+    .block-info-highlight .price {
+      margin: 0;
+      font-size: 14px; }
+      .block-info-highlight .price h5 {
+        font-size: 20px;
+        margin-top: 0px; }
+  .block-button-higlight {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-left: -10px;
+    text-align: center; }
+  .block-inside {
+    margin-top: 50px;
+    padding-top: 0; }
+  .box-title {
+    position: absolute;
+    margin-top: -10px; } }
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .block-button-higlight {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-left: -10px; }
+  .block-inside {
+    margin-top: 50px; }
+  .box-title {
+    position: relative;
+    margin-top: -10px;
+    width: 25%;
+    max-width: 80%; }
+  .action-slide {
+    width: 120px;
+    margin-left: -15px; } }
+
+@media (max-width: 768px) {
+  .block-inside {
+    width: 100% !important;
+    margin: 0px auto;
+    margin-top: 50px; } }
+
+@media (max-width: 1024px) {
+  .block-button-higlight {
+    text-align: left; }
+  .block-inside {
+    width: 845px;
+    margin: 0px auto;
+    margin-top: 50px; } }

@@ -1,0 +1,372 @@
+#error-pages {
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: -23px;
+  background: #f8f8f8;
+  padding: 100px 0; }
+  #error-pages a {
+    color: #e41b13; }
+    #error-pages a:hover {
+      color: #c12d2d;
+      text-decoration: none; }
+  #error-pages .block-title {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding-bottom: 30px; }
+    #error-pages .block-title p {
+      margin-bottom: 5px; }
+  #error-pages h4 {
+    font-family: 'Conv_GothamRnd-Bold';
+    font-size: 24px;
+    line-height: 24px;
+    color: #000;
+    margin: 0 0 25px 0;
+    display: block;
+    text-align: center; }
+  #error-pages .box-search-error {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 25px 0 60px 0;
+    margin-bottom: 90px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center; }
+    #error-pages .box-search-error form {
+      width: 820px;
+      margin: 0px auto;
+      position: relative;
+      display: block;
+      overflow: hidden; }
+      #error-pages .box-search-error form .col-md-9 {
+        padding-right: 0; }
+      #error-pages .box-search-error form .form-control {
+        background: url('../../img/icon-search-support.png') no-repeat 15px 13px #fff;
+        background-size: 20px;
+        behavior: url(PIE.htc);
+        position: relative;
+        padding: 0 0 0 45px;
+        z-index: 0; }
+      #error-pages .box-search-error form input {
+        border: none;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        behavior: url(PIE.htc); }
+        #error-pages .box-search-error form input::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #acacac; }
+        #error-pages .box-search-error form input:-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #acacac;
+          opacity: 1; }
+        #error-pages .box-search-error form input::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #acacac;
+          opacity: 1; }
+        #error-pages .box-search-error form input:-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: #acacac; }
+      #error-pages .box-search-error form button {
+        font-size: 14px;
+        line-height: 24px; }
+  #error-pages .block-feature {
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 20px 0 60px 0; }
+    #error-pages .block-feature .block-images {
+      width: 115px;
+      margin: 0px auto;
+      margin-bottom: 20px;
+      display: block;
+      overflow: hidden; }
+      #error-pages .block-feature .block-images .icon {
+        width: 115px;
+        height: 115px;
+        background: #e41b13;
+        border-radius: 115px;
+        -moz-border-radius: 115px;
+        -webkit-border-radius: 115px;
+        behavior: url(PIE.htc);
+        vertical-align: middle;
+        display: table-cell; }
+        #error-pages .block-feature .block-images .icon img {
+          max-width: 100%;
+          border: none; }
+    #error-pages .block-feature strong {
+      text-transform: uppercase;
+      color: #000;
+      font-family: 'Conv_GothamRnd-Bold';
+      font-size: 16px;
+      line-height: 24px; }
+    #error-pages .block-feature p {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 14px;
+      line-height: 22px;
+      color: #000; }
+  #error-pages .box-option {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 50px 0 90px 0; }
+    #error-pages .box-option h4 {
+      font-family: 'Conv_GothamRnd-Book';
+      font-size: 22px;
+      line-height: 29px;
+      color: #000;
+      margin-bottom: 20px; }
+    #error-pages .box-option a {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Conv_GothamRnd-Bold';
+      font-size: 12px;
+      padding-left: 25px;
+      padding-right: 25px; }
+    #error-pages .box-option strong {
+      font-family: 'Conv_GothamRnd-Bold';
+      font-size: 24px;
+      line-height: 24px;
+      margin-top: 25px;
+      display: block; }
+
+@media screen and (max-width : 500px) {
+  #error-pages {
+    padding: 100px 0 70px 0;
+    overflow: hidden; }
+    #error-pages p {
+      font-size: 0.8em;
+      line-height: 1.4em; }
+    #error-pages .block-title {
+      padding-bottom: 15px; }
+      #error-pages .block-title h1 {
+        font-size: 2.5em;
+        line-height: 1em; }
+      #error-pages .block-title p {
+        font-size: 0.8em;
+        line-height: 1.4em; }
+    #error-pages h4 {
+      font-size: 1em;
+      line-height: 1.4em;
+      text-align: left; }
+    #error-pages .box-search-error {
+      padding: 15px 0 30px 0;
+      margin-bottom: 45px; }
+      #error-pages .box-search-error form {
+        width: 100%; }
+        #error-pages .box-search-error form .col-xs-12 {
+          padding-left: 0;
+          padding-right: 0; }
+        #error-pages .box-search-error form input {
+          margin-bottom: 10px;
+          border: 1px solid #e5e5e5;
+          font-size: 0.8em; }
+        #error-pages .box-search-error form button {
+          font-size: 0.8em; }
+    #error-pages .block-feature {
+      margin: 10px 0 30px 0; }
+      #error-pages .block-feature .block-images {
+        margin-bottom: 10px; }
+      #error-pages .block-feature strong {
+        font-size: 0.9em;
+        line-height: 1.4em; }
+      #error-pages .block-feature p {
+        font-size: 0.8em;
+        line-height: 1.4em; }
+    #error-pages .box-option {
+      padding: 0 0 30px 0; }
+      #error-pages .box-option h4 {
+        font-size: 1em;
+        line-height: 1.4em;
+        text-align: center;
+        width: 90%;
+        margin: 0px auto;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+      #error-pages .box-option.last h4 {
+        margin-top: 0; }
+      #error-pages .box-option a {
+        font-size: 0.8em;
+        padding: 10px 0;
+        width: 100%; }
+      #error-pages .box-option strong {
+        font-family: 'Conv_GothamRnd-Bold';
+        font-size: 1.2em;
+        line-height: 1.2em;
+        margin-top: 0; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+  #error-pages {
+    padding: 100px 0 70px 0;
+    overflow: hidden; }
+    #error-pages p {
+      font-size: 0.8em;
+      line-height: 1.4em; }
+    #error-pages .block-title {
+      padding-bottom: 15px; }
+      #error-pages .block-title h1 {
+        font-size: 2.5em;
+        line-height: 1em; }
+      #error-pages .block-title p {
+        font-size: 0.8em;
+        line-height: 1.4em; }
+    #error-pages h4 {
+      font-size: 1em;
+      line-height: 1.4em;
+      text-align: left; }
+    #error-pages .box-search-error {
+      padding: 15px 0 30px 0;
+      margin-bottom: 45px; }
+      #error-pages .box-search-error form {
+        width: 100%; }
+        #error-pages .box-search-error form .col-xs-12 {
+          padding-left: 0;
+          padding-right: 0; }
+        #error-pages .box-search-error form input {
+          margin-bottom: 10px;
+          border: 1px solid #e5e5e5;
+          font-size: 0.8em; }
+        #error-pages .box-search-error form button {
+          font-size: 0.8em; }
+    #error-pages .block-feature {
+      margin: 10px 0 30px 0; }
+      #error-pages .block-feature .block-images {
+        margin-bottom: 10px; }
+      #error-pages .block-feature strong {
+        font-size: 0.9em;
+        line-height: 1.4em; }
+      #error-pages .block-feature p {
+        font-size: 0.8em;
+        line-height: 1.4em; }
+    #error-pages .box-option {
+      padding: 0 0 30px 0; }
+      #error-pages .box-option h4 {
+        font-size: 1em;
+        line-height: 1.4em;
+        text-align: center;
+        width: 90%;
+        margin: 0px auto;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+      #error-pages .box-option.last h4 {
+        margin-top: 0; }
+      #error-pages .box-option a {
+        font-size: 0.8em;
+        padding: 10px 0;
+        width: 100%; }
+      #error-pages .box-option strong {
+        font-family: 'Conv_GothamRnd-Bold';
+        font-size: 1.2em;
+        line-height: 1.2em;
+        margin-top: 0; } }
+
+@media screen and (min-width:501px) and (max-width:999px) {
+  #error-pages {
+    padding: 120px 0 100px 0;
+    overflow: hidden; }
+    #error-pages p {
+      font-size: 12px;
+      line-height: 18px; }
+    #error-pages .block-title {
+      padding-bottom: 30px; }
+      #error-pages .block-title h1 {
+        font-size: 45px;
+        line-height: 45px; }
+      #error-pages .block-title p {
+        font-size: 12px;
+        line-height: 18px; }
+    #error-pages h4 {
+      font-size: 18px;
+      line-height: 18px; }
+    #error-pages .box-search-error {
+      padding: 15px 0 30px 0;
+      margin-bottom: 60px; }
+      #error-pages .box-search-error form {
+        width: 100%; }
+        #error-pages .box-search-error form input {
+          margin-bottom: 10px;
+          border: 1px solid #e5e5e5;
+          font-size: 12px; }
+        #error-pages .box-search-error form button {
+          font-size: 12px; }
+    #error-pages .block-feature {
+      margin: 10px 0 30px 0; }
+      #error-pages .block-feature .block-images {
+        margin-bottom: 10px; }
+      #error-pages .block-feature strong {
+        font-size: 14px;
+        line-height: 22px; }
+      #error-pages .block-feature p {
+        font-size: 12px;
+        line-height: 18px; }
+    #error-pages .box-option {
+      padding: 0 0 70px 0; }
+      #error-pages .box-option h4 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 40px; }
+      #error-pages .box-option a {
+        font-size: 12px; }
+      #error-pages .box-option strong {
+        font-family: 'Conv_GothamRnd-Bold';
+        font-size: 20px;
+        line-height: 20px; } }
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  #error-pages {
+    padding: 120px 0 100px 0;
+    overflow: hidden; }
+    #error-pages p {
+      font-size: 12px;
+      line-height: 18px; }
+    #error-pages .block-title {
+      padding-bottom: 30px; }
+      #error-pages .block-title h1 {
+        font-size: 45px;
+        line-height: 45px; }
+      #error-pages .block-title p {
+        font-size: 12px;
+        line-height: 18px; }
+    #error-pages h4 {
+      font-size: 18px;
+      line-height: 18px; }
+    #error-pages .box-search-error {
+      padding: 15px 0 30px 0;
+      margin-bottom: 60px; }
+      #error-pages .box-search-error form {
+        width: 100%; }
+        #error-pages .box-search-error form input {
+          margin-bottom: 10px;
+          border: 1px solid #e5e5e5;
+          font-size: 12px; }
+        #error-pages .box-search-error form button {
+          font-size: 12px; }
+    #error-pages .block-feature {
+      margin: 10px 0 30px 0; }
+      #error-pages .block-feature .block-images {
+        margin-bottom: 10px; }
+      #error-pages .block-feature strong {
+        font-size: 14px;
+        line-height: 22px; }
+      #error-pages .block-feature p {
+        font-size: 12px;
+        line-height: 18px; }
+    #error-pages .box-option {
+      padding: 0 0 70px 0; }
+      #error-pages .box-option h4 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 40px; }
+      #error-pages .box-option a {
+        font-size: 12px; }
+      #error-pages .box-option strong {
+        font-family: 'Conv_GothamRnd-Bold';
+        font-size: 20px;
+        line-height: 20px; } }

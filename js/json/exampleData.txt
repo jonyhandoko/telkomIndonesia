@@ -1,0 +1,22 @@
+[
+    {
+    	"id":"1",
+    	"text":"Bundle",
+    	"url":"broadband"
+    },
+    {
+    	"id":"2",
+    	"text":"Wifi",
+    	"url" : "wifi"
+    },
+    {
+    	"id":"3",
+    	"text":"TV",
+    	"url":"tv"
+    },
+    {
+    	"id":"4",
+    	"text":"Phone",
+    	"url": "phone"
+    }
+]

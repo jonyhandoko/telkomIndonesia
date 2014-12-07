@@ -1,0 +1,180 @@
+/* DRY - DO NOT REPEAT YOURSELF */
+.wrapper {
+	margin-top: -23px;
+	font-size: 14px;
+	background-color: #f8f8f8;
+}
+.wrapper .breadcrumb {
+	margin-bottom: 30px;
+}
+.wrapper .breadcrumb a,
+.wrapper .breadcrumb li.active,
+.wrapper .breadcrumb li + li:before {
+	color: #000;
+}
+.wrapper .greet,
+.wrapper .guide-form {
+	margin-bottom: 20px;
+}
+.greet .main-text h3 {
+	font-family: 'Conv_GothamRnd-Bold';
+	margin-top: 0px;
+	font-size: 34px;
+	color: #000;
+}
+.nav-medium {
+	margin: 6px 0;
+}
+.nav-medium li a {
+	font-family: 'Conv_GothamRnd-Bold';
+	font-size: 13px;
+	color: #B4B4B4;
+	text-transform: uppercase;
+}
+.nav-medium li.active > a, 
+.nav-medium li.active > a:hover, 
+.nav-medium li.active > a:focus {
+	color: #000;
+	background-color: transparent;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+	color: #000;
+	background-color: transparent;
+}
+.form-medium label {
+	margin-bottom: 12px;
+	font-weight: normal;
+}
+.form-medium .input-group-addon {
+	background-color: #FFF;
+}
+.form-medium .input-group input {
+	border-right: 0;
+}
+.tv-guide {
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+}
+.tv-guide .day-date {
+	padding: 0 30px;
+	background-color: #9A9A9A;
+}
+.day-date .row,
+.time .row,
+.schedule .row {
+	margin: 0;
+}
+.day-date .row .col-md-1,
+.time .row .col-md-2,
+.schedule .row [class*="col-"] {
+	padding: 0;
+}
+.day-date .col-md-1 a {
+	display: block;
+	margin: 0;
+	color: #FFF;
+	text-align: center;
+	padding: 15px 0;
+}
+.day-date .col-md-1 a:hover,
+.day-date .col-md-1 a:focus,
+.day-date .col-md-1 .active {
+	text-decoration: none;
+	background-color: #D7D7D7;
+	color: #676767;
+}
+.tv-guide .time {
+	margin-bottom: 20px;
+	padding: 25px 0;
+	border-bottom: 1px solid #D7D7D7;
+	position: relative;
+	overflow: hidden;
+}
+.time p {
+	margin: 0;
+	padding: 0 10px;
+	color: #666666;
+	border-left: 2px solid #D7D7D7;
+	position: relative;
+}
+.control {
+	display: block;
+}
+.control nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.control nav ul {
+	margin: 0;
+}
+.control nav .pager li > a, 
+.control nav .pager li > span {
+	background-color: #E41B13;
+	border: 0;
+	border-radius: 0;
+	color: #FFF;
+	line-height: 65px;
+	padding: 5px 5px;
+}
+.control nav .pager li > .pull-left {
+	padding-left: 10px;
+}
+.control nav .pager li > .pull-right {
+	padding-right: 10px;
+}
+.schedule {
+	display: block;
+}
+.schedule .channels .row {
+	margin-bottom: 3px;
+	border: 1px solid #D7D7D7;
+	display: table;
+}
+.channels [class*="col-"] {
+	float: none;
+	display: table-cell;
+	vertical-align: top;
+}
+.schedule .channels .logo {
+	width: 100%;
+	height: 100%;
+}
+.schedule .channels .box {
+	padding: 10px;
+}
+.schedule .channels .box p {
+	margin: 0;
+	line-height: 12px;
+}
+.schedule .channels .box .title {
+	margin-bottom: 5px;
+	font-size: 13px;
+	color: #e41b13;
+}
+.schedule .channels .box .time {
+	padding: 0;
+	border: 0;
+	color: #666666;
+}
+.schedule .channels .now {
+	background-color: #D7D7D7;
+}
+
+@media (max-width: 767px) {
+	.greet {
+		margin-top: 111px
+	}
+	.tv-guide .time {
+		padding: 0;
+	}
+	/*.schedule .channels .row,
+	.channels [class*="col-"] {
+		display: block;
+	}
+	.schedule .channels .row {
+		float: left;
+	}*/
+}

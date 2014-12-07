@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="no-js lt-ie7"><![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Telkom</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" /> 
+	<meta name="MobileOptimized" content="320">
+	
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<meta property="og:title" content="">
+   	<meta property="og:image" content="">
+   	<meta property="og:description" content="">
+   
+	<!-- BEGIN STYLES -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="css/sites/base-site.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/homepage.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/page-article.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/services.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/page-feedback.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/page-errors.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/page-login.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/typo.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/box-search.css">
+	<!-- END STYLES -->   
+	
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/jquery-validate.bootstrap-tooltip.js"></script>
+	<script type="text/javascript" src="js/jquery.placeholder.js"></script> 
+    <script type="text/javascript" src="js/collapse-header.js"></script>
+    <script type="text/javascript" src="js/jquery.jsonSuggest.js"></script>
+    <script type="text/javascript" src="js/jsonData.js"></script>
+    <script type="text/javascript" src="js/banner-slider.js"></script>
+    <script type="text/javascript" src="js/news-ticker.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/side-navigation.js"></script>
+	<script type="text/javascript" src="js/responsive.js"></script>
+	<script type="text/javascript" src="js/component.js"></script>  
+	
+  	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/ie.css" />
+		<script type="text/javascript" src="js/PIE.js"></script>		
+	<![endif]-->    	
+</head>
+<!-- END HEAD -->
+<body>
+	<a href="#" class="back-to-top">Back to Top</a>
+	<!-- Header Start Here -->
+	<div id="header">
+		<div class="container">
+			<div class="row block-top">
+				<div id="nav-left" class="col-md-4 col-xs-4 col-sm-4">
+					<div class="nav-top hidden-sm hidden-xs">
+						<ul>
+							<li><a href="#">Pelanggan</a></li>
+							<li><a href="#">Bisnis</a></li>
+							<li><a href="#">Tentang Telkom</a></li>
+						</ul>
+					</div>
+					<div class="dropdown text-right hidden-lg hidden-md">
+					  <button class="drop-top btn btn-default dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">
+					    Pelanggan
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="top-left-menu">
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bisnis</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tentang Telkom</a></li>
+					  </ul>
+					</div>					
+				</div>
+				<div class="col-md-8 hidden-xs hidden-sm text-right">
+					<div class="language hidden-sm hidden-xs">
+						<div class="dropdown">
+						  <button class="drop-top btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+						    Bahasa Indonesia
+						  </button>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">English</a></li>
+						  </ul>
+						</div>						
+					</div>
+                    <div id="block-search-head">
+                        <form action="" method="POST" id="search-box" class="navbar-right" role="search">
+                            <div class="form-group box-search">
+                            <input type="text" class="form-control" placeholder="Search" id="header-search-input" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
+                            <button type="submit">go</button>
+                            </div>                       
+                        </form>
+                    </div>
+                    
+				</div>
+				<div id="box-search" class="col-xs-2 col-sm-1 visible-xs visible-sm">
+					<div class="icon-search" id="box-form-search">
+						<img src="img/icon.search.png">
+					</div>
+				</div>				
+				<div id="box-user" class="col-xs-2 col-sm-1 visible-xs visible-sm">
+					<div class="icon-user">
+						<img src="img/icon.user.png">
+					</div>
+				</div>
+			</div>
+			<div class="row block-nav">		
+				<div id="logo" class="col-md-2 col-xs-1 col-sm-3">
+					<a href="/" title="Telkom Indonesia" class="logo">Telkom Indonesia</a>	
+				</div>
+				<button id="nav-mob" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<div class="text">Menu</div>
+				</button>									
+				<div class="col-md-10 col-xs-12 col-sm-12 navigation">	
+		          <div class="navbar-collapse collapse">
+		          	<ul class='collapse-menu hidden-xs hidden-sm'>
+		          		<li><a id="top-page" href="#">See Menu</a></li>	
+		          	</ul>					
+					<ul class="expand-menu">
+						<li><a href="#">broadband</a></li>
+						<li><a href="#">wifi</a></li>
+						<li><a href="#">tv</a></li>
+						<li><a href="#">phone</a></li>
+						<li><a href="#">bundles</a></li>
+						<li><a href="#">rewards</a></li>
+						<li><a href="#">magazine</a></li>
+						<li class="nav-shop"><a href="#">Telkom Shop<i class="glyphicon glyphicon-lock"></i></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="sticky-right" class="hidden-sm hidden-xs"><!-- Side nav start here -->
+		<ul>
+			<li>
+				<div class="box-icon login">
+					<img src="img/icon-login.png">
+					Login
+				</div>
+			</li>
+			<li>
+				<div class="box-icon">
+					<img src="img/icon-cart.png">
+					shopping cart
+				</div>
+			</li>				
+			<li id='ctn-support'>
+				<div class="box-icon">
+					<img id="ctn-support" src="img/icon-support.png">
+					support		
+				</div>				
+				<div class="box-support">
+					<div class="content">
+						<form class="form" role="form">
+						<div class="row">
+						  <div class="col-md-9">
+						    <input type="text" id="search-head" class="form-control icon-search" placeholder="Search Support">
+						  </div>
+						  <div class="col-md-3">
+						     <button type="submit" class="btn btn-red">search</button>
+						  </div>
+						</div>		
+						</form>	
+						<div class="row">
+							<div class="col-md-6">
+								<div class="title-ribbon">
+									we are online	
+								</div>	
+								<div class="box-chat">
+									<img src="img/icon-livechat.png" />
+									<span>live chat</span>
+									Lorem ipsum dolor sit, ipsum adipiscin.
+								</div>
+							</div>	
+							<div class="col-md-6 ctn-right">
+								<div class="sidebox">
+									<h7>Join our community</h7>
+									<div class="links">
+										<a href="#">Facebook</a>
+										<a href="#">Twitter</a>
+									</div>
+								</div>
+								<div class="sidebox">
+									<h7>Talk to us</h7>
+									<div class="links odd">
+										<a href="#">Contact Details</a>
+										<a href="#">Feedback</a>
+										<a href="#">Find a store</a>
+									</div>
+								</div>								
+							</div>	
+						</div>	
+				    </div>
+				</div>					
+			</li>	
+			<li>
+				<div class="box-icon">
+					<img src="img/icon-feedback.png">
+					feedback
+				</div>
+			</li>						
+		</ul>		
+	</div><!-- End Side nav -->
+	<!-- End Header -->
+	<div><div id="banner-slider" class="carousel slide" data-ride="carousel"><!-- Banner slider start here -->
+  <!-- Indicators -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="image-container" style="background: url('img/img-banner.jpg');"></div>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Menyatukan Indonesia</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros molestie. </p>
+          <p><a class="btn btn-lg btn-red" href="#" role="button">find out more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+  <div class="image-container" style="background: url('img/img-banner.jpg');"></div>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Menyatukan Indonesia</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros molestie. </p>
+          <p><a class="btn btn-lg btn-red" href="#" role="button">find out more</a></p>
+        </div>
+      </div>
+  </div>
+    <div class="item">
+  <div class="image-container" style="background: url('img/img-banner.jpg');"></div>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Menyatukan Indonesia</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros molestie. </p>
+          <p><a class="btn btn-lg btn-red" href="#" role="button">find out more</a></p>
+        </div>
+      </div>
+  </div>    
+  </div>
+<div class="box-bullets">
+    <ol class="carousel-indicators">
+      <li data-target="#banner-slider" data-slide-to="0" class="active"></li>
+      <li data-target="#banner-slider" data-slide-to="1"></li>
+      <li data-target="#banner-slider" data-slide-to="2"></li>
+    </ol>     
+</div>         
+  <a class="hidden-xs hidden-sm left carousel-control" href="#banner-slider" role="button" data-slide="prev"><span class="left-slide">prev</span></a>
+  <a class="hidden-xs hidden-sm right carousel-control" href="#banner-slider" role="button" data-slide="next"><span class="next-slide">prev</span></a>
+</div>
+<!-- End banner -->
+
+<div class="container" id="box-highlight">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box-title">
+        <h3>Highlights</h3> 
+      </div>
+      <div class="block-inside">
+      <div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
+        <div class="block-img-highlight">
+          <img src="img/img-highlights-01.jpg">
+        </div>
+        <div class="block-info-highlight">
+          <p>Speedy</p> 
+          <h4>Pertandingan Live Streaming </h4>
+          <div class="price">
+            <h5>20.000</h5><span>/ bulan</span>
+          </div>
+        </div>
+        <div class="block-button-higlight">
+          <a href="#" class="btn btn-lg btn-reds">find out more</a> 
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
+        <div class="block-img-highlight">
+          <img src="img/img-highlights-02.jpg">
+        </div>
+        <div class="block-info-highlight">
+          <p>INDI Home</p>  
+          <h4>Internet <br />Tercepat </h4>
+          <div class="price">
+            <h5>20.000</h5><span>/ bulan</span>
+          </div>
+        </div>
+        <div class="block-button-higlight">
+          <a href="#" class="btn btn-lg btn-reds">find out more</a> 
+        </div>            
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
+        <div class="block-img-highlight">
+          <img src="img/img-highlights-03.jpg">
+        </div>
+        <div class="block-info-highlight">
+          <p>Speedy</p> 
+          <h4>Pertandingan Live Streaming </h4>
+          <div class="price">
+            <h5>20.000</h5><span>/ bulan</span>
+          </div>
+        </div>
+        <div class="block-button-higlight">
+          <a href="#" class="btn btn-lg btn-reds">find out more</a> 
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
+        <div class="block-img-highlight">
+          <img src="img/img-highlights-04.jpg">
+        </div>
+        <div class="block-info-highlight">
+          <p>Speedy Instant</p> 
+          <h4>WIFI Speedy Instan hanya</h4>
+          <div class="price">
+            <h5>20.000</h5><span>/ bulan</span>
+          </div>
+        </div>
+        <div class="block-button-higlight">
+          <a href="#" class="btn btn-lg btn-reds">find out more</a> 
+        </div>            
+      </div>  
+      <div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
+        <div class="block-img-highlight">
+          <img src="img/img-highlights-01.jpg">
+        </div>
+        <div class="block-info-highlight">
+          <p>Speedy</p> 
+          <h4>Pertandingan Live Streaming </h4>
+          <div class="price">
+            <h5>20.000</h5><span>/ bulan</span>
+          </div>
+        </div>
+        <div class="block-button-higlight">
+          <a href="#" class="btn btn-lg btn-reds">find out more</a> 
+        </div>            
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
+        <div class="block-img-highlight">
+          <img src="img/img-highlights-02.jpg">
+        </div>
+        <div class="block-info-highlight">
+          <p>INDI Home</p>  
+          <h4>Internet <br />Tercepat </h4>
+          <div class="price">
+            <h5>20.000</h5><span>/ bulan</span>
+          </div>
+        </div>
+        <div class="block-button-higlight">
+          <a href="#" class="btn btn-lg btn-reds">find out more</a> 
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
+        <div class="block-img-highlight">
+          <img src="img/img-highlights-03.jpg">
+        </div>
+        <div class="block-info-highlight">
+          <p>Speedy</p> 
+          <h4>Pertandingan Live Streaming </h4>
+          <div class="price">
+            <h5>20.000</h5><span>/ bulan</span>
+          </div>
+        </div>
+        <div class="block-button-higlight">
+          <a href="#" class="btn btn-lg btn-reds">find out more</a> 
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
+        <div class="block-img-highlight">
+          <img src="img/img-highlights-04.jpg">
+        </div>
+        <div class="block-info-highlight">
+          <p>Speedy Instant</p> 
+          <h4>WIFI Speedy Instan hanya</h4>
+          <div class="price">
+            <h5>20.000</h5><span>/ bulan</span>
+          </div>
+        </div>
+        <div class="block-button-higlight">
+          <a href="#" class="btn btn-lg btn-reds">find out more</a> 
+        </div>
+      </div>
+      </div>  
+      <div class="col-md-2 col-md-offset-5 col-sm-3 col-sm-offset-5 col-xs-6 col-xs-offset-3">
+        <div class="action-slide">
+          <a href="#box-highlight" class="show-item">See more</a>  
+          <a href="#see-all" class="show-all">See all</a>
+        </div>
+      </div>                                        
+    </div>
+  </div>
+</div>    
+
+<div id="magazine" class="pg-mag" style="background-image:url('img/bg-magazine.jpg');">
+  <div class="container">
+    <div id="one"></div>
+    <div id="two"></div>      
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Majalah</h2>
+        <ul id="list-magazine">
+          <li>
+            <div class="block-images">
+              <img src="img/img-mag-01.jpg">
+              <div class="ribbon">
+                <span>Category</span>
+              </div>
+            </div>
+            <div class="block-desc">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>
+                For price and package changes or new products launches. Aenean euismod bibendum laoreet proin gravida dolor.
+              </p>
+              <a href="#"><h7>read more</h7></a>
+            </div>
+          </li> 
+          <li>
+            <div class="block-images">
+              <img src="img/img-mag-01.jpg">
+              <div class="ribbon">
+                <span>Category</span>
+              </div>
+            </div>
+            <div class="block-desc">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>
+                For price and package changes or new products launches. Aenean euismod bibendum laoreet proin gravida dolor.
+              </p>
+              <a href="#"><h7>read more</h7></a>
+            </div>
+          </li> 
+          <li>
+            <div class="block-images">
+              <img src="img/img-mag-01.jpg">
+              <div class="ribbon">
+                <span>Category</span>
+              </div>
+            </div>
+            <div class="block-desc">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>
+                For price and package changes or new products launches. Aenean euismod bibendum laoreet proin gravida dolor.
+              </p>
+              <a href="#"><h7>read more</h7></a>
+            </div>
+          </li>   
+          <li>
+            <div class="block-images">
+              <img src="img/img-mag-01.jpg">
+              <div class="ribbon">
+                <span>Category</span>
+              </div>
+            </div>
+            <div class="block-desc">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>
+                For price and package changes or new products launches. Aenean euismod bibendum laoreet proin gravida dolor.
+              </p>
+              <a href="#"><h7>read more</h7></a>
+            </div>
+          </li> 
+          <li>
+            <div class="block-images">
+              <img src="img/img-mag-01.jpg">
+              <div class="ribbon">
+                <span>Category</span>
+              </div>
+            </div>
+            <div class="block-desc">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>
+                For price and package changes or new products launches. Aenean euismod bibendum laoreet proin gravida dolor.
+              </p>
+              <a href="#"><h7>read more</h7></a>
+            </div>
+          </li> 
+          <li>
+            <div class="block-images">
+              <img src="img/img-mag-01.jpg">
+              <div class="ribbon">
+                <span>Category</span>
+              </div>
+            </div>
+            <div class="block-desc">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>
+                For price and package changes or new products launches. Aenean euismod bibendum laoreet proin gravida dolor.
+              </p>
+              <a href="#"><h7>read more</h7></a>
+            </div>
+          </li>                             
+        </ul>
+        <div class="clearfix"></div>
+        <a class="prev" id="mag_prev" href="#"><span>prev</span></a>
+        <a class="next" id="mag_next" href="#"><span>next</span></a>
+        <div class="pagination" id="mag_pag"></div>             
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="static-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Apa yang anda cari?</h2>
+        <ul class="list-item">
+          <li>
+            <a href="#">
+            <div class="circle">
+            <img src="img/icon-desktop.png">    
+            </div>
+            <p>broadband</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <div class="circle">
+            <img src="img/icon-hp.png">   
+            </div>
+            <p>Mobile Internet</p>
+            </a>
+          </li> 
+          <li>
+            <a href="#">
+            <div class="circle">
+            <img src="img/icon-tv.png">   
+            </div>
+            <p>TV</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <div class="circle">
+            <img src="img/icon-hp.png">   
+            </div>
+            <p>Phone</p>
+            </a>
+          </li>                                         
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="support" style="background-image:url('img/bg-support.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box-title">
+          <h3>Dukungan</h3>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 col-sm-7">
+        <div class="sidebar">
+          <h3>FAQ: Top Questions</h3> 
+          <div class="inner hidden-xs">
+            <ul>
+              <li><a href="#">Moving home. What should I do?</a></li>
+              <li><a href="#">How do I subscribe online?</a></li>
+              <li><a href="#">Do I tip the installation officer?</a></li>
+              <li><a href="#">What is e-Billing?</a></li>
+              <li><a href="#">How do I change or upgrade my package?</a></li>
+            </ul>
+          </div>
+      <div class="dropdown hidden-sm hidden-lg hidden-md">
+        <button class="drop-home btn btn-default dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">
+          Moving home. What should I do?
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="top-left-menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">How do I subscribe online?</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Do I tip the installation officer?</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Do I tip the installation officer?</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">What is e-Billing?</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">How do I change or upgrade my package?</a></li>
+        </ul>
+      </div>                
+        </div>
+      </div>
+      <div class="col-md-2 col-xs-12 col-sm-5">
+        <div class="sidebar">
+          <h3>FAQ: Topics</h3>  
+          <div class="inner">
+            <ul>
+              <li><a href="#">Getting started</a></li>
+              <li><a href="#">Troubleshooting</a></li>
+              <li><a href="#">Tips and tricks</a></li>
+              <li><a href="#">Top Questions</a></li>
+              <li><a href="#">See all &raquo;</a></li>
+            </ul>
+          </div>
+        </div>            
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-6">
+        <div class="side-contact">
+          <img src="img/img-social-1.jpg">
+          <p class="title">Join our community</p>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-6">
+        <div class="side-contact">
+          <img src="img/img-social-2.jpg">
+          <p class="title">Talk to us</p>
+          <ul>
+            <li><a href="#">Contact Details</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Find a store</a></li>
+          </ul>
+        </div>
+      </div>          
+    </div>
+  </div>
+</div></div>
+	<!-- Footer start here  -->   
+    <div id="news-ticker">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 col-xs-12 col-sm-1">
+                    <h3>News</h3>
+                </div>
+                <div class="col-md-10 col-xs-12 col-sm-10">
+                    <ul id="list-news">
+                        <li><a href="#">Etiam imperdiet volutpat libero eu tristique.</a> </li>
+                        <li><a href="#">Curabitur porttitor ante eget hendrerit </a> </li>  
+                        <li><a href="#">Etiam imperdiet volutpat libero eu tristique.</a> </li>
+                        <li><a href="#">Curabitur porttitor ante eget hendrerit </a> </li>  
+                        <li><a href="#">Etiam imperdiet volutpat libero eu tristique.</a> </li>
+                        <li><a href="#">Curabitur porttitor ante eget hendrerit </a> </li>                                                                    
+                    </ul>
+                    <div class="clearfix"></div>
+                    <a id="news-prev" href="#"><span class="news-left">previous</span></a>
+                    <a id="news-next" href="#"><span class="news-right">next</span></a>
+                </div>
+                <div class="col-md-1 col-xs-12 col-sm-1">
+                    <a class="more">more</a>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 visible-sm visible-xs">
+                <div class="dropdown hidden-lg hidden-md">
+                  <button class="drop-quick btn btn-default btn-block dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">
+                   Quick Links
+                  </button>
+                </div>                  
+                </div>              
+                <div class="col-md-8 hidden-xs hidden-sm">
+                    <div class="sidefoot">
+                        <h3>Broadband</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidefoot">
+                        <h3>TV</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>  
+                    <div class="sidefoot">
+                        <h3>Bundles</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>  
+                    <div class="sidefoot">
+                        <h3>Magazine</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>  
+                    <div class="sidefoot">
+                        <h3>Telkom Shop</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>   
+                    <div class="sidefoot">
+                        <h3>wifi</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div> 
+                    <div class="sidefoot">
+                        <h3>My Phone</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>   
+                    <div class="sidefoot">
+                        <h3>Rewards</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div> 
+                    <div class="sidefoot">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>                                                                                                                                                  
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="side-socmed">
+                        <h3>Connect with us</h3>
+                        <a class="facebook" href="#">
+                            <img src="img/icon-fb.png" />
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-twitter.png" />
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-linkedin.png" />
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-youtube.png" />
+                        </a>                                                                        
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 sidefoot-bottom">
+                    <div class="col-md-7 col-sm-6 col-xs-12">
+                        <ul>
+                            <li><a href="#">About Telkom</a></li>
+                            <li><a href="#">Investors Relations</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">CSR</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                        </ul>   
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <p class="text-right">
+                            &copy; 2014 PT. Telekomunikasi Indonesia, Tbk. All Right Reserved.
+                        </p>    
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div> 
+    <!-- End footer  -->  
+</body>
+</html>

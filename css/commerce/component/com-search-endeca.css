@@ -1,0 +1,464 @@
+#block-search {
+  width: 100%;
+  margin-top: -67px;
+  background: #f8f8f8; }
+  #block-search .box-search-support {
+    width: 100%;
+    position: relative;
+    padding: 40px 60px 60px 60px;
+    background: #acacac;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    behavior: url(PIE.htc);
+    z-index: 1;
+    height: 150px; }
+    #block-search .box-search-support form {
+      position: relative;
+      display: block;
+      width: 100%; }
+      #block-search .box-search-support form .box-input {
+        background: #fff;
+        padding: 5px 20px;
+        width: 675px;
+        float: left;
+        display: inline-block; }
+        #block-search .box-search-support form .box-input input {
+          background: url(../../../img/icon-search-support.png) no-repeat left 12px;
+          padding-left: 55px;
+          color: #242424;
+          font-size: 25px;
+          line-height: 30px;
+          font-family: 'Conv_GothamRnd-Book';
+          border: none;
+          margin-right: 15px;
+          padding: 10px 20px 10px 40px;
+          width: 100%; }
+          #block-search .box-search-support form .box-input input:focus {
+            outline: none; }
+        #block-search .box-search-support form .box-input .ui-menu {
+          top: 60px !important;
+          width: 675px !important;
+          left: -10px !important; }
+          #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a {
+            line-height: 24px; }
+            #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a strong {
+              color: #e41b13;
+              font-weight: normal; }
+        #block-search .box-search-support form .box-input .ui-widget-content {
+          border: 1px solid #e5e5e5; }
+        #block-search .box-search-support form .box-input .ui-widget {
+          font-size: 16px; }
+      #block-search .box-search-support form button {
+        float: right;
+        font-family: 'Conv_GothamRnd-Medium';
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 19px 40px;
+        background: #e41b13;
+        border: none;
+        border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        behavior: url(PIE.htc); }
+        #block-search .box-search-support form button:hover {
+          background-color: #c12d2d;
+          color: #fff; }
+        #block-search .box-search-support form button:focus {
+          background-color: #e41b13;
+          color: #fff; }
+    #block-search .box-search-support .suggest {
+      float: left;
+      display: inline-block;
+      width: 45%;
+      margin-top: 15px;
+      font-size: 14px;
+      font-family: 'Conv_GothamRnd-Light';
+      line-height: 21px;
+      color: #fff; }
+      #block-search .box-search-support .suggest a {
+        color: #fff;
+        text-decoration: underline; }
+    #block-search .box-search-support .advance {
+      float: right;
+      margin-top: 15px;
+      margin-right: 165px;
+      width: 35%;
+      text-align: right; }
+      #block-search .box-search-support .advance a {
+        font-size: 14px;
+        font-family: 'Conv_GothamRnd-Light';
+        line-height: 21px;
+        color: #fff;
+        text-decoration: underline; }
+    #block-search .box-search-support .suggest-box-big {
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ececec;
+      margin: -5px 20px 0 10px;
+      padding: 20px;
+      width: 675px;
+      z-index: 50;
+      height: 205px;
+      overflow: auto;
+      left: 50px;
+      top: 105px; }
+      #block-search .box-search-support .suggest-box-big ul {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important; }
+        #block-search .box-search-support .suggest-box-big ul li {
+          float: left;
+          width: 100%;
+          display: block;
+          font-family: 'Conv_GothamRnd-Light';
+          font-size: 18px;
+          line-height: 28px;
+          margin-bottom: 8px;
+          text-align: left;
+          border: none !important;
+          padding: 0 !important; }
+          #block-search .box-search-support .suggest-box-big ul li a {
+            text-decoration: none;
+            color: #242424;
+            font-family: 'Conv_GothamRnd-Light' !important;
+            text-transform: none !important; }
+            #block-search .box-search-support .suggest-box-big ul li a:hover {
+              color: #e41b13; }
+  #block-search .box-search-location {
+    width: 100%;
+    position: relative;
+    padding: 40px 25px 40px 25px;
+    background: #acacac;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    behavior: url(PIE.htc);
+    z-index: 1;
+    height: 130px; }
+    #block-search .box-search-location form {
+      position: relative;
+      display: block;
+      width: 100%; }
+      #block-search .box-search-location form .box-find {
+        background: #fff;
+        padding: 0 20px;
+        width: 80%;
+        float: left;
+        display: inline-block; }
+        #block-search .box-search-location form .box-find input {
+          background: url(../../../img/icon-search-support.png) no-repeat left 12px;
+          padding-left: 55px;
+          color: #242424;
+          font-size: 16px;
+          line-height: 30px;
+          font-family: 'Conv_GothamRnd-Book';
+          border: none;
+          margin-right: 15px;
+          padding: 10px 0 10px 40px;
+          width: 100%; }
+          #block-search .box-search-location form .box-find input:focus {
+            outline: none; }
+      #block-search .box-search-location form strong {
+        font-size: 20px;
+        font-family: 'Conv_GothamRnd-Light';
+        color: #fff;
+        line-height: 50px; }
+      #block-search .box-search-location form button {
+        float: right;
+        font-family: 'Conv_GothamRnd-Medium';
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 15px 20px;
+        background: #e41b13;
+        border: none;
+        border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        behavior: url(PIE.htc); }
+        #block-search .box-search-location form button:hover {
+          background-color: #c12d2d;
+          color: #fff; }
+        #block-search .box-search-location form button:focus {
+          background-color: #e41b13;
+          color: #fff; }
+
+@media screen and (max-width : 540px) {
+  .store-find {
+    margin-top: -120px !important;
+    height: 120px !important; }
+  #block-search {
+    margin-top: -100px;
+    height: 100px; }
+    #block-search .box-search-support {
+      padding: 0;
+      background: none;
+      border-radius: 0px;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px; }
+      #block-search .box-search-support .suggest {
+        float: left;
+        font-size: 100%;
+        width: auto; }
+        #block-search .box-search-support .suggest a {
+          font-size: 100%; }
+      #block-search .box-search-support .advance {
+        float: left;
+        text-align: left;
+        width: 50%; }
+        #block-search .box-search-support .advance.txt-search {
+          float: right;
+          width: auto;
+          margin-right: 0px;
+          margin-left: 5%; }
+          #block-search .box-search-support .advance.txt-search a {
+            font-size: 100%; }
+        #block-search .box-search-support .advance a {
+          font-size: 120%; }
+      #block-search .box-search-support form .box-input {
+        background: #fff;
+        padding: 1% 3%;
+        width: 80%;
+        float: left;
+        display: inline-block; }
+        #block-search .box-search-support form .box-input input {
+          background: url(../../../img/icon-search-support.png) no-repeat left center;
+          background-size: 10%;
+          color: #bcbcbc;
+          font-size: 120%;
+          line-height: 1.5em;
+          margin-right: 15px;
+          padding: 3% 2% 2% 15%;
+          width: 100%; }
+          #block-search .box-search-support form .box-input input:focus {
+            outline: none; }
+        #block-search .box-search-support form .box-input .ui-menu {
+          top: 43px !important;
+          width: 80% !important;
+          left: -10px !important;
+          height: 150px !important; }
+          #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a {
+            line-height: 1.2em;
+            color: #585858; }
+            #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a strong {
+              color: #e41b13;
+              font-weight: normal; }
+            #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a:hover {
+              color: #e41b13;
+              font-weight: normal; }
+        #block-search .box-search-support form .box-input .ui-widget-content {
+          background: #fff;
+          border: 1px solid #e5e5e5; }
+        #block-search .box-search-support form .box-input .ui-widget {
+          font-size: 0.9em; }
+      #block-search .box-search-support form button {
+        float: right;
+        font-size: 100%;
+        padding: 3% 5%; }
+      #block-search .box-search-support .suggest-box-big {
+        left: 0;
+        top: 44px;
+        width: 80%;
+        margin: 0;
+        height: 150px;
+        padding: 3% 5%; }
+        #block-search .box-search-support .suggest-box-big ul li {
+          font-size: 90%;
+          line-height: 1.2em;
+          margin-bottom: 3%; }
+    #block-search .box-search-location {
+      padding: 0;
+      background: none;
+      border-radius: 0px;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px; }
+      #block-search .box-search-location form .col-xs-12 {
+        padding-left: 0;
+        padding-right: 0; }
+        #block-search .box-search-location form .col-xs-12 .col-xs-12 {
+          padding-right: 0; }
+      #block-search .box-search-location form .box-find {
+        width: 75%;
+        padding: 5px;
+        margin-bottom: 25px; }
+        #block-search .box-search-location form .box-find input {
+          background: url(../../../img/icon-search-support.png) no-repeat left center;
+          background-size: 8%;
+          color: #bcbcbc;
+          font-size: 0.7em;
+          line-height: 1em;
+          margin-right: 15px;
+          padding: 2% 2% 1% 10%;
+          width: 100%; }
+          #block-search .box-search-location form .box-find input:focus {
+            outline: none; }
+      #block-search .box-search-location form button {
+        float: right;
+        font-size: 0.75em;
+        padding: 9px 15px; }
+      #block-search .box-search-location form strong {
+        font-size: 0.8em;
+        line-height: 2.5em; } }
+
+@media screen and (min-width:541px) and (max-width:1024px) {
+  #block-search {
+    background: #f0f0f0;
+    margin-top: -6%; }
+    #block-search .box-search-support {
+      height: 120px;
+      padding: 3% 5% 7%; }
+      #block-search .box-search-support .advance {
+        margin-right: 155px; }
+      #block-search .box-search-support form .box-input {
+        background: #fff;
+        padding: 1% 3%;
+        width: 82%;
+        float: left;
+        display: inline-block; }
+        #block-search .box-search-support form .box-input input {
+          background: url(../../../img/icon-search-support.png) no-repeat left center;
+          color: #bcbcbc;
+          font-size: 120%;
+          line-height: 1.5em;
+          margin-right: 15px;
+          padding: 1% 4% 0 8%;
+          width: 100%; }
+          #block-search .box-search-support form .box-input input:focus {
+            outline: none; }
+        #block-search .box-search-support form .box-input .ui-menu {
+          top: 43px !important;
+          width: 77% !important;
+          left: -10px !important;
+          height: 190px !important;
+          padding: 15px 1.5em !important; }
+          #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a {
+            line-height: 1.5em;
+            color: #585858; }
+            #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a strong {
+              color: #e41b13;
+              font-weight: normal; }
+            #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a:hover {
+              color: #e41b13;
+              font-weight: normal; }
+        #block-search .box-search-support form .box-input .ui-widget-content {
+          background: #fff;
+          border: 1px solid #e5e5e5; }
+        #block-search .box-search-support form .box-input .ui-widget {
+          font-size: 1em; }
+      #block-search .box-search-support form button {
+        float: right;
+        font-size: 100%;
+        padding: 2% 5%; }
+      #block-search .box-search-support .suggest-box-big {
+        left: 5%;
+        top: 68px;
+        width: 69.2%;
+        margin: 0;
+        height: 190px;
+        padding: 3% 5%; }
+        #block-search .box-search-support .suggest-box-big ul li {
+          font-size: 100%;
+          line-height: 1.3em;
+          margin-bottom: 3%; }
+    #block-search .box-search-location {
+      padding: 20px 12px 20px 12px;
+      height: 80px; }
+      #block-search .box-search-location form .box-find {
+        width: 77%;
+        padding: 5px;
+        margin-bottom: 25px; }
+        #block-search .box-search-location form .box-find input {
+          background: url(../../../img/icon-search-support.png) no-repeat left center;
+          background-size: 8%;
+          color: #bcbcbc;
+          font-size: 0.8em;
+          line-height: 1em;
+          margin-right: 15px;
+          padding: 2% 2% 1% 10%;
+          width: 100%; }
+          #block-search .box-search-location form .box-find input:focus {
+            outline: none; }
+      #block-search .box-search-location form button {
+        float: right;
+        font-size: 0.8em;
+        padding: 9px 15px; }
+      #block-search .box-search-location form strong {
+        font-size: 0.9em;
+        line-height: 2.5em; } }
+
+@media only screen and (min-width : 767px) and (max-width : 1024px) {
+  #block-search {
+    background: #f0f0f0;
+    margin-top: -6%; }
+    #block-search .box-search-support {
+      padding: 3% 5% 7%;
+      height: 120px; }
+      #block-search .box-search-support .advance {
+        margin-right: 155px; }
+      #block-search .box-search-support form .box-input {
+        background: #fff;
+        padding: 1% 3%;
+        width: 77%;
+        float: left;
+        display: inline-block; }
+        #block-search .box-search-support form .box-input input {
+          background: url(../../../img/icon-search-support.png) no-repeat left center;
+          color: #bcbcbc;
+          font-size: 120%;
+          line-height: 1.5em;
+          margin-right: 15px;
+          padding: 1% 4% 0 8%;
+          width: 100%; }
+          #block-search .box-search-support form .box-input input:focus {
+            outline: none; }
+        #block-search .box-search-support form .box-input .ui-menu {
+          top: 43px !important;
+          width: 77% !important;
+          left: -10px !important;
+          height: 190px !important;
+          padding: 15px 1.5em !important; }
+          #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a {
+            line-height: 1.5em;
+            color: #585858; }
+            #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a strong {
+              color: #e41b13;
+              font-weight: normal; }
+            #block-search .box-search-support form .box-input .ui-menu .ui-menu-item a:hover {
+              color: #e41b13;
+              font-weight: normal; }
+        #block-search .box-search-support form .box-input .ui-widget-content {
+          background: #fff;
+          border: 1px solid #e5e5e5; }
+        #block-search .box-search-support form .box-input .ui-widget {
+          font-size: 1em; }
+      #block-search .box-search-support form button {
+        float: right;
+        font-size: 100%;
+        padding: 1.7% 5%; }
+    #block-search .box-search-location {
+      padding: 20px 12px 20px 12px;
+      height: 80px; }
+      #block-search .box-search-location form .box-find {
+        width: 77%;
+        padding: 5px;
+        margin-bottom: 25px; }
+        #block-search .box-search-location form .box-find input {
+          background: url(../../../img/icon-search-support.png) no-repeat left center;
+          background-size: 8%;
+          color: #bcbcbc;
+          font-size: 0.8em;
+          line-height: 1em;
+          margin-right: 15px;
+          padding: 2% 2% 1% 10%;
+          width: 100%; }
+          #block-search .box-search-location form .box-find input:focus {
+            outline: none; }
+      #block-search .box-search-location form button {
+        float: right;
+        font-size: 0.8em;
+        padding: 9px 15px; }
+      #block-search .box-search-location form strong {
+        font-size: 0.9em;
+        line-height: 2.5em; } }
