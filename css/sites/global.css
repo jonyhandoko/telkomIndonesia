@@ -53,6 +53,7 @@
 	border-right: 0;
 }
 .tv-guide {
+	margin-bottom: 100px;
 	display: block;
 	font-size: 12px;
 	font-weight: bold;
@@ -104,8 +105,11 @@
 }
 .control nav {
 	position: absolute;
-	top: 0;
 	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .control nav ul {
 	margin: 0;
@@ -125,18 +129,35 @@
 .control nav .pager li > .pull-right {
 	padding-right: 10px;
 }
+.control .table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.control .table .pager {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
 .schedule {
 	display: block;
 }
 .schedule .channels .row {
 	margin-bottom: 3px;
-	border: 1px solid #D7D7D7;
-	display: table;
+	/* display: table; */
 }
-.channels [class*="col-"] {
+.schedule .channels .row > [class*="col-"] {
 	float: none;
 	display: table-cell;
 	vertical-align: top;
+	border: 1px solid #D7D7D7;
+	border-left: 0;
+}
+.schedule .channels .row > [class*="col-"]:first-child {
+	border: 1px solid #D7D7D7;
+}
+.schedule .channels .row > .active {
+	border-bottom: transparent;
 }
 .schedule .channels .logo {
 	width: 100%;
@@ -161,6 +182,68 @@
 }
 .schedule .channels .now {
 	background-color: #D7D7D7;
+}
+.tv-guide-tab a {
+	display: block;
+}
+.tv-guide-tab a:hover,
+.tv-guide-tab a:focus {
+	text-decoration: none;
+}
+.tv-guide-tab .detail {
+	display: none;
+}
+.tv-guide-content .tab-pane {
+	margin: -5px 0 5px;
+	border: 1px solid #D7D7D7;
+	border-top: 0;
+	position: relative;
+	padding: 25px;
+}
+.tv-guide-content .close {
+	padding: 6px 12px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: transparent;
+	z-index: 2;
+	filter: alpha(opacity=1);
+	opacity: 1;
+}
+.tv-guide-content .close:focus {
+	outline: 0;
+}
+.tv-guide-content .close:active{
+	box-shadow: none;
+}
+.tv-guide-content .media > .pull-left {
+	margin-right: 25px;
+}
+.tv-guide-content .media .media-heading {
+	font-size: 16px;
+	font-weight: bold;
+}
+.tv-guide-content .media .title {
+	color: #e41b13;
+}
+.tv-guide-content .media .time {
+	margin-bottom: 13px;
+	padding: 0; 
+	border: 0; 
+}
+.tv-guide-content .media p {
+	font-weight: lighter;
+	line-height: 18px;
+	color: #666666;
+}
+.tv-guide-content .media b {
+	margin-right: 10px;
+}
+.tv-guide-content .control .pull-left {
+	margin-left: -33px;
+}
+.tv-guide-content .control .pull-right {
+	margin-right: -33px;
 }
 
 @media (max-width: 767px) {
