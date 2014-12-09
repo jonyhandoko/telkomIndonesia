@@ -218,3 +218,17 @@ input[type="radio"] {
 	.call-us-assist a{
 		color: #585858;
 	}
+	
+	.title-medium-size{
+		font-size: 26px;
+	}
+	
+	/*additional css by philip herlambang*/
+
+.text-uppercase{text-transform: uppercase;}
+.less-padding{ padding: 0 !important;}
+.less-margin{ margin: 0 !important;}
+.well-vertical-margin{margin: 10px 0;}
+.well-margin-bottom{margin-bottom: 20px;}
+.title-medium-size{font-size: 26px;}
+.text-black{color:#000;}
