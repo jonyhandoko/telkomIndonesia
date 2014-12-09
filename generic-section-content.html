@@ -365,275 +365,800 @@
 					</div>
 					<div class="schedule">
 						<div class="channels">
-							<div class="row">
-								<div class="col-sm-2">
-									<img class="img-responsive" src="img/channels/axn.jpg">
-								</div>
-								<!-- Max Col 10 / Column 1 Mean 30 Minute -->
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:00 - 00:00</p>
+
+							<div id="axn">
+								<div class="tv-guide-tab" role="tablist">
+									<div class="row">
+										<div class="col-sm-2">
+											<img class="img-responsive" src="img/channels/axn.jpg">
+										</div>
+										<!-- Max Col 10 / Column 1 Mean 30 Minute -->
+										<div class="col-sm-2">
+											<a href=".tab-axn" class="parse-tab" aria-controls="tab-axn" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">AXN 1</p>
+													<p class="time">23:00 - 00:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="axn_1">AXN 1</p>
+													</div>
+												</div>
+											</a>
+										</div>
+		 								<div class="col-sm-3 now">
+		 									<a href=".tab-axn" class="parse-tab" aria-controls="tab-axn" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">AXN 2</p>
+													<p class="time">00:00 - 01:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="axn_2">AXN 2</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2">
+		 									<a href=".tab-axn" class="parse-tab" aria-controls="tab-axn" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">AXN 3</p>
+													<p class="time">01:30 - 02:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="axn_3">AXN 3</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-3">
+											<a href=".tab-axn" class="parse-tab"  aria-controls="tab-axn" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">AXN 4</p>
+													<p class="time">02:30 - 04:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="axn_4">AXN 4</p>
+													</div>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
- 								<div class="col-sm-3 now">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">00:00 - 01:30</p>
-									</div>
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">01:30 - 02:30</p>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">02:30 - 04:00</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img class="img-responsive" src="img/channels/dw.jpg">
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:00 - 00:00</p>
-									</div>
-								</div>
-								<div class="col-sm-2 now">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">00:00 - 01:00</p>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">01:30 - 03:00</p>
-									</div>
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">03:00 - 04:00</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img class="img-responsive" src="img/channels/aljazeera.jpg">
-								</div>
-								<div class="col-sm-1">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:00 - 23:30</p>
-									</div>
-								</div>
-								<div class="col-sm-2 now">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:30 - 00:30</p>
-									</div>
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">00:30 - 01:30</p>
-									</div>
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">01:30 - 02:30</p>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">02:30 - 04:00</p>
+								<div class="tab-content tv-guide-content">
+									<div role="tabpanel" class="tab-pane tab-axn">
+										<div class="media">
+											<div class="pull-left">
+												<img class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading title"></h4>
+												<h4 class="media-heading time"></h4>
+												<p class="desc"></p>
+												<a href="" class="url"><p><b>READ MORE</b><img src="img/arrow-link.png"></p></a>
+											</div>
+										</div>
+										<button class="btn close"><img src="img/close.png"></button>
+										<div class="control">
+											<nav>
+												<div class="table">
+													<ul class="pager">
+														<li><a href="" class="pull-left prev"><img src="img/arrow-white-left.png"></a></li>
+														<li><a href="" class="pull-right next"><img src="img/arrow-white-right.png"></a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img class="img-responsive" src="img/channels/bloomberg.jpg">
-								</div>
-								<div class="col-sm-4 now">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:00 - 01:00</p>
+
+							<div id="dw">
+								<div class="tv-guide-tab" role="tablist">
+									<div class="row">
+										<div class="col-sm-2">
+											<img class="img-responsive" src="img/channels/dw.jpg">
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-dw" class="parse-tab"  aria-controls="tab-dw" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">DW 1</p>
+													<p class="time">23:00 - 00:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="dw_1">DW 1</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2 now">
+											<a href=".tab-dw" class="parse-tab"  aria-controls="tab-dw" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">DW 2</p>
+													<p class="time">00:00 - 01:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="dw_2">DW 2</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-4">
+											<a href=".tab-dw" class="parse-tab"  aria-controls="tab-dw" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">DW 3</p>
+													<p class="time">01:00 - 03:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="dw_3">DW 3</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-dw" class="parse-tab"  aria-controls="tab-dw" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">DW 4</p>
+													<p class="time">03:00 - 04:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="dw_4">DW 4</p>
+													</div>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">01:00 - 02:00</p>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">02:00 - 04:00</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img class="img-responsive" src="img/channels/fashion-tv.jpg">
-								</div>
-								<div class="col-sm-1">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:00 - 23:30</p>
-									</div>
-								</div>
-								<div class="col-sm-3 now">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:30 - 01:00</p>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">01:00 - 02:30</p>
-									</div>
-								</div>
-								<div class="col-sm-1">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">02:30 - 03:00</p>
-									</div>
-								</div>
-								<div class="col-sm-1">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">03:00 - 03:30</p>
-									</div>
-								</div>
-								<div class="col-sm-1">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">03:30 - 04:00</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img class="img-responsive" src="img/channels/nickelodeon.jpg">
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:00 - 00:00</p>
-									</div>
-								</div>
-								<div class="col-sm-3 now">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">00:00 - 01:30</p>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">01:30 - 03:00</p>
-									</div>
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">03:00 - 04:00</p>
+								<div class="tab-content tv-guide-content">
+									<div role="tabpanel" class="tab-pane tab-dw">
+										<div class="media">
+											<div class="pull-left">
+												<img class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading title"></h4>
+												<h4 class="media-heading time"></h4>
+												<p class="desc"></p>
+												<a href="" class="url"><p><b>READ MORE</b><img src="img/arrow-link.png"></p></a>
+											</div>
+										</div>
+										<button class="btn close"><img src="img/close.png"></button>
+										<div class="control">
+											<nav>
+												<div class="table">
+													<ul class="pager">
+														<li><a href="" class="pull-left prev"><img src="img/arrow-white-left.png"></a></li>
+														<li><a href="" class="pull-right next"><img src="img/arrow-white-right.png"></a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img class="img-responsive" src="img/channels/hbo.jpg">
-								</div>
-								<div class="col-sm-5 now">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:00 - 01:30</p>
+
+							<div id="aljazeera">
+								<div class="tv-guide-tab" role="tablist">
+									<div class="row">
+										<div class="col-sm-2">
+											<img class="img-responsive" src="img/channels/aljazeera.jpg">
+										</div>
+										<div class="col-sm-1">
+											<a href=".tab-aljazeera" class="parse-tab"  aria-controls="tab-aljazeera" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Aljazeera 1</p>
+													<p class="time">23:00 - 23:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="aljazeera_1">Aljazeera 1</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2 now">
+											<a href=".tab-aljazeera" class="parse-tab"  aria-controls="tab-aljazeera" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Aljazeera 2</p>
+													<p class="time">23:30 - 00:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="aljazeera_2">Aljazeera 2</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-aljazeera" class="parse-tab"  aria-controls="tab-aljazeera" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Aljazeera 3</p>
+													<p class="time">00:30 - 01:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="aljazeera_3">Aljazeera 3</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-aljazeera" class="parse-tab"  aria-controls="tab-aljazeera" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Aljazeera 4</p>
+													<p class="time">01:30 - 02:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="aljazeera_4">Aljazeera 4</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-3">
+											<a href=".tab-aljazeera" class="parse-tab"  aria-controls="tab-aljazeera" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Aljazeera 5</p>
+													<p class="time">02:30 - 04:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="aljazeera_5">Aljazeera 5</p>
+													</div>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
-								<div class="col-sm-5">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">01:30 - 04:00</p>
+								<div class="tab-content tv-guide-content">
+									<div role="tabpanel" class="tab-pane tab-aljazeera">
+										<div class="media">
+											<div class="pull-left">
+												<img class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading title"></h4>
+												<h4 class="media-heading time"></h4>
+												<p class="desc"></p>
+												<a href="" class="url"><p><b>READ MORE</b><img src="img/arrow-link.png"></p></a>
+											</div>
+										</div>
+										<button class="btn close"><img src="img/close.png"></button>
+										<div class="control">
+											<nav>
+												<div class="table">
+													<ul class="pager">
+														<li><a href="" class="pull-left prev"><img src="img/arrow-white-left.png"></a></li>
+														<li><a href="" class="pull-right next"><img src="img/arrow-white-right.png"></a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img class="img-responsive" src="img/channels/discovery-channel.jpg">
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:00 - 00:00</p>
+
+							<div id="bloomberg">
+								<div class="tv-guide-tab" role="tablist">
+									<div class="row">
+										<div class="col-sm-2">
+											<img class="img-responsive" src="img/channels/bloomberg.jpg">
+										</div>
+										<div class="col-sm-4 now">
+											<a href=".tab-bloomberg" class="parse-tab"  aria-controls="tab-bloomberg" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Bloomberg 1</p>
+													<p class="time">23:00 - 01:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="bloomberg_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-bloomberg" class="parse-tab"  aria-controls="tab-bloomberg" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Bloomberg 2</p>
+													<p class="time">01:00 - 02:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="bloomberg_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-4">
+											<a href=".tab-bloomberg" class="parse-tab"  aria-controls="tab-bloomberg" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Bloomberg 3</p>
+													<p class="time">02:00 - 04:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="bloomberg_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+													</div>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
-								<div class="col-sm-3 now">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">00:00 - 01:30</p>
-									</div>
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">01:30 - 02:30</p>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">02:30 - 04:00</p>
+								<div class="tab-content tv-guide-content">
+									<div role="tabpanel" class="tab-pane tab-bloomberg">
+										<div class="media">
+											<div class="pull-left">
+												<img class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading title"></h4>
+												<h4 class="media-heading time"></h4>
+												<p class="desc"></p>
+												<a href="" class="url"><p><b>READ MORE</b><img src="img/arrow-link.png"></p></a>
+											</div>
+										</div>
+										<button class="btn close"><img src="img/close.png"></button>
+										<div class="control">
+											<nav>
+												<div class="table">
+													<ul class="pager">
+														<li><a href="" class="pull-left prev"><img src="img/arrow-white-left.png"></a></li>
+														<li><a href="" class="pull-right next"><img src="img/arrow-white-right.png"></a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img class="img-responsive" src="img/channels/espn.jpg">
-								</div>
-								<div class="col-sm-3 now">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">23:00 - 00:30</p>
+
+							<div id="fashion-tv">
+								<div class="tv-guide-tab" role="tablist">
+									<div class="row">
+										<div class="col-sm-2">
+											<img class="img-responsive" src="img/channels/fashion-tv.jpg">
+										</div>
+										<div class="col-sm-1">
+											<a href=".tab-fashion-tv" class="parse-tab"  aria-controls="tab-fashion-tv" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Fashion TV 1</p>
+													<p class="time">23:00 - 23:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="fashion-tv_1">Fashion TV 1</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-3 now">
+											<a href=".tab-fashion-tv" class="parse-tab"  aria-controls="tab-fashion-tv" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Fashion TV 2</p>
+													<p class="time">23:30 - 01:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="fashion-tv_2">Fashion TV 2</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-3">
+											<a href=".tab-fashion-tv" class="parse-tab"  aria-controls="tab-fashion-tv" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Fashion TV 3</p>
+													<p class="time">01:00 - 02:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="fashion-tv_3">Fashion TV 3</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-1">
+											<a href=".tab-fashion-tv" class="parse-tab"  aria-controls="tab-fashion-tv" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Fashion TV 4</p>
+													<p class="time">02:30 - 03:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="fashion-tv_4">Fashion TV 4</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-1">
+											<a href=".tab-fashion-tv" class="parse-tab"  aria-controls="tab-fashion-tv" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Fashion TV 5</p>
+													<p class="time">03:00 - 03:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="fashion-tv_5">Fashion TV 5</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-1">
+											<a href=".tab-fashion-tv" class="parse-tab"  aria-controls="tab-fashion-tv" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Fashion TV 6</p>
+													<p class="time">03:30 - 04:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="fashion-tv_6">Fashion TV 6</p>
+													</div>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">00:30 - 01:30</p>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">01:30 - 03:00</p>
-									</div>
-								</div>
-								<div class="col-sm-2">
-									<div class="box">
-										<p class="title">TV Show Name</p>
-										<p class="time">03:00 - 04:00</p>
+								<div class="tab-content tv-guide-content">
+									<div role="tabpanel" class="tab-pane tab-fashion-tv">
+										<div class="media">
+											<div class="pull-left">
+												<img class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading title"></h4>
+												<h4 class="media-heading time"></h4>
+												<p class="desc"></p>
+												<a href="" class="url"><p><b>READ MORE</b><img src="img/arrow-link.png"></p></a>
+											</div>
+										</div>
+										<button class="btn close"><img src="img/close.png"></button>
+										<div class="control">
+											<nav>
+												<div class="table">
+													<ul class="pager">
+														<li><a href="" class="pull-left prev"><img src="img/arrow-white-left.png"></a></li>
+														<li><a href="" class="pull-right next"><img src="img/arrow-white-right.png"></a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
 									</div>
 								</div>
 							</div>
+
+							<div id="nickelodeon">
+								<div class="tv-guide-tab" role="tablist">
+									<div class="row">
+										<div class="col-sm-2">
+											<img class="img-responsive" src="img/channels/nickelodeon.jpg">
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-nickelodeon" class="parse-tab"  aria-controls="tab-nickelodeon" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Nickelodeon 1</p>
+													<p class="time">23:00 - 00:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="nickelodeon_1">Nickelodeon 1</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-3 now">
+											<a href=".tab-nickelodeon" class="parse-tab"  aria-controls="tab-nickelodeon" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Nickelodeon 2</p>
+													<p class="time">00:00 - 01:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="nickelodeon_2">Nickelodeon 2</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-3">
+											<a href=".tab-nickelodeon" class="parse-tab"  aria-controls="tab-nickelodeon" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Nickelodeon 3</p>
+													<p class="time">01:30 - 03:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="nickelodeon_3">Nickelodeon 3</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-nickelodeon" class="parse-tab"  aria-controls="tab-nickelodeon" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Nickelodeon 4</p>
+													<p class="time">03:00 - 04:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="nickelodeon_4">Nickelodeon 4</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content tv-guide-content">
+									<div role="tabpanel" class="tab-pane tab-nickelodeon">
+										<div class="media">
+											<div class="pull-left">
+												<img class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading title"></h4>
+												<h4 class="media-heading time"></h4>
+												<p class="desc"></p>
+												<a href="" class="url"><p><b>READ MORE</b><img src="img/arrow-link.png"></p></a>
+											</div>
+										</div>
+										<button class="btn close"><img src="img/close.png"></button>
+										<div class="control">
+											<nav>
+												<div class="table">
+													<ul class="pager">
+														<li><a href="" class="pull-left prev"><img src="img/arrow-white-left.png"></a></li>
+														<li><a href="" class="pull-right next"><img src="img/arrow-white-right.png"></a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="hbo">
+								<div class="tv-guide-tab" role="tablist">
+									<div class="row">
+										<div class="col-sm-2">
+											<img class="img-responsive" src="img/channels/hbo.jpg">
+										</div>
+										<div class="col-sm-5 now">
+											<a href=".tab-hbo" class="parse-tab"  aria-controls="tab-hbo" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">HBO 1</p>
+													<p class="time">23:00 - 01:30</p>
+													<div class="detail">
+														<p class="desc" data-url="hbo_1">HBO 1</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-5">
+											<a href=".tab-hbo" class="parse-tab"  aria-controls="tab-hbo" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">HBO 2</p>
+													<p class="time">01:30 - 04:00</p>
+													<div class="detail">														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="hbo_2">HBO 2</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content tv-guide-content">
+									<div role="tabpanel" class="tab-pane tab-hbo">
+										<div class="media">
+											<div class="pull-left">
+												<img class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading title"></h4>
+												<h4 class="media-heading time"></h4>
+												<p class="desc"></p>
+												<a href="" class="url"><p><b>READ MORE</b><img src="img/arrow-link.png"></p></a>
+											</div>
+										</div>
+										<button class="btn close"><img src="img/close.png"></button>
+										<div class="control">
+											<nav>
+												<div class="table">
+													<ul class="pager">
+														<li><a href="" class="pull-left prev"><img src="img/arrow-white-left.png"></a></li>
+														<li><a href="" class="pull-right next"><img src="img/arrow-white-right.png"></a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="discovery-channel">
+								<div class="tv-guide-tab" role="tablist">
+									<div class="row">
+										<div class="col-sm-2">
+											<img class="img-responsive" src="img/channels/discovery-channel.jpg">
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-discovery-channel" class="parse-tab"  aria-controls="tab-discovery-channel" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Discovery Channel 1</p>
+													<p class="time">23:00 - 00:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="discovery-channel_1">Discovery Channel 1</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-3 now">
+											<a href=".tab-discovery-channel" class="parse-tab"  aria-controls="tab-discovery-channel" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Discovery Channel 2</p>
+													<p class="time">00:00 - 01:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="discovery-channel_2">Discovery Channel 2</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-discovery-channel" class="parse-tab"  aria-controls="tab-discovery-channel" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Discovery Channel 3</p>
+													<p class="time">01:30 - 02:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="discovery-channel_3">Discovery Channel 3</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-3">
+											<a href=".tab-discovery-channel" class="parse-tab"  aria-controls="tab-discovery-channel" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">Discovery Channel 4</p>
+													<p class="time">02:30 - 04:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="discovery-channel_4">Discovery Channel 4</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content tv-guide-content">
+									<div role="tabpanel" class="tab-pane tab-discovery-channel">
+										<div class="media">
+											<div class="pull-left">
+												<img class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading title"></h4>
+												<h4 class="media-heading time"></h4>
+												<p class="desc"></p>
+												<a href="" class="url"><p><b>READ MORE</b><img src="img/arrow-link.png"></p></a>
+											</div>
+										</div>
+										<button class="btn close"><img src="img/close.png"></button>
+										<div class="control">
+											<nav>
+												<div class="table">
+													<ul class="pager">
+														<li><a href="" class="pull-left prev"><img src="img/arrow-white-left.png"></a></li>
+														<li><a href="" class="pull-right next"><img src="img/arrow-white-right.png"></a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="espn">
+								<div class="tv-guide-tab" role="tablist">
+									<div class="row">
+										<div class="col-sm-2">
+											<img class="img-responsive" src="img/channels/espn.jpg">
+										</div>
+										<div class="col-sm-3 now">
+											<a href=".tab-espn" class="parse-tab"  aria-controls="tab-espn" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">ESPN 1</p>
+													<p class="time">23:00 - 00:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="espn_1">ESPN 1</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-espn" class="parse-tab" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">ESPN 2</p>
+													<p class="time">00:30 - 01:30</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="espn_2">ESPN 2</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-3">
+											<a href=".tab-espn" class="parse-tab" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">ESPN 3</p>
+													<p class="time">01:30 - 03:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="espn_3">ESPN 3</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-2">
+											<a href=".tab-espn" class="parse-tab" role="tab" data-toggle="tab">
+												<div class="box">
+													<p class="title">ESPN 4</p>
+													<p class="time">03:00 - 04:00</p>
+													<div class="detail">
+														<img src="img/channels/bloomberg-detail.jpg">
+														<p class="desc" data-url="espn_4">ESPN 4</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content tv-guide-content">
+									<div role="tabpanel" class="tab-pane tab-espn">
+										<div class="media">
+											<div class="pull-left">
+												<img class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading title"></h4>
+												<h4 class="media-heading time"></h4>
+												<p class="desc"></p>
+												<a href="" class="url"><p><b>READ MORE</b><img src="img/arrow-link.png"></p></a>
+											</div>
+										</div>
+										<button class="btn close"><img src="img/close.png"></button>
+										<div class="control">
+											<nav>
+												<div class="table">
+													<ul class="pager">
+														<li><a href="" class="pull-left prev"><img src="img/arrow-white-left.png"></a></li>
+														<li><a href="" class="pull-right next"><img src="img/arrow-white-right.png"></a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<script type="text/javascript">
+								// Prototype - Will Be Fixed
+								(function() {
+									$('.tv-guide-tab').on('click', '.parse-tab', function () {
+										$('.tab-content').find('.close').click();
+
+										var that = $(this),
+											tab = that.attr('href'),
+											content = that.parents('.tv-guide-tab').next();
+
+										// Move, move, move
+										that.parent().addClass('active');
+										content.find('img:first').attr('src', that.find('img:first').attr('src'));
+										content.find('.title').text(that.find('.title').text());
+										content.find('.time').text(that.find('.time').text());
+										content.find('.desc').text(that.find('.desc').text());
+										content.find('.url').attr('href', that.find('.desc').data('url'));
+									});
+									$('.tab-content').on('click', '.close', function () {
+										var that = $(this);
+										that.parent().removeClass('active');
+										that.parents('.tab-content').prev().find('.active').removeClass('active');
+									});
+									$('.tab-content').on('click', '.prev', function (e) {
+										e.preventDefault();
+										$(this).closest('.tab-content').prev().find('.active').prev().find('a').trigger('click');
+									});
+									$('.tab-content').on('click', '.next', function (e) {
+										e.preventDefault();
+										$(this).closest('.tab-content').prev().find('.active').next().find('a').trigger('click');
+									});
+								}());
+							</script>
+
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<br><br><br><br>
-
 		</div>
 	</div>
 
