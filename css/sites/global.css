@@ -261,3 +261,222 @@
 		float: left;
 	}*/
 }
+
+
+/* Fix Dumb */
+.override {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.override .grey-box {
+	float: left;
+	width: 100%;
+	background-color: #E9E9E9;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 80px;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+.override #content-support {
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: #E9E9E9
+}
+.override #content-support h4,
+.override #article-content h4 {
+	font-family: 'Conv_GothamRnd-Bold';
+	margin: 24px 0 18px;
+	color: #000;
+	font-weight: bold;
+}
+.override #content-support .sidebar {
+	padding: 0 15px 20px;
+}
+.override #content-support .sidebar li {
+	width: auto;
+}
+.override #content-support .sidebar a {
+	padding: 0 !important;
+}
+.override #content-support .sidebar p {
+	margin-bottom: 0;
+}
+.override .box-support-feedback .form-horizontal {
+	padding: 15px 0;
+}
+.override .box-support-feedback .form-group {
+	margin-bottom: 0;
+}
+.override .box-support-feedback .form-control,
+.override .box-support-feedback .btn {
+	margin: 5px 0 !important;
+}
+.override .box-support-feedback input {
+	width: 100% !important;
+	padding-top: 6px !important;
+}
+.override .box-support-feedback button {
+	float: left !important;
+	width: 100% !important;
+	height: 50px !important;
+}
+.override .box-support-feedback .form-control::-moz-placeholder {
+	font-family: 'Conv_GothamRnd-Light';
+	color: #A1A1A1 !important;
+	opacity: 1 !important;
+}
+.override .box-support-feedback .form-control:-ms-input-placeholder {
+	font-family: 'Conv_GothamRnd-Light';
+	color: #A1A1A1 !important;
+}
+.override .box-support-feedback .form-control::-webkit-input-placeholder {
+	font-family: 'Conv_GothamRnd-Light';
+	color: #A1A1A1 !important;
+}
+.override .box-support-feedback .form-control:focus::-webkit-input-placeholder {
+	font-family: 'Conv_GothamRnd-Light';
+	color: #A1A1A1 !important;
+	opacity:0 !important;
+}
+.override .box-support-feedback .title-ribbon {
+	padding: 15px 20px !important;
+}
+.override .box-support-feedback .box-chat {
+	padding-top: 15px !important;
+}
+.override #article-content {
+	margin-top: 0;
+}
+.override #article-content .sidebar {
+	overflow: visible;
+	padding: 0;
+	border-bottom: 0;
+}
+.override #form-feedback {
+	font-family: 'Conv_GothamRnd-Light' !important;
+	font-size: 14px;
+}
+.override #form-feedback label {
+	color: #A1A1A1;
+}
+.override #form-feedback input {
+	color: #000;
+}
+.override #form-feedback textarea {
+	resize: none;
+}
+.override #form-feedback p {
+	font-size: 14px;
+	line-height: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+} 
+.override .nav-tabs,
+.override .nav-tabs > li > a,
+.override .nav-tabs > li > a:hover {
+	border: 0;
+	width: auto;
+}
+.override .nav-tabs > li > a {
+	border-radius: 0;
+}
+.override .nav-tabs > li.active > a {
+	background-color: transparent;
+	border: 0;
+	color: #FFF !important;
+	/* Arrow Please*/
+	position: relative;
+	background: #e41b13;
+}
+.override .nav-tabs > li.active > a:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(228, 27, 19, 0);
+	border-left-color: #e41b13;
+	border-width: 20px;
+	margin-top: -20px;
+}
+.override .nav-tabs > li > a:hover {
+	color: #000 !important;
+	background-image: none !important;
+}
+.override .nav-tabs > li,
+.override .nav-tabs > li > a {
+	width: auto !important;
+}
+.override .nav-tabs > li.active > a {
+	color: #FFF !important;
+	background: #e41b13 !important;
+}
+.override #article-content .side-nav ul {
+	margin-bottom: 20px;
+}
+
+
+
+.override .read-more.active {
+	background-image: none;
+	color: #585858;
+	cursor: default;
+}
+.override .read-more {
+	color: #e41b13;
+}
+.override .read-more:hover,
+.override .read-more:focus {
+	color: #585858;
+}
+.override .modal {
+	background: rgba(0, 0, 0, 0.5);
+}
+.override .modal-header {
+	padding: 15px 30px;
+	background-color: #e41b13;
+}
+.override .modal-header .close {
+	margin-top: -6px;
+	font-size: 28px;
+	color: #FFF;
+	opacity: 1;
+	font-weight: normal;
+}
+.override .modal-title {
+	font-family: 'Conv_GothamRnd-Medium';
+	font-size: 14px;
+	color: #FFF;
+}
+.override .modal-content {
+	border-radius: 0;
+}
+.override .modal-body {
+	padding: 30px;
+}
+.override .modal-body img {
+	margin-bottom: 20px;
+}
+.override .modal-body b {
+	font-family: 'Conv_GothamRnd-Bold';
+}
+
+
+
+.socials-line {
+	position: relative;
+}
+.socials-line p {
+	margin-bottom: 0;
+padding: 8px 50px;
+}
+.socials-line .btn {
+	position: absolute;
+	right: 2px;
+	top: 2px;
+}
