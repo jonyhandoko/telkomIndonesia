@@ -156,7 +156,7 @@ input[type="radio"] {
 		float: left; margin-right: 15px;
 	}
 	.box-paket-title{
-		font-size: 38px; letter-spacing: -3px; line-height: 30px;
+		font-size: 38px; letter-spacing: -3px; line-height: 36px;
 	}
 	.box-paket-subtitle{
 		color: black; font-size: 14px; line-height: 40px; font-family: 'Conv_GothamRnd-Bold';
@@ -226,6 +226,13 @@ input[type="radio"] {
 	
 	/*additional css by philip herlambang*/
 
+.learn-more a{
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	letter-spacing: 1px;
+}
+
 .text-uppercase{text-transform: uppercase;}
 .less-padding{ padding: 0 !important;}
 .less-margin{ margin: 0 !important;}
@@ -234,8 +241,12 @@ input[type="radio"] {
 .title-medium-size{font-size: 26px;}
 .text-black{color:#000;}
 
+.large-margin-top{margin-top: 55px;}
+.medium-margin-top{margin-top: 25px;}
+.medium-margin-right{margin-right: 15px;}
 
-@media only screen and (max-width : 320px) {
+
+@media (min-width : 320px) and (max-width : 480px) {
 	.gotham-bold{
 		font-size: 13px;
 		text-align: center;
@@ -255,7 +266,7 @@ input[type="radio"] {
 	}
 	
 	#customize-content h3{
-		font-size: 36px;
+		font-size: 36px !important;
 		letter-spacing: -2px;
 	}
 	
