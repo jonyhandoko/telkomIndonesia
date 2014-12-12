@@ -130,7 +130,7 @@ input[type="radio"] {
 		font-size: 14px;
 	}
 	.active{
-		border: 2px #e41b13 solid !important;
+		border: 2px #e41b13 solid;
 	}
 
 	/* Misc CSS */
