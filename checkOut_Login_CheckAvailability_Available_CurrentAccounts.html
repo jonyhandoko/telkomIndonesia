@@ -6,7 +6,7 @@
 <!-- BEGIN HEAD -->
 <head>
     <meta charset="utf-8" />
-    <title>Telkom Indonesia</title>
+    <title>Telkom</title>
     <link rel="shortcut icon" href="favicon.ico" />
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +28,7 @@
     <link href="css/sites/page-feedback.css" rel="stylesheet" type="text/css"/>
     <link href="css/sites/page-errors.css" rel="stylesheet" type="text/css"/>
     <link href="css/sites/page-login.css" rel="stylesheet" type="text/css"/>
+    <link href="css/sites/global.css" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="css/sites/page-customize.css">
     <link rel="stylesheet" type="text/css" href="css/typo.css">
     <link rel="stylesheet" type="text/css" href="css/buttons.css">
@@ -102,7 +103,7 @@
                         <form action="" method="POST" id="search-box" class="navbar-right" role="search">
                             <div class="form-group box-search">
                             <input type="text" class="form-control" placeholder="Search" id="header-search-input" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
-                            <button type="submit">go</button>
+                            <button type="button">go</button>
                             </div>                       
                         </form>
                     </div>
@@ -178,7 +179,7 @@
 						    <input type="text" id="search-head" class="form-control icon-search" placeholder="Search Support">
 						  </div>
 						  <div class="col-md-3">
-						     <button type="submit" class="btn btn-red">search</button>
+						     <button type="button" class="btn btn-red">search</button>
 						  </div>
 						</div>		
 						</form>	
@@ -195,14 +196,14 @@
 							</div>	
 							<div class="col-md-6 ctn-right">
 								<div class="sidebox">
-									<h6>Join our community</h6>
+									<h7>Join our community</h7>
 									<div class="links">
 										<a href="#">Facebook</a>
 										<a href="#">Twitter</a>
 									</div>
 								</div>
 								<div class="sidebox">
-									<h6>Talk to us</h6>
+									<h7>Talk to us</h7>
 									<div class="links odd">
 										<a href="#">Contact Details</a>
 										<a href="#">Feedback</a>
@@ -225,197 +226,143 @@
 	<!-- End Header -->
 	<div><div id="customize-content">
  <div class="container">
-  <div class="row">
+  <div class="row well-vertical-padding">
    <div class="col-md-12 col-sm-12">
     <ol class="breadcrumb">
-     <li>< <a class="red" href="#">Back to See Packages</a></li>				
+     <li>< <a class="red" href=""#>Back</a></li>				
     </ol>	
    </div>				
-	<div class="col-md-12 col-xs-12 col-sm-12">
-	    <h3>Customize Your Packages</h3>
-	    <p class="text-normal-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean euismod bibendum laoreet. Donec odio. Quisque volutpat.</p>		
+	<div class="col-md-7 col-xs-12 col-sm-6">
+     <h3>Check Availability Networks</h3>
+     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean euismod bibendum laoreet. Donec odio. Quisque volutpat.</p>		
 	</div>
-	<div class="col-md-12 col-xs-12 col-sm-12">
-		<div class="box-payment">
-			<div class="col-xs-12 col-sm-6 less-padding">
-				<p class="gotham-bold wow">You are making payment for this account</p>
-				<p class="text-normal">Accout Number: #235004546984</p>
-			</div>
-			
-			<div class="col-xs-12 col-sm-6 less-padding">
-				<div class="small-font col-xs-12">I want to make payment with another account</div>
-				<div class="col-xs-12 col-md-6 pull-right col-sm-6">
-					<button type="submit" class="btn btn-lg btn-block btn-red">Change Account</button>
-				</div>
-			</div>
+	<div class="clearfix"></div>
+	<div class="col-xs-12">
+		<div role="tabpanel" class="large-margin-top">
+
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">current account</a></li>
+		    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">new account</a></li>
+		    
+		  </ul>
+		
+		  <!-- Tab panes -->
+		  <div class="tab-content tab-content-custom">
+		    
+		    <!-- current account content -->
+		    <div role="tabpanel" class="tab-pane" id="home">
+		    	<p>Please select the account that you want to link the service to from the list below:</p><br/>
+		    	
+		    	<form>
+		    		<!-- item -->
+			    	<div class="row triple-margin-bottom">
+			    		<p class="text-bold text-uppercase"><input type="radio" value="yes" name="tvservice" class="tvservice"><small>Account #235004546984s</small></p>
+				    	
+				    	<div class="col-sm-3">
+				    		<a href="#" class="text-red">Service Address</a>
+				    	</div>
+				    	<div class="col-sm-9">
+				    		Apartemen Mediterania Garden Residence 1 - Tower Dahlia - Unit D-17-HE Jl. Tanjung Duren Raya Kav. 5-9 Jakarta Barat, 11470
+				    	</div>	
+			    	</div>
+			    	<!-- /item -->
+			    	
+			    	<!-- item -->
+			    	<div class="row triple-margin-bottom">
+			    		<p class="text-bold text-uppercase"><input type="radio" value="yes" name="tvservice" class="tvservice"><small>Account #235004546984s</small></p>
+				    	
+				    	<div class="col-sm-3">
+				    		<a href="#" class="text-red">Service Address</a>
+				    	</div>
+				    	<div class="col-sm-9">
+				    		Apartemen Mediterania Garden Residence 1 - Tower Dahlia - Unit D-17-HE Jl. Tanjung Duren Raya Kav. 5-9 Jakarta Barat, 11470
+				    	</div>	
+			    	</div>
+			    	<!-- /item -->
+			    	
+			    	<!-- item -->
+			    	<div class="row triple-margin-bottom">
+			    		<p class="text-bold text-uppercase"><input type="radio" value="yes" name="tvservice" class="tvservice"><small>Account #235004546984s</small></p>
+				    	
+				    	<div class="col-sm-3">
+				    		<a href="#" class="text-red">Service Address</a>
+				    	</div>
+				    	<div class="col-sm-9">
+				    		Apartemen Mediterania Garden Residence 1 - Tower Dahlia - Unit D-17-HE Jl. Tanjung Duren Raya Kav. 5-9 Jakarta Barat, 11470
+				    	</div>	
+			    	</div>
+			    	<!-- /item -->
+			    	
+			    	<!-- item -->
+			    	<div class="row triple-margin-bottom">
+			    		<p class="text-bold text-uppercase"><input type="radio" value="yes" name="tvservice" class="tvservice"><small>Account #235004546984s</small></p>
+				    	
+				    	<div class="col-sm-3">
+				    		<a href="#" class="text-red">Service Address</a>
+				    	</div>
+				    	<div class="col-sm-9">
+				    		Apartemen Mediterania Garden Residence 1 - Tower Dahlia - Unit D-17-HE Jl. Tanjung Duren Raya Kav. 5-9 Jakarta Barat, 11470
+				    	</div>	
+			    	</div>
+			    	<!-- /item -->
+			    	
+			    	<!-- item -->
+			    	<div class="row triple-margin-bottom">
+			    		<p class="text-bold text-uppercase"><input type="radio" value="yes" name="tvservice" class="tvservice"><small>Account #235004546984s</small></p>
+				    	
+				    	<div class="col-sm-3">
+				    		<a href="#" class="text-red">Service Address</a>
+				    	</div>
+				    	<div class="col-sm-9">
+				    		Apartemen Mediterania Garden Residence 1 - Tower Dahlia - Unit D-17-HE Jl. Tanjung Duren Raya Kav. 5-9 Jakarta Barat, 11470
+				    	</div>	
+			    	</div>
+			    	<!-- /item -->
+			    	
+			    	<div class="col-lg-2 col-xs-12 pull-right">
+			    		<button class="btn btn-lg btn-block btn-red btn-next">select account</button>
+			    	</div>
+		    	</form>
+		    	
+		    </div>
+		    
+		    <!-- new account content -->
+		    <div role="tabpanel" class="tab-pane active" id="profile">
+		    	<p>You are creating new account for this product. Please proceed with the installation address below.</p><br/>
+		    	<p class="text-uppercase text-bold"><small>Please Enter Installation Address</small></p>
+		    	
+		    	<form class="form-inline" role="form"">
+				  <div class="form-group form-group-custom col-sm-7 relative"  style="padding-left: 0;">
+				    <img src="img/magnify-icon.png" class="magnify-icon">
+				    <input type="" class="form-control form-control-custom" id="" placeholder="area">
+				  </div>
+				  <button type="submit" class="btn btn-lg-custom btn-red btn-next">check</button>
+				</form>
+				<br/>
+				<p><em class="well-vertical-margin"><small>For example, jalan, nomor, cluster, kompleks, RT/RW, kelurahan, kecamata</small></em></p>
+		    	
+		    	<div class="clearfix"></div>
+		    	<div class="col-sm-8 less-padding well-vertical-margin">
+		    		<img width="98%" src="img/map.jpg">
+		    	</div>
+		    	
+		    	<div class="col-sm-4">
+		    		<div class="col-sm-4 col-xs-12"><center><img src="img/tick-big.png"></center></div>
+		    		<div class="col-sm-8 gotham29">There are Service Packages Available</div>
+		    		<div class="clearfix"></div>
+		    		<br/>
+		    		<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>
+		    		<a href="#" class="btn btn-lg btn-red btn-next" role="button">see packages</a>
+		    	</div>
+		    </div>
+		    <!--  new account content ends -->
+		    
+		  </div>
+		
 		</div>
 	</div>
 	
-	<div class="col-md-11 col-xs-12 col-sm-11 large-margin-top">
-		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
-			<img width="100%" src="img/eclipse-red-step-1.png">	
-		</div>
-		<div class="col-xs-10">
-			<p>You can start by choosing your</p>
-			<p style="font-size: 38px; letter-spacing: -3px; line-height: 36px;">Available Services</p>
-		</div>
-		
-		<div class="col-md-4 col-xs-12 col-sm-4 less-padding medium-margin-top col-md-offset-1 col-sm-offset-1">
-			<img class="hidden-xs medium-margin-right" src="img/img-indihome.png">
-			<br/>
-			<p style="color: black; font-size: 14px; line-height: 40px; font-family: 'Conv_GothamRnd-Bold';">INDIHOME</p>
-			<p>
-				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
-			</p>
-		</div>
-		<div class="col-md-7 col-xs-12 col-sm-7 less-padding" style="margin-top: 25px; padding-right: 0;">
-			<script>
-				$( document ).ready(function() {
-					$( ".box-paket" ).click(function(){
-						$( ".box-paket" ).removeClass("active");
-						$( ".icon-selected" ).addClass("hidden");
-						$('input:radio').removeAttr('checked');
-						$(this).addClass("active");
-						$(this).find(".icon-selected").removeClass("hidden");
-						$(this).find("input:radio").attr('checked','checked');
-					});
-				});
-			</script>
-			
-			<form method="get" action="">
-				<div class="col-xs-12 box-paket active">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" checked="checked" name="type" value="High">
-					<div class="col-sm-12 col-md-4 ">
-						<span class="title-medium-size">IndiHome High</span>
-					</div>
-					<img class="icon-selected" src="img/icon-selected.png">
-					<div class="pull-right col-md-8 col-sm-11 col-sm-offset-1 col-xs-10">
-						<table class="table-spec">
-							<tr>
-								<td width="30%" align="right">Zone</td>
-								<td width="20%"></td>
-								<td width="50%">1</td>
-							</tr>
-							<tr>
-								<td align="right">Speed</td>
-								<td></td>
-								<td>10 - 100mbps</td>
-							</tr>
-							<tr>
-								<td align="right">Contract</td>
-								<td></td>
-								<td>24 months</td>
-							</tr>
-							<tr>
-								<td align="right">From</td>
-								<td></td>
-								<td>Rp. 455.000</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket">
-					<!-- This Input Radio Button to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="Medium">
-					<div class="col-sm-12 col-md-4 ">
-						<span class="title-medium-size">IndiHome Mid</span>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="pull-right col-md-8 col-sm-11 col-sm-offset-1 col-xs-10">
-						<table class="table-spec">
-							<tr>
-								<td width="30%" align="right">Zone</td>
-								<td width="20%"></td>
-								<td width="50%">1</td>
-							</tr>
-							<tr>
-								<td align="right">Speed</td>
-								<td></td>
-								<td>10 - 100mbps</td>
-							</tr>
-							<tr>
-								<td align="right">Contract</td>
-								<td></td>
-								<td>24 months</td>
-							</tr>
-							<tr>
-								<td align="right">From</td>
-								<td></td>
-								<td>Rp. 455.000</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket">
-					<!-- This Input Radio Button to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="Low">
-					<div class="col-sm-12 col-md-4 ">
-						<span class="title-medium-size">IndiHome Mid</span>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="pull-right col-md-8 col-sm-11 col-sm-offset-1 col-xs-10">
-						<table class="table-spec">
-							<tr>
-								<td width="30%" align="right">Zone</td>
-								<td width="20%"></td>
-								<td width="50%">1</td>
-							</tr>
-							<tr>
-								<td align="right">Speed</td>
-								<td></td>
-								<td>10 - 100mbps</td>
-							</tr>
-							<tr>
-								<td align="right">Contract</td>
-								<td></td>
-								<td>24 months</td>
-							</tr>
-							<tr>
-								<td align="right">From</td>
-								<td></td>
-								<td>Rp. 455.000</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-12 less-padding text-right form-group">
-					<button type="submit" style="width: 20%; display: initial;" class="btn btn-lg btn-block btn-red well-margin-bottom">Next</button>
-				</div>
-			</form>
-			
-		</div>
-	</div>
-	<div class="col-md-4 col-md-offset-8 col-xs-12 col-sm-6 col-sm-offset-6 less-padding text-right">
-		<div class="box-assistance">
-			<center>
-				<p class="gotham-bold">Need Assistance</p>
-				<div class="col-md-6" style="border-right: 1px solid #c7c7c7">
-					<div class="float-right align-left call-us-assist">
-						<p class="text-uppercase">call us</br>
-						<a href="#">+62-22-4521404</a></p>
-					</div>
-					<div class="float-right">
-						<img src="img/icon-support-phone.png" style="margin-right: 10px;">
-					</div>
-					
-				</div>
-				<div class="col-md-6" style="padding-left: 40px;">
-					<div class="float-left">
-						<img src="img/icon-livechat-red.png">
-					</div>
-					<div class="float-left align-left live-chat-assist">
-						<a href="#"><p class="text-uppercase">live</br>chat</p>
-						</a>
-					</div>
-				</div>
-				
-			</center>
-		</div>
-		<br/><br/><br/>
-	</div>
    </div>
  </div>
 </div></div>
@@ -568,6 +515,5 @@
         </div>  
     </div> 
     <!-- End footer  -->  
-    <!--  test commit ke github lagi -->
 </body>
 </html>

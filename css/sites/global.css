@@ -480,3 +480,85 @@ padding: 8px 50px;
 	right: 2px;
 	top: 2px;
 }
+
+/* additional philip */
+.well-vertical-padding{
+	padding: 10px 0;
+}
+
+.nav-tabs-custom > li.active > a, .nav-tabs-custom > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	background: none !Important;
+	border: none !important;
+}
+
+.nav-tabs-custom > li > a{
+	border: none;
+	text-transform: uppercase;
+	font: 14px 'Conv_GothamRnd-Bold';
+	color:#ccc;
+}
+.nav-tabs-custom .active{
+	border-bottom: 2px solid #e41b13 !important;
+	border-top: none !Important;
+	border-left: none !important;
+	border-right: none !important;
+}
+
+.tab-content-custom .active{
+	border: none !important;
+}
+
+.tab-content-custom{
+	padding: 32px 0 10px 0;
+	font-size: 16px;
+}
+
+.form-group-custom input.form-control-custom{
+	border: none;
+	border-radius: 0;
+	width: 100%;
+	background: white;
+	height: 50px;
+	padding-left: 36px;
+}
+
+.btn-lg-custom{
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 6px 20px;
+}
+
+.relative{position: relative}
+
+.magnify-icon{
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+
+/* repeat from page customize css */
+.text-uppercase{text-transform: uppercase;}
+.less-padding{ padding: 0 !important;}
+.less-margin{ margin: 0 !important;}
+.well-vertical-margin{margin: 10px 0;}
+.well-margin-bottom{margin-bottom: 20px;}
+.text-black{color:#000;}
+.text-bold{font-weight: bold;}
+.text-white{color:#fff;}
+.text-line-34{line-height: 34px;}
+.text-red{color:#e41b13;}
+
+.large-margin-top{margin-top: 55px;}
+.medium-margin-top{margin-top: 25px;}
+.medium-margin-right{margin-right: 15px;}
+.triple-margin-bottom{margin: 0 0 60px 0;}
+
+.gotham29{font: 29px 'Conv_GothamRnd-Bold'}
+
+@media (min-width : 320px) and (max-width : 480px) {
+	.gotham29{
+		text-align: center;
+		margin: 10px 0;
+	}
+}

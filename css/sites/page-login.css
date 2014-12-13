@@ -275,7 +275,9 @@
     font-size: 0.9em;
     width: 100%;
     text-align: center;
-    height: 34px; }
+    height: 34px; 
+    line-height: 34px;
+    }
   #sites-page {
     padding-top: 100px; }
     #sites-page h1 {
