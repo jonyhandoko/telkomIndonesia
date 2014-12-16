@@ -332,10 +332,10 @@
 		    	<p>You are creating new account for this product. Please proceed with the installation address below.</p><br/>
 		    	<p class="text-uppercase text-bold"><small>Please Enter Installation Address</small></p>
 		    	
-		    	<form class="form-inline" role="form"">
+		    	<form class="form-inline" role="form">
 				  <div class="form-group form-group-custom col-sm-7 relative"  style="padding-left: 0;">
 				    <img src="img/magnify-icon.png" class="magnify-icon">
-				    <input type="" class="form-control form-control-custom" id="" placeholder="area">
+				    <input type="" class="form-control form-control-custom" id="" placeholder="Jl. Tanjung Duren Raya Kav. 5-9">
 				  </div>
 				  <button type="submit" class="btn btn-lg-custom btn-red btn-next">check</button>
 				</form>
@@ -344,7 +344,71 @@
 		    	
 		    	<div class="clearfix"></div>
 		    	<div class="col-sm-8 less-padding well-vertical-margin">
-		    		<img width="98%" src="img/map.jpg">
+		    		<!-- <img width="98%" src="img/map.jpg"> -->
+					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+					<script type="text/javascript">
+						function initialize() {
+
+							var ll = document.getElementById('ll'),
+								map,
+								markers = [],
+								defaultLatlng = new google.maps.LatLng(-6.174779,106.788563),
+								pin = 'img/pin-marker.png',
+								mapOptions = {
+									center: defaultLatlng,
+									zoom: 15,
+									disableDefaultUI: true
+								},
+								map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions),
+								marker = new google.maps.Marker({
+									map: map,
+									draggable: true,
+									animation: google.maps.Animation.DROP,
+									position: defaultLatlng,
+									icon: pin
+								});
+								markers.push(marker);
+								ll.value = -6.174779,106.788563;
+
+							google.maps.event.addListener(marker, 'click', toggleBounce);
+							google.maps.event.addListener(marker, 'dragend', upLatLng);
+							google.maps.event.addListener(map, 'click', function (e) { upMark(e.latLng); ll.value = e.latLng.lat() + ' ' + e.latLng.lat() });
+
+							function toggleBounce() {
+								if (marker.getAnimation() != null) {
+									marker.setAnimation(null);
+								} else {
+									marker.setAnimation(google.maps.Animation.BOUNCE);
+								}
+							}
+							function upLatLng() {
+								ll.value = this.getPosition().lat() + ' ' + this.getPosition().lng();
+							}
+							function upMark (loc) {
+								delMarks();
+								var marker = new google.maps.Marker({
+									map: map,
+									draggable: true,
+									animation: google.maps.Animation.DROP,
+									position: loc,
+									icon: pin
+								});
+								markers.push(marker);
+							}
+							function delMarks() {
+								if (markers) {
+									for (i in markers) {
+										markers[i].setMap(null);
+									}
+									markers.length = 0;
+								}
+							}
+
+						}
+						google.maps.event.addDomListener(window, 'load', initialize);
+					</script>
+					<div id="map-canvas"></div>
+					<input type="hidden" id="ll">
 		    	</div>
 		    	
 		    	<div class="col-sm-4">
