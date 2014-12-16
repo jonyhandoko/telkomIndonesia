@@ -68,79 +68,83 @@
 	<a href="#" class="back-to-top">Back to Top</a>
 
 	<div id="header">
-		<div class="container">
-			<div class="row block-top">
-				<div id="nav-left" class="col-md-4 col-xs-4 col-sm-4">
-					<div class="nav-top hidden-sm hidden-xs">
-						<ul>
-							<li><a href="#">Pelanggan</a></li>
-							<li><a href="#">Bisnis</a></li>
-							<li><a href="#">Tentang Telkom</a></li>
-						</ul>
-					</div>
-					<div class="dropdown text-right hidden-lg hidden-md">
-						<button class="drop-top btn btn-default dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">Pelanggan</button>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="top-left-menu">
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bisnis</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tentang Telkom</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-8 hidden-xs hidden-sm text-right">
-					<div class="language hidden-sm hidden-xs">
-						<div class="dropdown">
-							<button class="drop-top btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Bahasa Indonesia</button>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">English</a></li>
+		<div class="login">
+			<div class="container">
+				<div class="row block-top">
+					<div id="nav-left" class="col-md-4 col-xs-4 col-sm-4">
+						<div class="nav-top hidden-sm hidden-xs">
+							<ul>
+								<li><a href="#">Pelanggan</a></li>
+								<li><a href="#">Bisnis</a></li>
+								<li><a href="#">Tentang Telkom</a></li>
+							</ul>
+						</div>
+						<div class="dropdown text-right hidden-lg hidden-md">
+							<button class="drop-top btn btn-default dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">Pelanggan</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="top-left-menu">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bisnis</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tentang Telkom</a></li>
 							</ul>
 						</div>
 					</div>
-					<div id="block-search-head">
-						<form action="" method="POST" id="search-box" class="navbar-right" role="search">
-							<div class="form-group box-search">
-								<input type="text" class="form-control" placeholder="Search" id="header-search-input" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
-								<button type="submit">go</button>
+					<div class="col-md-8 hidden-xs hidden-sm text-right">
+						<div class="language hidden-sm hidden-xs">
+							<div class="dropdown">
+								<button class="drop-top btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Bahasa Indonesia</button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">English</a></li>
+								</ul>
 							</div>
-						</form>
+						</div>
+						<div class="user">
+							<img src="img/user.png" class="img-responsive pull-left">
+							<p>HI, ANITA!</p>
+						</div>
+					</div>
+					<div id="box-search" class="col-xs-2 col-sm-1 visible-xs visible-sm">
+						<div class="icon-search" id="box-form-search">
+							<img src="img/icon.search.png">
+						</div>
+					</div>
+					<div id="box-user" class="col-xs-2 col-sm-1 visible-xs visible-sm">
+						<div class="icon-user">
+							<img src="img/icon.user.png">
+						</div>
 					</div>
 				</div>
-				<div id="box-search" class="col-xs-2 col-sm-1 visible-xs visible-sm">
-					<div class="icon-search" id="box-form-search">
-						<img src="img/icon.search.png">
+				<div class="row block-nav">
+					<div id="logo" class="col-md-2 col-xs-1 col-sm-3">
+						<a href="/" title="Telkom Indonesia" class="logo">Telkom Indonesia</a>	
 					</div>
-				</div>
-				<div id="box-user" class="col-xs-2 col-sm-1 visible-xs visible-sm">
-					<div class="icon-user">
-						<img src="img/icon.user.png">
-					</div>
-				</div>
-			</div>
-			<div class="row block-nav">
-				<div id="logo" class="col-md-2 col-xs-1 col-sm-3">
-					<a href="/" title="Telkom Indonesia" class="logo">Telkom Indonesia</a>	
-				</div>
-				<button id="nav-mob" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<div class="text">Menu</div>
-				</button>
-				<div class="col-md-10 col-xs-12 col-sm-12 navigation">
-					<div class="navbar-collapse collapse">
-						<ul class='collapse-menu hidden-xs hidden-sm'>
-							<li><a id="top-page" href="#">See Menu</a></li>	
-						</ul>					
-						<ul class="expand-menu">
-							<li><a href="#">broadband</a></li>
-							<li><a href="#">wifi</a></li>
-							<li><a href="#">tv</a></li>
-							<li><a href="#">phone</a></li>
-							<li><a href="#">bundles</a></li>
-							<li><a href="#">rewards</a></li>
-							<li><a href="#">magazine</a></li>
-							<li class="nav-shop"><a href="#">Telkom Shop<i class="glyphicon glyphicon-lock"></i></a></li>
-						</ul>
+					<button id="nav-mob" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<div class="text">Menu</div>
+					</button>
+					<div class="col-md-10 col-xs-12 col-sm-12 navigation">
+						<div class="navbar-collapse collapse">
+							<ul class='collapse-menu hidden-xs hidden-sm'>
+								<li><a id="top-page" href="#">See Menu</a></li>	
+							</ul>					
+							<ul class="expand-menu">
+								<li>
+									<div class="dropdown my-dropdown">
+										<a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">MY PURCHASE</a>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<li role="presentation"><a role="menuitem" href="#">VIEW MY CART</a></li>
+											<li role="presentation"><a role="menuitem" href="#">VIEW ORDER</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">BILLINGS & TOP UPS</a></li>
+								<li><a href="#">PRODUCTS & SERVICES</a></li>
+								<li><a href="#">MY NOTIFICATIONS</a></li>
+								<li><a href="#">T-MONEY</a></li>
+								<li><a href="#">SUPPORT</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
