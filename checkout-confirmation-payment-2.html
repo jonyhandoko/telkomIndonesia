@@ -27,10 +27,10 @@
 	<link href="css/sites/page-feedback.css" rel="stylesheet" type="text/css"/>
 	<link href="css/sites/page-errors.css" rel="stylesheet" type="text/css"/>
 	<link href="css/sites/page-login.css" rel="stylesheet" type="text/css"/>
-
+    
+    <link href="css/sites/global.css" rel="stylesheet" type="text/css"/>
 	<link href="css/sites/page-customize.css" rel="stylesheet" type="text/css"/>
-	<link href="css/sites/global.css" rel="stylesheet" type="text/css"/>
-
+	
 	<link rel="stylesheet" type="text/css" href="css/typo.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="css/box-search.css">
@@ -218,217 +218,272 @@
 	</div>
 
 	<!-- We Are Here -->
-	<div class="override">
+	<div class="override clearfloat">
 		<div id="feedback-form">
 			<div id="customize-content">
 				<div class="col-xs-12">
 					<div class="breadcrumb">
 						<ul id="progressbar">
-							<li style="z-index: 2;"><p>CUSTOMER DATA</p></li>
-							<li><p>PAYMENT</p></li>
-							<li class="active"><p>CONFIRMATION</p></li>
+							<li style="z-index: 3;"><p class="text-uppercase">customer data</p></li>
+							<li style="z-index: 2;" class="active"><p class="text-uppercase">payment</p></li>
+							<li><p class="text-uppercase">confirmation</p></li>
 						</ul>
 					</div>
 				</div>
 				<div class="container">
 					<div class="row" style="margin-bottom: 40px;">
+						<div class="col-sm-5 col-xs-12" style="float: right;">
+                            <!--  fixing  -->
+                            <div id="">
+                            	<div class="panel panel-default">
+									<div class="panel-heading">
+										<p class="panel-title text-uppercase pull-left">your order</p>
+										<a href="#" class="text-red pull-right">edit</a>
+									</div>
+									<div class="panel-body">
+										<form id="form-feedback">
+											<div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Account Number</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Reference Number</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Date</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                <hr/>
+			                                
+			                                <address>
+			                                	<span class="text-bold">Service Address</span><br/>
+			                                	<p class="text-line-24"><small>Apartemen Mediterania Garden Residence Jl Tanjung Duren Raya Kav. 5-9</small></p>
+			                                </address>
+			                                <hr/>
+			                                
+			                                <p class="text-bold">Package Details</p>
+			                                <div class="clearfix"></div>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-line-40" style="margin-left: 10px;">PSTN</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class=" text-line-40" style="margin-left: 10px;">Broadband</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Add-on name</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">Rp 11.000</p>
+			                                    </div>
+			                                </div>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Add-on name</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">0</p>
+			                                    </div>
+			                                </div>
+			                                <hr/>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-bold text-line-40">Monthly Fee</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40 text-bold">Rp. 466.000</p>
+			                                    </div>
+			                                </div>
+			                                <hr/>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-bold">Wireless Modem<br/><small><a href="#" class="text-red">Learn More</a></small></p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right">0</p>
+			                                    </div>
+			                                </div>
+			                                <br/>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-bold">Delivery and Installation<br/><small><a href="#" class="text-red">Learn More</a></small></p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right">0</p>
+			                                    </div>
+			                                </div>
+			                                
+										</form>
+									</div>
+									
+									<div class="row" style="background: #e9e9e9; overflow: auto; padding: 10px; margin: 0px 0;">
+	                                	<div class="col-xs-7">
+	                                        <p class="text-bold">Subtotal</p>
+	                                    </div>
+	                                    <div class="col-xs-5">
+	                                        <p class="text-right">Rp. 466.000</p>
+	                                    </div>
+	                                </div>
+	                                
+	                                <div class="row" style="background: #fff; overflow: auto; padding: 10px; margin: 0px 0;">
+	                                	<div class="col-xs-12">
+	                                        <p class="text-right">tax Rp. 99.000/mth</p>
+	                                    </div>
+	                                </div>
+	                                
+									<div class="row" style="background: #e9e9e9; overflow: auto; padding: 10px; margin: 0px 0;">
+	                                	<div class="col-xs-7">
+	                                        <p class="text-bold">total</p>
+	                                    </div>
+	                                    <div class="col-xs-5">
+	                                        <p class="text-right">Rp. 644.000</p>
+	                                    </div>
+	                                </div>
+	                                
+									
+								</div>
+                            </div>
+							<!-- /fixing -->    
+						</div>
+						
 						<div class="col-sm-7 col-xs-12">
-							<h3>Confirmation</h3>
-							<p>Please print this for your reference.</p>
-						</div>
-						<div class="col-sm-5 col-xs-12">
-							<div class="box-assistance">
-								<p class="title">Need Assistance?</p>
-								<div class="col-xs-7">
-									<div class="blocked">
-										<img class="img-resposive pull-left" src="img/icon-support-phone.png">
-										<a href=""><p class="text-uppercase">call us<br>+62-22-4521404</p></a>
+							<h3>Payment Details</h3>
+							<form class="payment_information">
+                                <div class="double-margin-bottom">
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><img src="img/visa.png">&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><img src="img/mastercard.png">&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><img src="img/amex.png">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Your Full Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <div class="form-group col-sm-6 less-padding col-xs-6">
+                                    <label>Your Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                                
+                                <div class="form-group col-sm-5 less-padding col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <label>Contact Number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <div class="form-group double-margin-bottom">
+                                    <label>Your Address</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <p class="well-vertical-margin"><strong>Billing Address</strong></p>
+                                <p>Same as your Service Address?</p>
+                                
+                                <input type="radio" class="tvservice" name="tvservice" value="yes">NO
+                                <input class="well-margin-left" type="radio" class="tvservice" name="tvservice" value="yes">YES
+                                
+                                <div class="clearfix"></div>
+                                <div class="form-group">
+                                    <label>Street Address</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <div class="form-group col-sm-6 less-padding col-xs-6">
+                                    <label>City</label>
+                                    <div style="position: relative;">
+										<select class="form-control">
+											<option>Choose one</option>
+											<option>Laki</option>
+											<option>Perempuan</option>
+										</select>
+										<img class="img-responsive form-img sel" src="img/arrow-dropdown.png">
 									</div>
-								</div>
-								<div class="col-xs-5 divide">
-									<div class="blocked">
-										<img class="img-resposive pull-left" src="img/icon-livechat-red.png">
-										<a href=""><p class="text-uppercase">live<br>chat</p></a>
+                                </div>
+                                
+                                <div class="form-group col-sm-5 less-padding col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                    <label>Province</label>
+                                    <div style="position: relative;">
+										<select class="form-control">
+											<option>Choose one</option>
+											<option>Laki</option>
+											<option>Perempuan</option>
+										</select>
+										<img class="img-responsive form-img sel" src="img/arrow-dropdown.png">
 									</div>
-								</div>
-							</div>
+                                </div>
+                                
+                                <div class="form-group col-sm-6 less-padding col-xs-12">
+                                    <label>Postal Code</label>
+                                    <div class="row less-margin">
+                                    	<div class="col-sm-6 less-padding col-xs-8">
+                                    		<input type="text" class="form-control">
+	                                    </div>
+                                    	<div class="col-sm-6 col-xs-4">
+	                                    	<button class="btn btn-red btn-block" type="submit">retrieve</button>
+	                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                
+                                <div class="form-group col-sm-5 less-padding col-sm-offset-1 col-xs-12">
+                                    <label>Country</label>
+                                    <div style="position: relative;">
+										<select class="form-control">
+											<option>Choose one</option>
+											<option>Laki</option>
+											<option>Perempuan</option>
+										</select>
+										<img class="img-responsive form-img sel" src="img/arrow-dropdown.png">
+									</div>
+                                </div>
+                                <div class="clearfix"></div>
+                                
+                                <br/>
+                                <div class="row">
+                                	<div class="col-md-7">
+                                		<div class="col-xs-6 less-padding"><button class="btn btn-grey text-uppercase btn-block" type="submit">cancel order</button></div>
+		                               	<div class="col-xs-6"><button class="btn btn-grey text-uppercase btn-block" type="submit">edit order</button></div>
+		                                
+                                	</div>
+                                	<div class="col-md-3 col-sm-12 col-xs-12"><button class="btn btn-red btn-block" type="submit">pay</button></div>
+                                </div>
+                                
+                                
+	                              
+                            </form>
 						</div>
-						<div class="col-xs-12">
-							<br>
-							<div class="print-ref blocked">
-								<hr>
-								<p>Account Number: #235004546384</p>
-								<p>Reference Number: 3241203982342345</p>
-								<p>Date: 06/08/2014</p>
-								<hr>
-								<button type="button" class="btn btn-red btn-print">PRINT</button>
-							</div>
-						</div>
+						
+						
 					</div>
 
-					<div id="orders-cart">
+					
 
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<p class="panel-title">SERVICE ORDERS CART</p>
-							</div>
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-sm-2">
-										<img src="img/round-cart.png" class="img-responsive">
-									</div>
-									<div class="col-sm-10 col-xs-12 col-no-pad">
-										<div class="blocked">
-											<div class="col-md-5 pull-right">
-												<div class="action text-right">
-													<img src="img/quest.png" class="img-responsive" style="display: block !important;">
-												</div>
-											</div>
-											<div class="col-md-7">
-												<div class="list blocked">
-													<div class="item">
-														<div class="col-xs-12">
-															<p class="bold">OFFER NAME</p>
-															<p>Indi Home High</p>
-															<ul class="list-unstyled">
-																<li>
-																	<p>PSTN <span class="pull-right">Rp. xxxx</span></p>
-																	<ul class="list-unstyled">
-																		<li><p>pstn 01 <span class="pull-right">Rp. xxxx</span></p></li>
-																	</ul>
-																</li>
-																<li>
-																	<p>Broadband</p>
-																	<ul class="list-unstyled">
-																		<li><p>5Mbps <span class="pull-right">Rp. xxxx</span></p></li>
-																	</ul>
-																</li>
-																<li>
-																	<p>Usee TV</p>
-																	<ul class="list-unstyled">
-																		<li><p>Basic Packages <span class="pull-right">Rp. xxxx</span></p></li>
-																		<li><p>Movvy <span class="pull-right">Rp. xxxx</span></p></li>
-																		<li><p>Showy <span class="pull-right">Rp. xxxx</span></p></li>
-																		<li><p>Melon <span class="pull-right">Rp. xxxx</span></p></li>
-																		<li><p>Gold <span class="pull-right">Rp. xxxx</span></p></li>
-																	</ul>
-																</li>
-															</ul>
-														</div>
-													</div>
-													<div class="item">
-														<div class="col-xs-6">
-															<p class="bold">ADD-ON NAME</p>
-														</div>
-														<div class="col-xs-6">
-															<p class="text-right">Rp. 11.000 / mth</p>
-														</div>
-													</div>
-													<div class="item">
-														<div class="col-xs-6">
-															<p class="bold">ADD-ON NAME</p>
-														</div>
-														<div class="col-xs-6">
-															<p class="text-right">Rp. 0 / mth</p>
-														</div>
-													</div>
-												</div>
-												<hr>
-												<div class="total blocked">
-													<div class="col-xs-6">
-														<p>Monthly Fee</p>
-													</div>
-													<div class="col-xs-6">
-														<p class="text-right">Rp. 466.000 / mth</p>
-													</div>
-												</div>
-												<hr>
-												<div class="list blocked">
-													<div class="item">
-														<div class="col-xs-8">
-															<p class="bold one-learn">DELIVERY & INSTALLATION</p>
-															<a href="" class="pull-left"><small>Learn more</small></a>
-														</div>
-														<div class="col-xs-4">
-															<p class="text-right">Rp. 0 / mth</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="amount blocked">
-											<div class="col-md-7 col-sm-4"></div>
-											<div class="col-md-5 col-sm-8 col-xs-12">
-												<div class="item">
-													<div class="col-xs-6">
-														<p>Subtotal</p>
-													</div>
-													<div class="col-xs-6">
-														<p>Rp. 466.000</p>
-													</div>
-												</div>
-												<div class="item">
-													<div class="col-xs-6">
-														<p>Tax</p>
-													</div>
-													<div class="col-xs-6">
-														<p>Rp. 99.000</p>
-													</div>
-												</div>
-												<div class="item">
-													<div class="col-xs-6">
-														<p class="bold">Total</p>
-													</div>
-													<div class="col-xs-6">
-														<p class="bold red">Rp. 664.000</p>
-													</div>
-												</div>
-												<button type="button" class="btn btn-red" data-toggle="modal" data-target="#checkout">CHECK OUT SERVICE</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-
-						<div class="print-ref ref-detail blocked">
-							<div class="panel panel-default">
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-sm-2"></div>
-										<div class="col-sm-5">
-											<p class="bold">Customer Data</p>
-											<hr>
-											<p class="name">John Doe</p>
-											<p>Apartemen Mediterania Garden REsidence 1</p>
-											<p>Tower Dahlia - Unit D-17-HE</p>
-											<p>Jl. Tanjung Duren Raya Kav. 5-9</p>
-											<p>Jakarta Barat, 11470.</p>
-										</div>
-										<div class="col-sm-5">
-											<p class="bold">Payment Method</p>
-											<hr>
-											<p>T Money</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="print-ref blocked">
-								<hr>
-								<p class="lone">Please print this for your reference.</p>
-								<hr>
-								<button type="button" class="btn btn-red btn-print">PRINT</button>
-							</div>
-						</div>
-					</div>
-
+					
 					<div class="row blocked" style="margin: 20px 0 40px;">
 						<div class="col-sm-7"></div>
 						<div class="col-sm-5 col-xs-12">
@@ -454,78 +509,6 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="container" id="box-highlight">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="box-title">
-					<h3>RECOMMENDED FOR YOU</h3>
-				</div>
-				<div class="block-inside">
-					<div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
-						<div class="block-img-highlight">
-							<img src="img/img-highlights-01.jpg">
-						</div>
-						<div class="block-info-highlight">
-							<p>Speedy</p> 
-							<h4>Streaming Live Matches</h4>
-							<div class="price">
-								<h5>20.000</h5><span>/ bulan</span>
-							</div>
-						</div>
-						<div class="block-button-higlight">
-							<a href="#" class="btn btn-lg btn-reds">find out more</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
-						<div class="block-img-highlight">
-							<img src="img/img-highlights-02.jpg">
-						</div>
-						<div class="block-info-highlight">
-							<p>INDI Home</p>
-							<h4>Internet <br />Tercepat </h4>
-							<div class="price">
-								<h5>39.000</h5><span>/ bulan</span>
-							</div>
-						</div>
-						<div class="block-button-higlight">
-							<a href="#" class="btn btn-lg btn-reds">find out more</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
-						<div class="block-img-highlight">
-							<img src="img/img-highlights-03.jpg">
-						</div>
-						<div class="block-info-highlight">
-							<p>Lorem ipsum dolor</p> 
-							<h4>Only Limited Time Promos</h4>
-							<div class="price">
-								<h5>35.000</h5><span>/ bulan</span>
-							</div>
-						</div>
-						<div class="block-button-higlight">
-							<a href="#" class="btn btn-lg btn-reds">find out more</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-12 col-sm-4 list-highlight">
-						<div class="block-img-highlight">
-							<img src="img/img-highlights-04.jpg">
-						</div>
-						<div class="block-info-highlight">
-							<p>Speedy Instant</p>
-							<h4>WIFI Speedy Instan Hingga</h4>
-							<div class="price">
-								<h5>60.000</h5><span>/ bulan</span>
-							</div>
-						</div>
-						<div class="block-button-higlight">
-							<a href="#" class="btn btn-lg btn-reds">find out more</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> 
 
 	<div id="news-ticker">
 		<div class="container">

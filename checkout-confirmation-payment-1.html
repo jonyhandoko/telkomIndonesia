@@ -27,10 +27,10 @@
 	<link href="css/sites/page-feedback.css" rel="stylesheet" type="text/css"/>
 	<link href="css/sites/page-errors.css" rel="stylesheet" type="text/css"/>
 	<link href="css/sites/page-login.css" rel="stylesheet" type="text/css"/>
-
+    
+    <link href="css/sites/global.css" rel="stylesheet" type="text/css"/>
 	<link href="css/sites/page-customize.css" rel="stylesheet" type="text/css"/>
-	<link href="css/sites/global.css" rel="stylesheet" type="text/css"/>
-
+	
 	<link rel="stylesheet" type="text/css" href="css/typo.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="css/box-search.css">
@@ -224,334 +224,195 @@
 				<div class="col-xs-12">
 					<div class="breadcrumb">
 						<ul id="progressbar">
-							<li class="active" style="z-index: 3;"><p>CUSTOMER DATA</p></li>
-							<li style="z-index: 2;"><p>PAYMENT</p></li>
-							<li><p>CONFIRMATION</p></li>
+							<li style="z-index: 3;"><p class="text-uppercase">customer data</p></li>
+							<li style="z-index: 2;" class="active"><p class="text-uppercase">payment</p></li>
+							<li><p class="text-uppercase">confirmation</p></li>
 						</ul>
 					</div>
 				</div>
 				<div class="container">
-					<div id="orders-cart">
-						<div id="customer-data">
-							<div class"row">
-
-								<div class="col-sm-6">
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<p class="panel-title">CUSTOMER DATA</p>
-										</div>
-										<div class="panel-body">
-											<p><i>This will lead you to create your TelkomID. Unless otherwise stated, all fields are mandatory.</i></p>
-											<form id="form-feedback">
-												<div class="form-group">
-													<label>Your First Name</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>Your Last Name</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>Your Contact Number</label>
-													<input type="email" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>Your Email Address</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>KTP/Identification Number</label>
-													<div class="row">
-														<div class="col-xs-3">
-															<div style="position: relative;">
-																<select class="form-control">
-																	<option>KTP</option>
-																	<option>SIM</option>
-																</select>
-																<img src="img/arrow-dropdown.png" class="img-responsive form-img sel">
-															</div>
-														</div>
-														<div class="col-xs-9">
-															<input type="text" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="form-group">
-													<div class="row">
-														<div class="col-sm-6">
-															<label>Date of Birth</label>
-															<div style="position: relative;">
-																<input type="text" class="form-control" value="11/10/1988">
-																<img src="img/cal.png" class="img-responsive form-img">
-															</div>
-														</div>
-														<div class="col-sm-6">
-															<label>Gender</label>
-															<div style="position: relative;">
-																<select class="form-control">
-																	<option>Choose one</option>
-																	<option>Laki</option>
-																	<option>Perempuan</option>
-																</select>
-																<img src="img/arrow-dropdown.png" class="img-responsive form-img sel">
-															</div>
-														</div>
-													</div>
-												</div>
-												<br>
-												<p>Please complete the address according to the location specified.</p>
-												<div class="form-group">
-													<div class="row">
-														<div class="col-sm-4">
-															<label>Zip Code</label>
-															<div style="position: relative;">
-																<input type="text" class="form-control" value="12180">
-															</div>
-														</div>
-														<div class="col-sm-4">
-															<label>City</label>
-															<div style="position: relative;">
-																<select class="form-control">
-																	<option>Choose one</option>
-																	<option>Jakarta</option>
-																	<option>Bandung</option>
-																</select>
-																<img src="img/arrow-dropdown.png" class="img-responsive form-img sel">
-															</div>
-														</div>
-														<div class="col-sm-4">
-															<div class="form-group">
-																<label>&nbsp;</label>
-																<div class="maps">
-																	<a href=""><img src="img/pin-marker.png" class="img-responsive">Check Map</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="form-group">
-													<textarea class="form-control" rows="5"></textarea>
-												</div>
-												<p><i>For example, jalan, nomor, cluster, kompleks, RT/RW, kelurahan, kecamatan</i></p>
-											</form>
-										</div>
+					<div class="row" style="margin-bottom: 40px;">
+						<div class="col-sm-5 col-xs-12 confirm-payment-1" style="float:right;">
+                            
+							<!--  fixing  -->
+                            <div id="">
+                            	<div class="panel panel-default">
+									<div class="panel-heading">
+										<p class="panel-title text-uppercase pull-left">your order</p>
+										<a href="#" class="text-red pull-right">edit</a>
 									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<p class="panel-title">BILLING DATA</p>
-										</div>
-										<div class="panel-body">
-											<p><i>Please enter billing address & contact that this product will be billed to. All fields are mandatory.</i></p>
-											<form id="form-feedback">
-												<div class="form-group">
-													<label>Your First Name</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>Your Last Name</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>Your Contact Number</label>
-													<input type="email" class="form-control">
-												</div>
-												<div class="form-group">
-													<div class="row">
-														<div class="col-sm-4">
-															<label>Zip Code</label>
-															<div style="position: relative;">
-																<input type="text" class="form-control" value="12180">
-															</div>
-														</div>
-														<div class="col-sm-4">
-															<label>City</label>
-															<div style="position: relative;">
-																<select class="form-control">
-																	<option>Choose one</option>
-																	<option>Jakarta</option>
-																	<option>Bandung</option>
-																</select>
-																<img src="img/arrow-dropdown.png" class="img-responsive form-img sel">
-															</div>
-														</div>
-														<div class="col-sm-4"></div>
-													</div>
-												</div>
-												<div class="form-group">
-													<textarea class="form-control" rows="5"></textarea>
-												</div>
-												<div class="form-group">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" value="same" checked> My billing address is same as my customer address.
-													</label>
-													</div>
-												</div>
-												<p><i>For example, jalan, nomor, cluster, kompleks, RT/RW, kelurahan, kecamatan</i></p>
-											</form>
-										</div>
+									<div class="panel-body">
+										<form id="form-feedback">
+											<div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Account Number</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Reference Number</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Date</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                <hr/>
+			                                
+			                                <address>
+			                                	<span class="text-bold">Service Address</span><br/>
+			                                	<p class="text-line-24"><small>Apartemen Mediterania Garden Residence Jl Tanjung Duren Raya Kav. 5-9</small></p>
+			                                </address>
+			                                <hr/>
+			                                
+			                                <p class="text-bold">Package Details</p>
+			                                <div class="clearfix"></div>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-line-40" style="margin-left: 10px;">PSTN</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class=" text-line-40" style="margin-left: 10px;">Broadband</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">12345678</p>
+			                                    </div>
+			                                </div>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Add-on name</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">Rp 11.000</p>
+			                                    </div>
+			                                </div>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-uppercase text-bold text-line-40">Add-on name</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">0</p>
+			                                    </div>
+			                                </div>
+			                                <hr/>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-bold text-line-40">Monthly Fee</p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right text-line-40">Rp. 466.000</p>
+			                                    </div>
+			                                </div>
+			                                <hr/>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-bold">Wireless Modem<br/><small><a href="#" class="text-red">Learn More</a></small></p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right">0</p>
+			                                    </div>
+			                                </div>
+			                                <br/>
+			                                <div class="row">
+			                                    <div class="col-xs-7">
+			                                        <p class="text-bold">Delivery and Installation<br/><small><a href="#" class="text-red">Learn More</a></small></p>
+			                                    </div>
+			                                    <div class="col-xs-5">
+			                                        <p class="text-right">0</p>
+			                                    </div>
+			                                </div>
+			                                
+										</form>
 									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<p class="panel-title">SCHEDULE ACTIVATION DATE WITH TELKOM</p>
-										</div>
-										<div class="panel-body">
-											<form id="form-feedback">
-												<div class="form-group">
-													<div class="row">
-														<div class="col-sm-6">
-															<label>Date</label>
-															<div style="position: relative;">
-																<input type="text" class="form-control" value="11/10/1988">
-																<img src="img/cal.png" class="img-responsive form-img">
-															</div>
-														</div>
-														<div class="col-sm-6">
-															<label>Time</label>
-															<div style="position: relative;">
-																<select class="form-control">
-																	<option>9AM - 3PM</option>
-																	<option>3PM - 9PM</option>
-																	<option>9PM - 3AM</option>
-																	<option>3AM - 9AM</option>
-																</select>
-																<img src="img/arrow-dropdown.png" class="img-responsive form-img sel">
-															</div>
-														</div>
-													</div>
-												</div>
-												<br>
-												<div class="text-right">
-													<button type="submit" class="btn btn-grey">EDIT ORDER</button>
-													<button type="submit" class="btn btn-red" style="width: auto !important">SUBMIT ORDER</button>
-												</div>
-											</form>
-										</div>
-									</div>
-									<br><br>
+									
+									<div class="row" style="background: #e9e9e9; overflow: auto; padding: 10px; margin: 0px 0;">
+	                                	<div class="col-xs-7">
+	                                        <p class="text-bold">Subtotal</p>
+	                                    </div>
+	                                    <div class="col-xs-5">
+	                                        <p class="text-right">Rp. 466.000</p>
+	                                    </div>
+	                                </div>
+	                                
+	                                <div class="row" style="background: #fff; overflow: auto; padding: 10px; margin: 0px 0;">
+	                                	<div class="col-xs-12">
+	                                        <p class="text-right">tax Rp. 99.000/mth</p>
+	                                    </div>
+	                                </div>
+	                                
+									<div class="row" style="background: #e9e9e9; overflow: auto; padding: 10px; margin: 0px 0;">
+	                                	<div class="col-xs-7">
+	                                        <p class="text-bold">total</p>
+	                                    </div>
+	                                    <div class="col-xs-5">
+	                                        <p class="text-right">Rp. 644.000</p>
+	                                    </div>
+	                                </div>
+	                                
+									
 								</div>
+                            </div>
+							<!-- /fixing --> 
+							
+							
+						</div>
+						<div class="col-sm-7 col-xs-12">
+							<h3>Payment Details</h3>
+							<form>
+                                <p class="text-radio">
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>T Bank</small>
+                                </p>
+                                <p class="text-radio">
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>T Money</small>
+                                </p>
+                                <p class="text-radio">
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>Credit Card</small>
+                                </p>
+                                <div class="col-md-2 col-md-offset-10 col-sm-12">
+                                	<button class="btn btn-lg btn-red btn-next pull-right btn-block">pay</button>
+                                </div>
+                                
+                            </form>
+						</div>
+						
+					</div>
 
-								<div class="col-sm-6 ">
-									<div id="prev-ref">
-										<div class="panel panel-default top-rad">
-											<div class="panel-heading">
-												<p class="panel-title">YOUR ORDER <a class="pull-right" style="color: #e41b13">Edit</a></p>
-											</div>
-											<div class="panel-body">
-												<div class="col-xs-12 col-no-pad">
-													<div class="list blocked">
-														<div class="item">
-															<div class="col-xs-12">
-																<p class="bold">PACKAGE DETAILS</p>
-																<p>Indi Home High</p>
-																<ul class="list-unstyled">
-																	<li>
-																		<p>PSTN <span class="pull-right">Rp. xxxx</span></p>
-																		<ul class="list-unstyled">
-																			<li><p>pstn 01 <span class="pull-right">Rp. xxxx</span></p></li>
-																		</ul>
-																	</li>
-																	<li>
-																		<p>Broadband</p>
-																		<ul class="list-unstyled">
-																			<li><p>5Mbps <span class="pull-right">Rp. xxxx</span></p></li>
-																		</ul>
-																	</li>
-																	<li>
-																		<p>Usee TV</p>
-																		<ul class="list-unstyled">
-																			<li><p>Basic Packages <span class="pull-right">Rp. xxxx</span></p></li>
-																			<li><p>Movvy <span class="pull-right">Rp. xxxx</span></p></li>
-																			<li><p>Showy <span class="pull-right">Rp. xxxx</span></p></li>
-																			<li><p>Melon <span class="pull-right">Rp. xxxx</span></p></li>
-																			<li><p>Gold <span class="pull-right">Rp. xxxx</span></p></li>
-																		</ul>
-																	</li>
-																</ul>
-															</div>
-														</div>
-														<div class="item">
-															<div class="col-xs-6">
-																<p class="bold">ADD-ON NAME</p>
-															</div>
-															<div class="col-xs-6">
-																<p class="text-right">Rp. 11.000 / mth</p>
-															</div>
-														</div>
-														<div class="item">
-															<div class="col-xs-6">
-																<p class="bold">ADD-ON NAME</p>
-															</div>
-															<div class="col-xs-6">
-																<p class="text-right">Rp. 0 / mth</p>
-															</div>
-														</div>
-													</div>
-													<hr>
-													<div class="total blocked">
-														<div class="col-xs-6">
-															<p>Monthly Fee</p>
-														</div>
-														<div class="col-xs-6">
-															<p class="text-right">Rp. 466.000 / mth</p>
-														</div>
-													</div>
-													<hr>
-													<div class="list blocked">
-															<div class="col-xs-4">
-																<p class="text-right">Rp. 0 / mth</p>
-															</div>
-														</div>
-														<div class="item">
-															<div class="col-xs-8">
-																<p class="bold one-learn">DELIVERY & INSTALLATION</p>
-																<a href=""><small>Learn more</small></a>
-															</div>
-															<div class="col-xs-4">
-																<p class="text-right">Rp. 0 / mth</p>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<p class="panel-title"><b>SUBTOTAL<span class="pull-right">Rp. 466.000</span></b></p>
-											</div>
-											<div class="panel-body">
-												<div class="blocked">
-													<div class="col-xs-12">
-														<div class="item">
-															<p class="text-right">Tax &nbsp;&nbsp;&nbsp;<span>Rp. 99.000 / mth</span></p>
-														</div>
-													</div>
-												</div>									
-											</div>
-										</div>
-										<div class="panel panel-default bot-rad">
-											<div class="panel-heading">
-												<p class="panel-title"><b>TOTAL<span class="pull-right">Rp. 664.000</span></b></p>
-											</div>
-										</div>
+					
+
+					
+					<div class="row blocked" style="margin: 20px 0 40px;">
+						<div class="col-sm-7"></div>
+						<div class="col-sm-5 col-xs-12">
+							<div class="box-assistance">
+								<p class="title">Need Assistance?</p>
+								<div class="col-xs-7">
+									<div class="blocked">
+										<img class="img-resposive pull-left" src="img/icon-support-phone.png">
+										<a href=""><p class="text-uppercase">call us<br>+62-22-4521404</p></a>
 									</div>
-
-									<div class="box-assistance" style="margin: 30px 0 !important;">
-										<p class="title">Need Assistance?</p>
-										<div class="col-xs-7">
-											<div class="blocked">
-												<img class="img-resposive pull-left" src="img/icon-support-phone.png">
-												<a href=""><p class="text-uppercase">call us<br>+62-22-4521404</p></a>
-											</div>
-										</div>
-										<div class="col-xs-5 divide">
-											<div class="blocked">
-												<img class="img-resposive pull-left" src="img/icon-livechat-red.png">
-												<a href=""><p class="text-uppercase">live<br>chat</p></a>
-											</div>
-										</div>
+								</div>
+								<div class="col-xs-5 divide">
+									<div class="blocked">
+										<img class="img-resposive pull-left" src="img/icon-livechat-red.png">
+										<a href=""><p class="text-uppercase">live<br>chat</p></a>
 									</div>
-
 								</div>
 							</div>
 						</div>
@@ -562,7 +423,7 @@
 		</div>
 	</div>
 
-	<div id="news-ticker" style="height: auto;">
+	<div id="news-ticker">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-1 col-xs-12 col-sm-1">
@@ -702,6 +563,42 @@
 						<p class="text-right">
 							&copy; 2014 PT. Telekomunikasi Indonesia, Tbk. All Right Reserved.
 						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Lives Here -->
+	<div class="override">
+		<div id="form-checkout">
+			<div class="modal fade" id="checkout" tabindex="-1" role="dialog" aria-labelledby="checkoutLabel" aria-hidden="true" style="z-index: 10000;">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<form>
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+								<div class="row">
+									<div class="col-sm-6 divide">
+										<p class="bold more">Save check out time and effort by logging in with Telkom</p>
+										<br>
+										<button type="submit" class="btn btn-red">LOGIN</button>
+									</div>
+									<div class="col-sm-6">
+										<p class="bold">Not yet a memeber?</p>
+										<p class="bold">Join us.</p>
+										<p>You can:</p>
+										<ul>
+											<li>Pay your Bills Online</li>
+											<li>See Your Bills</li>
+											<li>Quick check out</li>
+										</ul>
+										<button type="submit" class="btn btn-red">CREATE NOW</button>
+										<p><a href="" class="red">Skip and proceed anonymously</a></p>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
