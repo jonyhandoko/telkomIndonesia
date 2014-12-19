@@ -234,22 +234,106 @@
 					<div class="row" style="margin-bottom: 40px;">
 						<div class="col-sm-7 col-xs-12">
 							<h3>Payment Details</h3>
-							<form>
-                                <p class="text-radio">
-                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>T Bank</small>
-                                </p>
-                                <p class="text-radio">
-                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>T Money</small>
-                                </p>
-                                <p class="text-radio">
-                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>Credit Card</small>
-                                </p>
-                                <button class="btn btn-lg btn-red btn-next pull-right">pay</button>
+							<form class="payment_information">
+                                <div class="double-margin-bottom">
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><img src="img/visa.png">&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><img src="img/mastercard.png">&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><img src="img/amex.png">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Your Full Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <div class="form-group col-sm-6 less-padding">
+                                    <label>Your Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                                
+                                <div class="form-group col-sm-5 less-padding col-sm-offset-1">
+                                    <label>Contact Number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <div class="form-group double-margin-bottom">
+                                    <label>Your Address</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <p class="well-vertical-margin"><strong>Billing Address</strong></p>
+                                <p>Same as your Service Address?</p>
+                                
+                                <input type="radio" class="tvservice" name="tvservice" value="yes">NO
+                                <input class="well-margin-left" type="radio" class="tvservice" name="tvservice" value="yes">YES
+                                
+                                <div class="clearfix"></div>
+                                <div class="form-group">
+                                    <label>Street Address</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <div class="form-group col-sm-6 less-padding">
+                                    <label>City</label>
+                                    <div style="position: relative;">
+										<select class="form-control">
+											<option>Choose one</option>
+											<option>Laki</option>
+											<option>Perempuan</option>
+										</select>
+										<img class="img-responsive form-img sel" src="img/arrow-dropdown.png">
+									</div>
+                                </div>
+                                
+                                <div class="form-group col-sm-5 less-padding col-sm-offset-1">
+                                    <label>Province</label>
+                                    <div style="position: relative;">
+										<select class="form-control">
+											<option>Choose one</option>
+											<option>Laki</option>
+											<option>Perempuan</option>
+										</select>
+										<img class="img-responsive form-img sel" src="img/arrow-dropdown.png">
+									</div>
+                                </div>
+                                
+                                <div class="form-group col-sm-6 less-padding">
+                                    <label>Postal Code</label>
+                                    <div class="row less-margin">
+                                    	<div class="col-sm-6 less-padding">
+                                    		<input type="text" class="form-control">
+	                                    </div>
+                                    	<div class="col-sm-6">
+	                                    	<button class="btn btn-red btn-block" type="submit">retrieve</button>
+	                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="form-group col-sm-5 less-padding col-sm-offset-1">
+                                    <label>Country</label>
+                                    <div style="position: relative;">
+										<select class="form-control">
+											<option>Choose one</option>
+											<option>Laki</option>
+											<option>Perempuan</option>
+										</select>
+										<img class="img-responsive form-img sel" src="img/arrow-dropdown.png">
+									</div>
+                                </div>
+                                <div class="clearfix"></div>
+                                
+                                <div class="form-group double-well-vertical-margin pull-right">
+                                	<button class="btn btn-grey text-uppercase" type="submit">cancel order</button>
+	                                <button class="btn btn-grey text-uppercase" type="submit">edit order</button>
+	                                <button class="btn btn-red" type="submit">pay</button>
+	                                
+                                </div>
+                                
                             </form>
 						</div>
 						<div class="col-sm-5 col-xs-12">
-                            
-							<!--  fixing  -->
+                            <!--  fixing  -->
                             <div id="">
                             	<div class="panel panel-default">
 									<div class="panel-heading">
@@ -383,9 +467,7 @@
 									
 								</div>
                             </div>
-							<!-- /fixing --> 
-							
-							
+							<!-- /fixing -->    
 						</div>
 						
 					</div>
