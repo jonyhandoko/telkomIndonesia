@@ -1031,12 +1031,30 @@ padding: 8px 50px;
 	overflow: auto;
 }
 
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding: 0 5px;
+}
+
+.form-img {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.form-img.sel {
+	top: 13px;
+}
+
 /* repeat from page customize css */
 .text-uppercase{text-transform: uppercase;}
 .less-padding{ padding: 0 !important;}
 .less-margin{ margin: 0 !important;}
 .well-vertical-margin{margin: 10px 0;}
+.double-well-vertical-margin{margin: 25px 0 !important;}
 .well-margin-bottom{margin-bottom: 20px;}
+.well-margin-left{margin-left: 40px !important;}
+.double-margin-bottom{margin-bottom: 20px !important;}
 .text-black{color:#000;}
 .text-bold{font-weight: bold;}
 .text-white{color:#fff;}
@@ -1044,6 +1062,23 @@ padding: 8px 50px;
 .text-line-34{line-height: 34px !important;}
 .text-line-40{line-height: 40px !important;}
 .text-red{color:#e41b13 !important;}
+
+.payment_information{
+	font-size: 14px;
+}
+
+.payment_information .form-group{
+	margin-bottom: 7px;
+	margin-top: 7px;
+}
+
+.payment_information .form-group input{
+	box-shadow: none;
+}
+
+.payment_information .form-group label{
+	font-weight: normal !important;
+}
 
 .large-margin-top{margin-top: 55px;}
 .medium-margin-top{margin-top: 25px;}
