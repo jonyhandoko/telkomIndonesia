@@ -253,6 +253,7 @@
 	.tv-guide .time {
 		padding: 0;
 	}
+	
 	/*.schedule .channels .row,
 	.channels [class*="col-"] {
 		display: block;
@@ -260,6 +261,18 @@
 	.schedule .channels .row {
 		float: left;
 	}*/
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.double-button-wrapper{
+		margin-bottom:10px;
+		overflow: auto;
+		margin: 0 -15px;
+	}
+	
+	.double-button-wrapper .col-xs-12{
+		margin-top: 10px;
+	}
 }
 
 
@@ -822,6 +835,11 @@
 	.override .ref-detail .panel-body .col-sm-5:last-child {
 		margin-top: 40px
 	}
+	
+	.confirm-payment-1{
+		float: left !important;
+	}
+	
 }
 
 
@@ -1046,6 +1064,10 @@ select {
 	top: 13px;
 }
 
+.panel-heading{
+	overflow: auto;
+}
+
 /* repeat from page customize css */
 .text-uppercase{text-transform: uppercase;}
 .less-padding{ padding: 0 !important;}
@@ -1062,6 +1084,7 @@ select {
 .text-line-34{line-height: 34px !important;}
 .text-line-40{line-height: 40px !important;}
 .text-red{color:#e41b13 !important;}
+.clearfloat{float: none !important;}
 
 .payment_information{
 	font-size: 14px;

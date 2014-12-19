@@ -218,7 +218,7 @@
 	</div>
 
 	<!-- We Are Here -->
-	<div class="override">
+	<div class="override clearfloat">
 		<div id="feedback-form">
 			<div id="customize-content">
 				<div class="col-xs-12">
@@ -232,28 +232,14 @@
 				</div>
 				<div class="container">
 					<div class="row" style="margin-bottom: 40px;">
-						<div class="col-sm-7 col-xs-12">
-							<h3>Payment Details</h3>
-							<form>
-                                <p class="text-radio">
-                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>T Bank</small>
-                                </p>
-                                <p class="text-radio">
-                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>T Money</small>
-                                </p>
-                                <p class="text-radio">
-                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>Credit Card</small>
-                                </p>
-                                <button class="btn btn-lg btn-red btn-next pull-right">pay</button>
-                            </form>
-						</div>
-						<div class="col-sm-5 col-xs-12">
+						<div class="col-sm-5 col-xs-12 confirm-payment-1" style="float:right;">
                             
 							<!--  fixing  -->
                             <div id="">
                             	<div class="panel panel-default">
 									<div class="panel-heading">
-										<p class="panel-title text-uppercase">your order</p>
+										<p class="panel-title text-uppercase pull-left">your order</p>
+										<a href="#" class="text-red pull-right">edit</a>
 									</div>
 									<div class="panel-body">
 										<form id="form-feedback">
@@ -386,6 +372,24 @@
 							<!-- /fixing --> 
 							
 							
+						</div>
+						<div class="col-sm-7 col-xs-12">
+							<h3>Payment Details</h3>
+							<form>
+                                <p class="text-radio">
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>T Bank</small>
+                                </p>
+                                <p class="text-radio">
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>T Money</small>
+                                </p>
+                                <p class="text-radio">
+                                    <input type="radio" class="tvservice" name="tvservice" value="yes"><small>Credit Card</small>
+                                </p>
+                                <div class="col-md-2 col-md-offset-10 col-sm-12">
+                                	<button class="btn btn-lg btn-red btn-next pull-right btn-block">pay</button>
+                                </div>
+                                
+                            </form>
 						</div>
 						
 					</div>
