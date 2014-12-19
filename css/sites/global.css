@@ -1017,6 +1017,20 @@ padding: 8px 50px;
 	left: 10px;
 }
 
+.text-radio input{
+	margin: 3px 4px 0 0 !important;
+	background: red;
+}
+
+.box-title-wrapper{
+	background:#e9e9e9;
+	line-height: 60px;
+	padding: 0 20px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	overflow: auto;
+}
+
 /* repeat from page customize css */
 .text-uppercase{text-transform: uppercase;}
 .less-padding{ padding: 0 !important;}
@@ -1026,8 +1040,10 @@ padding: 8px 50px;
 .text-black{color:#000;}
 .text-bold{font-weight: bold;}
 .text-white{color:#fff;}
-.text-line-34{line-height: 34px;}
-.text-red{color:#e41b13;}
+.text-line-24{line-height: 24px !important;}
+.text-line-34{line-height: 34px !important;}
+.text-line-40{line-height: 40px !important;}
+.text-red{color:#e41b13 !important;}
 
 .large-margin-top{margin-top: 55px;}
 .medium-margin-top{margin-top: 25px;}
