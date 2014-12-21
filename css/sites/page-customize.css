@@ -292,3 +292,7 @@ input[type="radio"] {
 		font-size: 16px;
 	}
 }
+
+.chkBtn{
+	display: none;
+}

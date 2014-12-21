@@ -242,8 +242,8 @@
 
 		  <!-- Nav tabs -->
 		  <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
-		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">current account</a></li>
-		    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">new account</a></li>
+		    <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">current account</a></li>
+		    <li role="presentation"  class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">new account</a></li>
 		    
 		  </ul>
 		
@@ -251,7 +251,7 @@
 		  <div class="tab-content tab-content-custom">
 		    
 		    <!-- current account content -->
-		    <div role="tabpanel" class="tab-pane active" id="home">
+		    <div role="tabpanel" class="tab-pane" id="home">
 		    	<p>Please select the account that you want to link the service to from the list below:</p><br/>
 		    	
 		    	<form>
@@ -328,16 +328,16 @@
 		    </div>
 		    
 		    <!-- new account content -->
-		    <div role="tabpanel" class="tab-pane" id="profile">
+		    <div role="tabpanel" class="tab-pane active" id="profile">
 		    	<p>You are creating new account for this product. Please proceed with the installation address below.</p><br/>
 		    	<p class="text-uppercase text-bold"><small>Please Enter Installation Address</small></p>
 		    	
 		    	<form class="form-inline" role="form">
 				  <div class="form-group form-group-custom col-sm-7 relative"  style="padding-left: 0;">
 				    <img src="img/magnify-icon.png" class="magnify-icon">
-				    <input type="" class="form-control form-control-custom" id="" placeholder="Jl. Tanjung Duren Raya Kav. 5-9">
+				    <input type="" class="form-control form-control-custom" id="address" placeholder="Jl. Tanjung Duren Raya Kav. 5-9">
 				  </div>
-				  <button type="submit" class="btn btn-lg-custom btn-red btn-next">check</button>
+				  <button type="button" id="searchbtn" class="btn btn-lg-custom btn-red btn-next">search</button>
 				</form>
 				<br/>
 				<p><em class="well-vertical-margin"><small>For example, jalan, nomor, cluster, kompleks, RT/RW, kelurahan, kecamata</small></em></p>
@@ -346,33 +346,47 @@
 		    	<div class="col-sm-8 less-padding well-vertical-margin">
 		    		<!-- <img width="98%" src="img/map.jpg"> -->
 					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+					
+					<script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/4/intl/id_ALL/geocoder.js"></script>
+					<script type="text/javascript" charset="UTF-8" src="https://maps.gstatic.com/maps-api-v3/api/js/19/4/intl/id_ALL/map.js"></script>
+					
 					<script type="text/javascript">
+						var geocoder;
+						var map;
+						var geocoder;
+						var map;
+						var markers = [];
+						var markerArray = [];
+						var pin = 'img/pin-marker.png';
 						function initialize() {
-
+							geocoder = new google.maps.Geocoder();
 							var ll = document.getElementById('ll'),
-								map,
-								markers = [],
-								defaultLatlng = new google.maps.LatLng(-6.174779,106.788563),
-								pin = 'img/pin-marker.png',
-								mapOptions = {
+								defaultLatlng = new google.maps.LatLng(-6.174779,106.788563);
+								
+							mapOptions = {
 									center: defaultLatlng,
 									zoom: 15,
 									disableDefaultUI: true
-								},
-								map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions),
-								marker = new google.maps.Marker({
-									map: map,
-									draggable: true,
-									animation: google.maps.Animation.DROP,
-									position: defaultLatlng,
-									icon: pin
-								});
-								markers.push(marker);
-								ll.value = -6.174779,106.788563;
+								};
+								
+							map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+							
+							markers = new google.maps.Marker({
+								map: map,
+								draggable: true,
+								animation: google.maps.Animation.DROP,
+								position: defaultLatlng,
+								icon: pin
+							});
+							
+							//markers.push(marker);
+							markerArray[0] = markers;
+							ll.value = -6.174779,106.788563;
 
-							google.maps.event.addListener(marker, 'click', toggleBounce);
-							google.maps.event.addListener(marker, 'dragend', upLatLng);
+							google.maps.event.addListener(markers, 'click', toggleBounce);
+							google.maps.event.addListener(markers, 'dragend', upLatLng);
 							google.maps.event.addListener(map, 'click', function (e) { upMark(e.latLng); ll.value = e.latLng.lat() + ' ' + e.latLng.lat() });
+							google.maps.event.addListener(map, 'rightclick', function (e) { upMark(e.latLng); ll.value = e.latLng.lat() + ' ' + e.latLng.lat() });
 
 							function toggleBounce() {
 								if (marker.getAnimation() != null) {
@@ -385,15 +399,21 @@
 								ll.value = this.getPosition().lat() + ' ' + this.getPosition().lng();
 							}
 							function upMark (loc) {
-								delMarks();
-								var marker = new google.maps.Marker({
+								//delMarks();
+								
+								if(markerArray[0] != null){
+									markerArray[0].setMap(null);
+								}
+								
+								var markers = new google.maps.Marker({
 									map: map,
 									draggable: true,
 									animation: google.maps.Animation.DROP,
 									position: loc,
 									icon: pin
 								});
-								markers.push(marker);
+								//markers.push(marker);
+								markerArray[0] = markers;
 							}
 							function delMarks() {
 								if (markers) {
@@ -405,19 +425,81 @@
 							}
 
 						}
+						
+						function codeAddress(){
+							var address = $("#address").val();
+							geocoder.geocode( { 'address': address}, function(results, status) {
+							if (status == google.maps.GeocoderStatus.OK) {
+								map.setCenter(results[0].geometry.location);
+								$('#ll').val(results[0].geometry.location);
+								//$('#indihomeajuanlatlng').val(results[0].geometry.location);
+
+								if(markerArray[0] != null){
+									markerArray[0].setMap(null);
+								}
+								var markers = new google.maps.Marker({
+									map: map,
+									draggable: true,
+									animation: google.maps.Animation.DROP,
+									position: results[0].geometry.location,
+									icon: pin
+								});
+								
+								markerArray[0] = markers;
+										} else {
+								alert('Alamat yang anda masukkan tidak ditemukan');
+							}
+						  });
+						}
+						
+						$('#searchbtn').click(function(e){
+							//$("#loadersearch").css('display','block');
+							$("#statusService").hide();
+							codeAddress();
+						});
+						
 						google.maps.event.addDomListener(window, 'load', initialize);
+						
 					</script>
 					<div id="map-canvas"></div>
 					<input type="hidden" id="ll">
 		    	</div>
-		    	
+		    	<script>
+					$( document ).ready(function() {
+						$('#cekJaringanAvail').click(function(e){
+							$("#statusServiceNotAvail").hide();
+							$("#statusServiceAvail").show();
+						});
+						
+						$('#cekJaringanNotAvail').click(function(e){
+							$("#statusServiceAvail").hide();
+							$("#statusServiceNotAvail").show();
+						});
+					});
+					
+				</script>
 		    	<div class="col-sm-4">
-		    		<div class="col-sm-4 col-xs-12"><center><img src="img/tick-big.png"></center></div>
-		    		<div class="col-sm-8 gotham29">There are Service Packages Available</div>
-		    		<div class="clearfix"></div>
-		    		<br/>
-		    		<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>
-		    		<a href="#" class="btn btn-lg btn-red btn-next" role="button">see packages</a>
+					<div class="col-xs-12">
+						<button type="button" id="cekJaringanAvail" class="btn btn-lg-custom btn-red btn-next">Cek Available</button>
+						<br/><br/>
+						<button type="button" id="cekJaringanNotAvail" class="btn btn-lg-custom btn-red btn-next">Cek Not Available</button>
+						<br/><br/>
+					</div>
+					<div id="statusServiceAvail">
+						<div class="col-sm-4 col-xs-12"><center><img src="img/tick-big.png"></center></div>
+						<div class="col-sm-8 gotham29">There are Service Packages Available</div>
+						<div class="clearfix"></div>
+						<br/>
+						<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>
+						<a href="#" class="btn btn-lg btn-red btn-next" role="button">see packages</a>
+					</div>
+					<div id="statusServiceNotAvail" style="display: none">
+						<div class="col-sm-4 col-xs-12"><center><img src="img/tick-big.png"></center></div>
+						<div class="col-sm-8 gotham29">There are Service Packages No Available</div>
+						<div class="clearfix"></div>
+						<br/>
+						<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>
+					</div>
 		    	</div>
 		    </div>
 		    <!--  new account content ends -->
