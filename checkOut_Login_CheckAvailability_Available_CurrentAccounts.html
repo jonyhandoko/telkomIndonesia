@@ -463,6 +463,26 @@
 					</script>
 					<div id="map-canvas"></div>
 					<input type="hidden" id="ll">
+					
+					<div class="col-xs-12 less-padding">
+						<button type="button" id="cekJaringanAvail" class="btn btn-lg-custom btn-red btn-next well-vertical-margin" autocomplete="off" data-loading-text="Loading..." type="button">Cek Available</button>
+						<button type="button" id="cekJaringanNotAvail" class="btn btn-lg-custom btn-red btn-next well-vertical-margin " autocomplete="off" data-loading-text="Loading..." type="button">Cek Not Available</button>
+
+						<!-- simulasi timeout -->
+						
+						<script>
+						$("button").click(function() {
+						    var $btn = $(this);
+						    $btn.button('loading');
+						    
+						    setTimeout(function () {
+						        $btn.button('reset');
+						    }, 1000);
+						});
+						</script>
+						<!-- /simulasi timeout -->
+					</div>
+					
 		    	</div>
 		    	<script>
 					$( document ).ready(function() {
@@ -479,23 +499,18 @@
 					
 				</script>
 		    	<div class="col-sm-4">
-					<div class="col-xs-12">
-						<button type="button" id="cekJaringanAvail" class="btn btn-lg-custom btn-red btn-next">Cek Available</button>
-						<br/><br/>
-						<button type="button" id="cekJaringanNotAvail" class="btn btn-lg-custom btn-red btn-next">Cek Not Available</button>
-						<br/><br/>
-					</div>
-					<div id="statusServiceAvail">
+					
+					<div id="statusServiceAvail" class="pull-left">
 						<div class="col-sm-4 col-xs-12"><center><img src="img/tick-big.png"></center></div>
-						<div class="col-sm-8 gotham29">There are Service Packages Available</div>
+						<div class="col-sm-12 col-md-8 gotham29 well-vertical-margin">There are Service Packages Available</div>
 						<div class="clearfix"></div>
 						<br/>
 						<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>
 						<a href="#" class="btn btn-lg btn-red btn-next" role="button">see packages</a>
 					</div>
-					<div id="statusServiceNotAvail" style="display: none">
-						<div class="col-sm-4 col-xs-12"><center><img src="img/tick-big.png"></center></div>
-						<div class="col-sm-8 gotham29">There are Service Packages No Available</div>
+					<div id="statusServiceNotAvail" class="pull-left" style="display: none">
+						<div class="col-sm-4 col-xs-12"><center><img src="img/cross.png"></center></div>
+						<div class="col-sm-12 col-md-8 gotham29 well-vertical-margin">There are Service Packages No Available</div>
 						<div class="clearfix"></div>
 						<br/>
 						<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>

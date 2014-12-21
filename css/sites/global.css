@@ -1065,6 +1065,10 @@ padding: 8px 50px;
 	top: 13px;
 }
 
+.form-inline ::-moz-placeholder{
+	opacity: 0.4;
+}
+
 /* repeat from page customize css */
 .text-uppercase{text-transform: uppercase;}
 .less-padding{ padding: 0 !important;}
