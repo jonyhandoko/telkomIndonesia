@@ -253,6 +253,7 @@
 	.tv-guide .time {
 		padding: 0;
 	}
+	
 	/*.schedule .channels .row,
 	.channels [class*="col-"] {
 		display: block;
@@ -260,6 +261,18 @@
 	.schedule .channels .row {
 		float: left;
 	}*/
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.double-button-wrapper{
+		margin-bottom:10px;
+		overflow: auto;
+		margin: 0 -15px;
+	}
+	
+	.double-button-wrapper .col-xs-12{
+		margin-top: 10px;
+	}
 }
 
 
@@ -653,6 +666,13 @@
 	border-radius: 0;
 	border-color: #e9e9e9;
 }
+.override #customer-data .panel-body .form-group input[type="radio"] {
+	border-radius: 50%;
+	border: 1px solid #bbb;
+}
+.override #customer-data .panel-body .form-group .sel-pos {
+	margin-top: 5px;
+}
 .override #customer-data .panel-body .form-group label {
 	color: #000;
 	margin-bottom: 8px;
@@ -822,6 +842,11 @@
 	.override .ref-detail .panel-body .col-sm-5:last-child {
 		margin-top: 40px
 	}
+	
+	.confirm-payment-1{
+		float: left !important;
+	}
+	
 }
 
 
@@ -1031,12 +1056,6 @@ padding: 8px 50px;
 	overflow: auto;
 }
 
-select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	padding: 0 5px;
-}
-
 .form-img {
 	position: absolute;
 	top: 10px;
@@ -1044,6 +1063,10 @@ select {
 }
 .form-img.sel {
 	top: 13px;
+}
+
+.form-inline ::-moz-placeholder{
+	opacity: 0.4;
 }
 
 /* repeat from page customize css */
@@ -1062,6 +1085,7 @@ select {
 .text-line-34{line-height: 34px !important;}
 .text-line-40{line-height: 40px !important;}
 .text-red{color:#e41b13 !important;}
+.clearfloat{float: none !important;}
 
 .payment_information{
 	font-size: 14px;

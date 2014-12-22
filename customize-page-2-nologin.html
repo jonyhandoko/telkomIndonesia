@@ -262,7 +262,9 @@
 	
 	<script>
 		$( document ).ready(function() {
+			/* This Javascript is used for call any action after button clicked. So I put it inline scripting if there any ajax action here.*/
 			$( ".box-paket-2" ).click(function(){
+				/* This condition trigger when the box checked is clicked and it will unchecked the box */
 				if($(this).find("input:radio").is('[checked]')){
 					$(this).find("input:radio").removeAttr("checked");
 					$(this).find(".icon-selected").addClass("hidden");
@@ -292,19 +294,87 @@
 				}
 			});
 			
+			// Step 4 Usee Basic TV
 			$( ".tvservice" ).click(function(){
 				if($(this).val()=="no"){
 					$(".box-paket-4").find(".icon-selected").addClass("hidden");
 					$(".box-paket-4").removeClass("active");
 					$(".additional-package").slideUp(500);
+					// This function if choose no, it will go to box step 5 (addon 01)
+					$(".btn-paket-4").attr("id", "box-step-5");
 				}else{
 					$( ".box-paket-4" ).removeClass("active");
 					$(".box-paket-4 .icon-selected").addClass("hidden");
 					$(".box-paket-4").addClass("active");
 					$(".box-paket-4").find(".icon-selected").removeClass("hidden");
 					$(".additional-package").slideDown(1000);
+					// This function if choose no, it will go to box step 4b (additional HD)
+					$(".btn-paket-4").attr("id", "box-step-4b");
 				}
 			});
+			
+			// Step 4a Usee TV Additional Package Mini
+			$( ".box-paket-4a-mini" ).click(function(){
+				var checkedCount = 0;
+				// To check if checked button is less than 2 it will not unchecked the last one
+				$( ".box-paket-4a-mini" ).each(function( index ) {
+					if($(this).find("input:checkbox").is('[checked]')){
+						checkedCount++;
+					}
+				});
+				
+				if($(this).find("input:checkbox").is('[checked]')){
+					if(checkedCount > 1){
+						$(this).find("input:checkbox").removeAttr("checked");
+						$(this).find(".icon-selected").addClass("hidden");
+						$(this).removeClass("active");
+					}
+				}else{
+					$(this).addClass("active");
+					$(this).find(".icon-selected").removeClass("hidden");
+					$(this).find("input:checkbox").attr('checked','checked');
+				}
+			});
+			
+			// Step 4a Usee TV Additional Package Combo
+			$( ".box-paket-4a-combo" ).click(function(){
+				var checkedCount = 0;
+				// To check if checked button is less than 2 it will not unchecked the last one
+				$( ".box-paket-4a-combo" ).each(function( index ) {
+					if($(this).find("input:checkbox").is('[checked]')){
+						checkedCount++;
+					}
+				});
+				
+				if($(this).find("input:checkbox").is('[checked]')){
+					if(checkedCount > 1){
+						$(this).find("input:checkbox").removeAttr("checked");
+						$(this).find(".icon-selected").addClass("hidden");
+						$(this).removeClass("active");
+					}
+				}else{
+					$(this).addClass("active");
+					$(this).find(".icon-selected").removeClass("hidden");
+					$(this).find("input:checkbox").attr('checked','checked');
+				}
+			});
+			
+			// Step 4b Usee Additional HD
+			$( ".box-paket-4b" ).click(function(){
+				if($(this).find("input:radio").is('[checked]')){
+					$(this).find("input:radio").removeAttr("checked");
+					$(this).find(".icon-selected").addClass("hidden");
+					$(this).removeClass("active");
+				}else{
+					$( ".box-paket-4b" ).removeClass("active");
+					$(".box-paket-4b .icon-selected").addClass("hidden");
+					$(".box-paket-4b").find("input:radio").removeAttr("checked");
+					$(this).addClass("active");
+					$(this).find(".icon-selected").removeClass("hidden");
+					$(this).find("input:radio").attr('checked','checked');
+				}
+			});
+			
 			
 			$( ".box-paket-5" ).click(function(){
 				if($(this).find("input:radio").is('[checked]')){
@@ -336,63 +406,15 @@
 				}
 			});
 			
-			$( ".box-paket-7" ).click(function(){
-				if($(this).find("input:radio").is('[checked]')){
-					$(this).find("input:radio").removeAttr("checked");
-					$(this).find(".icon-selected").addClass("hidden");
-					$(this).removeClass("active");
-				}else{
-					$( ".box-paket-7" ).removeClass("active");
-					$(".box-paket-7 .icon-selected").addClass("hidden");
-					$(".box-paket-7").find("input:radio").removeAttr("checked");
-					$(this).addClass("active");
-					$(this).find(".icon-selected").removeClass("hidden");
-					$(this).find("input:radio").attr('checked','checked');
-				}
-			});
-			
-			$( ".box-paket-8" ).click(function(){
-				if($(this).find("input:radio").is('[checked]')){
-					$(this).find("input:radio").removeAttr("checked");
-					$(this).find(".icon-selected").addClass("hidden");
-					$(this).removeClass("active");
-				}else{
-					$( ".box-paket-8" ).removeClass("active");
-					$(".box-paket-8 .icon-selected").addClass("hidden");
-					$(".box-paket-8").find("input:radio").removeAttr("checked");
-					$(this).addClass("active");
-					$(this).find(".icon-selected").removeClass("hidden");
-					$(this).find("input:radio").attr('checked','checked');
-				}
-			});
-			
 			/* Jump Scroll to the next step */
 			$( ".btn-next" ).click(function(event){
 				var jumpTo = $(this).attr("id");
+				var offset = $('#'+jumpTo).offset().top;
 				$('html, body').animate({
-					scrollTop: $('.'+jumpTo).offset().top
+					scrollTop: offset
 				},500);
+				return false;
 			});
-			
-			/*$( ".box-paket-4" ).click(function(){
-				var $target = $(event.target);
-				if(!$target.is("input:radio")){
-					if($(this).find("input.radioBtn:radio").is('[checked]')){
-						$(this).find("input.radioBtn:radio").removeAttr("checked");
-						$(this).find(".icon-selected").addClass("hidden");
-						$(this).removeClass("active");
-						$(".additional-package").slideUp(500);
-					}else{
-						$( ".box-paket-4" ).removeClass("active");
-						$(".box-paket-4 .icon-selected").addClass("hidden");
-						$(".box-paket-4").find("input.radioBtn:radio").removeAttr("checked");
-						$(this).addClass("active");
-						$(this).find(".icon-selected").removeClass("hidden");
-						$(this).find("input.radioBtn:radio").attr('checked','checked');
-						$(".additional-package").slideDown(1000);
-					}
-				}
-			});*/
 		});
 	</script>
 	
@@ -419,7 +441,7 @@
 			<form method="get" action="">
 				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-2">
 					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" checked="checked" name="type" value="High">
+					<input class="radioBtn" type="radio" name="type" value="High">
 					<div class="col-md-4 col-xs-12 col-sm-12 nopad">
 						<span text-uppercase>pstn 01</span>
 					</div>
@@ -442,7 +464,7 @@
 				</div>
 				
 				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-5" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+					<button type="button" style="display: initial;" id="box-step-3" class="btn btn-lg btn-block btn-red btn-next">Next</button>
 				</div>
 			</form>
 			
@@ -453,7 +475,7 @@
 	<!--  /test philip ends -->
 	
 	<!-- Step 3 broadband test philip -->
-	<div class="col-md-11 col-xs-12 col-sm-11 large-margin-top">
+	<div class="box-step-3 col-md-11 col-xs-12 col-sm-11 large-margin-top">
 		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
 			<img width="100%" class="icon-step" src="img/eclipse-red-step-3.png">
 		</div>
@@ -475,7 +497,7 @@
 			<form method="get" action="">
 				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-3">
 					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" checked="checked" name="type" value="High">
+					<input class="radioBtn" type="radio" name="type" value="High">
 					<div class="col-md-4 col-xs-12 col-sm-12 nopad">
 						<span class="text-uppercase">option 01</span>
 					</div>
@@ -498,7 +520,7 @@
 				</div>
 				
 				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-5" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+					<button type="button" style="display: initial;" id="box-step-4" class="btn btn-lg btn-block btn-red btn-next">Next</button>
 				</div>
 			</form>
 			
@@ -509,7 +531,7 @@
 	<!--  /test philip ends -->
 	
 	<!-- Step 4 Usee TV test philip -->
-	<div class="col-md-11 col-xs-12 col-sm-11 large-margin-top">
+	<div class="box-step-4 col-md-11 col-xs-12 col-sm-11 large-margin-top">
 		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
 			<img width="100%" class="icon-step" src="img/eclipse-red-step-4.png">
 		</div>
@@ -555,7 +577,7 @@
 				</div>
 				
 				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-5" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+					<button type="button" style="display: initial;" id="box-step-4a" class="btn btn-lg btn-block btn-red btn-next">Next</button>
 				</div>
 			</form>
 			
@@ -565,8 +587,8 @@
 	<hr/>
 	<!--  /test philip ends -->
 	
-	<!-- Step 5 Usee TV Additional Package test philip -->
-	<div class="additional-package col-md-11 col-xs-12 col-sm-11 large-margin-top">
+	<!-- Step 4a Usee TV Additional Package test philip -->
+	<div class="box-step-4a additional-package col-md-11 col-xs-12 col-sm-11 large-margin-top">
 		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
 			<img width="100%" class="icon-step" src="img/eclipse-red-step-4a.png">
 		</div>
@@ -589,20 +611,24 @@
 		</div>
 		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
 			<form method="get" action="">
-				<!-- Start List Additional Package -->
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
+				<!-- Start List Additional Package Mini -->
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-4a-mini active">
+					<!-- This Input CheckBox Button for Multiple Value to Pass -->
+					<input class="chkBtn" type="checkbox" checked="checked" name="additionalPackageMini" value="Moovy">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Moovy</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
 					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
+					<img class="icon-selected" src="img/icon-selected.png">
 					<div class="col-md-6 col-xs-12 col-sm-12">
 						<p>Top-up</p>
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 					<img style="width: 100%" src="img/logo-channel.jpg">
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-4a-mini">
+					<!-- This Input CheckBox Button for Multiple Value to Pass -->
+					<input class="chkBtn" type="checkbox" name="additionalPackageMini" value="Sporty">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Sporty</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -614,7 +640,9 @@
 					</div>
 					<img style="width: 100%" src="img/logo-channel.jpg">
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-4a-mini">
+					<!-- This Input CheckBox Button for Multiple Value to Pass -->
+					<input class="chkBtn" type="checkbox" name="additionalPackageMini" value="Showy">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Showy</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -642,20 +670,24 @@
 		</div>
 		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
 			<form method="get" action="">
-				<!-- Start List Additional Package -->
-				<div class="col-xs-12 box-paket box-paket-6">
+				<!-- Start List Additional Package Combo -->
+				<div class="col-xs-12 box-paket box-paket-4a-combo active">
+					<!-- This Input CheckBox Button for Multiple Value to Pass -->
+					<input class="chkBtn" type="checkbox" checked="checked" name="additionalPackageCombo" value="Moovy">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Moovy</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
 					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
+					<img class="icon-selected" src="img/icon-selected.png">
 					<div class="col-md-6 col-xs-12 col-sm-12">
 						<p>Top-up</p>
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 					<img width="100%" src="img/logo-channel.jpg">
 				</div>
-				<div class="col-xs-12 box-paket box-paket-6">
+				<div class="col-xs-12 box-paket box-paket-4a-combo">
+					<!-- This Input CheckBox Button for Multiple Value to Pass -->
+					<input class="chkBtn" type="checkbox" name="additionalPackageCombo" value="Sporty">
 					<div class="col-md-6 col-xs-12 less-padding">
 						<span>Sporty</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -667,7 +699,9 @@
 					</div>
 					<img width="100%" src="img/logo-channel.jpg">
 				</div>
-				<div class="col-xs-12 box-paket box-paket-6">
+				<div class="col-xs-12 box-paket box-paket-4a-combo">
+					<!-- This Input CheckBox Button for Multiple Value to Pass -->
+					<input class="chkBtn" type="checkbox" name="additionalPackageCombo" value="Showy">
 					<div class="col-md-6 col-xs-12 less-padding">
 						<span>Showy</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -682,7 +716,7 @@
 				<!-- End of List Additional Package -->
 				
 				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-5" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+					<button type="button" style="display: initial;" id="box-step-4b" class="btn btn-lg btn-block btn-red btn-next">Next</button>
 				</div>
 			</form>
 			
@@ -692,8 +726,8 @@
 	<hr/>
 	<!--  /test philip ends -->
 	
-	<!-- Step 6 test philip -->
-	<div class="col-md-11 col-xs-12 col-sm-11 large-margin-top">
+	<!-- Step 4b test philip -->
+	<div class="box-step-4b additional-package col-md-11 col-xs-12 col-sm-11 large-margin-top">
 		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
 			<img width="100%" class="icon-step" src="img/eclipse-red-step-4b.png">
 		</div>
@@ -713,7 +747,9 @@
 		</div>
 		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
 			<form method="get" action="">
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-4b">
+					<!-- This Input Radio Button Checked to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="additionalHD" value="hd">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Additional HD</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -735,8 +771,8 @@
 	<hr/>
 	<!--  /test philip ends -->
 	
-	<!-- Step 7 test philip -->
-	<div class="col-md-11 col-xs-12 col-sm-11 large-margin-top">
+	<!-- Step 5 test philip -->
+	<div class="box-step-5 col-md-11 col-xs-12 col-sm-11 large-margin-top">
 		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
 			<img width="100%" class="icon-step" src="img/eclipse-red-step-5.png">
 		</div>
@@ -756,8 +792,10 @@
 		</div>
 		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
 			<form method="get" action="">
-				<!-- Start List Step 7 Addons -->
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-7">
+				<!-- Start List Step 5 Addons -->
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
+					<!-- This Input Radio Button Checked to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="addOn01">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>None</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -768,7 +806,9 @@
 						<p><span class="price">Rp 0</span>/mth</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-7">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
+					<!-- This Input Radio Button Checked to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="addOn01">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Bronze 100MB</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -779,7 +819,9 @@
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-7">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
+					<!-- This Input Radio Button Checked to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="addOn01">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Silver 500MB</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -790,7 +832,9 @@
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-7">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
+					<!-- This Input Radio Button Checked to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="addOn01">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Gold 1GB</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -801,9 +845,9 @@
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 				</div>
-				<!-- End List Step 7 Addons -->
+				<!-- End List Step 5 Addons -->
 				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-5" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+					<button type="button" style="display: initial;" id="box-step-6" class="btn btn-lg btn-block btn-red btn-next">Next</button>
 				</div>
 			</form>
 			
@@ -813,8 +857,8 @@
 	<hr/>
 	<!--  /test philip ends -->
 	
-	<!-- Step 8 test philip -->
-	<div class="col-md-11 col-xs-12 col-sm-11 large-margin-top">
+	<!-- Step 6 test philip -->
+	<div class="box-step-6 col-md-11 col-xs-12 col-sm-11 large-margin-top">
 		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
 			<img width="100%" class="icon-step" src="img/eclipse-red-step-6.png">
 		</div>
@@ -834,8 +878,10 @@
 		</div>
 		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
 			<form method="get" action="">
-				<!-- Start List Step 8 Addons -->
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-8">
+				<!-- Start List Step 6 Addons -->
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
+					<!-- This Input Radio Button Checked to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="addOn02">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>None</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -846,7 +892,9 @@
 						<p><span class="price">Rp 0</span>/mth</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-8">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
+					<!-- This Input Radio Button Checked to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="addOn02">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Bronze 100MB</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -857,7 +905,9 @@
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-8">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
+					<!-- This Input Radio Button Checked to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="addOn02">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Silver 500MB</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -868,7 +918,9 @@
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-8">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
+					<!-- This Input Radio Button Checked to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="addOn02">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Gold 1GB</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -879,7 +931,7 @@
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 				</div>
-				<!-- End List Step 8 Addons -->
+				<!-- End List Step 6 Addons -->
 				
 			</form>
 			
