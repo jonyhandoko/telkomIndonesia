@@ -1183,6 +1183,10 @@ height: 14px;
 background: #262525;
 }
 
+.dropdown-menu-custom{
+	width: 100%;
+}
+
 .large-margin-top{margin-top: 55px;}
 .medium-margin-top{margin-top: 25px;}
 .medium-margin-right{margin-right: 15px;}
