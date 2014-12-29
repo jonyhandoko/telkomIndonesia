@@ -242,8 +242,8 @@
 
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs nav-tabs-custom hidden-xs" role="tablist">
-				<li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="ca">current account</a></li>
-				<li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="na">new account</a></li>
+				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="ca">current account</a></li>
+				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="na">new account</a></li>
 			</ul>
 			
 			<!-- 
@@ -280,7 +280,7 @@
 			<div class="tab-content tab-content-custom">
 				
 				<!-- current account content -->
-				<div role="tabpanel" class="tab-pane" id="home">
+				<div role="tabpanel" class="tab-pane active" id="home">
 					<p>Please select the account that you want to link the service to from the list below:</p><br/>
 					
 					<form>
@@ -357,7 +357,7 @@
 				</div>
 				
 				<!-- new account content -->
-				<div role="tabpanel" class="tab-pane active" id="profile">
+				<div role="tabpanel" class="tab-pane" id="profile">
 					<p>You are creating new account for this product. Please proceed with the installation address below.</p><br/>
 					<p class="text-uppercase text-bold"><small>Please Enter Installation Address</small></p>
 					
@@ -374,192 +374,190 @@
 					<div class="clearfix"></div>
 					<div class="col-sm-7 less-padding well-vertical-margin">
 						<!-- <img width="98%" src="img/map.jpg"> -->
-					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&amp;libraries=places"></script>
+						<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&amp;libraries=places"></script>
 
-					<script type="text/javascript">
-						function initialize() {
-							// Elements Caches
-							var ll = document.getElementById('ll'),
-								fs = document.getElementById('search-location'),
-								adres = document.getElementById('address'),
-								btns = document.getElementById('address-search');
+						<script type="text/javascript">
+							function initialize() {
+								// Elements Caches
+								var ll = document.getElementById('ll'),
+									fs = document.getElementById('search-location'),
+									adres = document.getElementById('address'),
+									btns = document.getElementById('address-search');
 
-							var map,
-								placeSearch,
-								autocomplete,
-								markers = [],
-								pin = 'img/pin-marker.png',
-								geocoder = new google.maps.Geocoder(),
-								defaultLatlng = new google.maps.LatLng(-6.174779,106.788563);
+								var map,
+									placeSearch,
+									autocomplete,
+									markers = [],
+									pin = 'img/pin-marker.png',
+									geocoder = new google.maps.Geocoder(),
+									defaultLatlng = new google.maps.LatLng(-6.174779,106.788563);
+									
+								mapOptions = {
+									center: defaultLatlng,
+									zoom: 15
+								};
+									
+								map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 								
-							mapOptions = {
-								center: defaultLatlng,
-								zoom: 15
-							};
-								
-							map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-							
-							marker = new google.maps.Marker({
-								map: map,
-								draggable: true,
-								animation: google.maps.Animation.DROP,
-								position: defaultLatlng,
-								icon: pin
-							});
-							
-							markers.push(marker);
-							ll.value = -6.174779,106.788563;
-
-							google.maps.event.addListener(marker, 'click', toggleBounce);
-							google.maps.event.addListener(marker, 'dragend', function (e) { upLatLng(this.getPosition().lat(), this.getPosition().lng()) });
-							google.maps.event.addListener(map, 'click', function (e) { upLatLng(e.latLng.lat(), e.latLng.lng()) });
-							google.maps.event.addListener(map, 'rightclick', function (e) { upLatLng(e.latLng.lat(), e.latLng.lng()) });
-
-							// Search
-							btns.addEventListener('click', function() { codeAddress() });
-							fs.addEventListener('submit', function(e) { e.preventDefault(); codeAddress() });
-							adres.addEventListener('focus', function() { geolocate() });
-
-							// Autocomplete Search
-							autocomplete = new google.maps.places.Autocomplete(
-								adres,
-								{ types: ['geocode'] });
-								google.maps.event.addListener(autocomplete, 'place_changed', function() {
-									btns.click();
-								});
-
-							function toggleBounce() {
-								if (marker.getAnimation() != null) {
-									marker.setAnimation(null);
-								} else {
-									marker.setAnimation(google.maps.Animation.BOUNCE);
-								}
-							}
-							function upLatLng(lat, lng) {
-								ll.value = lat + ',' + lng;
-								// console.log('ll', ll.value);
-
-								// Reverse Geocoding Pass Parameters
-								var latlng = new google.maps.LatLng(lat, lng);
-								codeLatLng(latlng);
-							}
-							function upMark (loc) {
-								delMarks();
-								var marker = new google.maps.Marker({
+								marker = new google.maps.Marker({
 									map: map,
 									draggable: true,
 									animation: google.maps.Animation.DROP,
-									position: loc,
+									position: defaultLatlng,
 									icon: pin
 								});
+								
 								markers.push(marker);
-								// console.log('loc', loc);
-							}
-							function delMarks() {
-								if (markers) {
-									for (i in markers) {
-										markers[i].setMap(null);
-									}
-									markers.length = 0;
-								}
-							}
-							function codeAddress() {
-								geocoder.geocode({'address': adres.value}, function(results, status) {
-									if (status == google.maps.GeocoderStatus.OK) {
-										var gt = results[0].geometry.location;
-										map.setCenter(gt);
-										upMark(gt);
-										ll.value = gt.k + ',' + gt.D;
+								ll.value = -6.174779,106.788563;
+
+								google.maps.event.addListener(marker, 'click', toggleBounce);
+								google.maps.event.addListener(marker, 'dragend', function (e) { upLatLng(this.getPosition().lat(), this.getPosition().lng()) });
+								google.maps.event.addListener(map, 'click', function (e) { upLatLng(e.latLng.lat(), e.latLng.lng()) });
+								google.maps.event.addListener(map, 'rightclick', function (e) { upLatLng(e.latLng.lat(), e.latLng.lng()) });
+
+								// Search
+								btns.addEventListener('click', function() { codeAddress() });
+								fs.addEventListener('submit', function(e) { e.preventDefault(); codeAddress() });
+								adres.addEventListener('focus', function() { geolocate() });
+
+								// Autocomplete Search
+								autocomplete = new google.maps.places.Autocomplete(
+									adres,
+									{ types: ['geocode'] });
+									google.maps.event.addListener(autocomplete, 'place_changed', function() {
+										btns.click();
+									});
+
+								function toggleBounce() {
+									if (marker.getAnimation() != null) {
+										marker.setAnimation(null);
 									} else {
-										alert('Alamat yang anda masukkan tidak ditemukan');
+										marker.setAnimation(google.maps.Animation.BOUNCE);
 									}
-								})
-							}
-							function codeLatLng(latlng) {
-								geocoder.geocode({'latLng': latlng}, function(results, status) {
-									if (status == google.maps.GeocoderStatus.OK) {
-										if (results[1]) {
-											upMark(latlng);
-											adres.value = results[1].formatted_address;
+								}
+								function upLatLng(lat, lng) {
+									ll.value = lat + ',' + lng;
+									// console.log('ll', ll.value);
+
+									// Reverse Geocoding Pass Parameters
+									var latlng = new google.maps.LatLng(lat, lng);
+									codeLatLng(latlng);
+								}
+								function upMark (loc) {
+									delMarks();
+									var marker = new google.maps.Marker({
+										map: map,
+										draggable: true,
+										animation: google.maps.Animation.DROP,
+										position: loc,
+										icon: pin
+									});
+									markers.push(marker);
+									// console.log('loc', loc);
+								}
+								function delMarks() {
+									if (markers) {
+										for (i in markers) {
+											markers[i].setMap(null);
+										}
+										markers.length = 0;
+									}
+								}
+								function codeAddress() {
+									geocoder.geocode({'address': adres.value}, function(results, status) {
+										if (status == google.maps.GeocoderStatus.OK) {
+											var gt = results[0].geometry.location;
+											map.setCenter(gt);
+											upMark(gt);
+											ll.value = gt.k + ',' + gt.D;
 										} else {
 											alert('Alamat yang anda masukkan tidak ditemukan');
 										}
-									} else {
-										alert('Alamat yang anda masukkan tidak ditemukan');
-									}
-								});
-							}
-							function geolocate() {
-								if (navigator.geolocation) {
-									navigator.geolocation.getCurrentPosition(function(position) {
-										var geolocation = new google.maps.LatLng(
-											position.coords.latitude, position.coords.longitude);
-										var circle = new google.maps.Circle({
-											center: geolocation,
-											radius: position.coords.accuracy
-										});
-										autocomplete.setBounds(circle.getBounds());
+									})
+								}
+								function codeLatLng(latlng) {
+									geocoder.geocode({'latLng': latlng}, function(results, status) {
+										if (status == google.maps.GeocoderStatus.OK) {
+											if (results[1]) {
+												upMark(latlng);
+												adres.value = results[1].formatted_address;
+											} else {
+												alert('Alamat yang anda masukkan tidak ditemukan');
+											}
+										} else {
+											alert('Alamat yang anda masukkan tidak ditemukan');
+										}
 									});
 								}
+								function geolocate() {
+									if (navigator.geolocation) {
+										navigator.geolocation.getCurrentPosition(function(position) {
+											var geolocation = new google.maps.LatLng(
+												position.coords.latitude, position.coords.longitude);
+											var circle = new google.maps.Circle({
+												center: geolocation,
+												radius: position.coords.accuracy
+											});
+											autocomplete.setBounds(circle.getBounds());
+										});
+									}
+								}
+
 							}
-
-						}
-						google.maps.event.addDomListener(window, 'load', initialize);
-					</script>
-					<div id="map-canvas"></div>
-					<input type="hidden" id="ll">
-					
-					<div class="col-xs-12 less-padding">
-						<button type="button" id="cekJaringanAvail" class="btn btn-lg btn-red btn-next well-vertical-margin" autocomplete="off" data-loading-text="Loading..." type="button">Cek Available</button>
-						<button type="button" id="cekJaringanNotAvail" class="btn btn-lg btn-red btn-next well-vertical-margin " autocomplete="off" data-loading-text="Loading..." type="button">Cek Not Available</button>
-
-						<!-- simulasi timeout -->
-						
-						<script>
-						$("button").click(function() {
-								var $btn = $(this);
-								$btn.button('loading');
-								
-								setTimeout(function () {
-										$btn.button('reset');
-								}, 1000);
-						});
+							google.maps.event.addDomListener(window, 'load', initialize);
 						</script>
-						<!-- /simulasi timeout -->
-					</div>
-					
+						<div id="map-canvas"></div>
+						<input type="hidden" id="ll">
+						
+						<div class="col-xs-12 less-padding">
+							<button type="button" id="cekJaringanAvail" class="btn btn-lg btn-red btn-next well-vertical-margin" autocomplete="off" data-loading-text="Loading..." type="button">Cek Available</button>
+							<button type="button" id="cekJaringanNotAvail" class="btn btn-lg btn-red btn-next well-vertical-margin " autocomplete="off" data-loading-text="Loading..." type="button">Cek Not Available</button>
+
+							<!-- simulasi timeout -->
+							
+							<script>
+							$("button").click(function() {
+									var $btn = $(this);
+									$btn.button('loading');
+									
+									setTimeout(function () {
+											$btn.button('reset');
+									}, 1000);
+							});
+							</script>
+							<!-- /simulasi timeout -->
+						</div>
+
 					</div>
 					<script>
-					$( document ).ready(function() {
-						$('#cekJaringanAvail').click(function(e){
-							$("#statusServiceNotAvail").hide();
-							$("#statusServiceAvail").show();
+						$( document ).ready(function() {
+							$('#cekJaringanAvail').click(function(e){
+								$("#statusServiceNotAvail").hide();
+								$("#statusServiceAvail").show();
+							});
+							
+							$('#cekJaringanNotAvail').click(function(e){
+								$("#statusServiceAvail").hide();
+								$("#statusServiceNotAvail").show();
+							});
 						});
-						
-						$('#cekJaringanNotAvail').click(function(e){
-							$("#statusServiceAvail").hide();
-							$("#statusServiceNotAvail").show();
-						});
-					});
-					
-				</script>
+					</script>
 					<div class="col-sm-5">
-					
-					<div id="statusServiceAvail" class="pull-left">
-						<div class="col-sm-3 col-xs-12"><center><img src="img/tick-big.png"></center></div>
-						<div class="col-sm-12 col-md-9 gotham25 well-vertical-margin">There are Service Packages Available</div>
-						<div class="clearfix"></div>
-						<br/>
-						<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>
-						<a href="#" class="btn btn-lg btn-red btn-next" role="button">see packages</a>
-					</div>
-					<div id="statusServiceNotAvail" class="pull-left" style="display: none">
-						<div class="col-sm-4 col-xs-12"><center><img src="img/cross.png"></center></div>
-						<div class="col-sm-12 col-md-8 gotham29 well-vertical-margin">There are Service Packages No Available</div>
-						<div class="clearfix"></div>
-						<br/>
-						<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>
-					</div>
+						<div id="statusServiceAvail" class="pull-left">
+							<div class="col-sm-3 col-xs-12"><center><img src="img/tick-big.png"></center></div>
+							<div class="col-sm-12 col-md-9 gotham25 well-vertical-margin">There are Service Packages Available</div>
+							<div class="clearfix"></div>
+							<br/>
+							<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>
+							<a href="#" class="btn btn-lg btn-red btn-next" role="button">see packages</a>
+						</div>
+						<div id="statusServiceNotAvail" class="pull-left" style="display: none">
+							<div class="col-sm-4 col-xs-12"><center><img src="img/cross.png"></center></div>
+							<div class="col-sm-12 col-md-8 gotham29 well-vertical-margin">There are Service Packages No Available</div>
+							<div class="clearfix"></div>
+							<br/>
+							<p class="text-normal">Location Installation of your product can we serve within 3x24 hours Make sure the location is in accordance with the installation address.</p>
+						</div>
 					</div>
 				</div>
 				<!--  new account content ends -->
