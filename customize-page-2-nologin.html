@@ -102,10 +102,13 @@
                         <form action="" method="POST" id="search-box" class="navbar-right" role="search">
                             <div class="form-group box-search">
                             <input type="text" class="form-control" placeholder="Search" id="header-search-input" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
-                            <button type="button">go</button>
+                            <input type="hidden" id="storeHostUrl" value="">
+                            <input type="hidden" id="searchPageUrl" value="">
+                            <input type="hidden" id="typeAheadPageUrl" value="">
+                            <button type="submit">go</button>
                             </div>                       
                         </form>
-                    </div>
+                    </div> 
                     
 				</div>
 				<div id="box-search" class="col-xs-2 col-sm-1 visible-xs visible-sm">
@@ -231,7 +234,7 @@
      <li>< <a class="red" href="">Back to See Packages</a></li>				
     </ol>	
    </div>				
-	<div class="col-md-7 col-xs-12 col-sm-6">
+   <div class="col-md-7 col-xs-12 col-sm-6">
      <h3>Customize Your Packages</h3>
      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean euismod bibendum laoreet. Donec odio. Quisque volutpat.</p>		
 	</div>
@@ -245,30 +248,122 @@
 			</center>
 		</div>
 	</div>
-	<div class="clearfix"></div>
-	
-	<div class="row block-dark-bar">
-		<div class="text-bold text-white title-medium-size text-line-34 pull-left col-xs-6">
-			<small>Pelanggan Lama?</small>
+
+	<!-- Modal Usee Tv Basic -->
+	<div class="modal fade" id="useeTvBasic" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Usee Tv Basic</h4>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		  </div>
 		</div>
-		<div class="col-xs-3 col-sm-2">
-			<a href="#" class="btn btn-lg btn-block btn-red" role="button">yes</a>
-		</div>
-		<div class="col-xs-3 col-sm-2">
-			<a href="#" class="btn btn-lg btn-block btn-red" role="button">no</a>
-		</div>
-		
+	  </div>
 	</div>
-	
+	<!-- Modal MiniPack -->
+	<div class="modal fade" id="miniPack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Usee Tv Mini Pack</h4>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal ComboPack -->
+	<div class="modal fade" id="comboPack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Usee Tv Combo Pack</h4>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal Additional HD -->
+	<div class="modal fade" id="additionalHd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Addition HD</h4>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal Add-ons Name 01 -->
+	<div class="modal fade" id="addOns01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Add-ons Name 01</h4>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal Add-ons Name 02 -->
+	<div class="modal fade" id="addOns02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Add-ons Name 02</h4>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal Box End -->
 	<script>
 		$( document ).ready(function() {
 			/* This Javascript is used for call any action after button clicked. So I put it inline scripting if there any ajax action here.*/
 			$( ".box-paket-2" ).click(function(){
 				/* This condition trigger when the box checked is clicked and it will unchecked the box */
 				if($(this).find("input:radio").is('[checked]')){
-					$(this).find("input:radio").removeAttr("checked");
-					$(this).find(".icon-selected").addClass("hidden");
-					$(this).removeClass("active");
 				}else{
 					$( ".box-paket-2" ).removeClass("active");
 					$(".box-paket-2 .icon-selected").addClass("hidden");
@@ -281,9 +376,6 @@
 			
 			$( ".box-paket-3" ).click(function(){
 				if($(this).find("input:radio").is('[checked]')){
-					$(this).find("input:radio").removeAttr("checked");
-					$(this).find(".icon-selected").addClass("hidden");
-					$(this).removeClass("active");
 				}else{
 					$( ".box-paket-3" ).removeClass("active");
 					$(".box-paket-3 .icon-selected").addClass("hidden");
@@ -300,47 +392,22 @@
 					$(".box-paket-4").find(".icon-selected").addClass("hidden");
 					$(".box-paket-4").removeClass("active");
 					$(".additional-package").slideUp(500);
-					// This function if choose no, it will go to box step 5 (addon 01)
-					$(".btn-paket-4").attr("id", "box-step-5");
+					$(".btn-paket-4").attr("id", "box-step-7");
 				}else{
 					$( ".box-paket-4" ).removeClass("active");
 					$(".box-paket-4 .icon-selected").addClass("hidden");
 					$(".box-paket-4").addClass("active");
 					$(".box-paket-4").find(".icon-selected").removeClass("hidden");
 					$(".additional-package").slideDown(1000);
-					// This function if choose no, it will go to box step 4b (additional HD)
-					$(".btn-paket-4").attr("id", "box-step-4b");
+					$(".btn-paket-4").attr("id", "box-step-5");
 				}
 			});
 			
-			// Step 4a Usee TV Additional Package Mini
-			$( ".box-paket-4a-mini" ).click(function(){
+			// Step 4a Usee TV Additional Package
+			$( ".box-paket-5" ).click(function(){
 				var checkedCount = 0;
 				// To check if checked button is less than 2 it will not unchecked the last one
-				$( ".box-paket-4a-mini" ).each(function( index ) {
-					if($(this).find("input:checkbox").is('[checked]')){
-						checkedCount++;
-					}
-				});
-				
-				if($(this).find("input:checkbox").is('[checked]')){
-					if(checkedCount > 1){
-						$(this).find("input:checkbox").removeAttr("checked");
-						$(this).find(".icon-selected").addClass("hidden");
-						$(this).removeClass("active");
-					}
-				}else{
-					$(this).addClass("active");
-					$(this).find(".icon-selected").removeClass("hidden");
-					$(this).find("input:checkbox").attr('checked','checked');
-				}
-			});
-			
-			// Step 4a Usee TV Additional Package Combo
-			$( ".box-paket-4a-combo" ).click(function(){
-				var checkedCount = 0;
-				// To check if checked button is less than 2 it will not unchecked the last one
-				$( ".box-paket-4a-combo" ).each(function( index ) {
+				$( ".box-paket-5" ).each(function( index ) {
 					if($(this).find("input:checkbox").is('[checked]')){
 						checkedCount++;
 					}
@@ -360,37 +427,6 @@
 			});
 			
 			// Step 4b Usee Additional HD
-			$( ".box-paket-4b" ).click(function(){
-				if($(this).find("input:radio").is('[checked]')){
-					$(this).find("input:radio").removeAttr("checked");
-					$(this).find(".icon-selected").addClass("hidden");
-					$(this).removeClass("active");
-				}else{
-					$( ".box-paket-4b" ).removeClass("active");
-					$(".box-paket-4b .icon-selected").addClass("hidden");
-					$(".box-paket-4b").find("input:radio").removeAttr("checked");
-					$(this).addClass("active");
-					$(this).find(".icon-selected").removeClass("hidden");
-					$(this).find("input:radio").attr('checked','checked');
-				}
-			});
-			
-			
-			$( ".box-paket-5" ).click(function(){
-				if($(this).find("input:radio").is('[checked]')){
-					$(this).find("input:radio").removeAttr("checked");
-					$(this).find(".icon-selected").addClass("hidden");
-					$(this).removeClass("active");
-				}else{
-					$( ".box-paket-5" ).removeClass("active");
-					$(".box-paket-5 .icon-selected").addClass("hidden");
-					$(".box-paket-5").find("input:radio").removeAttr("checked");
-					$(this).addClass("active");
-					$(this).find(".icon-selected").removeClass("hidden");
-					$(this).find("input:radio").attr('checked','checked');
-				}
-			});
-			
 			$( ".box-paket-6" ).click(function(){
 				if($(this).find("input:radio").is('[checked]')){
 					$(this).find("input:radio").removeAttr("checked");
@@ -400,6 +436,30 @@
 					$( ".box-paket-6" ).removeClass("active");
 					$(".box-paket-6 .icon-selected").addClass("hidden");
 					$(".box-paket-6").find("input:radio").removeAttr("checked");
+					$(this).addClass("active");
+					$(this).find(".icon-selected").removeClass("hidden");
+					$(this).find("input:radio").attr('checked','checked');
+				}
+			});
+			
+			$( ".box-paket-7" ).click(function(){
+				if($(this).find("input:radio").is('[checked]')){
+				}else{
+					$( ".box-paket-7" ).removeClass("active");
+					$(".box-paket-7 .icon-selected").addClass("hidden");
+					$(".box-paket-7").find("input:radio").removeAttr("checked");
+					$(this).addClass("active");
+					$(this).find(".icon-selected").removeClass("hidden");
+					$(this).find("input:radio").attr('checked','checked');
+				}
+			});
+			
+			$( ".box-paket-8" ).click(function(){
+				if($(this).find("input:radio").is('[checked]')){
+				}else{
+					$( ".box-paket-8" ).removeClass("active");
+					$(".box-paket-8 .icon-selected").addClass("hidden");
+					$(".box-paket-8").find("input:radio").removeAttr("checked");
 					$(this).addClass("active");
 					$(this).find(".icon-selected").removeClass("hidden");
 					$(this).find("input:radio").attr('checked','checked');
@@ -417,33 +477,30 @@
 			});
 		});
 	</script>
-	
-	<!-- Step 2 test philip -->
-	<div class="col-md-11 col-xs-12 col-sm-11 large-margin-top">
-		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
-			<img width="100%" class="icon-step" src="img/eclipse-red-step-2.png">
-		</div>
-		<div class="col-xs-10">
-			<p>Next up, you can configure your</p>
-			<p style="font-size: 38px; letter-spacing: -3px; line-height: 36px;" class="text-uppercase">ptsn</p>
-		</div>
+	<!-- Step 2 PSTN -->
+	<div class="box-step-1 col-md-1 col-xs-1 col-sm-1 hidden-xs" style="margin-top: 55px;">
+		<img class="icon-step" src="img/eclipse-red-step-2.png">
+	</div>
+	<div class="col-md-11 col-xs-12 col-sm-11 box-paket-step">
+		<img class="visible-xs icon-step" src="img/eclipse-red-step-2.png">
+		<p style="padding-top: 5px">Next up, you can configure your</p>
+		<p class="box-paket-title">PSTN</p>
 		
-		<div class="col-md-4 col-xs-12 col-sm-4 less-padding medium-margin-top col-md-offset-1 col-sm-offset-1">
-			<img class="hidden-xs img-rounded" src="img/support-landing-phone.png" style="margin-right: 15px;">
+		<div class="col-md-5 col-xs-12 col-sm-5 box-paket-configure">
+			<img class="hidden-xs" src="img/support-landing-phone.png" style="margin-right: 15px;">
 			<br/>
-			<p class="box-paket-subtitle text-uppercase">ptsn</p>
-			<p class="text-normal-left">
+			<p class="box-paket-subtitle">PSTN</p>
+			<p>
 				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
 			</p>
-			
 		</div>
 		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
 			<form method="get" action="">
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-2">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-2 active">
 					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="High">
+					<input class="radioBtn" type="radio" name="type" checked="checked" value="High">
 					<div class="col-md-4 col-xs-12 col-sm-12 nopad">
-						<span text-uppercase>pstn 01</span>
+						<span>PSTN 01</span>
 					</div>
 					<img class="icon-selected hidden" src="img/icon-selected.png">
 					<div class="col-md-8 col-xs-12 col-sm-12">
@@ -455,7 +512,7 @@
 					<!-- This Input Radio Button to get Value to Pass -->
 					<input class="radioBtn" type="radio" name="type" value="Medium">
 					<div class="col-md-4 col-xs-12 col-sm-12 nopad">
-						<span text-uppercase text-uppercase>pstn 02</span>
+						<span>PSTN 02</span>
 					</div>
 					<img class="icon-selected hidden" src="img/icon-selected.png">
 					<div class="col-md-8 col-xs-12 col-sm-12">
@@ -463,43 +520,38 @@
 					</div>
 				</div>
 				
-				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-3" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+				<div class="col-md-12 col-xs-12 col-sm-12 nopad align-right">
+					<button type="button" style="width: 20%; display: initial;" id="box-step-3" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+					<br/><br/><br/>
 				</div>
 			</form>
-			
 		</div>
 	</div>
-	<div class="clearfix"></div>
-	<hr/>
-	<!--  /test philip ends -->
-	
-	<!-- Step 3 broadband test philip -->
-	<div class="box-step-3 col-md-11 col-xs-12 col-sm-11 large-margin-top">
-		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
-			<img width="100%" class="icon-step" src="img/eclipse-red-step-3.png">
-		</div>
-		<div class="col-xs-10">
-			<p>Next up, you can configure your</p>
-			<p style="font-size: 38px; letter-spacing: -3px; line-height: 36px;" class="">broadband</p>
-		</div>
+	<hr>
+	<!-- Step 3 BroadBand -->
+	<div class="box-step-3 col-md-1 col-xs-1 col-sm-1 hidden-xs" style="margin-top: 55px;">
+		<img class="icon-step" src="img/eclipse-red-step-3.png">
+	</div>
+	<div class="col-md-11 col-xs-12 col-sm-11 box-paket-step">
+		<img class="visible-xs icon-step" src="img/eclipse-red-step-3.png">
+		<p style="padding-top: 5px">Next up, you can configure your</p>
+		<p class="box-paket-title">Broadband</p>
 		
-		<div class="col-md-4 col-xs-12 col-sm-4 less-padding medium-margin-top col-md-offset-1 col-sm-offset-1">
-			<img class="hidden-xs img-rounded" src="img/support-landing-broadband.png" style="margin-right: 15px;">
+		<div class="col-md-5 col-xs-12 col-sm-5 box-paket-configure">
+			<img class="hidden-xs" src="img/support-landing-broadband.png" style="margin-right: 15px;">
 			<br/>
-			<p class="box-paket-subtitle text-uppercase">Broadband</p>
-			<p class="text-normal-left">
+			<p class="box-paket-subtitle">BROADBAND</p>
+			<p>
 				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
 			</p>
-			
 		</div>
 		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
 			<form method="get" action="">
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-3">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-3 active">
 					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="High">
+					<input class="radioBtn" type="radio" name="type" checked="checked" value="High">
 					<div class="col-md-4 col-xs-12 col-sm-12 nopad">
-						<span class="text-uppercase">option 01</span>
+						<span>OPTION 01</span>
 					</div>
 					<img class="icon-selected hidden" src="img/icon-selected.png">
 					<div class="col-md-8 col-xs-12 col-sm-12">
@@ -511,7 +563,7 @@
 					<!-- This Input Radio Button to get Value to Pass -->
 					<input class="radioBtn" type="radio" name="type" value="Medium">
 					<div class="col-md-4 col-xs-12 col-sm-12 nopad">
-						<span class="text-uppercase">option 02</span>
+						<span>OPTION 02</span>
 					</div>
 					<img class="icon-selected hidden" src="img/icon-selected.png">
 					<div class="col-md-8 col-xs-12 col-sm-12">
@@ -519,37 +571,34 @@
 					</div>
 				</div>
 				
-				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-4" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+				<div class="col-md-12 col-xs-12 col-sm-12 nopad align-right">
+					<button type="button" style="width: 20%; display: initial;" id="box-step-4" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+					<br/><br/><br/>
 				</div>
 			</form>
 			
 		</div>
 	</div>
-	<div class="clearfix"></div>
-	<hr/>
-	<!--  /test philip ends -->
-	
-	<!-- Step 4 Usee TV test philip -->
-	<div class="box-step-4 col-md-11 col-xs-12 col-sm-11 large-margin-top">
-		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
-			<img width="100%" class="icon-step" src="img/eclipse-red-step-4.png">
-		</div>
-		<div class="col-xs-10">
-			<p>Next up, you can configure your</p>
-			<p style="font-size: 38px; letter-spacing: -3px; line-height: 36px;">Usee TV Basic Packages</p>
-		</div>
+	<hr>
+	<!-- Step 4 Usee TV-->
+	<div class="box-step-4 col-md-1 col-xs-1 col-sm-1 hidden-xs" style="margin-top: 55px;">
+		<img class="icon-step" src="img/eclipse-red-step-4.png">
+	</div>
+	<div class="col-md-11 col-xs-12 col-sm-11 box-paket-step">
+		<img class="visible-xs icon-step" src="img/eclipse-red-step-4.png">
+		<p style="padding-top: 5px">Next up, you can configure your</p>
+		<p class="box-paket-title">Usee TV Basic Packages</p>
 		
-		<div class="col-md-4 col-xs-12 col-sm-4 less-padding medium-margin-top col-md-offset-1 col-sm-offset-1">
-			<img class="hidden-xs img-rounded" src="img/icon-useetv.png" style="margin-right: 15px;">
+		<div class="col-md-5 col-xs-12 col-sm-5 box-paket-configure">
+			<img class="hidden-xs" src="img/icon-useetv.png" style="margin-right: 15px;">
 			<br/>
-			<p style="color: black; font-size: 14px; line-height: 40px; font-family: 'Conv_GothamRnd-Bold';" class="text-uppercase">usee tv</p>
-			<p class="text-normal-left">
+			<p class="box-paket-subtitle">USEE TV</p>
+			<p>
 				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
 			</p>
-			
 			<p class="learn-more">
-				<a href="#" class="gotham-bold text-uppercase" target="_blank">learn more&nbsp;&nbsp; <img src="img/arrow-link.png"></a>
+				<!-- Button trigger modal box Learn More -->
+				<a href="#" class="gotham-bold" data-toggle="modal" data-target="#useeTvBasic">LEARN MORE&nbsp;&nbsp; <img src="img/arrow-link.png"></a>
 			</p>
 		</div>
 		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
@@ -576,312 +625,225 @@
 					</div>
 				</div>
 				
-				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-4a" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+				<div class="col-md-12 col-xs-12 col-sm-12 nopad align-right">
+					<button type="button" style="width: 20%; display: initial;" id="box-step-7" class="btn btn-lg btn-block btn-red btn-next btn-paket-4">Next</button>
+					<br/><br/><br/>
 				</div>
 			</form>
 			
 		</div>
 	</div>
-	<div class="clearfix"></div>
-	<hr/>
-	<!--  /test philip ends -->
-	
-	<!-- Step 4a Usee TV Additional Package test philip -->
-	<div class="box-step-4a additional-package col-md-11 col-xs-12 col-sm-11 large-margin-top">
-		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
-			<img width="100%" class="icon-step" src="img/eclipse-red-step-4a.png">
+	<hr>
+	<!-- Step 4a Usee TV Additional Package -->
+	<div class="additional-package">
+		<div class="box-step-5 col-md-1 col-xs-1 col-sm-1 hidden-xs" style="margin-top: 55px;">
+			<img class="icon-step" src="img/eclipse-red-step-4a.png">
 		</div>
-		<div class="col-xs-10">
-			<p>Next up, you can configure your</p>
-			<p style="font-size: 38px; letter-spacing: -3px; line-height: 36px;">Usee TV Additional Package</p>
-		</div>
-		
-		<div class="col-md-4 col-xs-12 col-sm-4 less-padding medium-margin-top col-md-offset-1 col-sm-offset-1">
-			<img class="hidden-xs img-rounded" src="img/icon-minipack.png" style="margin-right: 15px;">
-			<br/>
-			<p style="color: black; font-size: 14px; line-height: 40px; font-family: 'Conv_GothamRnd-Bold';" class="text-uppercase">mini pack</p>
-			<p class="text-normal-left">
-				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
-			</p>
+		<div class="col-md-11 col-xs-12 col-sm-11 box-paket-step">
+			<img class="visible-xs icon-step" src="img/eclipse-red-step-4b.png">
+			<p style="padding-top: 5px">Next up, you can configure your</p>
+			<p class="box-paket-title">Usee TV Additional Package</p>
 			
-			<p class="learn-more">
-				<a href="#" class="gotham-bold text-uppercase" target="_blank">learn more&nbsp;&nbsp; <img src="img/arrow-link.png"></a>
-			</p>
+			<div class="col-md-5 col-xs-12 col-sm-5 box-paket-configure">
+				<img class="hidden-xs" src="img/icon-minipack.png" style="margin-right: 15px;">
+				<br/>
+				<p class="box-paket-subtitle">MINIPACK</p>
+				<p>
+					Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
+				</p>
+				<p class="learn-more">
+					<!-- Button trigger modal box Learn More -->
+				<a href="#" class="gotham-bold" data-toggle="modal" data-target="#miniPack">LEARN MORE&nbsp;&nbsp; <img src="img/arrow-link.png"></a>
+				</p>
+			</div>
+			<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
+				<form method="get" action="">
+					<!-- Start List Additional Package -->
+					<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5 active">
+						<!-- This Input CheckBox Button for Multiple Value to Pass -->
+						<input class="chkBtn" type="checkbox" checked="checked" name="additionalPackage" value="Moovy">
+						<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+							<span>Moovy</span>
+							<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+						</div>
+						<img class="icon-selected" src="img/icon-selected.png">
+						<div class="col-md-6 col-xs-12 col-sm-12">
+							<p>Top-up</p>
+							<p><span class="price">Rp 25.000</span>/mth</p>
+						</div>
+						<img style="width: 100%" src="img/logo-channel.jpg">
+					</div>
+					<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
+						<!-- This Input CheckBox Button for Multiple Value to Pass -->
+						<input class="chkBtn" type="checkbox" name="additionalPackage" value="Sporty">
+						<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+							<span>Sporty</span>
+							<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+						</div>
+						<img class="icon-selected hidden" src="img/icon-selected.png">
+						<div class="col-md-6 col-xs-12 col-sm-12">
+							<p>Top-up</p>
+							<p><span class="price">Rp 25.000</span>/mth</p>
+						</div>
+						<img style="width: 100%" src="img/logo-channel.jpg">
+					</div>
+					<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
+						<!-- This Input CheckBox Button for Multiple Value to Pass -->
+						<input class="chkBtn" type="checkbox" name="additionalPackage" value="Showy">
+						<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+							<span>Showy</span>
+							<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+						</div>
+						<img class="icon-selected hidden" src="img/icon-selected.png">
+						<div class="col-md-6 col-xs-12 col-sm-12">
+							<p>Top-up</p>
+							<p><span class="price">Rp 25.000</span>/mth</p>
+						</div>
+						<img style="width: 100%" src="img/logo-channel.jpg">
+					</div>
+					<!-- End of List Additional Package -->
+				</form>
+			</div>
+			<div class="col-md-5 col-xs-12 col-sm-5 box-paket-configure">
+				<img class="hidden-xs" src="img/icon-minipack.png" style="margin-right: 15px;">
+				<br/>
+				<p class="box-paket-subtitle">COMBO PACK</p>
+				<p>
+					Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
+				</p>
+				<p class="learn-more">
+					<!-- Button trigger modal box Learn More -->
+					<a href="#" class="gotham-bold" data-toggle="modal" data-target="#comboPack">LEARN MORE&nbsp;&nbsp; <img src="img/arrow-link.png"></a>
+				</p>
+			</div>
+			<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
+				<form method="get" action="">
+					<!-- Start List Additional Package -->
+					<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6 active">
+						<!-- This Input CheckBox Button for Multiple Value to Pass -->
+						<input class="chkBtn" type="checkbox" checked="checked" name="additionalComboPackage" value="Moovy">
+						<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+							<span>Moovy</span>
+							<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+						</div>
+						<img class="icon-selected" src="img/icon-selected.png">
+						<div class="col-md-6 col-xs-12 col-sm-12">
+							<p>Top-up</p>
+							<p><span class="price">Rp 25.000</span>/mth</p>
+						</div>
+						<img style="width: 100%" src="img/logo-channel.jpg">
+					</div>
+					<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
+						<!-- This Input CheckBox Button for Multiple Value to Pass -->
+						<input class="chkBtn" type="checkbox" name="additionalComboPackage" value="Sporty">
+						<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+							<span>Sporty</span>
+							<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+						</div>
+						<img class="icon-selected hidden" src="img/icon-selected.png">
+						<div class="col-md-6 col-xs-12 col-sm-12">
+							<p>Top-up</p>
+							<p><span class="price">Rp 25.000</span>/mth</p>
+						</div>
+						<img style="width: 100%" src="img/logo-channel.jpg">
+					</div>
+					<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
+						<!-- This Input CheckBox Button for Multiple Value to Pass -->
+						<input class="chkBtn" type="checkbox" name="additionalComboPackage" value="Showy">
+						<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+							<span>Showy</span>
+							<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+						</div>
+						<img class="icon-selected hidden" src="img/icon-selected.png">
+						<div class="col-md-6 col-xs-12 col-sm-12">
+							<p>Top-up</p>
+							<p><span class="price">Rp 25.000</span>/mth</p>
+						</div>
+						<img style="width: 100%" src="img/logo-channel.jpg">
+					</div>
+					<!-- End of List Additional Package -->
+					
+					<div class="col-md-12 col-xs-12 col-sm-12 nopad align-right">
+						<button type="button" style="width: 20%; display: initial;" id="box-step-6" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+						<br/><br/><br/>
+					</div>
+				</form>
+				
+			</div>
 		</div>
-		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
-			<form method="get" action="">
-				<!-- Start List Additional Package Mini -->
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-4a-mini active">
-					<!-- This Input CheckBox Button for Multiple Value to Pass -->
-					<input class="chkBtn" type="checkbox" checked="checked" name="additionalPackageMini" value="Moovy">
-					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
-						<span>Moovy</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12 col-sm-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-					<img style="width: 100%" src="img/logo-channel.jpg">
-				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-4a-mini">
-					<!-- This Input CheckBox Button for Multiple Value to Pass -->
-					<input class="chkBtn" type="checkbox" name="additionalPackageMini" value="Sporty">
-					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
-						<span>Sporty</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12 col-sm-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-					<img style="width: 100%" src="img/logo-channel.jpg">
-				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-4a-mini">
-					<!-- This Input CheckBox Button for Multiple Value to Pass -->
-					<input class="chkBtn" type="checkbox" name="additionalPackageMini" value="Showy">
-					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
-						<span>Showy</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12 col-sm-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-					<img style="width: 100%" src="img/logo-channel.jpg">
-				</div>
-				<!-- End of List Additional Package -->
-			</form>
+		<hr>
+		<!-- Step 4b Additional HD -->
+		<div class="box-step-6 col-md-1 col-xs-1 col-sm-1 hidden-xs" style="margin-top: 55px;">
+			<img class="icon-step" src="img/eclipse-red-step-4b.png">
 		</div>
+		<div class="col-md-11 col-xs-12 col-sm-11 box-paket-step">
+			<img class="visible-xs icon-step" src="img/eclipse-red-step-4b.png">
+			<p style="padding-top: 5px">Next up, you can configure your</p>
+			<p class="box-paket-title">Additional HD</p>
+			
+			<div class="col-md-5 col-xs-12 col-sm-5 box-paket-configure">
+				<img class="hidden-xs" src="img/img-vid-hd.png" style="margin-right: 15px;">
+				<br/>
+				<p class="box-paket-subtitle">ADDITIONAL HD</p>
+				<p>
+					Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
+				</p>
+				<p class="learn-more">
+					<!-- Button trigger modal box Learn More -->
+					<a href="#" class="gotham-bold" data-toggle="modal" data-target="#additionalHd">LEARN MORE&nbsp;&nbsp; <img src="img/arrow-link.png"></a>
+				</p>
+			</div>
+			<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
+				<form method="get" action="">
+					<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
+						<!-- This Input Radio Button to get Value to Pass -->
+						<input class="radioBtn" type="radio" name="type" value="Medium">
+						<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+							<span>Additional HD</span>
+							<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+						</div>
+						<img class="icon-selected hidden" src="img/icon-selected.png">
+						<div class="col-md-6 col-xs-12 col-sm-12">
+							<p>Top-up</p>
+							<p><span class="price">Rp 25.000</span>/mth</p>
+						</div>
+					</div>
+					<div class="col-md-12 col-xs-12 col-sm-12 nopad align-right">
+						<button type="button" style="width: 20%; display: initial;" id="box-step-7" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+						<br/><br/><br/>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<!-- Step 7 Addons -->
+	<div class="box-step-7 col-md-1 col-xs-1 col-sm-1 hidden-xs" style="margin-top: 55px;">
+		<img class="icon-step" src="img/eclipse-red-step-5.png">
+	</div>
+	<div class="col-md-11 col-xs-12 col-sm-11 box-paket-step">
+		<img class="visible-xs icon-step" src="img/eclipse-red-step-5.png">
+		<p style="padding-top: 5px">Next up, you can configure your</p>
+		<p class="box-paket-title">Add-ons Name 01</p>
+		
 		<div class="col-md-5 col-xs-12 col-sm-5 box-paket-configure">
-			<img class="hidden-xs" src="img/icon-minipack.png" style="margin-right: 15px;">
+			<img class="hidden-xs" src="img/icon-addon.png" style="margin-right: 15px;">
 			<br/>
-			<p class="box-paket-subtitle text-uppercase">combo pack</p>
+			<p class="box-paket-subtitle">ADD-ONS NAME</p>
 			<p>
 				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
 			</p>
 			<p class="learn-more">
-				<a href="#" class="gotham-bold text-uppercase" target="_blank">learn more&nbsp;&nbsp; <img src="img/arrow-link.png"></a>
+				<!-- Button trigger modal box Learn More -->
+				<a href="#" class="gotham-bold" data-toggle="modal" data-target="#addOns01">LEARN MORE&nbsp;&nbsp; <img src="img/arrow-link.png"></a>
 			</p>
 		</div>
 		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
 			<form method="get" action="">
-				<!-- Start List Additional Package Combo -->
-				<div class="col-xs-12 box-paket box-paket-4a-combo active">
-					<!-- This Input CheckBox Button for Multiple Value to Pass -->
-					<input class="chkBtn" type="checkbox" checked="checked" name="additionalPackageCombo" value="Moovy">
-					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
-						<span>Moovy</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12 col-sm-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-					<img width="100%" src="img/logo-channel.jpg">
-				</div>
-				<div class="col-xs-12 box-paket box-paket-4a-combo">
-					<!-- This Input CheckBox Button for Multiple Value to Pass -->
-					<input class="chkBtn" type="checkbox" name="additionalPackageCombo" value="Sporty">
-					<div class="col-md-6 col-xs-12 less-padding">
-						<span>Sporty</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-					<img width="100%" src="img/logo-channel.jpg">
-				</div>
-				<div class="col-xs-12 box-paket box-paket-4a-combo">
-					<!-- This Input CheckBox Button for Multiple Value to Pass -->
-					<input class="chkBtn" type="checkbox" name="additionalPackageCombo" value="Showy">
-					<div class="col-md-6 col-xs-12 less-padding">
-						<span>Showy</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-					<img width="100%" src="img/logo-channel.jpg">
-				</div>
-				<!-- End of List Additional Package -->
-				
-				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-4b" class="btn btn-lg btn-block btn-red btn-next">Next</button>
-				</div>
-			</form>
-			
-		</div>
-	</div>
-	<div class="clearfix"></div>
-	<hr/>
-	<!--  /test philip ends -->
-	
-	<!-- Step 4b test philip -->
-	<div class="box-step-4b additional-package col-md-11 col-xs-12 col-sm-11 large-margin-top">
-		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
-			<img width="100%" class="icon-step" src="img/eclipse-red-step-4b.png">
-		</div>
-		<div class="col-xs-10">
-			<p>Next up, you can configure your</p>
-			<p style="font-size: 38px; letter-spacing: -3px; line-height: 36px;">Additional HD</p>
-		</div>
-		
-		<div class="col-md-4 col-xs-12 col-sm-4 less-padding medium-margin-top col-md-offset-1 col-sm-offset-1">
-			<img class="hidden-xs img-rounded" src="img/support-landing-broadband.png" style="margin-right: 15px;">
-			<br/>
-			<p class="box-paket-subtitle text-uppercase">Additional HD</p>
-			<p class="text-normal-left">
-				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
-			</p>
-			
-		</div>
-		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
-			<form method="get" action="">
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-4b">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="additionalHD" value="hd">
-					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
-						<span>Additional HD</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-5" class="btn btn-lg btn-block btn-red btn-next">Next</button>
-				</div>
-			</form>
-			
-		</div>
-	</div>
-	<div class="clearfix"></div>
-	<hr/>
-	<!--  /test philip ends -->
-	
-	<!-- Step 5 test philip -->
-	<div class="box-step-5 col-md-11 col-xs-12 col-sm-11 large-margin-top">
-		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
-			<img width="100%" class="icon-step" src="img/eclipse-red-step-5.png">
-		</div>
-		<div class="col-xs-10">
-			<p>Next up, you can configure your</p>
-			<p style="font-size: 38px; letter-spacing: -3px; line-height: 36px;">Add-ons Name 01</p>
-		</div>
-		
-		<div class="col-md-4 col-xs-12 col-sm-4 less-padding medium-margin-top col-md-offset-1 col-sm-offset-1">
-			<img class="hidden-xs img-rounded" src="img/support-landing-broadband.png" style="margin-right: 15px;">
-			<br/>
-			<p class="box-paket-subtitle text-uppercase">Add-ons Name 01</p>
-			<p class="text-normal-left">
-				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
-			</p>
-			
-		</div>
-		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
-			<form method="get" action="">
-				<!-- Start List Step 5 Addons -->
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="addOn01">
-					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
-						<span>None</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 0</span>/mth</p>
-					</div>
-				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="addOn01">
-					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
-						<span>Bronze 100MB</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="addOn01">
-					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
-						<span>Silver 500MB</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12 col-sm-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-5">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="addOn01">
-					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
-						<span>Gold 1GB</span>
-						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
-					</div>
-					<img class="icon-selected hidden" src="img/icon-selected.png">
-					<div class="col-md-6 col-xs-12 col-sm-12">
-						<p>Top-up</p>
-						<p><span class="price">Rp 25.000</span>/mth</p>
-					</div>
-				</div>
-				<!-- End List Step 5 Addons -->
-				<div class="col-md-2 col-xs-12 col-sm-2 col-lg-2 less-padding pull-right">
-					<button type="button" style="display: initial;" id="box-step-6" class="btn btn-lg btn-block btn-red btn-next">Next</button>
-				</div>
-			</form>
-			
-		</div>
-	</div>
-	<div class="clearfix"></div>
-	<hr/>
-	<!--  /test philip ends -->
-	
-	<!-- Step 6 test philip -->
-	<div class="box-step-6 col-md-11 col-xs-12 col-sm-11 large-margin-top">
-		<div class="col-xs-2 less-padding col-lg-1 col-md-1 col-sm-1">
-			<img width="100%" class="icon-step" src="img/eclipse-red-step-6.png">
-		</div>
-		<div class="col-xs-10">
-			<p>Next up, you can configure your</p>
-			<p style="font-size: 38px; letter-spacing: -3px; line-height: 36px;">Add-ons Name 02</p>
-		</div>
-		
-		<div class="col-md-4 col-xs-12 col-sm-4 less-padding medium-margin-top col-md-offset-1 col-sm-offset-1">
-			<img class="hidden-xs img-rounded" src="img/support-landing-broadband.png" style="margin-right: 15px;">
-			<br/>
-			<p class="box-paket-subtitle text-uppercase">Add-ons Name 02</p>
-			<p class="text-normal-left">
-				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
-			</p>
-			
-		</div>
-		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
-			<form method="get" action="">
-				<!-- Start List Step 6 Addons -->
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="addOn02">
+				<!-- Start List Step 7 Addons -->
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-7 active">
+					<!-- This Input Radio Button to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" checked="checked" value="Medium">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>None</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -892,9 +854,9 @@
 						<p><span class="price">Rp 0</span>/mth</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="addOn02">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-7">
+					<!-- This Input Radio Button to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="Medium">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Bronze 100MB</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -905,9 +867,9 @@
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="addOn02">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-7">
+					<!-- This Input Radio Button to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="Medium">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Silver 500MB</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -918,9 +880,9 @@
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-6">
-					<!-- This Input Radio Button Checked to get Value to Pass -->
-					<input class="radioBtn" type="radio" name="type" value="addOn02">
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-7">
+					<!-- This Input Radio Button to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="Medium">
 					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
 						<span>Gold 1GB</span>
 						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
@@ -931,26 +893,111 @@
 						<p><span class="price">Rp 25.000</span>/mth</p>
 					</div>
 				</div>
-				<!-- End List Step 6 Addons -->
-				
+				<!-- End List Step 7 Addons -->
+				<div class="col-md-12 col-xs-12 col-sm-12 nopad align-right">
+					<button type="button" style="width: 20%; display: initial;" id="box-step-8" class="btn btn-lg btn-block btn-red btn-next">Next</button>
+					<br/><br/><br/>
+				</div>
 			</form>
-			
 		</div>
 	</div>
-	<div class="clearfix"></div>
-	<hr/>
-	<!--  /test philip ends -->
-	   
+	<!-- Step 8 Addons -->
+	<div class="box-step-8 col-md-1 col-xs-1 col-sm-1 hidden-xs" style="margin-top: 55px;">
+		<img class="icon-step" src="img/eclipse-red-step-6.png">
+	</div>
+	<div class="col-md-11 col-xs-12 col-sm-11 box-paket-step">
+		<img class="visible-xs icon-step" src="img/eclipse-red-step-6.png">
+		<p style="padding-top: 5px">Next up, you can configure your</p>
+		<p class="box-paket-title">Add-ons Name 02</p>
 		
-	
-	
-	<div class="col-md-4 col-md-offset-8 col-xs-12 col-sm-6 col-sm-offset-6 nopad text-right">
+		<div class="col-md-5 col-xs-12 col-sm-5 box-paket-configure">
+			<img class="hidden-xs" src="img/icon-addon.png" style="margin-right: 15px;">
+			<br/>
+			<p class="box-paket-subtitle">ADD-ONS NAME</p>
+			<p>
+				Lorem ipsum add-on services and plan options ullamco laboris nisi ut aliquid ex ea commodi consequat omnes lingua:
+			</p>
+			<p class="learn-more">
+				<!-- Button trigger modal box Learn More -->
+				<a href="#" class="gotham-bold" data-toggle="modal" data-target="#addOns02">LEARN MORE&nbsp;&nbsp; <img src="img/arrow-link.png"></a>
+			</p>
+		</div>
+		<div class="col-md-7 col-xs-12 col-sm-7 box-paket-details nopad">
+			<form method="get" action="">
+				<!-- Start List Step 8 Addons -->
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-8 active">
+					<!-- This Input Radio Button to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" checked="checked" value="Medium">
+					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+						<span>None</span>
+						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+					</div>
+					<img class="icon-selected hidden" src="img/icon-selected.png">
+					<div class="col-md-6 col-xs-12 col-sm-12">
+						<p>Top-up</p>
+						<p><span class="price">Rp 0</span>/mth</p>
+					</div>
+				</div>
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-8">
+					<!-- This Input Radio Button to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="Medium">
+					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+						<span>Bronze 100MB</span>
+						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+					</div>
+					<img class="icon-selected hidden" src="img/icon-selected.png">
+					<div class="col-md-6 col-xs-12 col-sm-12">
+						<p>Top-up</p>
+						<p><span class="price">Rp 25.000</span>/mth</p>
+					</div>
+				</div>
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-8">
+					<!-- This Input Radio Button to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="Medium">
+					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+						<span>Silver 500MB</span>
+						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+					</div>
+					<img class="icon-selected hidden" src="img/icon-selected.png">
+					<div class="col-md-6 col-xs-12 col-sm-12">
+						<p>Top-up</p>
+						<p><span class="price">Rp 25.000</span>/mth</p>
+					</div>
+				</div>
+				<div class="col-md-12 col-xs-12 col-sm-12 box-paket box-paket-8">
+					<!-- This Input Radio Button to get Value to Pass -->
+					<input class="radioBtn" type="radio" name="type" value="Medium">
+					<div class="col-md-6 col-xs-12 col-sm-12 nopad">
+						<span>Gold 1GB</span>
+						<p>Details sociis natoque pena tibus et magnis dis parturient lorem ipsum</p>
+					</div>
+					<img class="icon-selected hidden" src="img/icon-selected.png">
+					<div class="col-md-6 col-xs-12 col-sm-12">
+						<p>Top-up</p>
+						<p><span class="price">Rp 25.000</span>/mth</p>
+					</div>
+				</div>
+				<!-- End List Step 8 Addons -->
+			</form>
+		</div>
+	</div>
+	<div class="col-md-12 col-xs-12 col-sm-12 align-right">
+		<div class="col-md-12 col-xs-12 col-sm-12 nopad align-right">
+			<p class="gotham-bold">TOTAL CART &nbsp;&nbsp;&nbsp;<span class="total-price">Rp. 664.000,-</span></p>
+		</div>
+		<hr/>
+		<div class="col-md-12 col-xs-12 col-sm-12 nopad align-right">
+			<button type="button" style="width: 25%; display: initial;" class="btn btn-lg btn-block btn-red">ADD TO CART</button>
+			<br/><br/><br/>
+		</div>
+	</div>
+	<div class="col-md-4 col-md-offset-8 col-xs-12 col-sm-6 col-sm-offset-6 nopad align-right">
 		<div class="box-assistance">
 			<center>
 				<p class="gotham-bold">Need Assistance</p>
 				<div class="col-md-6" style="border-right: 1px solid #c7c7c7">
 					<div class="float-right align-left call-us-assist">
-						<p class="text-uppercase">call us</br>
+						<p>CALL US</br>
 						<a href="#">+62-22-4521404</a></p>
 					</div>
 					<div class="float-right">
@@ -962,9 +1009,9 @@
 					<div class="float-left">
 						<img src="img/icon-livechat-red.png">
 					</div>
-					<div class="float-left align-left live-chat-assist text-uppercase">
-						<a href="#"><p>live</br>
-						chat</p>
+					<div class="float-left align-left live-chat-assist">
+						<a href="#"><p>LIVE</br>
+						CHAT</p>
 						</a>
 					</div>
 				</div>
