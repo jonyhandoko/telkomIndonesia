@@ -831,8 +831,9 @@
 }
 .industry .thumbs .thumbnail h4 {
 	font-family: 'Conv_GothamRnd-Bold';
-	font-size: 28px;
+	/*font-size: 28px;*/
 	margin-bottom: 20px;
+	z-index: 5;
 }
 .industry .thumbs .thumbnail p {
 	margin-bottom: 20px;
@@ -868,16 +869,22 @@
 	position: absolute;
 	right: 25px;
 	top: -40px;
+}
+.industry .thumbs .thumbnail .phone div {
 	background: #FFF;
 	height: 80px;
 	width: 80px;
 	padding: 25px;
 	border-radius: 50%;
+	position: relative;
 }
 
 @media (max-width: 767px) {
 	.override .btn-red {
 		line-height: normal !important;
+	}
+	.override .btn-lh {
+		line-height: 30px !important;
 	}
 	.override #orders-cart .col-no-pad {
 		width: 100%;
