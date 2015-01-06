@@ -387,8 +387,8 @@
 							<div class="control">
 								<nav>
 									<ul class="pager">
-										<li><a class="pull-left"><img src="img/arrow-white-left.png"></a></li>
-										<li><a class="pull-right"><img src="img/arrow-white-right.png"></a></li>
+										<li><a class="pull-left time-left"><img src="img/arrow-white-left.png"></a></li>
+										<li><a class="pull-right time-right"><img src="img/arrow-white-right.png"></a></li>
 									</ul>
 								</nav>
 							</div>
@@ -1222,7 +1222,7 @@
 							</div>
 						</div>
 						<!-- This load more for ajax purpose. Append it into class "channels" -->
-						<div class="load-more">
+						<div class="load-more" style="margin-top: 40px">
 							<center>
 								<button type="button" class="btn btn-lg btn-red">MORE</button>
 							</center>
@@ -1235,7 +1235,7 @@
 	
 	<script type="text/javascript">
 		(function() {
-			$('.tv-guide-tab').on('click', '.parse-tab', function () {
+			$('.channels').on('click', '.parse-tab', function () {
 				$('.tab-content').find('.close').click();
 
 				var that = $(this),
@@ -1250,50 +1250,45 @@
 				content.find('.desc').text(that.find('.desc').text());
 				content.find('.url').attr('href', that.find('.desc').data('url'));
 			});
-			$('.tab-content').on('click', '.close', function () {
-				var that = $(this);
-				that.parent().removeClass('active');
-				that.parents('.tab-content').prev().find('.active').removeClass('active');
+			$('.channels').on('click', '.close', function () {
+				$(this).parent().removeClass('active').parents('.tab-content').prev().find('.active').removeClass('active');
 			});
-			$('.tab-content').on('click', '.prev', function (e) {
+			$('.channels').on('click', '.prev', function (e) {
 				e.preventDefault();
 				$(this).closest('.tab-content').prev().find('.active').prev().find('a').trigger('click');
 			});
-			$('.tab-content').on('click', '.next', function (e) {
+			$('.channels').on('click', '.next', function (e) {
 				e.preventDefault();
 				$(this).closest('.tab-content').prev().find('.active').next().find('a').trigger('click');
 			});
 			
-			// This arrow will move for 2 hours (800px) to right
-			$('.pull-right').on('click', function () {
-				var position = $('.content-slide').position();
-				var top = position.top;
-				var left =  Math.floor(position.left);
-				var value = left - 800;
-				$('.time-slide').css('transform', 'translate('+value+'px, 0px)');
-				$('.content-slide').css('transform', 'translate('+value+'px, 0px)');
+			// This Arrow Will Move for 2 Hours (800px) To Right
+			$('.time-right').on('click', function () {
+				var position = $('.content-slide').position(),
+					top = position.top,
+					left =  Math.floor(position.left),
+					value = left - 800;
+				$('.time-slide, .content-slide').css('transform', 'translate(' + value + 'px, 0px)');
 				
-				// Width 11520px is full 24 hours
-				if(value<=-11520){
-					$('.time-slide').css('transform', 'translate(-10720px, 0px)');
-					$('.content-slide').css('transform', 'translate(-10720px, 0px)');
+				// Width 11520px is Full 24 Hours
+				if (value <= -11520) {
+					$('.time-slide, .content-slide').css('transform', 'translate(-10720px, 0px)');
 				}
 			});
 			
-			// This arrow will move for 2 hours (800px) to left
-			$('.pull-left').on('click', function () {
-				var position = $('.content-slide').position();
-				var top = position.top;
-				var left =  Math.floor(position.left);
-				var value = left + 800;
-				if(left<0 || left!=0){
-					$('.time-slide').css('transform', 'translate('+value+'px, 0px)');
-					$('.content-slide').css('transform', 'translate('+value+'px, 0px)');
+			// This Arrow Will Move for 2 Hours (800px) To Left
+			$('.time-left').on('click', function () {
+				var position = $('.content-slide').position(),
+					top = position.top,
+					left =  Math.floor(position.left),
+					value = left + 800;
+
+				if ( left < 0 || left != 0 ) {
+					$('.time-slide, .content-slide').css('transform', 'translate(' + value + 'px, 0px)');
 				}
 				
-				if(value>0){
-					$('.time-slide').css('transform', 'translate(0px, 0px)');
-					$('.content-slide').css('transform', 'translate(0px, 0px)');
+				if ( value > 0 ) {
+					$('.time-slide, .content-slide').css('transform', 'translate(0px, 0px)');
 				}
 			});
 			
@@ -1304,20 +1299,32 @@
 			$('.content-slide').css('transform', 'translate(-800px, 0px)');
 			
 			// This scrolling for sticky time schedule
-			$( window ).scroll(function() {
-				var scrollTop = $(document).scrollTop();
-				var checkPointTop = $(".schedule").first().position().top-50;
-				var windowsize = $(window).width();
-				if(scrollTop >= checkPointTop){
-					if(scrollTop < $(".line").last().position().top-50){
-						if(windowsize>540)
-							$( ".js-sticky-nav" ).css( "transform", "translate(0px, "+(scrollTop-272)+"px)" );
+			$(window).scroll(function() {
+				var scrollTop = $(document).scrollTop(),
+					checkPointTop = $('.schedule').first().position().top-50,
+					windowsize = $(window).width();
+
+				if ( scrollTop >= checkPointTop ) {
+					if(scrollTop < $('.line').last().position().top-50){
+						if(windowsize > 540)
+							$('.js-sticky-nav').css('transform', 'translate(0px, '+(scrollTop-272)+'px)');
 						else
-							$( ".js-sticky-nav" ).css( "transform", "translate(0px, "+(scrollTop-372)+"px)" );
+							$('.js-sticky-nav' ).css( 'transform', 'translate(0px, '+(scrollTop-372)+'px)');
 					}
-				}else{
-					$( ".js-sticky-nav" ).css( "transform", "translate(0px, 0px)" );
+				} else {
+					$('.js-sticky-nav').css('transform', 'translate(0px, 0px)');
 				}
+			});
+
+			$('.schedule').on('click', '.load-more', function() {
+				$.ajax({ url: 'generic-section-content-copy.html' })
+				.done(function(response) {
+					var c = $('.channels'),
+						r = $(response).find('.channels').children();
+					c.css({ maxHeight: c.height(), overflowY: 'scroll' }).append(r).animate({ scrollTop: c[0].scrollHeight }, 2000);
+				})
+				.fail(function() { console.log('error') })
+				.always(function() { console.log('complete') });
 			});
 		}());
 	</script>

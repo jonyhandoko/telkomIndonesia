@@ -145,6 +145,9 @@
 .schedule {
 	display: block;
 }
+.schedule .channels {
+	overflow-x: hidden; 
+}
 .schedule .channels .row {
 	margin-bottom: 3px;
 	/* display: table; */
@@ -654,14 +657,14 @@
 	font-size: 16px;
 }
 .override .print-ref .lone {
-	padding: 64px 0 24px;
+	padding: 53px 0 12px;
 }
 .override .print-ref .name {
 	margin-bottom: 5px;
 }
 .override .print-ref .btn-print {
 	position: absolute;
-	top: 60px;
+	top: 49px;
 	right: 0;
 }
 .override #customer-data .panel-default {
@@ -1095,6 +1098,7 @@ padding: 8px 50px;
 .well-margin-left{margin-left: 40px !important;}
 .double-margin-bottom{margin-bottom: 20px !important;}
 .text-black{color:#000;}
+.text-gray{color:#a1a1a1 !important;}
 .text-bold{font-weight: bold;}
 .text-white{color:#fff;}
 .text-line-24{line-height: 24px !important;}
@@ -1183,6 +1187,14 @@ height: 14px;
 background: #262525;
 }
 
+.dropdown-menu-custom{
+	width: 100%;
+}
+
+.transform-normal{
+	text-transform: none !important;
+}
+
 .large-margin-top{margin-top: 55px;}
 .medium-margin-top{margin-top: 25px;}
 .medium-margin-right{margin-right: 15px;}
@@ -1201,5 +1213,9 @@ background: #262525;
 	.gotham25{
 		text-align: center;
 		margin: 10px 0;
+	}
+	
+	.price .text-gray{
+		text-align: left;
 	}
 }
