@@ -1098,6 +1098,7 @@ padding: 8px 50px;
 .well-margin-left{margin-left: 40px !important;}
 .double-margin-bottom{margin-bottom: 20px !important;}
 .text-black{color:#000;}
+.text-gray{color:#a1a1a1 !important;}
 .text-bold{font-weight: bold;}
 .text-white{color:#fff;}
 .text-line-24{line-height: 24px !important;}
@@ -1190,6 +1191,10 @@ background: #262525;
 	width: 100%;
 }
 
+.transform-normal{
+	text-transform: none !important;
+}
+
 .large-margin-top{margin-top: 55px;}
 .medium-margin-top{margin-top: 25px;}
 .medium-margin-right{margin-right: 15px;}
@@ -1208,5 +1213,9 @@ background: #262525;
 	.gotham25{
 		text-align: center;
 		margin: 10px 0;
+	}
+	
+	.price .text-gray{
+		text-align: left;
 	}
 }
