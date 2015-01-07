@@ -833,7 +833,6 @@
 	font-family: 'Conv_GothamRnd-Bold';
 	/*font-size: 28px;*/
 	margin-bottom: 20px;
-	z-index: 5;
 }
 .industry .thumbs .thumbnail p {
 	margin-bottom: 20px;
@@ -844,12 +843,13 @@
 }
 .industry .thumbs .thumbnail hr {
 	float: none;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 .industry .thumbs .thumbnail .caption {
 	padding: 15px 25px;
 	position: relative;
 	background: #ffffff;
+	z-index: 1;
 }
 .industry .thumbs .thumbnail .caption:after {
 	bottom: 100%;
@@ -865,10 +865,14 @@
 	border-width: 8px;
 	margin-left: -30px;
 }
+.industry .thumbs .thumbnail .words {
+	display: block;
+}
 .industry .thumbs .thumbnail .phone {
 	position: absolute;
 	right: 25px;
 	top: -40px;
+	z-index: -1;
 }
 .industry .thumbs .thumbnail .phone div {
 	background: #FFF;
