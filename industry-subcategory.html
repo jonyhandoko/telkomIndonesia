@@ -322,12 +322,124 @@
 									</div>
 								</div>
 							</div>
+							<div class="col-sm-4 hidden-xs hidden-xx">
+								<div class="thumbnail">
+									<img src="img/grey-bg-img.jpg" alt="..." class="img-responsive block-img">
+									<div class="caption">
+										<div class="words">
+											<h4>Industry 07</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin Gravida dolor.</p>
+											<hr>
+											<a href="" class="read-more btn-article">READ MORE</a><br>
+										</div>
+										<div class="phone">
+											<div><img src="img/support-landing-phone.png" class="img-responsive"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 hidden-xs hidden-xx">
+								<div class="thumbnail">
+									<img src="img/grey-bg-img.jpg" alt="..." class="img-responsive block-img">
+									<div class="caption">
+										<div class="words">
+											<h4>Industry 08</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin Gravida dolor.</p>
+											<hr>
+											<a href="" class="read-more btn-article">READ MORE</a><br>
+										</div>
+										<div class="phone">
+											<div><img src="img/support-landing-phone.png" class="img-responsive"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 hidden-xs hidden-xx">
+								<div class="thumbnail">
+									<img src="img/grey-bg-img.jpg" alt="..." class="img-responsive block-img">
+									<div class="caption">
+										<div class="words">
+											<h4>Industry 09</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin Gravida dolor.</p>
+											<hr>
+											<a href="" class="read-more btn-article">READ MORE</a><br>
+										</div>
+										<div class="phone">
+											<div><img src="img/support-landing-phone.png" class="img-responsive"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 hidden-xs hidden-xx">
+								<div class="thumbnail">
+									<img src="img/grey-bg-img.jpg" alt="..." class="img-responsive block-img">
+									<div class="caption">
+										<div class="words">
+											<h4>Industry 10</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin Gravida dolor.</p>
+											<hr>
+											<a href="" class="read-more btn-article">READ MORE</a><br>
+										</div>
+										<div class="phone">
+											<div><img src="img/support-landing-phone.png" class="img-responsive"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 hidden-xs hidden-xx">
+								<div class="thumbnail">
+									<img src="img/grey-bg-img.jpg" alt="..." class="img-responsive block-img">
+									<div class="caption">
+										<div class="words">
+											<h4>Industry 11</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin Gravida dolor.</p>
+											<hr>
+											<a href="" class="read-more btn-article">READ MORE</a><br>
+										</div>
+										<div class="phone">
+											<div><img src="img/support-landing-phone.png" class="img-responsive"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 hidden-xs hidden-xx">
+								<div class="thumbnail">
+									<img src="img/grey-bg-img.jpg" alt="..." class="img-responsive block-img">
+									<div class="caption">
+										<div class="words">
+											<h4>Industry 12</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin Gravida dolor.</p>
+											<hr>
+											<a href="" class="read-more btn-article">READ MORE</a><br>
+										</div>
+										<div class="phone">
+											<div><img src="img/support-landing-phone.png" class="img-responsive"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 hidden-xs hidden-xx">
+								<div class="thumbnail">
+									<img src="img/grey-bg-img.jpg" alt="..." class="img-responsive block-img">
+									<div class="caption">
+										<div class="words">
+											<h4>Industry 13</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin Gravida dolor.</p>
+											<hr>
+											<a href="" class="read-more btn-article">READ MORE</a><br>
+										</div>
+										<div class="phone">
+											<div><img src="img/support-landing-phone.png" class="img-responsive"></div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-5"></div>
 							<div class="col-sm-2">
-								<div class="action-slide text-center" style="margin-bottom: 40px;">
-									<a href="" class="show-item">See more</a>  
+								<div class="action-shows text-center" style="margin-bottom: 40px;">
+									<a href="" class="">See more</a>  
 								</div>
 							</div>
 							<div class="col-sm-5"></div>
@@ -335,10 +447,21 @@
 					</div>
 					<script>
 						(function() {
-							$('.action-slide').on('click', 'a', function(e) {
+							// var w = $(window).width();
+							$('.action-shows').on('click', 'a', function(e) {
 								e.preventDefault();
-								$('.thumbs').find('.hidden-xs').removeClass('hidden-xs');
-							});
+								var items = $('.thumbs').find('.hidden-xs'),
+									len = items.length,
+									b = $(this);
+								console.log(len);
+								if (len > 0) {
+									items.each(function(i) {
+										if (i < 3) { $(this).removeClass().addClass('col-sm-4') }
+									});
+								} else {
+									b.text('NO MORE').css('background', 'none');
+								}
+							})
 						}())
 					</script>
 

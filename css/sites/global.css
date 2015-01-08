@@ -1302,3 +1302,29 @@ background: #262525;
 		text-align: left;
 	}
 }
+
+.more-margin-bott {
+	margin-bottom: 40px;
+}
+.block-high-auto {
+	min-height: inherit;
+	margin-bottom: 20px;
+}
+.text-center-i {
+	text-align: center !important;
+}
+.hidden-xx {
+	display: none;
+}
+.action-shows a {
+	font-size: 17px;
+	line-height: 25px;
+	color: #000;
+	font-family: 'Conv_GothamRnd-Bold';
+	text-transform: uppercase;
+	text-decoration: none;
+	vertical-align: middle;
+	display: block;
+	background: url('../../img/arrow-highlight.png') no-repeat right center;
+	padding-right: 10px;
+}
