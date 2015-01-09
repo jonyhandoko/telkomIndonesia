@@ -1328,3 +1328,56 @@ background: #262525;
 	background: url('../../img/arrow-highlight.png') no-repeat right center;
 	padding-right: 10px;
 }
+.grey-adds {
+	font-family: "Conv_GothamRnd-Light"
+}
+.grey-adds h3,
+.grey-adds p {
+	float: none !important;
+	margin-bottom: 5px !important;
+}
+.grey-adds h3 {
+	font-size: 28px;
+}
+.grey-adds img {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 12px 0;
+}
+.no-bd {
+	border-radius: 0 !important;
+	width: auto !important;
+	height: 60px !important;
+	margin: 0 auto;
+}
+.auto-height {
+	text-align: left !important;
+	height: auto !important;
+	max-height: inherit !important;
+}
+.cnt-edit {
+	padding: 40px 0 !important;
+}
+.cnt-edit .txt-info {
+	font-family: "Conv_GothamRnd-Bold";
+	margin-top: 0 !important;
+}
+.cnt-edit h2 {
+	font-size: 36px !important;
+	line-height: 42px !important;
+}
+.cnt-edit p {
+	font-family: "Conv_GothamRnd-Light";
+	font-size: 14px;
+}
+.auto-height h4 {
+	font-family: "Conv_GothamRnd-Light";
+	color: #000;
+	font-size: 20px;
+}
+.dwnld {
+	background-color: #DDD;
+	padding: 30px 0;
+	border-radius: 4px;
+}
