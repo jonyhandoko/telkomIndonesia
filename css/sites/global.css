@@ -1373,6 +1373,12 @@ background: #262525;
 	line-height: 40px !important;
 	height: inherit !important; 
 }
+.cnt-edit .txt-info.googles {
+	background: url(../../img/industry-googles.png) no-repeat left !important;
+}
+.cnt-edit .txt-info.eyes {
+	background: url(../../img/industry-eye.png) no-repeat left !important;
+}
 .cnt-edit h2 {
 	margin: 10px 0 !important;
 	font-size: 36px !important;
@@ -1381,6 +1387,40 @@ background: #262525;
 .cnt-edit p {
 	font-family: "Conv_GothamRnd-Light";
 	font-size: 14px;
+}
+.ctn-white {
+	height: auto !important;
+	background-color: #FFFFFF !important;
+}
+.ctn-grey {
+	height: auto !important;
+	background-color: #F8F8F8 !important;
+}
+.ctn-bundle-no-bg {
+	height: inherit !important;
+}
+.ctn-bundle-no-bg .container {
+	min-height: inherit !important;
+	background: none !important;
+}
+.img-align {
+	vertical-align: middle;
+}
+.img-align.img-top {
+	vertical-align: top;
+}
+.img-align.img-bot {
+	vertical-align: bottom;
+}
+.img-align img {
+	margin: 0 auto;
+}
+.auto-height.align-left {
+	width: 100%;
+}
+.strecht-img {
+	width: 100% !important;
+	height: auto !important;
 }
 .auto-height h4 {
 	font-family: "Conv_GothamRnd-Light";
@@ -1411,6 +1451,7 @@ background: #262525;
 	position: absolute; top: 20px; left: 1px; z-index: 2;
 }
 
+
 @media screen and (max-width: 768px) {
 	.full-xs {
 		width: 100% !important;
@@ -1427,5 +1468,12 @@ background: #262525;
 	.block-fix .bundle-desc {
 		margin-top: 20px !important;
 		text-align: center !important;
+	}
+	.grey-adds img {
+		float: right;
+	}
+	.ctn-bundle-no-bg .container {
+		min-height: inherit !important;
+		background: none !important;
 	}
 }
