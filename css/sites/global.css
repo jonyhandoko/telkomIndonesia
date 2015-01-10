@@ -1468,7 +1468,7 @@ background: #262525;
 	.block-fix .bundle-desc {
 		width: 100% !important;
 	}
-	.block-fix .block-images img {
+	.block-fix .block-images .img-round {
 		width: 140px !important;
 		height: 140px !important;
 	}
