@@ -1328,3 +1328,155 @@ background: #262525;
 	background: url('../../img/arrow-highlight.png') no-repeat right center;
 	padding-right: 10px;
 }
+.grey-adds {
+	font-family: "Conv_GothamRnd-Light"
+}
+.grey-adds h3,
+.grey-adds p {
+	float: none !important;
+	margin-bottom: 5px !important;
+}
+.grey-adds h3 {
+	font-size: 28px;
+}
+.grey-adds img {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 12px 0;
+}
+.no-bd {
+	border-radius: 0 !important;
+	width: auto !important;
+	height: 60px !important;
+	margin: 0 auto;
+}
+.auto-height {
+	text-align: center !important;
+	height: auto !important;
+	max-height: inherit !important;
+}
+.auto-height.align-left {
+	text-align: left !important;
+}
+.auto-height.align-left h4 {
+	display: inline-block;
+	margin-top: 20px;
+}
+.cnt-edit {
+	padding: 40px 0 !important;
+}
+.cnt-edit .txt-info {
+	font-family: "Conv_GothamRnd-Bold";
+	margin-top: 0 !important;
+	padding: 0 0 0 45px !important;
+	line-height: 40px !important;
+	height: inherit !important; 
+}
+.cnt-edit .txt-info.googles {
+	background: url(../../img/industry-googles.png) no-repeat left !important;
+}
+.cnt-edit .txt-info.eyes {
+	background: url(../../img/industry-eye.png) no-repeat left !important;
+}
+.cnt-edit h2 {
+	margin: 10px 0 !important;
+	font-size: 36px !important;
+	line-height: 42px !important;
+}
+.cnt-edit p {
+	font-family: "Conv_GothamRnd-Light";
+	font-size: 14px;
+}
+.ctn-white {
+	height: auto !important;
+	background-color: #FFFFFF !important;
+}
+.ctn-grey {
+	height: auto !important;
+	background-color: #F8F8F8 !important;
+}
+.ctn-bundle-no-bg {
+	height: inherit !important;
+}
+.ctn-bundle-no-bg .container {
+	min-height: inherit !important;
+	background: none !important;
+}
+.img-align {
+	vertical-align: middle;
+}
+.img-align.img-top {
+	vertical-align: top;
+}
+.img-align.img-bot {
+	vertical-align: bottom;
+}
+.img-align img {
+	margin: 0 auto;
+}
+.auto-height.align-left {
+	width: 100%;
+}
+.strecht-img {
+	width: 100% !important;
+	height: auto !important;
+}
+.auto-height h4 {
+	font-family: "Conv_GothamRnd-Light";
+	color: #000;
+	font-size: 20px;
+}
+.dwnld {
+	background-color: #DDD;
+	padding: 30px 0;
+	text-align: center;
+}
+.dwnld img {
+	width: inherit !important;
+	height: inherit !important;
+	margin-right: 10px;
+}
+.same-height {
+	display: table;
+}
+.same-height .row {
+	display:table-row;
+}
+.same-height [class^="col"] {
+	display: table-cell;
+	float: none;
+}
+.category-logo {
+	position: absolute; top: 20px; left: 1px; z-index: 2;
+}
+.block-fix .block-images img {
+	margin: 0 auto !important;
+}
+
+
+@media screen and (max-width: 768px) {
+	.full-xs {
+		width: 100% !important;
+	}
+	.col-xs-6-fix {
+		width: 50%;
+	}
+	.block-fix .block-images,
+	.block-fix .block-desc,
+	.block-fix .bundle-images,
+	.block-fix .bundle-desc {
+		width: 100% !important;
+	}
+	.block-fix .block-images .img-round {
+		width: 140px !important;
+		height: 140px !important;
+	}
+	.block-fix .bundle-desc {
+		margin-top: 20px !important;
+		text-align: center !important;
+	}
+	.grey-adds img {
+		float: right;
+	}
+}
