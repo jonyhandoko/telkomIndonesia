@@ -1388,6 +1388,42 @@ background: #262525;
 	font-family: "Conv_GothamRnd-Light";
 	font-size: 14px;
 }
+.cnt-edit .lone-head {
+	font-size: 36px !important;
+	color: #000 !important;
+	text-align: center;
+}
+.cnt-edit .about-block h2 {
+	color: #E94543 !important;
+}
+.cnt-edit .about-block h2 span {
+	font-family: "Conv_GothamRnd-Light";
+	color: #585858 !important;
+}
+.cnt-edit .about-block h2 span.red {
+	color: #E94543 !important;
+}
+.cnt-edit .about-block h2 q {
+	font-family: "Conv_GothamRnd-Medium";
+	color: #FFF;
+}
+.cnt-edit .about-block .quote-by {
+	font-family: "Conv_GothamRnd-Medium";
+	color: #FFF;
+}
+.cnt-edit .about-block .quote-by p {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+.cnt-edit .about-block-red {
+	padding: 10px;
+	border-radius: 8px;
+	background-color: #E41B13;
+}
+.cnt-edit .about-block-red p {
+	color: #FFF !important;
+	font-weight: bold;
+}
 .ctn-white {
 	height: auto !important;
 	background-color: #FFFFFF !important;
@@ -1395,6 +1431,10 @@ background: #262525;
 .ctn-grey {
 	height: auto !important;
 	background-color: #F8F8F8 !important;
+}
+.ctn-greys {
+	height: auto !important;
+	background-color: #EAEAE8 !important;
 }
 .ctn-bundle-no-bg {
 	height: inherit !important;
@@ -1453,6 +1493,58 @@ background: #262525;
 .block-fix .block-images img {
 	margin: 0 auto !important;
 }
+.word-serv {
+	font-family: 'Conv_GothamRnd-Light';
+	text-align: center !important;
+}
+.word-serv h3 {
+	font-family: 'Conv_GothamRnd-Bold';
+	font-size: 44px;
+	line-height: 50px;
+	text-align: center !important;
+}
+.word-serv .capt {
+	padding: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.word-serv .btn {
+	margin-top: 40px;
+}
+.arrow-bot {
+	position: relative;
+	background: #FFF;
+	z-index: 2;
+}
+.arrow-bot:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #FFF;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.arrow-bot.bot-greys:after {
+	border-top-color: #EAEAE8 
+}
+.carous-ul {
+	list-style: none;
+	font-size: 14px;
+	padding: 0;
+}
+.carous-ul li {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+	padding: 5px 0;
+}
+.carous-ul li a {
+	color: #FFF;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -1478,5 +1570,8 @@ background: #262525;
 	}
 	.grey-adds img {
 		float: right;
+	}
+	.border-bot-xs {
+		border-bottom: 1px solid #ddd;
 	}
 }
