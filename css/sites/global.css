@@ -1436,6 +1436,14 @@ background: #262525;
 	height: auto !important;
 	background-color: #EAEAE8 !important;
 }
+.ctn-greyss {
+	height: auto !important;
+	background-color: #F9F8F4 !important;
+}
+.ctn-greysss {
+	height: auto !important;
+	background-color: #F8F8F8 !important;
+}
 .ctn-bundle-no-bg {
 	height: inherit !important;
 }
@@ -1546,6 +1554,20 @@ background: #262525;
 .carous-ul li a {
 	color: #FFF;
 }
+.carous-ul-bold {
+	margin-bottom: 20px;
+}
+.carous-ul-bold li {
+	border-bottom: 0;
+}
+.carous-ul-bold li a {
+	font-family: "Conv_GothamRnd-Bold";
+	color: #585858;
+}
+.carous-ul-bold li a:hover,
+.carous-ul-bold li.active a {
+	color: #e41b13;
+}
 .fade-bg p {
 	font-family: "Conv_GothamRnd-Light" !important;
 }
@@ -1641,6 +1663,85 @@ background: #262525;
 .person-detail p {
 	margin-bottom: 10px !important;
 }
+.big-head-red {
+	color: #e41b13;
+	text-align: center;
+	margin-top: 65px;
+	font-size: 48px;
+}
+.nav-light li > a,
+.media-bundles {
+	font-family: "Conv_GothamRnd-Light" !important;
+}
+.media-bundles .media {
+	color: #FFF !important;
+	margin-bottom: 20px;
+}
+.media-bundles .media p {
+	font-size: 14px;
+	line-height: 16px;
+}
+.media-bundles .media-heading {
+	font-family: "Conv_GothamRnd-Medium";
+	color: #FFF;
+}
+.media-bundles .media-object {
+	margin-right: 10px;
+}
+.read-more.grey {
+	color: #FFF;
+	background: url('../../img/arrow-link-grey.png') no-repeat right;
+}
+.read-more.grey:hover {
+	color: #585858;
+}
+.tab-long-content {
+	padding: 40px 0 0;
+}
+.cnt-edit .condense-ls {
+	letter-spacing: -2px;"
+}
+.awards {
+	font-family: "Conv_GothamRnd-Light";
+}
+.awards h3 {
+	margin-top: 0;
+	text-align: left !important;
+}
+.awards h3.structure {
+	text-align: center !important;
+	margin-bottom: 40px;
+}
+.awards h4 {
+	font-family: "Conv_GothamRnd-Light";
+	font-size: 40px;
+	color: #e41b13;
+}
+.awards .sub {
+	font-family: "Conv_GothamRnd-Light";
+	font-weight: bold;
+	font-size: 20px;
+	color: #e41b13;
+}
+.awards .block-images {
+	margin-top: 20px !important;
+}
+.awards .block-fix {
+	margin-bottom: 20px;
+}
+.awards .block-desc {
+	text-align: left !important;
+	width: 100% !important;
+}
+.awards .sort-by {
+	float: left;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #DDD;
+}
+.awards .sort-by:last-child {
+	border-bottom: 0;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -1672,5 +1773,16 @@ background: #262525;
 	}
 	.block-23 .bl-sm {
 		border-left: 0;
+	}
+	.hide-bg-xs {
+		background: none !important;
+	}
+	.awards h4,
+	.awards .block-desc {
+		text-align: center !important;
+	}
+	.awards h3.structure {
+		text-align: left !important;
+		margin-bottom: 10px;
 	}
 }
