@@ -1537,6 +1537,7 @@ background: #262525;
 	list-style: none;
 	font-size: 14px;
 	padding: 0;
+	max-width: 200px;
 }
 .carous-ul li {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
@@ -1544,6 +1545,101 @@ background: #262525;
 }
 .carous-ul li a {
 	color: #FFF;
+}
+.fade-bg p {
+	font-family: "Conv_GothamRnd-Light" !important;
+}
+.fade-bg .sub-text {
+	color: #FFF;
+	padding: 0 40px 40px;
+}
+.block-23 .bl-sm {
+	border-left: 1px solid #DDD;
+}
+.block-23 .sub-text {
+	font-family: "Conv_GothamRnd-Bold";
+	text-align: center;
+}
+.carou-caps h1 {
+	margin: 0  0 10px !important;
+}
+.carou-caps .sub-text {
+	font-size: 18px !important;
+	font-weight: bold;
+	margin-bottom: 10px !important;
+}
+.carou-caps p {
+	font-family: "Conv_GothamRnd-Light" !important;
+	margin: 5px 0 !important;
+	font-size: 14px !important;
+	line-height: 20px !important;
+}
+.fade-long-cnt {
+	font-size: 14px;
+	padding: 0 15px;
+}
+.fade-long-cnt p {
+	line-height: 20px;
+}
+.fade-long-cnt .media {
+	margin-bottom: 20px;
+}
+.fade-long-cnt .media .media-heading {
+	font-family: "Conv_GothamRnd-Bold";
+	color: #000;
+}
+.fade-long-cnt .media .media-heading a {
+	color: #000;
+	text-decoration: none;
+}
+.fade-long-cnt .red-bold {
+	font-family: "Conv_GothamRnd-Bold";
+	color: #e41b13;
+	margin: 40px 0 20px; 
+}
+.media-same-height .media {
+	display: table;
+}
+.media-same-height .media-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+.fade-long-cnt .media-same-height .media {
+	background-color: #FFF;
+	border-radius: 12px;
+	overflow: hidden;
+}
+.fade-long-cnt .media-same-height .media > .pull-left,
+.fade-long-cnt .media-same-height .media > .pull-right {
+	margin: 0 !important;
+}
+.fade-long-cnt .media-same-height .media-body {
+	padding: 24px;
+}
+.fade-long-cnt .media-same-height .media-heading {
+	color: #585858;
+	font-size: 28px;
+}
+.fade-long-cnt .read-more {
+	font-family: "Conv_GothamRnd-Bold";
+}
+.person-detail .modal-content {
+	border-radius: 12px;
+	overflow: hidden;
+}
+.person-detail .modal-body {
+	padding-top: 10px !important;
+}
+.person-detail h3 {
+	color: #585858 !important;
+}
+.person-detail .sub {
+	font-family: "Conv_GothamRnd-Bold";
+	color: #e41b13 !important;
+	font-size: 18px;
+}
+.person-detail p {
+	margin-bottom: 10px !important;
 }
 
 
@@ -1573,5 +1669,8 @@ background: #262525;
 	}
 	.border-bot-xs {
 		border-bottom: 1px solid #ddd;
+	}
+	.block-23 .bl-sm {
+		border-left: 0;
 	}
 }
