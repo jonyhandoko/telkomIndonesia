@@ -1428,6 +1428,10 @@ background: #262525;
 	height: auto !important;
 	background-color: #FFFFFF !important;
 }
+.ctn-whites {
+	height: auto !important;
+	background-color: #F0EFED !important;
+}
 .ctn-grey {
 	height: auto !important;
 	background-color: #F8F8F8 !important;
@@ -1742,6 +1746,18 @@ background: #262525;
 .awards .sort-by:last-child {
 	border-bottom: 0;
 }
+.big-grey-text {
+	color: #585858 !important;
+	font-size: 66px;
+	line-height: 60px;
+}
+.btn-red.white {
+	background-color: #FFF;
+	color: #e41b13;
+}
+.btn-red.white:hover {
+	background-color: #DDD;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -1784,5 +1800,9 @@ background: #262525;
 	.awards h3.structure {
 		text-align: left !important;
 		margin-bottom: 10px;
+	}
+	.big-grey-text {
+		font-size: 36px !important;
+		line-height: 44px;
 	}
 }
