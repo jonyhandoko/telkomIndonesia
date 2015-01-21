@@ -1758,6 +1758,33 @@ background: #262525;
 .btn-red.white:hover {
 	background-color: #DDD;
 }
+.about-detail {
+	font-size: 14px;
+	background: #FFF !important;
+}
+.about-detail #ctn-service-highlight,
+.about-detail .breadcrumb {
+	background: #FFF;
+}
+.about-detail h3.structure {
+	text-align: left !important;
+	color: #e41b13 !important;
+}
+.about-detail .sub {
+	font-size: 22px;
+	color: #000;
+}
+.about-detail .box-fade {
+	padding: 14px 24px;
+	background-color: #EEE;
+}
+.about-detail .box-fade ul {
+	padding: 0 0 0 17px;
+}
+.about-detail .last-content {
+	padding-top: 40px !important;
+	background: #EEE !important;
+}
 
 
 @media screen and (max-width: 768px) {
