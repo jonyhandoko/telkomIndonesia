@@ -149,12 +149,6 @@
 					Login
 				</div>
 			</li>
-			<li>
-				<div class="box-icon">
-					<img src="img/icon-link.png">
-					quick links
-				</div>
-			</li>
 			<li id="ctn-support">
 				<div class="box-icon">
 					<img id="ctn-support" src="img/icon-support.png">
@@ -448,15 +442,17 @@
 					<script>
 						(function() {
 							// var w = $(window).width();
+							var items = $('.thumbs').find('.hidden-xs'),
+								len = items.length;
+							items.each(function(i) { if (i < 3) { $(this).removeClass().addClass('col-sm-4');console.log(i) } });
 							$('.action-shows').on('click', 'a', function(e) {
 								e.preventDefault();
 								var items = $('.thumbs').find('.hidden-xs'),
 									len = items.length,
 									b = $(this);
-								console.log(len);
 								if (len > 0) {
 									items.each(function(i) {
-										if (i < 3) { $(this).removeClass().addClass('col-sm-4') }
+										if (i < 3) { $(this).removeClass().addClass('col-sm-4');console.log(i) }
 									});
 								} else {
 									b.text('NO MORE').css('background', 'none');
