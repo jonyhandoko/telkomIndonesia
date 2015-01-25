@@ -1649,6 +1649,9 @@ background: #262525;
 .fade-long-cnt .read-more {
 	font-family: "Conv_GothamRnd-Bold";
 }
+.fade-long-cnt .img-medium {
+	margin: 40px 0px;
+}
 .person-detail .modal-content {
 	border-radius: 12px;
 	overflow: hidden;
@@ -1742,6 +1745,7 @@ background: #262525;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #DDD;
+	width: 100%;
 }
 .awards .sort-by:last-child {
 	border-bottom: 0;
@@ -1785,7 +1789,46 @@ background: #262525;
 	padding-top: 40px !important;
 	background: #EEE !important;
 }
-
+.media.auto-size .pull-left {
+	max-width: 128px;
+	max-height: 128px;
+}
+.media.auto-size .pull-left img {
+	width: 100%;
+}
+.ctn-bg {
+	overflow: hidden !important;
+	position: relative !important;
+}
+.ctn-bg .bg-center {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+.ctn-bg .bg-center.center {
+	right: 0;
+	left: 0;
+}
+.ctn-bg .bg-center.right {
+	right: 0;
+}
+.ctn-bg .bg-center.left {
+	left: 0;
+}
+.testimonials {
+	display: block;
+}
+.head-banner {
+	padding: 30px 10px;
+	font-family: 'Conv_GothamRnd-Bold';
+	font-size: 40px;"
+}
+@media screen and (max-width: 1024px) {
+	.head-banner {
+		margin-top: -30px
+	}
+}
 
 @media screen and (max-width: 768px) {
 	.full-xs {

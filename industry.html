@@ -152,13 +152,7 @@
           <img src="img/icon-login.png">
           Login
         </div>
-      </li>
-      <li>
-        <div class="box-icon">
-          <img src="img/icon-link.png">
-          quick links
-        </div>
-      </li>       
+      </li>      
       <li id='ctn-support'>
         <div class="box-icon">
           <img id="ctn-support" src="img/icon-support.png">
@@ -269,7 +263,7 @@
      <div class="txt-info googles">OUR VISION</div>
      <h2>Improving healthcare in Eastern Indonesia</h2>
      <p>Healthcare in Indonesia will be important lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra.</p><br>
-     <a class="btn btn-lg btn-red" href="#" role="button">SEE OUR BLUEPRINTS</a>
+     <button class="btn btn-lg btn-red">SEE OUR BLUEPRINTS</button>
     </div>
    </div>
    <div class="col-sm-6 hidden-xs img-align img-bot">
@@ -290,7 +284,7 @@
      <div class="txt-info eyes">OUR OVERVIEW</div>
      <h2>Saving medical costs & access to healthcare</h2>
      <p>Healthcare is expensive lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra.</p><br>
-     <a class="btn btn-lg btn-red" href="#" role="button">SEE OUR CASE STUDIES</a>
+     <button class="btn btn-lg btn-red">SEE OUR CASE STUDIES</button>
     </div>
    </div>
   </div>
@@ -408,30 +402,28 @@
     </div>
     <div class="content">
      <!-- Nav tabs -->
-     <ul class="nav nav-tabs" role="tablist">
+     <ul class="nav nav-tabs tabs-access" role="tablist">
       <li class="active">
-       <a href="#01" data-toggle="tab">SOLUTION 01</a>
+       <a href="#01" class="01" data-toggle="tab">SOLUTION 01</a>
       </li>
       <li>
-       <a href="#02" data-toggle="tab">SOLUTION 02</a>
+       <a href="#02" class="02" data-toggle="tab">SOLUTION 02</a>
       </li>
       <li>
-       <a href="#03" data-toggle="tab">SOLUTION 03</a>
+       <a href="#03" class="03" data-toggle="tab">SOLUTION 03</a>
       </li>                           
      </ul>
      
      <div class="col-xs-12">
-      <div class="dropdown hidden-sm hidden-lg hidden-md">
-      <button class="btn btn-default btn-block dropdown-toggle" type="button" id="top-left-menu" data-toggle="dropdown">
-      SOLUTION 01
-      <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="top-left-menu">
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SOLUTION 02</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SOLUTION 03</a></li>
-      </ul>
-      </div> 
-     </div>             
+      <div class="visible-xs override relative well-margin-bottom">
+       <select class="calo form-control">
+        <option value="01">SOLUTION 01</option>
+        <option value="02">SOLUTION 02</option>
+        <option value="03">SOLUTION 03</option>
+       </select>
+       <img class="img-responsive form-img sel" src="img/arrow-dropdown.png">
+      </div>  
+     </div>            
      
      <!-- Tab panes -->
      <div class="tab-content" style="padding: 60px 0 0">
@@ -444,7 +436,7 @@
         </div>
         <div class="col-md-6 col-sm-7 col-xs-12">
          <div class="ctn-text">
-          <h2>INFRASTRUCTURE SERVICE</h2>
+          <h2>INFRASTRUCTURE SERVICE 01</h2>
           <h5>Telkom has built health infrastructure across many provinces.</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo</p><br>
           <a class="btn btn-lg btn-red" href="#" role="button">LEARN MORE</a>
@@ -462,7 +454,7 @@
         </div>
         <div class="col-md-6 col-sm-7 col-xs-12">
          <div class="ctn-text">
-          <h2>INFRASTRUCTURE SERVICE</h2>
+          <h2>INFRASTRUCTURE SERVICE 02</h2>
           <h5>Telkom has built health infrastructure across many provinces.</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo</p><br>
           <a class="btn btn-lg btn-red" href="#" role="button">LEARN MORE</a>
@@ -480,7 +472,7 @@
         </div>
         <div class="col-md-6 col-sm-7 col-xs-12">
          <div class="ctn-text">
-          <h2>INFRASTRUCTURE SERVICE</h2>
+          <h2>INFRASTRUCTURE SERVICE 03</h2>
           <h5>Telkom has built health infrastructure across many provinces.</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo</p><br>
           <a class="btn btn-lg btn-red" href="#" role="button">LEARN MORE</a>
@@ -489,8 +481,14 @@
         </div>          
        </div>
       </div>
-      
      </div>
+
+     <script>
+      $('.calo').on('change', function() {
+       var v = this.value;
+       $('.tabs-access').find('.' + v).click()
+      });
+     </script> 
     </div>
    </div>
   </div>
