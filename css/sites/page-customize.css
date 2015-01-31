@@ -296,3 +296,16 @@ input[type="radio"] {
 .chkBtn{
 	display: none;
 }
+
+.box-status {
+	float: left;
+}
+.box-status.active {
+	opacity: 1;
+    pointer-events: inherit;
+    border: 0;
+}
+.box-status.disabled {
+	opacity: .5;
+    pointer-events: none;
+}
