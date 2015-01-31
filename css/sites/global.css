@@ -882,6 +882,10 @@
 	border-radius: 50%;
 	position: relative;
 }
+.industry .thumbs.same-height {
+	margin-right: -15px;
+	margin-left: -15px;
+}
 
 @media (max-width: 767px) {
 	.override .btn-red {
@@ -948,7 +952,14 @@
 	.confirm-payment-1{
 		float: left !important;
 	}
-	
+	.industry .thumbs.same-height {
+		margin: 0;
+	}
+	.industry .thumbs.same-height,
+	.industry .thumbs.same-height .row,
+	.industry .thumbs.same-height [class^="col"] {
+		display: block;
+	}
 }
 
 
@@ -1822,7 +1833,7 @@ background: #262525;
 .head-banner {
 	padding: 30px 10px;
 	font-family: 'Conv_GothamRnd-Bold';
-	font-size: 40px;"
+	font-size: 40px;
 }
 @media screen and (max-width: 1024px) {
 	.head-banner {
