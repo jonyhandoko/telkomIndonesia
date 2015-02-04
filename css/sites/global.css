@@ -1835,6 +1835,11 @@ background: #262525;
 	font-family: 'Conv_GothamRnd-Bold';
 	font-size: 40px;
 }
+.empty-text {
+	margin: 30px 0;
+	font-size: 18px;
+	font-weight: bold;
+}
 @media screen and (max-width: 1024px) {
 	.head-banner {
 		margin-top: -30px
